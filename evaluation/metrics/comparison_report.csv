@@ -1,0 +1,23 @@
+SECTION 1: AGGREGATE COMPARISON
+Metric,New_Project_Avg,Old_Project_Avg,Winner,Difference,Note
+Avg Heap Memory (MB),49.008,57.42,New,14.65%,Lower = Less memory used
+Avg System CPU (%),32.008,6.07,Old,427.31%,Lower = Less CPU load
+Avg Process CPU (%),0.5635,0.1494,Old,277.18%,Lower = Less process CPU
+Avg Live Threads,36.2,38.0,New,4.74%,Lower = Less resource usage
+Avg Startup Time (sec),27.4684,75.65,New,63.69%,Lower = Faster startup
+Total Requests Handled,0,80.0,Old,N/A,Higher = More active
+Avg Response Time (sec),0,0.0336,Old,N/A,Lower = Faster response
+Max Response Time (sec),0,0.0356,Old,N/A,Lower = Less latency spikes
+
+
+SECTION 2: SERVICE-WISE DATA
+Project,Service,Heap_Memory_MB,CPU_System_%,CPU_Process_%,Live_Threads,Startup_Time_sec,Total_Requests,Avg_Response_Time_sec,Max_Response_Time_sec
+New-Microservices,owner-service,58.86,31.29,0.2786,33,41.372,0,0,0
+New-Microservices,vet-service,47.55,31.14,0.2228,33,32.662,0,0,0
+New-Microservices,system-service,41.8,31.75,0.353,50,20.543,0,0,0
+New-Microservices,app-service,56.53,34.41,1.6474,32,18.974,0,0,0
+New-Microservices,api-gateway,40.3,31.45,0.3156,33,23.791,0,0,0
+Old-Microservices,spring-petclinic-customers-service,60.57,0,0,0,84.267,62,0.0396,0.0265
+Old-Microservices,spring-petclinic-vets-service,54.68,5.76,0.0887,34,71.395,60,0.0321,0.0464
+Old-Microservices,spring-petclinic-visits-service,68.32,0,0,0,77.838,60,0.027,0.0351
+Old-Microservices,spring-petclinic-api-gateway,46.11,6.38,0.2101,42,69.1,138,0.0359,0.0345

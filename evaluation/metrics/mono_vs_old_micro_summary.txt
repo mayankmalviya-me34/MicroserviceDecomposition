@@ -1,0 +1,42 @@
+================================================================================
+  MONOLITHIC vs MICROSERVICE COMPARISON REPORT
+  Monolithic (Spring PetClinic) vs Microservice (Ca/Ce Based Decomposition)
+================================================================================
+  Microservice services : 4
+  Monolithic services   : 1
+--------------------------------------------------------------------------------
+  Metric                         Microservice   Monolithic         Winner     Diff
+--------------------------------------------------------------------------------
+  Avg Heap Memory (MB)                  57.42        63.76   Microservice    9.94%
+  Avg System CPU (%)                     6.07        51.29   Microservice   88.17%
+  Avg Process CPU (%)                  0.1494       0.2866   Microservice   47.87%
+  Avg Live Threads                       38.0         25.0     Monolithic   34.21%
+  Avg Startup Time (sec)                75.65       10.628     Monolithic   85.95%
+  Total Requests Handled                 80.0         34.0   Microservice    57.5%
+  Avg Response Time (sec)              0.0336       0.1161   Microservice   71.06%
+  Max Response Time (sec)              0.0356       0.0769   Microservice   53.71%
+--------------------------------------------------------------------------------
+
+  KEY FINDINGS:
+  [Memory]   Winner: Microservice (diff: 9.94%)
+             Microservice total heap (all services): 229.68 MB
+             Monolithic heap: 63.76 MB
+             Microservice uses 260.23% MORE total memory (expected - multiple JVMs)
+  [CPU]      Winner: Microservice (diff: 47.87%)
+  [Startup]  Winner: Monolithic (diff: 85.95%)
+             Monolithic starts as 1 process, Microservice needs all services to start
+  [Resp.Time]Winner: Microservice (diff: 71.06%)
+  [Threads]  Winner: Monolithic
+
+  ARCHITECTURE COMPARISON:
+  Monolithic   : 1 deployable JAR, all features in one process
+                 Single DB, simple deployment, higher coupling
+  Microservice : 6 independent services, Ca/Ce metric based decomposition
+                 Separate DBs, independent deployment, lower coupling
+
+  TRADE-OFFS:
+  [+] Microservice: Independent scaling, fault isolation, tech diversity
+  [-] Microservice: Higher total memory (multiple JVMs), network overhead
+  [+] Monolithic  : Lower memory, simpler debugging, no network calls
+  [-] Monolithic  : Single point of failure, tight coupling, hard to scale
+================================================================================

@@ -1,0 +1,8 @@
+﻿New Service,Mono LOC,New LOC,Diff LOC,Mono Cyclomatic Complexity,New Cyclomatic Complexity,Diff Cyclomatic Complexity,Mono Cognitive Complexity,New Cognitive Complexity,Diff Cognitive Complexity,Mono Maintainability (%),New Maintainability (%),Diff Maintainability (%),Interpretation
+api-gateway,1258,53,-1205,137,1,-136,52,0,-52,98.7,99.7,+1.0,LOC less by 1205; Cyclomatic Complexity improved by 136; Cognitive Complexity improved by 52; Maint better 1.0%
+app-service,1258,63,-1195,137,2,-135,52,0,-52,98.7,99.7,+1.0,LOC less by 1195; Cyclomatic Complexity improved by 135; Cognitive Complexity improved by 52; Maint better 1.0%
+discovery-server,1258,55,-1203,137,1,-136,52,0,-52,98.7,100.0,+1.3,LOC less by 1203; Cyclomatic Complexity improved by 136; Cognitive Complexity improved by 52; Maint better 1.3%
+model-service,1258,88,-1170,137,10,-127,52,0,-52,98.7,100.0,+1.3,LOC less by 1170; Cyclomatic Complexity improved by 127; Cognitive Complexity improved by 52; Maint better 1.3%
+owner-service,1258,483,-775,137,85,-52,52,6,-46,98.7,99.9,+1.2,LOC less by 775; Cyclomatic Complexity improved by 52; Cognitive Complexity improved by 46; Maint better 1.2%
+system-service,1258,437,-821,137,62,-75,52,7,-45,98.7,98.1,-0.6,LOC less by 821; Cyclomatic Complexity improved by 75; Cognitive Complexity improved by 45; Maint worse -0.6%
+vet-service,1258,274,-984,137,38,-99,52,0,-52,98.7,99.7,+1.0,LOC less by 984; Cyclomatic Complexity improved by 99; Cognitive Complexity improved by 52; Maint better 1.0%

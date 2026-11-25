@@ -1,0 +1,8 @@
+﻿Service,LOC,Cyclomatic Complexity,Cognitive Complexity,Maintainability (%)
+api-gateway,53,1,0,99.70
+app-service,63,2,0,99.70
+discovery-server,55,1,0,100.00
+model-service,88,10,0,100.00
+owner-service,483,85,6,99.90
+system-service,437,62,7,98.10
+vet-service,274,38,0,99.70

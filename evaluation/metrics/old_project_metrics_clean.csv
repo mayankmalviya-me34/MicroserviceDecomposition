@@ -1,0 +1,5 @@
+Project,Service,Heap_Memory_MB,CPU_System_%,CPU_Process_%,Live_Threads,Startup_Time_sec,DB_Connections_Active,Total_Requests,Avg_Response_Time_sec,Max_Response_Time_sec,Timestamp
+Old-Microservices,spring-petclinic-customers-service,60.57,0,0,0,84.267,N/A,62,0.0396,0.0265,2026-06-28 20:25:52
+Old-Microservices,spring-petclinic-vets-service,54.68,5.76,0.0887,34,71.395,N/A,60,0.0321,0.0464,2026-06-28 20:25:52
+Old-Microservices,spring-petclinic-visits-service,68.32,0,0,0,77.838,N/A,60,0.027,0.0351,2026-06-28 20:25:52
+Old-Microservices,spring-petclinic-api-gateway,46.11,6.38,0.2101,42,69.1,N/A,138,0.0359,0.0345,2026-06-28 20:25:53

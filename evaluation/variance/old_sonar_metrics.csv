@@ -1,0 +1,9 @@
+﻿Service,LOC,Cyclomatic Complexity,Cognitive Complexity,Maintainability (%)
+spring-petclinic-admin-server,82,1,0,100.00
+spring-petclinic-api-gateway,512,47,1,99.80
+spring-petclinic-config-server,67,1,0,100.00
+spring-petclinic-customers-service,527,61,4,99.40
+spring-petclinic-discovery-server,61,1,0,100.00
+spring-petclinic-genai-service,494,22,6,99.90
+spring-petclinic-vets-service,268,17,1,100.00
+spring-petclinic-visits-service,272,23,0,99.30

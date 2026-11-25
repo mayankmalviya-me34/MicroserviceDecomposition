@@ -1,0 +1,8 @@
+Service,api-gateway,app-service,discovery-server,model-service,owner-service,system-service,vet-service
+api-gateway,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+app-service,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+discovery-server,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+model-service,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+owner-service,0.0,0.0,0.0,0.0,1.0,0.0,1.0
+system-service,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+vet-service,0.0,0.0,0.0,0.0,1.0,0.0,1.0

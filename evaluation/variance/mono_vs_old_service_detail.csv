@@ -1,0 +1,9 @@
+﻿Old Service,Mono LOC,Old LOC,Diff LOC,Mono Cyclomatic Complexity,Old Cyclomatic Complexity,Diff Cyclomatic Complexity,Mono Cognitive Complexity,Old Cognitive Complexity,Diff Cognitive Complexity,Mono Maintainability (%),Old Maintainability (%),Diff Maintainability (%),Interpretation
+spring-petclinic-admin-server,1258,82,-1176,137,1,-136,52,0,-52,98.7,100.0,+1.3,LOC less by 1176; Cyclomatic Complexity improved by 136; Cognitive Complexity improved by 52; Maint better 1.3%
+spring-petclinic-api-gateway,1258,512,-746,137,47,-90,52,1,-51,98.7,99.8,+1.1,LOC less by 746; Cyclomatic Complexity improved by 90; Cognitive Complexity improved by 51; Maint better 1.1%
+spring-petclinic-config-server,1258,67,-1191,137,1,-136,52,0,-52,98.7,100.0,+1.3,LOC less by 1191; Cyclomatic Complexity improved by 136; Cognitive Complexity improved by 52; Maint better 1.3%
+spring-petclinic-customers-service,1258,527,-731,137,61,-76,52,4,-48,98.7,99.4,+0.7,LOC less by 731; Cyclomatic Complexity improved by 76; Cognitive Complexity improved by 48; Maint better 0.7%
+spring-petclinic-discovery-server,1258,61,-1197,137,1,-136,52,0,-52,98.7,100.0,+1.3,LOC less by 1197; Cyclomatic Complexity improved by 136; Cognitive Complexity improved by 52; Maint better 1.3%
+spring-petclinic-genai-service,1258,494,-764,137,22,-115,52,6,-46,98.7,99.9,+1.2,LOC less by 764; Cyclomatic Complexity improved by 115; Cognitive Complexity improved by 46; Maint better 1.2%
+spring-petclinic-vets-service,1258,268,-990,137,17,-120,52,1,-51,98.7,100.0,+1.3,LOC less by 990; Cyclomatic Complexity improved by 120; Cognitive Complexity improved by 51; Maint better 1.3%
+spring-petclinic-visits-service,1258,272,-986,137,23,-114,52,0,-52,98.7,99.3,+0.6,LOC less by 986; Cyclomatic Complexity improved by 114; Cognitive Complexity improved by 52; Maint better 0.6%

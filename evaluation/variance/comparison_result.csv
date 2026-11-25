@@ -1,0 +1,30 @@
+﻿Old Project (Monolith Services)
+Service,LOC,Cyclomatic Complexity,Cognitive Complexity,Maintainability (%)
+spring-petclinic-admin-server,82,1,0,100.00
+spring-petclinic-api-gateway,512,47,1,99.80
+spring-petclinic-config-server,67,1,0,100.00
+spring-petclinic-customers-service,527,61,4,99.40
+spring-petclinic-discovery-server,61,1,0,100.00
+spring-petclinic-genai-service,494,22,6,99.90
+spring-petclinic-vets-service,268,17,1,100.00
+spring-petclinic-visits-service,272,23,0,99.30
+TOTAL / AVERAGE,2283.00,21.62,1.50,99.80
+
+New Project (Decomposed Microservices)
+Service,LOC,Cyclomatic Complexity,Cognitive Complexity,Maintainability (%)
+api-gateway,53,1,0,99.70
+app-service,63,2,0,99.70
+discovery-server,55,1,0,100.00
+model-service,88,10,0,100.00
+owner-service,483,85,6,99.90
+system-service,437,62,7,98.10
+vet-service,274,38,0,99.70
+TOTAL / AVERAGE,1453.00,28.43,1.86,99.59
+
+Summary Comparison
+Metric,Old,New,Difference,% Change
+Total LOC,2283.00,1453.00,-830.00,-36.36%
+Avg Cyclomatic Complexity,21.62,28.43,6.80,+31.46%
+Avg Cognitive Complexity,1.50,1.86,0.36,+23.81%
+Avg Maintainability (%),99.80,99.59,-0.21,-0.21%
+Number of Services,8.00,7.00,-1.00,-12.50%

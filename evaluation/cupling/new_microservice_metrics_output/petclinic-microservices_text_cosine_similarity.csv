@@ -1,0 +1,8 @@
+Service,api-gateway,app-service,discovery-server,model-service,owner-service,system-service,vet-service
+api-gateway,1.0,0.2404,0.4505,0.0084,0.0466,0.0717,0.0545
+app-service,0.2404,1.0,0.1916,0.0059,0.0848,0.0658,0.0348
+discovery-server,0.4505,0.1916,1.0,0.0061,0.0452,0.0685,0.0465
+model-service,0.0084,0.0059,0.0061,1.0,0.2206,0.2436,0.1405
+owner-service,0.0466,0.0848,0.0452,0.2206,1.0,0.4952,0.2731
+system-service,0.0717,0.0658,0.0685,0.2436,0.4952,1.0,0.1356
+vet-service,0.0545,0.0348,0.0465,0.1405,0.2731,0.1356,1.0

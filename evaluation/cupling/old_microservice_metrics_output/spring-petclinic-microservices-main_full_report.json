@@ -1,0 +1,335 @@
+{
+  "project": "spring-petclinic-microservices-main",
+  "root_path": "F:\\Main Project\\spring-petclinic-microservices-main",
+  "services": [
+    "spring-petclinic-admin-server",
+    "spring-petclinic-api-gateway",
+    "spring-petclinic-config-server",
+    "spring-petclinic-customers-service",
+    "spring-petclinic-discovery-server",
+    "spring-petclinic-genai-service",
+    "spring-petclinic-vets-service",
+    "spring-petclinic-visits-service"
+  ],
+  "cohesion": {
+    "spring-petclinic-admin-server": 1.0,
+    "spring-petclinic-api-gateway": 0.092,
+    "spring-petclinic-config-server": 1.0,
+    "spring-petclinic-customers-service": 0.103,
+    "spring-petclinic-discovery-server": 1.0,
+    "spring-petclinic-genai-service": 0.079,
+    "spring-petclinic-vets-service": 0.044,
+    "spring-petclinic-visits-service": 0.176
+  },
+  "coupling": {
+    "spring-petclinic-admin-server": 0,
+    "spring-petclinic-api-gateway": 0,
+    "spring-petclinic-config-server": 0,
+    "spring-petclinic-customers-service": 0,
+    "spring-petclinic-discovery-server": 0,
+    "spring-petclinic-genai-service": 0,
+    "spring-petclinic-vets-service": 0,
+    "spring-petclinic-visits-service": 0
+  },
+  "ca_incoming": {
+    "spring-petclinic-admin-server": 0,
+    "spring-petclinic-api-gateway": 0,
+    "spring-petclinic-config-server": 0,
+    "spring-petclinic-customers-service": 0,
+    "spring-petclinic-discovery-server": 0,
+    "spring-petclinic-genai-service": 0,
+    "spring-petclinic-vets-service": 0,
+    "spring-petclinic-visits-service": 0
+  },
+  "ce_outgoing": {
+    "spring-petclinic-admin-server": 0,
+    "spring-petclinic-api-gateway": 0,
+    "spring-petclinic-config-server": 0,
+    "spring-petclinic-customers-service": 0,
+    "spring-petclinic-discovery-server": 0,
+    "spring-petclinic-genai-service": 0,
+    "spring-petclinic-vets-service": 0,
+    "spring-petclinic-visits-service": 0
+  },
+  "depends_on": {},
+  "function_count": {
+    "spring-petclinic-admin-server": 1,
+    "spring-petclinic-api-gateway": 31,
+    "spring-petclinic-config-server": 1,
+    "spring-petclinic-customers-service": 45,
+    "spring-petclinic-discovery-server": 1,
+    "spring-petclinic-genai-service": 20,
+    "spring-petclinic-vets-service": 17,
+    "spring-petclinic-visits-service": 18
+  },
+  "classes": {
+    "spring-petclinic-admin-server": [
+      "SpringBootAdminApplication"
+    ],
+    "spring-petclinic-api-gateway": [
+      "ApiGatewayApplication",
+      "ApiGatewayController",
+      "CustomersServiceClient",
+      "FallbackController",
+      "OwnerDetails",
+      "OwnerDetailsBuilder",
+      "PetDetails",
+      "PetDetailsBuilder",
+      "PetType",
+      "VisitDetails",
+      "Visits",
+      "VisitsServiceClient"
+    ],
+    "spring-petclinic-config-server": [
+      "ConfigServerApplication"
+    ],
+    "spring-petclinic-customers-service": [
+      "CustomersServiceApplication",
+      "Mapper",
+      "MetricConfig",
+      "Owner",
+      "OwnerEntityMapper",
+      "OwnerRepository",
+      "OwnerRequest",
+      "OwnerResource",
+      "Pet",
+      "PetDetails",
+      "PetRepository",
+      "PetRequest",
+      "PetResource",
+      "PetType",
+      "ResourceNotFoundException",
+      "can",
+      "for"
+    ],
+    "spring-petclinic-discovery-server": [
+      "DiscoveryServerApplication"
+    ],
+    "spring-petclinic-genai-service": [
+      "AIBeanConfiguration",
+      "AIDataProvider",
+      "GenAIServiceApplication",
+      "OwnerDetails",
+      "OwnerRequest",
+      "PetDetails",
+      "PetRequest",
+      "PetType",
+      "PetclinicChatClient",
+      "PetclinicTools",
+      "Specialty",
+      "VectorStoreController",
+      "Vet",
+      "VisitDetails",
+      "defines",
+      "for",
+      "that"
+    ],
+    "spring-petclinic-vets-service": [
+      "Cache",
+      "CacheConfig",
+      "Specialty",
+      "Vet",
+      "VetRepository",
+      "VetResource",
+      "VetsProperties",
+      "VetsServiceApplication",
+      "can",
+      "for"
+    ],
+    "spring-petclinic-visits-service": [
+      "MetricConfig",
+      "Visit",
+      "VisitBuilder",
+      "VisitRepository",
+      "VisitResource",
+      "Visits",
+      "VisitsServiceApplication",
+      "can",
+      "for"
+    ]
+  },
+  "cosine_similarity_text_matrix": {
+    "spring-petclinic-admin-server": {
+      "spring-petclinic-admin-server": 1.0,
+      "spring-petclinic-api-gateway": 0.3395,
+      "spring-petclinic-config-server": 0.6814,
+      "spring-petclinic-customers-service": 0.2168,
+      "spring-petclinic-discovery-server": 0.6698,
+      "spring-petclinic-genai-service": 0.2963,
+      "spring-petclinic-vets-service": 0.4003,
+      "spring-petclinic-visits-service": 0.2587
+    },
+    "spring-petclinic-api-gateway": {
+      "spring-petclinic-admin-server": 0.3395,
+      "spring-petclinic-api-gateway": 1.0,
+      "spring-petclinic-config-server": 0.3992,
+      "spring-petclinic-customers-service": 0.5798,
+      "spring-petclinic-discovery-server": 0.3777,
+      "spring-petclinic-genai-service": 0.5547,
+      "spring-petclinic-vets-service": 0.4245,
+      "spring-petclinic-visits-service": 0.472
+    },
+    "spring-petclinic-config-server": {
+      "spring-petclinic-admin-server": 0.6814,
+      "spring-petclinic-api-gateway": 0.3992,
+      "spring-petclinic-config-server": 1.0,
+      "spring-petclinic-customers-service": 0.2766,
+      "spring-petclinic-discovery-server": 0.8311,
+      "spring-petclinic-genai-service": 0.3253,
+      "spring-petclinic-vets-service": 0.499,
+      "spring-petclinic-visits-service": 0.3248
+    },
+    "spring-petclinic-customers-service": {
+      "spring-petclinic-admin-server": 0.2168,
+      "spring-petclinic-api-gateway": 0.5798,
+      "spring-petclinic-config-server": 0.2766,
+      "spring-petclinic-customers-service": 1.0,
+      "spring-petclinic-discovery-server": 0.2682,
+      "spring-petclinic-genai-service": 0.5224,
+      "spring-petclinic-vets-service": 0.4526,
+      "spring-petclinic-visits-service": 0.5076
+    },
+    "spring-petclinic-discovery-server": {
+      "spring-petclinic-admin-server": 0.6698,
+      "spring-petclinic-api-gateway": 0.3777,
+      "spring-petclinic-config-server": 0.8311,
+      "spring-petclinic-customers-service": 0.2682,
+      "spring-petclinic-discovery-server": 1.0,
+      "spring-petclinic-genai-service": 0.3253,
+      "spring-petclinic-vets-service": 0.4884,
+      "spring-petclinic-visits-service": 0.3118
+    },
+    "spring-petclinic-genai-service": {
+      "spring-petclinic-admin-server": 0.2963,
+      "spring-petclinic-api-gateway": 0.5547,
+      "spring-petclinic-config-server": 0.3253,
+      "spring-petclinic-customers-service": 0.5224,
+      "spring-petclinic-discovery-server": 0.3253,
+      "spring-petclinic-genai-service": 1.0,
+      "spring-petclinic-vets-service": 0.4632,
+      "spring-petclinic-visits-service": 0.3821
+    },
+    "spring-petclinic-vets-service": {
+      "spring-petclinic-admin-server": 0.4003,
+      "spring-petclinic-api-gateway": 0.4245,
+      "spring-petclinic-config-server": 0.499,
+      "spring-petclinic-customers-service": 0.4526,
+      "spring-petclinic-discovery-server": 0.4884,
+      "spring-petclinic-genai-service": 0.4632,
+      "spring-petclinic-vets-service": 1.0,
+      "spring-petclinic-visits-service": 0.3877
+    },
+    "spring-petclinic-visits-service": {
+      "spring-petclinic-admin-server": 0.2587,
+      "spring-petclinic-api-gateway": 0.472,
+      "spring-petclinic-config-server": 0.3248,
+      "spring-petclinic-customers-service": 0.5076,
+      "spring-petclinic-discovery-server": 0.3118,
+      "spring-petclinic-genai-service": 0.3821,
+      "spring-petclinic-vets-service": 0.3877,
+      "spring-petclinic-visits-service": 1.0
+    }
+  },
+  "cosine_similarity_dependency_matrix": {
+    "spring-petclinic-admin-server": {
+      "spring-petclinic-admin-server": 1.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-api-gateway": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 1.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-config-server": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 1.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-customers-service": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 1.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-discovery-server": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 1.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-genai-service": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 1.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-vets-service": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 1.0,
+      "spring-petclinic-visits-service": 0.0
+    },
+    "spring-petclinic-visits-service": {
+      "spring-petclinic-admin-server": 0.0,
+      "spring-petclinic-api-gateway": 0.0,
+      "spring-petclinic-config-server": 0.0,
+      "spring-petclinic-customers-service": 0.0,
+      "spring-petclinic-discovery-server": 0.0,
+      "spring-petclinic-genai-service": 0.0,
+      "spring-petclinic-vets-service": 0.0,
+      "spring-petclinic-visits-service": 1.0
+    }
+  },
+  "cosine_similarity_text_avg": {
+    "spring-petclinic-admin-server": 0.409,
+    "spring-petclinic-api-gateway": 0.4496,
+    "spring-petclinic-config-server": 0.4768,
+    "spring-petclinic-customers-service": 0.4034,
+    "spring-petclinic-discovery-server": 0.4675,
+    "spring-petclinic-genai-service": 0.4099,
+    "spring-petclinic-vets-service": 0.4451,
+    "spring-petclinic-visits-service": 0.3778
+  },
+  "cosine_similarity_dependency_avg": {
+    "spring-petclinic-admin-server": 0.0,
+    "spring-petclinic-api-gateway": 0.0,
+    "spring-petclinic-config-server": 0.0,
+    "spring-petclinic-customers-service": 0.0,
+    "spring-petclinic-discovery-server": 0.0,
+    "spring-petclinic-genai-service": 0.0,
+    "spring-petclinic-vets-service": 0.0,
+    "spring-petclinic-visits-service": 0.0
+  }
+}

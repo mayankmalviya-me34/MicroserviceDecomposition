@@ -1,0 +1,39 @@
+﻿Source,Service,LOC,Cyclomatic Complexity,Cognitive Complexity,Maintainability (%)
+Monolithic,BaseEntity.java,21,3,0,100.0
+Monolithic,CacheConfiguration.java,17,3,0,100.0
+Monolithic,CrashController.java,11,1,0,93.9
+Monolithic,NamedEntity.java,21,4,1,99.2
+Monolithic,Owner.java,104,22,15,99.8
+Monolithic,OwnerController.java,118,21,7,99.8
+Monolithic,OwnerRepository.java,9,0,0,100.0
+Monolithic,package-info.java,1,0,0,100.0
+Monolithic,package-info.java,1,0,0,100.0
+Monolithic,package-info.java,1,0,0,100.0
+Monolithic,package-info.java,1,0,0,100.0
+Monolithic,package-info.java,1,0,0,100.0
+Monolithic,Person.java,28,4,0,100.0
+Monolithic,Pet.java,48,6,0,100.0
+Monolithic,PetClinicApplication.java,11,1,0,100.0
+Monolithic,PetClinicRuntimeHints.java,18,1,0,99.1
+Monolithic,PetController.java,124,27,15,99.7
+Monolithic,PetType.java,8,0,0,100.0
+Monolithic,PetTypeFormatter.java,29,6,4,100.0
+Monolithic,PetTypeRepository.java,8,0,0,100.0
+Monolithic,PetValidator.java,25,6,4,100.0
+Monolithic,pom.xml,394,0,0,100.0
+Monolithic,Specialty.java,8,0,0,100.0
+Monolithic,Vet.java,41,5,1,99.6
+Monolithic,VetController.java,43,5,0,100.0
+Monolithic,VetRepository.java,16,0,0,100.0
+Monolithic,Vets.java,16,2,1,97.9
+Monolithic,Visit.java,32,5,0,99.5
+Monolithic,VisitController.java,64,11,4,99.5
+Monolithic,WebConfiguration.java,29,3,0,100.0
+Monolithic,WelcomeController.java,10,1,0,100.0
+New Microservice,api-gateway,53,1,0,99.7
+New Microservice,app-service,63,2,0,99.7
+New Microservice,discovery-server,55,1,0,100.0
+New Microservice,model-service,88,10,0,100.0
+New Microservice,owner-service,483,85,6,99.9
+New Microservice,system-service,437,62,7,98.1
+New Microservice,vet-service,274,38,0,99.7

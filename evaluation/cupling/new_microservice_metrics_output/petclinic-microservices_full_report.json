@@ -1,0 +1,279 @@
+{
+  "project": "petclinic-microservices",
+  "root_path": "F:\\Main Project\\petclinic-microservices",
+  "services": [
+    "api-gateway",
+    "app-service",
+    "discovery-server",
+    "model-service",
+    "owner-service",
+    "system-service",
+    "vet-service"
+  ],
+  "cohesion": {
+    "api-gateway": 1.0,
+    "app-service": 0.0,
+    "discovery-server": 1.0,
+    "model-service": 0.178,
+    "owner-service": 0.036,
+    "system-service": 0.076,
+    "vet-service": 0.125
+  },
+  "coupling": {
+    "api-gateway": 0,
+    "app-service": 0,
+    "discovery-server": 0,
+    "model-service": 2,
+    "owner-service": 1,
+    "system-service": 0,
+    "vet-service": 1
+  },
+  "ca_incoming": {
+    "model-service": 2,
+    "api-gateway": 0,
+    "app-service": 0,
+    "discovery-server": 0,
+    "owner-service": 0,
+    "system-service": 0,
+    "vet-service": 0
+  },
+  "ce_outgoing": {
+    "owner-service": 1,
+    "vet-service": 1,
+    "api-gateway": 0,
+    "app-service": 0,
+    "discovery-server": 0,
+    "model-service": 0,
+    "system-service": 0
+  },
+  "depends_on": {
+    "owner-service": [
+      "model-service"
+    ],
+    "vet-service": [
+      "model-service"
+    ]
+  },
+  "function_count": {
+    "api-gateway": 1,
+    "app-service": 2,
+    "discovery-server": 1,
+    "model-service": 10,
+    "owner-service": 72,
+    "system-service": 51,
+    "vet-service": 27
+  },
+  "classes": {
+    "api-gateway": [
+      "ApiGatewayApplication"
+    ],
+    "app-service": [
+      "AppServiceApplication",
+      "PetClinicRuntimeHints"
+    ],
+    "discovery-server": [
+      "DiscoveryServerApplication"
+    ],
+    "model-service": [
+      "BaseEntity",
+      "NamedEntity",
+      "Person"
+    ],
+    "owner-service": [
+      "GlobalExceptionHandler",
+      "Owner",
+      "OwnerDTO",
+      "OwnerRepository",
+      "OwnerResource",
+      "OwnerServiceApplication",
+      "Pet",
+      "PetDTO",
+      "PetRepository",
+      "PetResource",
+      "PetType",
+      "PetTypeFormatter",
+      "PetTypeRepository",
+      "PetTypeResource",
+      "PetValidator",
+      "Visit",
+      "VisitDTO",
+      "VisitRepository",
+      "VisitResource"
+    ],
+    "system-service": [
+      "CacheConfiguration",
+      "CrashController",
+      "OwnerController",
+      "OwnerForm",
+      "OwnerSearchForm",
+      "PetController",
+      "PetForm",
+      "SystemServiceApplication",
+      "VetController",
+      "VisitController",
+      "VisitForm",
+      "WebConfiguration",
+      "WelcomeController"
+    ],
+    "vet-service": [
+      "GlobalExceptionHandler",
+      "Specialty",
+      "SpecialtyRepository",
+      "SpecialtyResource",
+      "Vet",
+      "VetDTO",
+      "VetRepository",
+      "VetResource",
+      "VetServiceApplication",
+      "Vets"
+    ]
+  },
+  "cosine_similarity_text_matrix": {
+    "api-gateway": {
+      "api-gateway": 1.0,
+      "app-service": 0.2404,
+      "discovery-server": 0.4505,
+      "model-service": 0.0084,
+      "owner-service": 0.0466,
+      "system-service": 0.0717,
+      "vet-service": 0.0545
+    },
+    "app-service": {
+      "api-gateway": 0.2404,
+      "app-service": 1.0,
+      "discovery-server": 0.1916,
+      "model-service": 0.0059,
+      "owner-service": 0.0848,
+      "system-service": 0.0658,
+      "vet-service": 0.0348
+    },
+    "discovery-server": {
+      "api-gateway": 0.4505,
+      "app-service": 0.1916,
+      "discovery-server": 1.0,
+      "model-service": 0.0061,
+      "owner-service": 0.0452,
+      "system-service": 0.0685,
+      "vet-service": 0.0465
+    },
+    "model-service": {
+      "api-gateway": 0.0084,
+      "app-service": 0.0059,
+      "discovery-server": 0.0061,
+      "model-service": 1.0,
+      "owner-service": 0.2206,
+      "system-service": 0.2436,
+      "vet-service": 0.1405
+    },
+    "owner-service": {
+      "api-gateway": 0.0466,
+      "app-service": 0.0848,
+      "discovery-server": 0.0452,
+      "model-service": 0.2206,
+      "owner-service": 1.0,
+      "system-service": 0.4952,
+      "vet-service": 0.2731
+    },
+    "system-service": {
+      "api-gateway": 0.0717,
+      "app-service": 0.0658,
+      "discovery-server": 0.0685,
+      "model-service": 0.2436,
+      "owner-service": 0.4952,
+      "system-service": 1.0,
+      "vet-service": 0.1356
+    },
+    "vet-service": {
+      "api-gateway": 0.0545,
+      "app-service": 0.0348,
+      "discovery-server": 0.0465,
+      "model-service": 0.1405,
+      "owner-service": 0.2731,
+      "system-service": 0.1356,
+      "vet-service": 1.0
+    }
+  },
+  "cosine_similarity_dependency_matrix": {
+    "api-gateway": {
+      "api-gateway": 1.0,
+      "app-service": 0.0,
+      "discovery-server": 0.0,
+      "model-service": 0.0,
+      "owner-service": 0.0,
+      "system-service": 0.0,
+      "vet-service": 0.0
+    },
+    "app-service": {
+      "api-gateway": 0.0,
+      "app-service": 1.0,
+      "discovery-server": 0.0,
+      "model-service": 0.0,
+      "owner-service": 0.0,
+      "system-service": 0.0,
+      "vet-service": 0.0
+    },
+    "discovery-server": {
+      "api-gateway": 0.0,
+      "app-service": 0.0,
+      "discovery-server": 1.0,
+      "model-service": 0.0,
+      "owner-service": 0.0,
+      "system-service": 0.0,
+      "vet-service": 0.0
+    },
+    "model-service": {
+      "api-gateway": 0.0,
+      "app-service": 0.0,
+      "discovery-server": 0.0,
+      "model-service": 1.0,
+      "owner-service": 0.0,
+      "system-service": 0.0,
+      "vet-service": 0.0
+    },
+    "owner-service": {
+      "api-gateway": 0.0,
+      "app-service": 0.0,
+      "discovery-server": 0.0,
+      "model-service": 0.0,
+      "owner-service": 1.0,
+      "system-service": 0.0,
+      "vet-service": 1.0
+    },
+    "system-service": {
+      "api-gateway": 0.0,
+      "app-service": 0.0,
+      "discovery-server": 0.0,
+      "model-service": 0.0,
+      "owner-service": 0.0,
+      "system-service": 1.0,
+      "vet-service": 0.0
+    },
+    "vet-service": {
+      "api-gateway": 0.0,
+      "app-service": 0.0,
+      "discovery-server": 0.0,
+      "model-service": 0.0,
+      "owner-service": 1.0,
+      "system-service": 0.0,
+      "vet-service": 1.0
+    }
+  },
+  "cosine_similarity_text_avg": {
+    "api-gateway": 0.1454,
+    "app-service": 0.1039,
+    "discovery-server": 0.1347,
+    "model-service": 0.1042,
+    "owner-service": 0.1943,
+    "system-service": 0.1801,
+    "vet-service": 0.1142
+  },
+  "cosine_similarity_dependency_avg": {
+    "api-gateway": 0.0,
+    "app-service": 0.0,
+    "discovery-server": 0.0,
+    "model-service": 0.0,
+    "owner-service": 0.1667,
+    "system-service": 0.0,
+    "vet-service": 0.1667
+  }
+}

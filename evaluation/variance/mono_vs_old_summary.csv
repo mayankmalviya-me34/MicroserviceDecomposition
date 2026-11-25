@@ -1,0 +1,4 @@
+﻿Project,Services Count,Avg LOC,Total LOC,Avg Cyclomatic Complexity,Total Cyclomatic Complexity,Avg Cognitive Complexity,Total Cognitive Complexity,Avg Maintainability (%),Total Maintainability (%)
+Monolithic (Overall),1,1258.0,1258,137.0,137,52.0,52,98.7,98.7
+Old Microservices (Spring PetClinic),8,285.38,2283,21.62,173,1.5,12,99.8,798.4000000000001
+Delta (Old Micro - Mono),-,-972.62,-,-115.38,-,-50.5,-,+1.1,-

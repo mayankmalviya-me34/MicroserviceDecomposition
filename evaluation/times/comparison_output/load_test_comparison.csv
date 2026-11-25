@@ -1,0 +1,8 @@
+Endpoint_Name,Service_new,Path_new,Service_old,Path_old,Throughput (req/s),,,Avg_RT (ms),,,Median_RT (ms),,,P90_RT (ms),,,P95_RT (ms),,,Max_RT (ms),,,Error%,,,Success%,,,Status,,
+,,,,,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner,new,old,Winner
+owners_by_id,owner-service,/owners/1,customers-service,/api/customer/owners/1,8.19,7.54,new ✓,36.37,178.10,new ✓,24.24,87.03,new ✓,64.41,456.91,new ✓,101.71,621.25,new ✓,781.86,3122.02,new ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,~tie
+owners_list,owner-service,/owners,customers-service,/api/customer/owners,8.17,6.83,new ✓,43.15,296.23,new ✓,28.79,181.55,new ✓,72.20,751.74,new ✓,121.05,978.50,new ✓,782.65,3203.42,new ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,~tie
+pet_types,owner-service,/petTypes,customers-service,/api/customer/petTypes,8.21,7.55,new ✓,34.94,172.57,new ✓,22.52,88.41,new ✓,56.98,476.36,new ✓,100.05,670.09,new ✓,782.65,2957.36,new ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,~tie
+vets_list,vet-service,/vets,vets-service,/api/vet/vets,8.11,7.41,new ✓,43.18,226.50,new ✓,30.49,134.54,new ✓,69.18,495.06,new ✓,118.42,691.20,new ✓,782.65,3766.58,new ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,~tie
+owner_pet_by_id,owner-service,/owners/1/pets/1,,,8.20,-,,35.87,-,,25.01,-,,59.72,-,,97.18,-,,782.65,-,,100.0%,-,,0.0%,-,,404,-,
+pet_visits,owner-service,/owners/1/pets/1/visits,visits-service,/api/visit/owners/1/pets/1/visits,8.21,7.71,new ✓,34.70,180.91,new ✓,21.52,84.24,new ✓,64.11,400.78,new ✓,113.69,580.78,new ✓,781.86,4108.79,new ✓,100.0%,0.0%,old ✓,0.0%,100.0%,old ✓,404,200,~tie

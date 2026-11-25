@@ -1,0 +1,9 @@
+Service,spring-petclinic-admin-server,spring-petclinic-api-gateway,spring-petclinic-config-server,spring-petclinic-customers-service,spring-petclinic-discovery-server,spring-petclinic-genai-service,spring-petclinic-vets-service,spring-petclinic-visits-service
+spring-petclinic-admin-server,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+spring-petclinic-api-gateway,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+spring-petclinic-config-server,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+spring-petclinic-customers-service,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+spring-petclinic-discovery-server,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+spring-petclinic-genai-service,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+spring-petclinic-vets-service,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+spring-petclinic-visits-service,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0

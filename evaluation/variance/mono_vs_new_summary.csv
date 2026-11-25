@@ -1,0 +1,4 @@
+﻿Project,Services Count,Avg LOC,Total LOC,Avg Cyclomatic Complexity,Total Cyclomatic Complexity,Avg Cognitive Complexity,Total Cognitive Complexity,Avg Maintainability (%),Total Maintainability (%)
+Monolithic (Overall),1,1258.0,1258,137.0,137,52.0,52,98.7,98.7
+New Microservices,7,207.57,1453,28.43,199,1.86,13,99.59,697.1
+Delta (New - Mono),-,-1050.43,-,-108.57,-,-50.14,-,+0.89,-

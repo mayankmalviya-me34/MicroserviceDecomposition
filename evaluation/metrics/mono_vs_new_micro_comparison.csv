@@ -1,0 +1,20 @@
+SECTION 1: AGGREGATE COMPARISON (Monolithic vs Microservice)
+Metric,Microservice_Avg,Monolithic_Avg,Winner,Difference,Note
+Avg Heap Memory (MB),49.008,63.76,Microservice,23.14%,Lower = Less memory used
+Avg System CPU (%),32.008,51.29,Microservice,37.59%,Lower = Less CPU load
+Avg Process CPU (%),0.5635,0.2866,Monolithic,49.14%,Lower = Less process CPU
+Avg Live Threads,36.2,25.0,Monolithic,30.94%,Lower = Less resource usage
+Avg Startup Time (sec),27.4684,10.628,Monolithic,61.31%,Lower = Faster startup
+Total Requests Handled,0,34.0,Monolithic,N/A,Higher = More active
+Avg Response Time (sec),0,0.1161,Monolithic,N/A,Lower = Faster response
+Max Response Time (sec),0,0.0769,Monolithic,N/A,Lower = Less latency spikes
+
+
+SECTION 2: SERVICE-WISE DATA
+Project,Service,Heap_Memory_MB,CPU_System_%,CPU_Process_%,Live_Threads,Startup_Time_sec,Total_Requests,Avg_Response_Time_sec,Max_Response_Time_sec
+Microservice (Ca/Ce Based),owner-service,58.86,31.29,0.2786,33,41.372,0,0,0
+Microservice (Ca/Ce Based),vet-service,47.55,31.14,0.2228,33,32.662,0,0,0
+Microservice (Ca/Ce Based),system-service,41.8,31.75,0.353,50,20.543,0,0,0
+Microservice (Ca/Ce Based),app-service,56.53,34.41,1.6474,32,18.974,0,0,0
+Microservice (Ca/Ce Based),api-gateway,40.3,31.45,0.3156,33,23.791,0,0,0
+Monolithic (Spring PetClinic),monolithic-app,63.76,51.29,0.2866,25,10.628,34,0.1161,0.0769

@@ -1,0 +1,13 @@
+node_modules/
+target/
+build/
+dist/
+.env
+*.log
+.idea/
+.vscode/
+.gradle/
+__pycache__/
+*.class
+Shoping Monolithic/Grocery_Online_Shopping_App-master/tree-sitter-javascript/
+evaluation/prometheus-3.13.0-rc.1.windows-amd64/

@@ -1,0 +1,137 @@
+[
+    {
+        "method": "GET",
+        "path": "/api/gateway/owners/{ownerId}",
+        "class": "ApiGatewayController",
+        "function": "getOwnerDetails",
+        "returnType": "Mono<OwnerDetails>",
+        "service": "spring-petclinic-api-gateway",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java"
+    },
+    {
+        "method": "POST",
+        "path": "/fallback",
+        "class": "FallbackController",
+        "function": "fallback",
+        "returnType": "String",
+        "service": "spring-petclinic-api-gateway",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\FallbackController.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/{ownerId}",
+        "class": "OwnerResource",
+        "function": "findOwner",
+        "returnType": "Optional<Owner>",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners",
+        "class": "OwnerResource",
+        "function": "findAll",
+        "returnType": "List<Owner>",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners",
+        "class": "OwnerResource",
+        "function": "createOwner",
+        "returnType": "Owner",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java"
+    },
+    {
+        "method": "PUT",
+        "path": "/owners/{ownerId}",
+        "class": "OwnerResource",
+        "function": "updateOwner",
+        "returnType": "void",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/petTypes",
+        "class": "PetResource",
+        "function": "getPetTypes",
+        "returnType": "List<PetType>",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/*/pets/{petId}",
+        "class": "PetResource",
+        "function": "findPet",
+        "returnType": "PetDetails",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners/{ownerId}/pets",
+        "class": "PetResource",
+        "function": "processCreationForm",
+        "returnType": "Pet",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java"
+    },
+    {
+        "method": "PUT",
+        "path": "/owners/*/pets/{petId}",
+        "class": "PetResource",
+        "function": "processUpdateForm",
+        "returnType": "void",
+        "service": "spring-petclinic-customers-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/chatclient",
+        "class": "PetclinicChatClient",
+        "function": "exchange",
+        "returnType": "String",
+        "service": "spring-petclinic-genai-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\PetclinicChatClient.java"
+    },
+    {
+        "method": "GET",
+        "path": "/vets",
+        "class": "VetResource",
+        "function": "showResourcesVetList",
+        "returnType": "List<Vet>",
+        "service": "spring-petclinic-vets-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\web\\VetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/*/pets/{petId}/visits",
+        "class": "VisitResource",
+        "function": "read",
+        "returnType": "List<Visit>",
+        "service": "spring-petclinic-visits-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/pets/visits",
+        "class": "VisitResource",
+        "function": "read",
+        "returnType": "Visits",
+        "service": "spring-petclinic-visits-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners/*/pets/{petId}/visits",
+        "class": "VisitResource",
+        "function": "create",
+        "returnType": "Visit",
+        "service": "spring-petclinic-visits-service",
+        "file": "F:\\Main Project\\spring-petclinic-microservices-main\\spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java"
+    }
+]

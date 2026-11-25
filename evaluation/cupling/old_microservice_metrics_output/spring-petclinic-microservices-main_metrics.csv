@@ -1,0 +1,9 @@
+Service,Cohesion,Coupling(Ca+Ce),Ca(Incoming),Ce(Outgoing),Avg_Cosine_Similarity_Text,Avg_Cosine_Similarity_Dependency,Depends_On
+spring-petclinic-admin-server,1.0,0,0,0,0.409,0.0,-
+spring-petclinic-api-gateway,0.092,0,0,0,0.4496,0.0,-
+spring-petclinic-config-server,1.0,0,0,0,0.4768,0.0,-
+spring-petclinic-customers-service,0.103,0,0,0,0.4034,0.0,-
+spring-petclinic-discovery-server,1.0,0,0,0,0.4675,0.0,-
+spring-petclinic-genai-service,0.079,0,0,0,0.4099,0.0,-
+spring-petclinic-vets-service,0.044,0,0,0,0.4451,0.0,-
+spring-petclinic-visits-service,0.176,0,0,0,0.3778,0.0,-

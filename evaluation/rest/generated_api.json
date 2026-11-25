@@ -1,0 +1,209 @@
+[
+    {
+        "method": "GET",
+        "path": "/owners",
+        "class": "OwnerResource",
+        "function": "getAllOwners",
+        "returnType": "List<Owner>",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\OwnerResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/{ownerId}",
+        "class": "OwnerResource",
+        "function": "getOwner",
+        "returnType": "Owner",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\OwnerResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners",
+        "class": "OwnerResource",
+        "function": "createOwner",
+        "returnType": "Owner",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\OwnerResource.java"
+    },
+    {
+        "method": "PUT",
+        "path": "/owners/{ownerId}",
+        "class": "OwnerResource",
+        "function": "updateOwner",
+        "returnType": "Owner",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\OwnerResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/{ownerId}/pets",
+        "class": "PetResource",
+        "function": "getPetsByOwner",
+        "returnType": "List<Pet>",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/{ownerId}/pets/{petId}",
+        "class": "PetResource",
+        "function": "getPet",
+        "returnType": "Pet",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners/{ownerId}/pets",
+        "class": "PetResource",
+        "function": "addPet",
+        "returnType": "Pet",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetResource.java"
+    },
+    {
+        "method": "PUT",
+        "path": "/owners/{ownerId}/pets/{petId}",
+        "class": "PetResource",
+        "function": "updatePet",
+        "returnType": "Pet",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/petTypes",
+        "class": "PetTypeResource",
+        "function": "getAllPetTypes",
+        "returnType": "List<PetType>",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetTypeResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/petTypes",
+        "class": "PetTypeResource",
+        "function": "createPetType",
+        "returnType": "PetType",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\PetTypeResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/owners/{ownerId}/pets/{petId}/visits",
+        "class": "VisitResource",
+        "function": "getVisits",
+        "returnType": "List<Visit>",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\VisitResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/owners/{ownerId}/pets/{petId}/visits",
+        "class": "VisitResource",
+        "function": "addVisit",
+        "returnType": "Visit",
+        "service": "owner-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\owner-service\\src\\main\\java\\com\\petclinic\\owner\\web\\VisitResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/specialties",
+        "class": "SpecialtyResource",
+        "function": "getAllSpecialties",
+        "returnType": "List<Specialty>",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\SpecialtyResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/specialties/{id}",
+        "class": "SpecialtyResource",
+        "function": "getSpecialty",
+        "returnType": "Specialty",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\SpecialtyResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/specialties",
+        "class": "SpecialtyResource",
+        "function": "createSpecialty",
+        "returnType": "Specialty",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\SpecialtyResource.java"
+    },
+    {
+        "method": "PUT",
+        "path": "/specialties/{id}",
+        "class": "SpecialtyResource",
+        "function": "updateSpecialty",
+        "returnType": "Specialty",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\SpecialtyResource.java"
+    },
+    {
+        "method": "DELETE",
+        "path": "/specialties/{id}",
+        "class": "SpecialtyResource",
+        "function": "deleteSpecialty",
+        "returnType": "void",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\SpecialtyResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/vets",
+        "class": "VetResource",
+        "function": "getAllVets",
+        "returnType": "List<Vet>",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/vets/{vetId}",
+        "class": "VetResource",
+        "function": "getVet",
+        "returnType": "Vet",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    },
+    {
+        "method": "GET",
+        "path": "/vets/{vetId}/specialties",
+        "class": "VetResource",
+        "function": "getVetSpecialties",
+        "returnType": "Set<Specialty>",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/vets",
+        "class": "VetResource",
+        "function": "createVet",
+        "returnType": "Vet",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    },
+    {
+        "method": "POST",
+        "path": "/vets/{vetId}/specialties/{specialtyId}",
+        "class": "VetResource",
+        "function": "addSpecialty",
+        "returnType": "Vet",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    },
+    {
+        "method": "DELETE",
+        "path": "/vets/{vetId}/specialties/{specialtyId}",
+        "class": "VetResource",
+        "function": "removeSpecialty",
+        "returnType": "void",
+        "service": "vet-service",
+        "file": "F:\\Main Project\\petclinic-microservices\\vet-service\\src\\main\\java\\com\\petclinic\\vet\\web\\VetResource.java"
+    }
+]

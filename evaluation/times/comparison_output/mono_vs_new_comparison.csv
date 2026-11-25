@@ -1,0 +1,16 @@
+Endpoint,Service(mono),Path(mono),Service(new),Path(new),Throughput(req/s),,,Avg_RT(ms),,,Median_RT(ms),,,P90_RT(ms),,,P95_RT(ms),,,Max_RT(ms),,,Error%,,,Success%,,,Status,,
+,,,,,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner,mono,new,Winner
+owners_by_id,monolithic-app,/owners/1,owner-service,/owners/1,8.016,8.190,new ✓,48.20,36.37,new ✓,47.21,24.24,new ✓,76.21,64.41,new ✓,86.37,101.71,mono ✓,101.55,781.86,mono ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,-
+owners_list,monolithic-app,/owners,owner-service,/owners,7.786,8.168,new ✓,64.33,43.15,new ✓,66.39,28.79,new ✓,86.82,72.20,new ✓,97.84,121.05,mono ✓,118.16,782.65,mono ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,-
+vets_list,monolithic-app,/vets,vet-service,/vets,8.297,8.107,mono ✓,3.21,43.18,mono ✓,3.20,30.49,mono ✓,4.33,69.18,mono ✓,5.14,118.42,mono ✓,14.47,782.65,mono ✓,0.0%,0.0%,~tie,100.0%,100.0%,~tie,200,200,-
+
+AVERAGE SUMMARY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Metric,Monolithic,New Microservice,Winner,,,,,,,,,,,,,,,,,,,,,,,,,,
+Throughput(req/s),8.040,8.169,~tie
+Avg_RT(ms),39.80,39.41,~tie
+Median_RT(ms),39.87,26.51,new ✓
+P90_RT(ms),58.42,65.69,mono ✓
+P95_RT(ms),66.58,110.31,mono ✓
+Max_RT(ms),95.76,782.45,mono ✓
+Error%,-,-,~tie
+Success%,100.0%,100.0%,~tie

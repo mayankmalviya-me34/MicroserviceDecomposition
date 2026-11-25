@@ -1,0 +1,6 @@
+Project,Service,Endpoint_Name,Method,Path,Total_Requests,Throughput_req_per_sec,Avg_Response_Time_ms,Min_Response_Time_ms,Median_Response_Time_ms,Max_Response_Time_ms,P90_Response_Time_ms,P95_Response_Time_ms,Error_Rate_Percent,Success_Rate_Percent,Most_Common_Status_Code
+old_microservices,customers-service,owners_by_id,GET,/api/customer/owners/1,343,7.535,178.1,11.58,87.03,3122.02,456.91,621.25,0.0,100.0,200
+old_microservices,customers-service,owners_list,GET,/api/customer/owners,311,6.827,296.23,24.95,181.55,3203.42,751.74,978.5,0.0,100.0,200
+old_microservices,customers-service,pet_types,GET,/api/customer/petTypes,345,7.55,172.57,10.14,88.41,2957.36,476.36,670.09,0.0,100.0,200
+old_microservices,vets-service,vets_list,GET,/api/vet/vets,329,7.406,226.5,18.43,134.54,3766.58,495.06,691.2,0.0,100.0,200
+old_microservices,visits-service,visits_list,GET,/api/visit/owners/1/pets/1/visits,342,7.706,180.91,14.53,84.24,4108.79,400.78,580.78,0.0,100.0,200

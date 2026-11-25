@@ -1,0 +1,6 @@
+Project,Service,Heap_Memory_MB,CPU_System_%,CPU_Process_%,Live_Threads,Startup_Time_sec,DB_Connections_Active,Total_Requests,Avg_Response_Time_sec,Max_Response_Time_sec,Timestamp
+New-Microservices,owner-service,58.86,31.29,0.2786,33,41.372,N/A,0,0,0,2026-06-27 12:12:50
+New-Microservices,vet-service,47.55,31.14,0.2228,33,32.662,N/A,0,0,0,2026-06-27 12:12:50
+New-Microservices,system-service,41.8,31.75,0.353,50,20.543,N/A,0,0,0,2026-06-27 12:12:50
+New-Microservices,app-service,56.53,34.41,1.6474,32,18.974,N/A,0,0,0,2026-06-27 12:12:50
+New-Microservices,api-gateway,40.3,31.45,0.3156,33,23.791,N/A,0,0,0,2026-06-27 12:12:50

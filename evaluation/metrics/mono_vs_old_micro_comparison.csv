@@ -1,0 +1,19 @@
+SECTION 1: AGGREGATE COMPARISON (Monolithic vs Microservice)
+Metric,Microservice_Avg,Monolithic_Avg,Winner,Difference,Note
+Avg Heap Memory (MB),57.42,63.76,Microservice,9.94%,Lower = Less memory used
+Avg System CPU (%),6.07,51.29,Microservice,88.17%,Lower = Less CPU load
+Avg Process CPU (%),0.1494,0.2866,Microservice,47.87%,Lower = Less process CPU
+Avg Live Threads,38.0,25.0,Monolithic,34.21%,Lower = Less resource usage
+Avg Startup Time (sec),75.65,10.628,Monolithic,85.95%,Lower = Faster startup
+Total Requests Handled,80.0,34.0,Microservice,57.5%,Higher = More active
+Avg Response Time (sec),0.0336,0.1161,Microservice,71.06%,Lower = Faster response
+Max Response Time (sec),0.0356,0.0769,Microservice,53.71%,Lower = Less latency spikes
+
+
+SECTION 2: SERVICE-WISE DATA
+Project,Service,Heap_Memory_MB,CPU_System_%,CPU_Process_%,Live_Threads,Startup_Time_sec,Total_Requests,Avg_Response_Time_sec,Max_Response_Time_sec
+Microservice (Ca/Ce Based),spring-petclinic-customers-service,60.57,0,0,0,84.267,62,0.0396,0.0265
+Microservice (Ca/Ce Based),spring-petclinic-vets-service,54.68,5.76,0.0887,34,71.395,60,0.0321,0.0464
+Microservice (Ca/Ce Based),spring-petclinic-visits-service,68.32,0,0,0,77.838,60,0.027,0.0351
+Microservice (Ca/Ce Based),spring-petclinic-api-gateway,46.11,6.38,0.2101,42,69.1,138,0.0359,0.0345
+Monolithic (Spring PetClinic),monolithic-app,63.76,51.29,0.2866,25,10.628,34,0.1161,0.0769
