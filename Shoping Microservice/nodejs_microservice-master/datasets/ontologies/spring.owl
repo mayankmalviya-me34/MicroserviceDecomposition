@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.com/shopic#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.com/shopic#isTrustError">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>isTrustError</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#isTrustError_isTrustError"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProfile_GetProfile">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetProfile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetOrderDetails">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetOrderDetails</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetOrderDetails_GetOrderDetails"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_38">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_38</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_38_func_38"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddWishlistItem">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>AddWishlistItem</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#AddWishlistItem_AddWishlistItem"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_24">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_24</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_28_func_28">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_28</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_12_func_12">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_12</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_128">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_128</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_128_func_128"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_16">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_16</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_16_func_16"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_13_func_13">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_13</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_28">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_28</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_28_func_28"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductDescription_GetProductDescription">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetProductDescription</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_50">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_50</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_50_func_50"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_3_func_3">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_17">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_17</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductsByCategory">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetProductsByCategory</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetProductsByCategory_GetProductsByCategory"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Cart">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>Cart</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#Cart_Cart"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_85_func_85">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_85</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_6">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_6</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_6_func_6"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_20">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_20</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_20_func_20"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SemanticRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_30_func_30">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_30</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductPayload_GetProductPayload">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetProductPayload</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_29">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_29</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_93_func_93">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_93</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindCustomerById_FindCustomerById">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>FindCustomerById</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddCartItem_AddCartItem">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>AddCartItem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddOrderToProfile">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>AddOrderToProfile</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_70">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_70</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_70_func_70"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateAddress_CreateAddress">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>CreateAddress</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#ManageOrder_ManageOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>ManageOrder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddToWishlist_AddToWishlist">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>AddToWishlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_44">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_44</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_44_func_44"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetWishList">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetWishList</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetWishList_GetWishList"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_71">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_71</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_71_func_71"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_76_func_76">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_76</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_57">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_57</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_57_func_57"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_37">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_37</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_37_func_37"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_30">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_30</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_30_func_30"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindCustomer">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>FindCustomer</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#FindCustomer_FindCustomer"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_72_func_72">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_72</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_40">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_40</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_40_func_40"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductPayload">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetProductPayload</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetProductPayload_GetProductPayload"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetOrderPayload">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetOrderPayload</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#logError">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>logError</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddNewAddress">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>AddNewAddress</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#AddNewAddress_AddNewAddress"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetShopingDetails">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetShopingDetails</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetShopingDetails_GetShopingDetails"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#ManageCart">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>ManageCart</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#ManageCart_ManageCart"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindByCategory">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>FindByCategory</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#FindByCategory_FindByCategory"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindByCategory_FindByCategory">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>FindByCategory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Read">
+    <rdf:type rdf:resource="http://example.com/shopic#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetCart">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetCart</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetCart_GetCart"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_21">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_21</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_21_func_21"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductDescription">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetProductDescription</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetProductDescription_GetProductDescription"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_87">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_87</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_87_func_87"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddWishlistItem_AddWishlistItem">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>AddWishlistItem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#PlaceOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>PlaceOrder</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#PlaceOrder_PlaceOrder"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_2">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_2</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_2_func_2"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#constructor">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>constructor</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#constructor_constructor"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#PlaceOrder_PlaceOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>PlaceOrder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Create">
+    <rdf:type rdf:resource="http://example.com/shopic#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_7">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_7</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_7_func_7"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateNewOrder_CreateNewOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>CreateNewOrder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_75">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_75</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_75_func_75"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_121">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_121</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_2_func_2">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateNewOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>CreateNewOrder</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#CreateNewOrder_CreateNewOrder"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_13">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_13</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_13_func_13"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_1_func_1">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProfile">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetProfile</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetProfile_GetProfile"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_135_func_135">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_135</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_9_func_9">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_9</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindById_FindById">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>FindById</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddCartItem">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>AddCartItem</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#AddCartItem_AddCartItem"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_38_func_38">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_38</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddNewAddress_AddNewAddress">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>AddNewAddress</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindById">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>FindById</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#FindById_FindById"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_135">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_135</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_135_func_135"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_40_func_40">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_40</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_52">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_52</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_52_func_52"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_70_func_70">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_70</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_45_func_45">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_45</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetProducts</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetProducts_GetProducts"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SignIn_SignIn">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>SignIn</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateAddress">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>CreateAddress</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#CreateAddress_CreateAddress"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindCustomer_FindCustomer">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>FindCustomer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_36">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_36</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SubscribeEvents">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>SubscribeEvents</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#SubscribeEvents_SubscribeEvents"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_85">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_85</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_85_func_85"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProductsByCategory_GetProductsByCategory">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetProductsByCategory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_78">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_78</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_78_func_78"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_107">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_107</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SignUp_SignUp">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>SignUp</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateProduct">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>CreateProduct</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#CreateProduct_CreateProduct"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindSelectedProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>FindSelectedProducts</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#FindSelectedProducts_FindSelectedProducts"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_72">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_72</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_72_func_72"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_60">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_60</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_60_func_60"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_76">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_76</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_76_func_76"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_12">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_12</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_12_func_12"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_65">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_65</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_65_func_65"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Orders">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>Orders</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#Orders_Orders"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_1">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_1</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_1_func_1"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateCustomer">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>CreateCustomer</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#CreateCustomer_CreateCustomer"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateCustomer_CreateCustomer">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>CreateCustomer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#transform_transform">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>transform</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Orders_Orders">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>Orders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_82">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_82</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_82_func_82"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_21_func_21">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_21</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_82_func_82">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_82</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CRUDIntent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetOrders">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetOrders</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetOrders_GetOrders"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_91_func_91">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_91</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetSelectedProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>GetSelectedProducts</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#GetSelectedProducts_GetSelectedProducts"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_51">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_51</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SignUp">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>SignUp</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#SignUp_SignUp"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_3">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_3</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_3_func_3"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindCustomerById">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>FindCustomerById</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#FindCustomerById_FindCustomerById"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_84">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_84</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_93">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_93</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_93_func_93"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_128_func_128">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_128</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#constructor_constructor">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>constructor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_59">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_59</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_59_func_59"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_45">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_45</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_45_func_45"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_37_func_37">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_37</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SignIn">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>SignIn</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#SignIn_SignIn"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#SubscribeEvents_SubscribeEvents">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>SubscribeEvents</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Products_Products">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>Products</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#AddToWishlist">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>AddToWishlist</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#AddToWishlist_AddToWishlist"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_91">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_91</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_91_func_91"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_57_func_57">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_57</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetOrders_GetOrders">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetOrders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#ManageCart_ManageCart">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>ManageCart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_22">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_22</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_5">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_5</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Unknown">
+    <rdf:type rdf:resource="http://example.com/shopic#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_65_func_65">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_65</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_68">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_68</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_68_func_68"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_48">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_48</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_6_func_6">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_6</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Cart_Cart">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>Cart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_44_func_44">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_44</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_20_func_20">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_20</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_9">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>func_9</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#func_9_func_9"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#isTrustError_isTrustError">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>isTrustError</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#transform">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>transform</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#transform_transform"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_52_func_52">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_52</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_60_func_60">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_60</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetCart_GetCart">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetCart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Products">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>Products</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#Products_Products"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#FindSelectedProducts_FindSelectedProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>FindSelectedProducts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_50_func_50">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_50</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#Wishlist">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>Wishlist</rdfs:label>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_59_func_59">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_59</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#ManageOrder">
+    <rdf:type rdf:resource="http://example.com/shopic#Function"/>
+    <rdfs:label>ManageOrder</rdfs:label>
+    <ex:hasRole rdf:resource="http://example.com/shopic#ManageOrder_ManageOrder"/>
+    <ex:hasIntent rdf:resource="http://example.com/shopic#Unknown"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_16_func_16">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_16</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_7_func_7">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_7</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_78_func_78">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_78</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_68_func_68">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_68</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#CreateProduct_CreateProduct">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>CreateProduct</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetProducts_GetProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetProducts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetShopingDetails_GetShopingDetails">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetShopingDetails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_71_func_71">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_71</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetSelectedProducts_GetSelectedProducts">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetSelectedProducts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetWishList_GetWishList">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetWishList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_87_func_87">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_87</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#func_75_func_75">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>func_75</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#DomainConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/shopic#GetOrderDetails_GetOrderDetails">
+    <rdf:type rdf:resource="http://example.com/shopic#SemanticRole"/>
+    <rdfs:label>GetOrderDetails</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

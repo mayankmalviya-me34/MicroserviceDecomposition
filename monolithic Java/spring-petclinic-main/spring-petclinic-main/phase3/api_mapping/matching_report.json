@@ -1,0 +1,104 @@
+[
+  {
+    "endpoint": "GET /owners/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "similarity_score": 0.448,
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "POST /owners/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner",
+    "similarity_score": 0.418,
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "GET /owners/find",
+    "matched_function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "similarity_score": 0.642,
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "GET /owners",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner",
+    "similarity_score": 0.505,
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "GET /owners/{ownerId}/edit",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner",
+    "similarity_score": 0.45,
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "POST /owners/{ownerId}/edit",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner",
+    "similarity_score": 0.438,
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "GET /owners/{ownerId}",
+    "matched_function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "similarity_score": 0.553,
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "REQUEST /owners/{ownerId}",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner",
+    "similarity_score": 0.52,
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "GET /pets/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner.getPets",
+    "similarity_score": 0.428,
+    "cluster_id": "GetpetsService"
+  },
+  {
+    "endpoint": "POST /pets/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.Owner.addPet",
+    "similarity_score": 0.339,
+    "cluster_id": "AddpetService"
+  },
+  {
+    "endpoint": "GET /pets/{petId}/edit",
+    "matched_function": "org.springframework.samples.petclinic.owner.PetValidator",
+    "similarity_score": 0.336,
+    "cluster_id": "PetvalidatorService"
+  },
+  {
+    "endpoint": "POST /pets/{petId}/edit",
+    "matched_function": "org.springframework.samples.petclinic.owner.PetValidator",
+    "similarity_score": 0.376,
+    "cluster_id": "PetvalidatorService"
+  },
+  {
+    "endpoint": "GET /owners/{ownerId}/pets/{petId}/visits/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "similarity_score": 0.446,
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "POST /owners/{ownerId}/pets/{petId}/visits/new",
+    "matched_function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "similarity_score": 0.332,
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "GET /oups",
+    "matched_function": "org.springframework.samples.petclinic.owner.Pet.getVisits",
+    "similarity_score": 0.346,
+    "cluster_id": "GetvisitsService"
+  },
+  {
+    "endpoint": "GET /",
+    "matched_function": "org.springframework.samples.petclinic.owner.Pet.getType",
+    "similarity_score": 0.325,
+    "cluster_id": "GettypeService"
+  },
+  {
+    "endpoint": "GET /vets.html",
+    "matched_function": "org.springframework.samples.petclinic.vet.Vets",
+    "similarity_score": 0.583,
+    "cluster_id": "VetsService"
+  }
+]

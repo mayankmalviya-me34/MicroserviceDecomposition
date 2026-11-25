@@ -1,0 +1,727 @@
+{
+  "PetclinicapplicationService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "PetclinicruntimehintsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "RegisterhintsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "BaseentityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetidService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "IsnewService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetidService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "NamedentityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "TostringService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetnameService"
+    ]
+  },
+  "PersonService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetfirstnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetlastnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetfirstnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetlastnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "OwnerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "AddpetService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ]
+  },
+  "AddvisitService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetpetService",
+      "GetvisitsService"
+    ]
+  },
+  "UnassignedService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetcityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetpetService": {
+    "Ca": 1,
+    "Ce": 1,
+    "Instability": 0.5,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ]
+  },
+  "GetpetsService": {
+    "Ca": 2,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GettelephoneService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetaddressService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetcityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SettelephoneService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "OwnercontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindownerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "FindpaginatedforownerslastnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitcreationformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "InitfindformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitupdateownerformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ProcesscreationformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "ProcessfindformService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedforownerslastnameService",
+      "UnassignedService"
+    ]
+  },
+  "ProcessupdateownerformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetallowedfieldsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "ShowownerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "OwnerrepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindbyidService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindbylastnamestartingwithService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetbirthdateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GettypeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetvisitsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetbirthdateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SettypeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PetcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindpetService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitownerbinderService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitpetbinderService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitupdateformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PopulatepettypesService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ProcessupdateformService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "UpdatepetdetailsService"
+    ]
+  },
+  "UpdatepetdetailsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PettypeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PettypeformatterService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ParseService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PrintService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PettyperepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindpettypesService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PetvalidatorService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SupportsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ValidateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "VisitService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetdateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetdescriptionService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetdateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SetdescriptionService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "VisitcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InitnewvisitformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "LoadpetwithvisitService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ProcessnewvisitformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "CacheconfigurationService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "PetcliniccacheconfigurationcustomizerService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "CacheconfigurationService"
+    ]
+  },
+  "CrashcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "TriggerexceptionService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "WebconfigurationService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "AddinterceptorsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "LocalechangeinterceptorService"
+    ]
+  },
+  "LocalechangeinterceptorService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "WelcomecontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "WelcomeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "SpecialtyService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PetclinicService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "AddspecialtyService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetnrofspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetspecialtiesinternalService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "VetcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindpaginatedService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ShowresourcesvetlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ShowvetlistService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedService",
+      "UnassignedService"
+    ]
+  },
+  "VetrepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindallService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "VetsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetvetlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "PetclinicgraphextractorService": {
+    "Ca": 0,
+    "Ce": 4,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "ExportsemanticgraphmlService",
+      "ExportstaticgraphgmlService",
+      "ParsefileService",
+      "UnassignedService"
+    ]
+  },
+  "ExportsemanticgraphmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ExportstaticgraphgmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ParsefileService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  }
+}

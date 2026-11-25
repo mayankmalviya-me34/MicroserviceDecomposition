@@ -1,0 +1,1629 @@
+[
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+        "function": "main",
+        "business_role": "APPLICATION",
+        "intent": null,
+        "domain_entity": "PetClinic",
+        "named_entities": [
+            {
+                "text": "PetClinic Spring Boot Application",
+                "label": "EVENT"
+            },
+            {
+                "text": "Dave Syer",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * PetClinic Spring Boot Application.\n *\n * @author Dave Syer"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+        "function": "registerHints",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "comment": "https://github.com/spring-projects/spring-boot/issues/32654"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+        "function": "getId",
+        "business_role": "ENTITY",
+        "intent": null,
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object with an id property. Used as a base class for objects\n * needing this property.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+        "function": "getName",
+        "business_role": "ENTITY",
+        "intent": "CREATE",
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object adds a name property to <code>BaseEntity</code>. Used as\n * a base class for objects needing these properties.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\package-info.java",
+        "function": "",
+        "business_role": "ENTITY",
+        "intent": null,
+        "domain_entity": "class",
+        "named_entities": [],
+        "comment": "*\n * The classes in this package represent utilities used by the domain."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+        "function": "getFirstName",
+        "business_role": "ENTITY",
+        "intent": null,
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object representing an person.\n *\n * @author Ken Krebs"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+        "function": "getAddress",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Oliver Drotbohm\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Oliver Drotbohm\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+        "function": "getAddress",
+        "business_role": "UNKNOWN",
+        "intent": "READ",
+        "domain_entity": "Pet",
+        "named_entities": [
+            {
+                "text": "Owner",
+                "label": "ORG"
+            },
+            {
+                "text": "Owner",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Return the Pet with the given name, or null if none found for this Owner.\n\t * @param name to test\n\t * @return the Pet with the given name, or null if no such Pet exists for this Owner"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+        "function": "getAddress",
+        "business_role": "UNKNOWN",
+        "intent": "READ",
+        "domain_entity": "Pet",
+        "named_entities": [
+            {
+                "text": "Owner",
+                "label": "ORG"
+            },
+            {
+                "text": "Owner",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Return the Pet with the given id, or null if none found for this Owner.\n\t * @param id to test\n\t * @return the Pet with the given id, or null if no such Pet exists for this Owner"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+        "function": "getAddress",
+        "business_role": "UNKNOWN",
+        "intent": "READ",
+        "domain_entity": "Pet",
+        "named_entities": [
+            {
+                "text": "Owner",
+                "label": "ORG"
+            },
+            {
+                "text": "Owner",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Return the Pet with the given name, or null if none found for this Owner.\n\t * @param name to test\n\t * @param ignoreNew whether to ignore new pets (pets that are not saved yet)\n\t * @return the Pet with the given name, or null if no such Pet exists for this Owner"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+        "function": "getAddress",
+        "business_role": "UNKNOWN",
+        "intent": "CREATE",
+        "domain_entity": "@link",
+        "named_entities": [],
+        "comment": "*\n\t * Adds the given {@link Visit} to the {@link Pet} with the given identifier.\n\t * @param petId the identifier of the {@link Pet}, must not be {@literal null}.\n\t * @param visit the visit to add, must not be {@literal null}."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "GET",
+        "named_entities": [],
+        "comment": "allow parameterless GET request for /owners to return all records"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [],
+        "comment": "empty string signifies broadest possible search"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": "READ",
+        "domain_entity": "owner",
+        "named_entities": [],
+        "comment": "find owners by last name"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": "READ",
+        "domain_entity": "owner",
+        "named_entities": [],
+        "comment": "no owners found"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": "READ",
+        "domain_entity": "owner",
+        "named_entities": [
+            {
+                "text": "1",
+                "label": "CARDINAL"
+            }
+        ],
+        "comment": "1 owner found"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": "READ",
+        "domain_entity": "owner",
+        "named_entities": [],
+        "comment": "multiple owners found"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Ken Krebs\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Arjen Poutsma\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+        "function": "OwnerController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "Custom",
+        "named_entities": [
+            {
+                "text": "ModelMap",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Custom handler for displaying an owner.\n\t * @param ownerId the ID of the owner to display\n\t * @return a ModelMap with the model attributes for the view"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+        "function": "findByLastNameStartingWith",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation",
+        "named_entities": [],
+        "comment": "docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+        "function": "findByLastNameStartingWith",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "Spring Data",
+                "label": "ORG"
+            },
+            {
+                "text": "Spring\n * Data",
+                "label": "ORG"
+            },
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Repository class for <code>Owner</code> domain objects. All method names are compliant\n * with Spring Data naming conventions so this interface can easily be extended for Spring\n * Data. See:\n * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+        "function": "findByLastNameStartingWith",
+        "business_role": "REPOSITORY",
+        "intent": "READ",
+        "domain_entity": "retrieve",
+        "named_entities": [
+            {
+                "text": "Collection",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Retrieve {@link Owner}s from the data store by last name, returning all owners\n\t * whose last name <i>starts</i> with the given name.\n\t * @param lastName Value to search for\n\t * @return a Collection of matching {@link Owner}s (or an empty Collection if none\n\t * found)"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+        "function": "findByLastNameStartingWith",
+        "business_role": "REPOSITORY",
+        "intent": "READ",
+        "domain_entity": "@link",
+        "named_entities": [
+            {
+                "text": "IllegalArgumentException",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Retrieve an {@link Owner} from the data store by id.\n\t * <p>\n\t * This method returns an {@link Optional} containing the {@link Owner} if found. If\n\t * no {@link Owner} is found with the provided id, it will return an empty\n\t * {@link Optional}.\n\t * </p>\n\t * @param id the id to search for\n\t * @return an {@link Optional} containing the {@link Owner} if found, or an empty\n\t * {@link Optional} if not found.\n\t * @throws IllegalArgumentException if the id is null (assuming null is not a valid\n\t * input for id)"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+        "function": "setBirthDate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "business",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+        "function": "PetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [],
+        "comment": "checking if the pet name already exists for the owner"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+        "function": "PetController",
+        "business_role": "CONTROLLER",
+        "intent": "UPDATE",
+        "domain_entity": "pet",
+        "named_entities": [],
+        "comment": "Update existing pet's properties"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+        "function": "PetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Ken Krebs\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Arjen Poutsma\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+        "function": "PetController",
+        "business_role": "CONTROLLER",
+        "intent": "UPDATE",
+        "domain_entity": "detail",
+        "named_entities": [],
+        "comment": "*\n\t * Updates the pet details if it exists or adds a new pet to the owner.\n\t * @param owner The owner of the pet\n\t * @param pet The pet with updated details"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java",
+        "function": "",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Juergen Hoeller",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Juergen Hoeller Can be Cat, Dog, Hamster..."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+        "function": "PetTypeFormatter",
+        "business_role": "COMPONENT",
+        "intent": null,
+        "domain_entity": "docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format",
+        "named_entities": [],
+        "comment": "docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+        "function": "PetTypeFormatter",
+        "business_role": "COMPONENT",
+        "intent": null,
+        "domain_entity": "instruct",
+        "named_entities": [
+            {
+                "text": "PetType",
+                "label": "ORG"
+            },
+            {
+                "text": "Spring 3.0",
+                "label": "DATE"
+            },
+            {
+                "text": "Formatters",
+                "label": "PERSON"
+            },
+            {
+                "text": "Spring",
+                "label": "DATE"
+            },
+            {
+                "text": "Mark Fisher\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Instructs Spring MVC on how to parse and print elements of type 'PetType'. Starting\n * from Spring 3.0, Formatters have come as an improvement in comparison to legacy\n * PropertyEditors. See the following links for more details: - The Spring ref doc:\n * https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format\n *\n * @author Mark Fisher\n * @author Juergen Hoeller\n * @author Michael Isvy"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+        "function": "findPetTypes",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "Patrick Baumgartner",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Repository class for <code>PetType</code> domain objects.\n *\n * @author Patrick Baumgartner"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+        "function": "findPetTypes",
+        "business_role": "REPOSITORY",
+        "intent": "READ",
+        "domain_entity": "@link",
+        "named_entities": [],
+        "comment": "*\n\t * Retrieve all {@link PetType}s from the data store.\n\t * @return a Collection of {@link PetType}s."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+        "function": "validate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [],
+        "comment": "name validation"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+        "function": "validate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "type",
+        "named_entities": [],
+        "comment": "type validation"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+        "function": "validate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "birth",
+        "named_entities": [],
+        "comment": "birth date validation"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+        "function": "validate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "code",
+        "named_entities": [
+            {
+                "text": "Bean Validation",
+                "label": "ORG"
+            },
+            {
+                "text": "Java",
+                "label": "PERSON"
+            },
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * <code>Validator</code> for <code>Pet</code> forms.\n * <p>\n * We're not using Bean Validation annotations here because it is easier to define such\n * validation rule in Java.\n * </p>\n *\n * @author Ken Krebs\n * @author Juergen Hoeller"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+        "function": "validate",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "Validator",
+        "named_entities": [],
+        "comment": "*\n\t * This Validator validates *just* Pet instances"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+        "function": "Visit",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Dave Syer",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Dave Syer"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+        "function": "Visit",
+        "business_role": "UNKNOWN",
+        "intent": "CREATE",
+        "domain_entity": "instance",
+        "named_entities": [],
+        "comment": "*\n\t * Creates a new instance of Visit for the current date"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "Spring",
+        "named_entities": [
+            {
+                "text": "MVC",
+                "label": "ORG"
+            }
+        ],
+        "comment": "Spring MVC calls method loadPetWithVisit(...) before initNewVisitForm is"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "comment": "called"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "Spring",
+        "named_entities": [
+            {
+                "text": "MVC",
+                "label": "ORG"
+            }
+        ],
+        "comment": "Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "comment": "called"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Ken Krebs\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Arjen Poutsma\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Dave Syer\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Dave Syer\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+        "function": "VisitController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "method",
+        "named_entities": [
+            {
+                "text": "2",
+                "label": "CARDINAL"
+            }
+        ],
+        "comment": "*\n\t * Called before each and every @RequestMapping annotated method. 2 goals: - Make sure\n\t * we always have fresh data - Since we do not use the session scope, make sure that\n\t * Pet object always has an id (Even though id is not part of the form fields)\n\t * @param petId\n\t * @return Pet"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+        "function": "petclinicCacheConfigurationCustomizer",
+        "business_role": "UNKNOWN",
+        "intent": "CREATE",
+        "domain_entity": "cache",
+        "named_entities": [
+            {
+                "text": "the JCache API",
+                "label": "ORG"
+            },
+            {
+                "text": "JMX",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n * Cache configuration intended for caches providing the JCache API. This configuration\n * creates the used cache for the application and enables statistics that become\n * accessible via JMX."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+        "function": "petclinicCacheConfigurationCustomizer",
+        "business_role": "UNKNOWN",
+        "intent": "UPDATE",
+        "domain_entity": "configuration",
+        "named_entities": [
+            {
+                "text": "JCache",
+                "label": "ORG"
+            },
+            {
+                "text": "API",
+                "label": "ORG"
+            },
+            {
+                "text": "JCache API",
+                "label": "PRODUCT"
+            },
+            {
+                "text": "JCache",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Create a simple configuration that enable statistics via the JCache programmatic\n\t * configuration API.\n\t * <p>\n\t * Within the configuration object that is provided by the JCache API standard, there\n\t * is only a very limited set of configuration options. The really relevant\n\t * configuration options (like the size limit) must be set via a configuration\n\t * mechanism that is provided by the selected JCache implementation."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+        "function": "added",
+        "business_role": "CONTROLLER",
+        "intent": "CREATE",
+        "domain_entity": "Controller",
+        "named_entities": [
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "error.html",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Controller used to showcase what happens when an exception is thrown\n *\n * @author Michael Isvy\n * <p/>\n * Also see how a view that resolves to \"error\" has been added (\"error.html\")."
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+        "function": "internationalization",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "Configures",
+        "named_entities": [
+            {
+                "text": "Anuj Ashok Potdar",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Configures internationalization (i18n) support for the application.\n *\n * <p>\n * Handles loading language-specific messages, tracking the user's language, and allowing\n * language changes via the URL parameter (e.g., <code>?lang=de</code>).\n * </p>\n *\n * @author Anuj Ashok Potdar"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+        "function": "internationalization",
+        "business_role": "UNKNOWN",
+        "intent": "UPDATE",
+        "domain_entity": "use",
+        "named_entities": [
+            {
+                "text": "English",
+                "label": "LANGUAGE"
+            }
+        ],
+        "comment": "*\n\t * Uses session storage to remember the user\u2019s language setting across requests.\n\t * Defaults to English if nothing is specified.\n\t * @return session-based {@link LocaleResolver}"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+        "function": "internationalization",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "app",
+        "named_entities": [],
+        "comment": "*\n\t * Allows the app to switch languages using a URL parameter like\n\t * <code>?lang=es</code>.\n\t * @return a {@link LocaleChangeInterceptor} that handles the change"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+        "function": "internationalization",
+        "business_role": "UNKNOWN",
+        "intent": "CREATE",
+        "domain_entity": "register",
+        "named_entities": [],
+        "comment": "*\n\t * Registers the locale change interceptor so it can run on each request.\n\t * @param registry where interceptors are added"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java",
+        "function": "",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "model",
+        "named_entities": [
+            {
+                "text": "Vet Vet's",
+                "label": "ORG"
+            },
+            {
+                "text": "Juergen Hoeller",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Models a {@link Vet Vet's} specialty (for example, dentistry).\n *\n * @author Juergen Hoeller"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+        "function": "getSpecialtiesInternal",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "JavaBean",
+        "named_entities": [
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Arjen Poutsma",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+        "function": "VetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "object",
+        "named_entities": [
+            {
+                "text": "Vet",
+                "label": "GPE"
+            }
+        ],
+        "comment": "Here we are returning an object of type 'Vets' rather than a collection of Vet"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+        "function": "VetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "object",
+        "named_entities": [],
+        "comment": "objects so it is simpler for Object-Xml mapping"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+        "function": "VetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "object",
+        "named_entities": [
+            {
+                "text": "Vet",
+                "label": "GPE"
+            }
+        ],
+        "comment": "Here we are returning an object of type 'Vets' rather than a collection of Vet"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+        "function": "VetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "object",
+        "named_entities": [
+            {
+                "text": "JSon",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "objects so it is simpler for JSon/Object mapping"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+        "function": "VetController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Mark Fisher\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Ken Krebs\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Arjen Poutsma",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Juergen Hoeller\n * @author Mark Fisher\n * @author Ken Krebs\n * @author Arjen Poutsma"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+        "function": "findAll",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation",
+        "named_entities": [],
+        "comment": "docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+        "function": "findAll",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "Spring Data",
+                "label": "ORG"
+            },
+            {
+                "text": "Spring\n * Data",
+                "label": "ORG"
+            },
+            {
+                "text": "Ken Krebs\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Repository class for <code>Vet</code> domain objects All method names are compliant\n * with Spring Data naming conventions so this interface can easily be extended for Spring\n * Data. See:\n * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+        "function": "findAll",
+        "business_role": "REPOSITORY",
+        "intent": "READ",
+        "domain_entity": "code",
+        "named_entities": [],
+        "comment": "*\n\t * Retrieve all <code>Vet</code>s from the data store.\n\t * @return a <code>Collection</code> of <code>Vet</code>s"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+        "function": "findAll",
+        "business_role": "REPOSITORY",
+        "intent": "READ",
+        "domain_entity": "code",
+        "named_entities": [
+            {
+                "text": "Pages\n\t ",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Retrieve all <code>Vet</code>s from data store in Pages\n\t * @param pageable\n\t * @return\n\t * @throws DataAccessException"
+    },
+    {
+        "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+        "function": "getVetList",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "domain",
+        "named_entities": [
+            {
+                "text": "Arjen Poutsma",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Simple domain object representing a list of veterinarians. Mostly here to be used for\n * the 'vets' {@link org.springframework.web.servlet.view.xml.MarshallingView}.\n *\n * @author Arjen Poutsma"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "Static",
+        "named_entities": [],
+        "comment": "---------- Static Graph ----------"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "function",
+        "named_entities": [
+            {
+                "text": "Semantic Data",
+                "label": "ORG"
+            }
+        ],
+        "comment": "---------- Function-level Semantic Data ----------"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "import",
+        "named_entities": [],
+        "comment": "-------- Imports --------"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "call",
+        "named_entities": [],
+        "comment": "-------- Static Call Graph --------"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "JSON",
+        "named_entities": [],
+        "comment": "-------- Semantic JSON (Function Level) --------"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "=",
+        "named_entities": [],
+        "comment": "================= STATIC GRAPH ================="
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "=",
+        "named_entities": [],
+        "comment": "================= SEMANTIC JSON ================="
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "=",
+        "named_entities": [
+            {
+                "text": "GRAPHML",
+                "label": "ORG"
+            }
+        ],
+        "comment": "================= SEMANTIC GRAPHML ================="
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "graphml.graphdrawing.org/xmlns",
+        "named_entities": [],
+        "comment": "graphml.graphdrawing.org/xmlns\");"
+    },
+    {
+        "file": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+        "function": "main",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "graph",
+        "named_entities": [
+            {
+                "text": "Spring",
+                "label": "DATE"
+            },
+            {
+                "text": "PetClinic",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n * Extracts static and semantic graphs from the Spring PetClinic project."
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+        "function": "testFindAll",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "cache",
+        "named_entities": [],
+        "comment": "served from cache"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+        "function": "testFindAll",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "localhost",
+        "named_entities": [],
+        "comment": "localhost:\" + port).build();"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+        "function": "main",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "PetClinic",
+        "named_entities": [
+            {
+                "text": "PetClinic Spring Boot Application",
+                "label": "EVENT"
+            },
+            {
+                "text": "Dave Syer",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * PetClinic Spring Boot Application.\n *\n * @author Dave Syer"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+        "function": "testFindAll",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "cache",
+        "named_entities": [],
+        "comment": "served from cache"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+        "function": "testFindAll",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "localhost",
+        "named_entities": [],
+        "comment": "localhost:\" + port).build();"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PostgresIntegrationTests.java",
+        "function": "available",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "cache",
+        "named_entities": [],
+        "comment": "served from cache"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PostgresIntegrationTests.java",
+        "function": "available",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "localhost",
+        "named_entities": [],
+        "comment": "localhost:\" + port).build();"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+        "function": "working",
+        "business_role": "ENTITY",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Michael Isvy Simple",
+                "label": "PERSON"
+            },
+            {
+                "text": "Bean Validation",
+                "label": "ORG"
+            },
+            {
+                "text": "Hibernate Validator/ Bean Validation",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n * @author Michael Isvy Simple test to make sure that Bean Validation is working (useful\n * when upgrading to a new version of Hibernate Validator/ Bean Validation)"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+        "function": "george",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "OwnerController",
+                "label": "ORG"
+            },
+            {
+                "text": "Colin",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for {@link OwnerController}\n *\n * @author Colin But\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+        "function": "setup",
+        "business_role": "COMPONENT",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "PetController",
+                "label": "ORG"
+            },
+            {
+                "text": "Colin",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for the {@link PetController}\n *\n * @author Colin But\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+        "function": "setup",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "Colin",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for {@link PetTypeFormatter}\n *\n * @author Colin But"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+        "function": "setup",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "helper",
+        "named_entities": [
+            {
+                "text": "PetType}",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n\t * Helper method to produce some sample pet types just for test purpose\n\t * @return {@link Collection} of {@link PetType}"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+        "function": "setUp",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for {@link PetValidator}\n *\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+        "function": "init",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "VisitController}\n *\n *",
+                "label": "ORG"
+            },
+            {
+                "text": "Colin",
+                "label": "PERSON"
+            },
+            {
+                "text": "Wick Dynex",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for {@link VisitController}\n *\n * @author Colin But\n * @author Wick Dynex"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+        "function": "shouldFindOwnersByLastName",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "mysql",
+        "named_entities": [],
+        "comment": "Ensure that if the mysql profile is active we connect to the real database:"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+        "function": "shouldFindOwnersByLastName",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "@testpropertysource(\"/application",
+        "named_entities": [],
+        "comment": "@TestPropertySource(\"/application-postgres.properties\")"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+        "function": "shouldFindOwnersByLastName",
+        "business_role": "SERVICE",
+        "intent": "READ",
+        "domain_entity": "name",
+        "named_entities": [],
+        "comment": "retrieving new name from database"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+        "function": "shouldFindOwnersByLastName",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "check",
+        "named_entities": [],
+        "comment": "checks that id has been generated"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+        "function": "shouldFindOwnersByLastName",
+        "business_role": "SERVICE",
+        "intent": "UPDATE",
+        "domain_entity": "integration",
+        "named_entities": [
+            {
+                "text": "Repository",
+                "label": "ORG"
+            },
+            {
+                "text": "Ken Krebs\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Rod Johnson\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "Michael Isvy\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Dave Syer",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Integration test of the Service and the Repository layer.\n * <p>\n * ClinicServiceSpringDataJpaTests subclasses benefit from the following services provided\n * by the Spring TestContext Framework:\n * </p>\n * <ul>\n * <li><strong>Spring IoC container caching</strong> which spares us unnecessary set up\n * time between test execution.</li>\n * <li><strong>Dependency Injection</strong> of test fixture instances, meaning that we\n * don't need to perform application context lookups. See the use of\n * {@link Autowired @Autowired} on the <code> </code> instance variable, which uses\n * autowiring <em>by type</em>.\n * <li><strong>Transaction management</strong>, meaning each test method is executed in\n * its own transaction, which is automatically rolled back by default. Thus, even if tests\n * insert or otherwise change database state, there is no need for a teardown or cleanup\n * script.\n * <li>An {@link org.springframework.context.ApplicationContext ApplicationContext} is\n * also inherited and can be used for explicit bean lookup if necessary.</li>\n * </ul>\n *\n * @author Ken Krebs\n * @author Rod Johnson\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Dave Syer"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+        "function": "getById",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "utility",
+        "named_entities": [
+            {
+                "text": "BaseEntity",
+                "label": "ORG"
+            },
+            {
+                "text": "Juergen Hoeller\n ",
+                "label": "PERSON"
+            },
+            {
+                "text": "Sam Brannen\n *",
+                "label": "PERSON"
+            },
+            {
+                "text": "BaseEntity\n ",
+                "label": "PRODUCT"
+            }
+        ],
+        "comment": "*\n * Utility methods for handling entities. Separate from the BaseEntity class mainly\n * because of dependency on the ORM-associated ObjectRetrievalFailureException.\n *\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @see org.springframework.samples.petclinic.model.BaseEntity\n * @since 29.10.2003"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+        "function": "getById",
+        "business_role": "SERVICE",
+        "intent": "READ",
+        "domain_entity": "entity",
+        "named_entities": [],
+        "comment": "*\n\t * Look up the entity of the given class with the given id in the given collection.\n\t * @param entities the collection to search\n\t * @param entityClass the entity class to look up\n\t * @param entityId the entity id to look up\n\t * @return the found entity\n\t * @throws ObjectRetrievalFailureException if the entity was not found"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "https://github.com/spring-projects/spring-boot/issues/5574",
+        "named_entities": [],
+        "comment": "NOT Waiting https://github.com/spring-projects/spring-boot/issues/5574"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "localhost",
+        "named_entities": [],
+        "comment": "localhost:\" + port + \"/oups\").build(),"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "localhost",
+        "named_entities": [
+            {
+                "text": "HttpMethod",
+                "label": "ORG"
+            }
+        ],
+        "comment": "localhost:\" + port + \"/oups\", HttpMethod.GET,"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "html",
+        "named_entities": [],
+        "comment": "html:"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "whitelabel",
+        "named_entities": [],
+        "comment": "Not the whitelabel error page:"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+        "function": "testTriggerExceptionJson",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "Integration",
+        "named_entities": [
+            {
+                "text": "Alex Lutz",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Integration Test for {@link CrashController}.\n *\n * @author Alex Lutz"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+        "function": "CrashController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "https://github.com/spring-projects/spring-boot/issues/5574",
+        "named_entities": [],
+        "comment": "Waiting https://github.com/spring-projects/spring-boot/issues/5574 ..good"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+        "function": "CrashController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "luck",
+        "named_entities": [
+            {
+                "text": "plain(st",
+                "label": "ORG"
+            }
+        ],
+        "comment": "luck ((plain(st) UNIT test)! :)"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+        "function": "CrashController",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "Colin",
+                "label": "PERSON"
+            },
+            {
+                "text": "Alex Lutz",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * Test class for {@link CrashController}\n *\n * @author Colin But\n * @author Alex Lutz"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+        "function": "checkNonInternationalizedStrings",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "||",
+        "named_entities": [],
+        "comment": "\") || line.startsWith(\"@\") || line.contains(\"log.\")"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+        "function": "checkNonInternationalizedStrings",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "logic",
+        "named_entities": [
+            {
+                "text": "english",
+                "label": "NORP"
+            },
+            {
+                "text": "messages_en",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "We use fallback logic to include english strings, hence messages_en is not"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+        "function": "checkNonInternationalizedStrings",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "comment": "populated."
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+        "function": "checkNonInternationalizedStrings",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "HTML",
+                "label": "ORG"
+            },
+            {
+                "text": "Anuj Ashok Potdar",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * This test ensures that there are no hard-coded strings without internationalization in\n * any HTML files. Also ensures that a string is translated in every language to avoid\n * partial translations.\n *\n * @author Anuj Ashok Potdar"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+        "function": "james",
+        "business_role": "CONTROLLER",
+        "intent": null,
+        "domain_entity": "test",
+        "named_entities": [
+            {
+                "text": "VetController",
+                "label": "ORG"
+            }
+        ],
+        "comment": "*\n * Test class for the {@link VetController}"
+    },
+    {
+        "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+        "function": "testSerialization",
+        "business_role": "UNKNOWN",
+        "intent": null,
+        "domain_entity": "@author",
+        "named_entities": [
+            {
+                "text": "Dave Syer",
+                "label": "PERSON"
+            }
+        ],
+        "comment": "*\n * @author Dave Syer"
+    }
+]

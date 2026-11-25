@@ -1,0 +1,2720 @@
+{
+  "nodes": [
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java::PetClinicApplication",
+      "type": "class",
+      "label": "PetClinicApplication"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java::PetClinicApplication::main",
+      "type": "function",
+      "label": "main",
+      "intent": "",
+      "domain": "PetClinic",
+      "role": "APPLICATION"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java::PetClinicRuntimeHints",
+      "type": "class",
+      "label": "PetClinicRuntimeHints"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java::PetClinicRuntimeHints::registerHints",
+      "type": "function",
+      "label": "registerHints",
+      "intent": "",
+      "domain": "",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "package": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity",
+      "type": "class",
+      "label": "BaseEntity"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::getId",
+      "type": "function",
+      "label": "getId",
+      "intent": "",
+      "domain": "JavaBean",
+      "role": "ENTITY"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::setId",
+      "type": "function",
+      "label": "setId",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::isNew",
+      "type": "function",
+      "label": "isNew",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "package": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity",
+      "type": "class",
+      "label": "NamedEntity"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::getName",
+      "type": "function",
+      "label": "getName",
+      "intent": "CREATE",
+      "domain": "JavaBean",
+      "role": "ENTITY"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::setName",
+      "type": "function",
+      "label": "setName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::toString",
+      "type": "function",
+      "label": "toString",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\package-info.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\package-info.java",
+      "package": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "package": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person",
+      "type": "class",
+      "label": "Person"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::getFirstName",
+      "type": "function",
+      "label": "getFirstName",
+      "intent": "",
+      "domain": "JavaBean",
+      "role": "ENTITY"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::setFirstName",
+      "type": "function",
+      "label": "setFirstName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::getLastName",
+      "type": "function",
+      "label": "getLastName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::setLastName",
+      "type": "function",
+      "label": "setLastName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner",
+      "type": "class",
+      "label": "Owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getAddress",
+      "type": "function",
+      "label": "getAddress",
+      "intent": "CREATE",
+      "domain": "@link",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setAddress",
+      "type": "function",
+      "label": "setAddress",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getCity",
+      "type": "function",
+      "label": "getCity",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setCity",
+      "type": "function",
+      "label": "setCity",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getTelephone",
+      "type": "function",
+      "label": "getTelephone",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setTelephone",
+      "type": "function",
+      "label": "setTelephone",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getPets",
+      "type": "function",
+      "label": "getPets",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::addPet",
+      "type": "function",
+      "label": "addPet",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getPet",
+      "type": "function",
+      "label": "getPet",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::toString",
+      "type": "function",
+      "label": "toString",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::addVisit",
+      "type": "function",
+      "label": "addVisit",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController",
+      "type": "class",
+      "label": "OwnerController",
+      "intent": "",
+      "domain": "Custom",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::setAllowedFields",
+      "type": "function",
+      "label": "setAllowedFields",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::findOwner",
+      "type": "function",
+      "label": "findOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initCreationForm",
+      "type": "function",
+      "label": "initCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processCreationForm",
+      "type": "function",
+      "label": "processCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initFindForm",
+      "type": "function",
+      "label": "initFindForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processFindForm",
+      "type": "function",
+      "label": "processFindForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::addPaginationModel",
+      "type": "function",
+      "label": "addPaginationModel",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::findPaginatedForOwnersLastName",
+      "type": "function",
+      "label": "findPaginatedForOwnersLastName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initUpdateOwnerForm",
+      "type": "function",
+      "label": "initUpdateOwnerForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processUpdateOwnerForm",
+      "type": "function",
+      "label": "processUpdateOwnerForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::showOwner",
+      "type": "function",
+      "label": "showOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet",
+      "type": "class",
+      "label": "Pet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::setBirthDate",
+      "type": "function",
+      "label": "setBirthDate",
+      "intent": "",
+      "domain": "business",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getBirthDate",
+      "type": "function",
+      "label": "getBirthDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getType",
+      "type": "function",
+      "label": "getType",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::setType",
+      "type": "function",
+      "label": "setType",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getVisits",
+      "type": "function",
+      "label": "getVisits",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::addVisit",
+      "type": "function",
+      "label": "addVisit",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController",
+      "type": "class",
+      "label": "PetController",
+      "intent": "UPDATE",
+      "domain": "detail",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::populatePetTypes",
+      "type": "function",
+      "label": "populatePetTypes",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::findOwner",
+      "type": "function",
+      "label": "findOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::findPet",
+      "type": "function",
+      "label": "findPet",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initOwnerBinder",
+      "type": "function",
+      "label": "initOwnerBinder",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initPetBinder",
+      "type": "function",
+      "label": "initPetBinder",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initCreationForm",
+      "type": "function",
+      "label": "initCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::processCreationForm",
+      "type": "function",
+      "label": "processCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initUpdateForm",
+      "type": "function",
+      "label": "initUpdateForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::processUpdateForm",
+      "type": "function",
+      "label": "processUpdateForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::updatePetDetails",
+      "type": "function",
+      "label": "updatePetDetails",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java::PetType",
+      "type": "class",
+      "label": "PetType"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter",
+      "type": "class",
+      "label": "PetTypeFormatter",
+      "intent": "",
+      "domain": "instruct",
+      "role": "COMPONENT"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter::print",
+      "type": "function",
+      "label": "print",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter::parse",
+      "type": "function",
+      "label": "parse",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator",
+      "type": "class",
+      "label": "PetValidator"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator::validate",
+      "type": "function",
+      "label": "validate",
+      "intent": "",
+      "domain": "Validator",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator::supports",
+      "type": "function",
+      "label": "supports",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit",
+      "type": "class",
+      "label": "Visit",
+      "intent": "CREATE",
+      "domain": "instance",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::getDate",
+      "type": "function",
+      "label": "getDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::setDate",
+      "type": "function",
+      "label": "setDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::getDescription",
+      "type": "function",
+      "label": "getDescription",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::setDescription",
+      "type": "function",
+      "label": "setDescription",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController",
+      "type": "class",
+      "label": "VisitController",
+      "intent": "",
+      "domain": "method",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::setAllowedFields",
+      "type": "function",
+      "label": "setAllowedFields",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::loadPetWithVisit",
+      "type": "function",
+      "label": "loadPetWithVisit",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::initNewVisitForm",
+      "type": "function",
+      "label": "initNewVisitForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::processNewVisitForm",
+      "type": "function",
+      "label": "processNewVisitForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration",
+      "type": "class",
+      "label": "CacheConfiguration"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration::petclinicCacheConfigurationCustomizer",
+      "type": "function",
+      "label": "petclinicCacheConfigurationCustomizer",
+      "intent": "UPDATE",
+      "domain": "configuration",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration::cacheConfiguration",
+      "type": "function",
+      "label": "cacheConfiguration",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java::CrashController",
+      "type": "class",
+      "label": "CrashController"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java::CrashController::triggerException",
+      "type": "function",
+      "label": "triggerException",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration",
+      "type": "class",
+      "label": "WebConfiguration"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::localeResolver",
+      "type": "function",
+      "label": "localeResolver",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::localeChangeInterceptor",
+      "type": "function",
+      "label": "localeChangeInterceptor",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::addInterceptors",
+      "type": "function",
+      "label": "addInterceptors",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java::WelcomeController",
+      "type": "class",
+      "label": "WelcomeController"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java::WelcomeController::welcome",
+      "type": "function",
+      "label": "welcome",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java::Specialty",
+      "type": "class",
+      "label": "Specialty"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet",
+      "type": "class",
+      "label": "Vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getSpecialtiesInternal",
+      "type": "function",
+      "label": "getSpecialtiesInternal",
+      "intent": "",
+      "domain": "JavaBean",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getSpecialties",
+      "type": "function",
+      "label": "getSpecialties",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getNrOfSpecialties",
+      "type": "function",
+      "label": "getNrOfSpecialties",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::addSpecialty",
+      "type": "function",
+      "label": "addSpecialty",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController",
+      "type": "class",
+      "label": "VetController",
+      "intent": "",
+      "domain": "@author",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::showVetList",
+      "type": "function",
+      "label": "showVetList",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::addPaginationModel",
+      "type": "function",
+      "label": "addPaginationModel",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::findPaginated",
+      "type": "function",
+      "label": "findPaginated",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::showResourcesVetList",
+      "type": "function",
+      "label": "showResourcesVetList",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+      "type": "file",
+      "label": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java::Vets",
+      "type": "class",
+      "label": "Vets"
+    },
+    {
+      "id": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java::Vets::getVetList",
+      "type": "function",
+      "label": "getVetList",
+      "intent": "",
+      "domain": "domain",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "type": "file",
+      "label": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "package": "unknown"
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor",
+      "type": "class",
+      "label": "PetClinicGraphExtractor"
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::main",
+      "type": "function",
+      "label": "main",
+      "intent": "",
+      "domain": "graph",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::parseFile",
+      "type": "function",
+      "label": "parseFile",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportStaticGraphGML",
+      "type": "function",
+      "label": "exportStaticGraphGML",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportSemanticJSON",
+      "type": "function",
+      "label": "exportSemanticJSON",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportSemanticGraphML",
+      "type": "function",
+      "label": "exportSemanticGraphML",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests",
+      "type": "class",
+      "label": "MySqlIntegrationTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests::testFindAll",
+      "type": "function",
+      "label": "testFindAll",
+      "intent": "",
+      "domain": "localhost",
+      "role": "SERVICE"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests::testOwnerDetails",
+      "type": "function",
+      "label": "testOwnerDetails",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication",
+      "type": "class",
+      "label": "MysqlTestApplication"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication::container",
+      "type": "function",
+      "label": "container",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication::main",
+      "type": "function",
+      "label": "main",
+      "intent": "",
+      "domain": "PetClinic",
+      "role": "SERVICE"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests",
+      "type": "class",
+      "label": "PetClinicIntegrationTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::testFindAll",
+      "type": "function",
+      "label": "testFindAll",
+      "intent": "",
+      "domain": "localhost",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::testOwnerDetails",
+      "type": "function",
+      "label": "testOwnerDetails",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::main",
+      "type": "function",
+      "label": "main",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PostgresIntegrationTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PostgresIntegrationTests.java",
+      "package": "org.springframework.samples.petclinic"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+      "package": "org.springframework.samples.petclinic.model"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests",
+      "type": "class",
+      "label": "ValidatorTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests::createValidator",
+      "type": "function",
+      "label": "createValidator",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests::shouldNotValidateWhenFirstNameEmpty",
+      "type": "function",
+      "label": "shouldNotValidateWhenFirstNameEmpty",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests",
+      "type": "class",
+      "label": "OwnerControllerTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::george",
+      "type": "function",
+      "label": "george",
+      "intent": "",
+      "domain": "test",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::setup",
+      "type": "function",
+      "label": "setup",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitCreationForm",
+      "type": "function",
+      "label": "testInitCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessCreationFormSuccess",
+      "type": "function",
+      "label": "testProcessCreationFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessCreationFormHasErrors",
+      "type": "function",
+      "label": "testProcessCreationFormHasErrors",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitFindForm",
+      "type": "function",
+      "label": "testInitFindForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormSuccess",
+      "type": "function",
+      "label": "testProcessFindFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormByLastName",
+      "type": "function",
+      "label": "testProcessFindFormByLastName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormNoOwnersFound",
+      "type": "function",
+      "label": "testProcessFindFormNoOwnersFound",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitUpdateOwnerForm",
+      "type": "function",
+      "label": "testInitUpdateOwnerForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormSuccess",
+      "type": "function",
+      "label": "testProcessUpdateOwnerFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormUnchangedSuccess",
+      "type": "function",
+      "label": "testProcessUpdateOwnerFormUnchangedSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormHasErrors",
+      "type": "function",
+      "label": "testProcessUpdateOwnerFormHasErrors",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testShowOwner",
+      "type": "function",
+      "label": "testShowOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormWithIdMismatch",
+      "type": "function",
+      "label": "testProcessUpdateOwnerFormWithIdMismatch",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests",
+      "type": "class",
+      "label": "PetControllerTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors",
+      "type": "class",
+      "label": "ProcessCreationFormHasErrors"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors",
+      "type": "class",
+      "label": "ProcessUpdateFormHasErrors"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::setup",
+      "type": "function",
+      "label": "setup",
+      "intent": "",
+      "domain": "test",
+      "role": "COMPONENT"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testInitCreationForm",
+      "type": "function",
+      "label": "testInitCreationForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testProcessCreationFormSuccess",
+      "type": "function",
+      "label": "testProcessCreationFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testProcessUpdateFormSuccess",
+      "type": "function",
+      "label": "testProcessUpdateFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithBlankName",
+      "type": "function",
+      "label": "testProcessCreationFormWithBlankName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithDuplicateName",
+      "type": "function",
+      "label": "testProcessCreationFormWithDuplicateName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithMissingPetType",
+      "type": "function",
+      "label": "testProcessCreationFormWithMissingPetType",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithInvalidBirthDate",
+      "type": "function",
+      "label": "testProcessCreationFormWithInvalidBirthDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testInitUpdateForm",
+      "type": "function",
+      "label": "testInitUpdateForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors::testProcessUpdateFormWithInvalidBirthDate",
+      "type": "function",
+      "label": "testProcessUpdateFormWithInvalidBirthDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors::testProcessUpdateFormWithBlankName",
+      "type": "function",
+      "label": "testProcessUpdateFormWithBlankName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests",
+      "type": "class",
+      "label": "PetTypeFormatterTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::setup",
+      "type": "function",
+      "label": "setup",
+      "intent": "",
+      "domain": "helper",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::testPrint",
+      "type": "function",
+      "label": "testPrint",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::shouldParse",
+      "type": "function",
+      "label": "shouldParse",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::shouldThrowParseException",
+      "type": "function",
+      "label": "shouldThrowParseException",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::makePetTypes",
+      "type": "function",
+      "label": "makePetTypes",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests",
+      "type": "class",
+      "label": "PetValidatorTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors",
+      "type": "class",
+      "label": "ValidateHasErrors"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests::setUp",
+      "type": "function",
+      "label": "setUp",
+      "intent": "",
+      "domain": "test",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests::testValidate",
+      "type": "function",
+      "label": "testValidate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidPetName",
+      "type": "function",
+      "label": "testValidateWithInvalidPetName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidPetType",
+      "type": "function",
+      "label": "testValidateWithInvalidPetType",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidBirthDate",
+      "type": "function",
+      "label": "testValidateWithInvalidBirthDate",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "package": "org.springframework.samples.petclinic.owner"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests",
+      "type": "class",
+      "label": "VisitControllerTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::init",
+      "type": "function",
+      "label": "init",
+      "intent": "",
+      "domain": "test",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testInitNewVisitForm",
+      "type": "function",
+      "label": "testInitNewVisitForm",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testProcessNewVisitFormSuccess",
+      "type": "function",
+      "label": "testProcessNewVisitFormSuccess",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testProcessNewVisitFormHasErrors",
+      "type": "function",
+      "label": "testProcessNewVisitFormHasErrors",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "package": "org.springframework.samples.petclinic.service"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests",
+      "type": "class",
+      "label": "ClinicServiceTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindOwnersByLastName",
+      "type": "function",
+      "label": "shouldFindOwnersByLastName",
+      "intent": "UPDATE",
+      "domain": "integration",
+      "role": "SERVICE"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindSingleOwnerWithPet",
+      "type": "function",
+      "label": "shouldFindSingleOwnerWithPet",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldInsertOwner",
+      "type": "function",
+      "label": "shouldInsertOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldUpdateOwner",
+      "type": "function",
+      "label": "shouldUpdateOwner",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindAllPetTypes",
+      "type": "function",
+      "label": "shouldFindAllPetTypes",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldInsertPetIntoDatabaseAndGenerateId",
+      "type": "function",
+      "label": "shouldInsertPetIntoDatabaseAndGenerateId",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldUpdatePetName",
+      "type": "function",
+      "label": "shouldUpdatePetName",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindVets",
+      "type": "function",
+      "label": "shouldFindVets",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldAddNewVisitForPet",
+      "type": "function",
+      "label": "shouldAddNewVisitForPet",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindVisitsByPetId",
+      "type": "function",
+      "label": "shouldFindVisitsByPetId",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+      "package": "org.springframework.samples.petclinic.service"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java::EntityUtils",
+      "type": "class",
+      "label": "EntityUtils"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java::EntityUtils::getById",
+      "type": "function",
+      "label": "getById",
+      "intent": "READ",
+      "domain": "entity",
+      "role": "SERVICE"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests",
+      "type": "class",
+      "label": "CrashControllerIntegrationTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::TestConfiguration",
+      "type": "class",
+      "label": "TestConfiguration"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests::testTriggerExceptionJson",
+      "type": "function",
+      "label": "testTriggerExceptionJson",
+      "intent": "",
+      "domain": "Integration",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests::testTriggerExceptionHtml",
+      "type": "function",
+      "label": "testTriggerExceptionHtml",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java::CrashControllerTests",
+      "type": "class",
+      "label": "CrashControllerTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java::CrashControllerTests::testTriggerException",
+      "type": "function",
+      "label": "testTriggerException",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+      "package": "org.springframework.samples.petclinic.system"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest",
+      "type": "class",
+      "label": "I18nPropertiesSyncTest"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest::checkNonInternationalizedStrings",
+      "type": "function",
+      "label": "checkNonInternationalizedStrings",
+      "intent": "",
+      "domain": "test",
+      "role": "UNKNOWN"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest::checkI18nPropertyFilesAreInSync",
+      "type": "function",
+      "label": "checkI18nPropertyFilesAreInSync",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests",
+      "type": "class",
+      "label": "VetControllerTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::james",
+      "type": "function",
+      "label": "james",
+      "intent": "",
+      "domain": "test",
+      "role": "CONTROLLER"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::helen",
+      "type": "function",
+      "label": "helen",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::setup",
+      "type": "function",
+      "label": "setup",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::testShowVetListHtml",
+      "type": "function",
+      "label": "testShowVetListHtml",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::testShowResourcesVetList",
+      "type": "function",
+      "label": "testShowResourcesVetList",
+      "intent": "",
+      "domain": "",
+      "role": ""
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+      "type": "file",
+      "label": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+      "package": "org.springframework.samples.petclinic.vet"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java::VetTests",
+      "type": "class",
+      "label": "VetTests"
+    },
+    {
+      "id": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java::VetTests::testSerialization",
+      "type": "function",
+      "label": "testSerialization",
+      "intent": "",
+      "domain": "@author",
+      "role": "UNKNOWN"
+    }
+  ],
+  "edges": [
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java::PetClinicApplication",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicApplication.java::PetClinicApplication::main",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java::PetClinicRuntimeHints",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\PetClinicRuntimeHints.java::PetClinicRuntimeHints::registerHints",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::getId",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::setId",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\BaseEntity.java::BaseEntity::isNew",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::getName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::setName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\NamedEntity.java::NamedEntity::toString",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::getFirstName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::setFirstName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::getLastName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\model\\Person.java::Person::setLastName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getAddress",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setAddress",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getCity",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setCity",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getTelephone",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::setTelephone",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getPets",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::addPet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::getPet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::toString",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Owner.java::Owner::addVisit",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::setAllowedFields",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::findOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initFindForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processFindForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::addPaginationModel",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::findPaginatedForOwnersLastName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::initUpdateOwnerForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::processUpdateOwnerForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java::OwnerController::showOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::setBirthDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getBirthDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getType",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::setType",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::getVisits",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Pet.java::Pet::addVisit",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::populatePetTypes",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::findOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::findPet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initOwnerBinder",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initPetBinder",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::processCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::initUpdateForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::processUpdateForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java::PetController::updatePetDetails",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetType.java::PetType",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter::print",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatter.java::PetTypeFormatter::parse",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator::validate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidator.java::PetValidator::supports",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::getDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::setDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::getDescription",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\Visit.java::Visit::setDescription",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::setAllowedFields",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::loadPetWithVisit",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::initNewVisitForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java::VisitController::processNewVisitForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration::petclinicCacheConfigurationCustomizer",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CacheConfiguration.java::CacheConfiguration::cacheConfiguration",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java::CrashController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java::CrashController::triggerException",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::localeResolver",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::localeChangeInterceptor",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WebConfiguration.java::WebConfiguration::addInterceptors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java::WelcomeController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java::WelcomeController::welcome",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Specialty.java::Specialty",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getSpecialtiesInternal",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getSpecialties",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::getNrOfSpecialties",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vet.java::Vet::addSpecialty",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::showVetList",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::addPaginationModel",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::findPaginated",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java::VetController::showResourcesVetList",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java::Vets",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java",
+      "target": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\Vets.java::Vets::getVetList",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::main",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::parseFile",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportStaticGraphGML",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportSemanticJSON",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java",
+      "target": "../src\\main\\java\\tools\\PetClinicGraphExtractor.java::PetClinicGraphExtractor::exportSemanticGraphML",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests::testFindAll",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MySqlIntegrationTests.java::MySqlIntegrationTests::testOwnerDetails",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication::container",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\MysqlTestApplication.java::MysqlTestApplication::main",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::testFindAll",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::testOwnerDetails",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\PetClinicIntegrationTests.java::PetClinicIntegrationTests::main",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests::createValidator",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\model\\ValidatorTests.java::ValidatorTests::shouldNotValidateWhenFirstNameEmpty",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::george",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::setup",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessCreationFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessCreationFormHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitFindForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormByLastName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessFindFormNoOwnersFound",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testInitUpdateOwnerForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormUnchangedSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testShowOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java::OwnerControllerTests::testProcessUpdateOwnerFormWithIdMismatch",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::setup",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testInitCreationForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testProcessCreationFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::PetControllerTests::testProcessUpdateFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithBlankName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithDuplicateName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithMissingPetType",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testProcessCreationFormWithInvalidBirthDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessCreationFormHasErrors::testInitUpdateForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors::testProcessUpdateFormWithInvalidBirthDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java::ProcessUpdateFormHasErrors::testProcessUpdateFormWithBlankName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::setup",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::testPrint",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::shouldParse",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::shouldThrowParseException",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetTypeFormatterTests.java::PetTypeFormatterTests::makePetTypes",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests::setUp",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::PetValidatorTests::testValidate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidPetName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidPetType",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetValidatorTests.java::ValidateHasErrors::testValidateWithInvalidBirthDate",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::init",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testInitNewVisitForm",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testProcessNewVisitFormSuccess",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java::VisitControllerTests::testProcessNewVisitFormHasErrors",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindOwnersByLastName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindSingleOwnerWithPet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldInsertOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldUpdateOwner",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindAllPetTypes",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldInsertPetIntoDatabaseAndGenerateId",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldUpdatePetName",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindVets",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldAddNewVisitForPet",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\ClinicServiceTests.java::ClinicServiceTests::shouldFindVisitsByPetId",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java::EntityUtils",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\service\\EntityUtils.java::EntityUtils::getById",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::TestConfiguration",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests::testTriggerExceptionJson",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java::CrashControllerIntegrationTests::testTriggerExceptionHtml",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java::CrashControllerTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java::CrashControllerTests::testTriggerException",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest::checkNonInternationalizedStrings",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\I18nPropertiesSyncTest.java::I18nPropertiesSyncTest::checkI18nPropertyFilesAreInSync",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::james",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::helen",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::setup",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::testShowVetListHtml",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java::VetControllerTests::testShowResourcesVetList",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java::VetTests",
+      "relation": "contains"
+    },
+    {
+      "source": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java",
+      "target": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetTests.java::VetTests::testSerialization",
+      "relation": "contains"
+    }
+  ]
+}

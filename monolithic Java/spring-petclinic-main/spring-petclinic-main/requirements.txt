@@ -1,0 +1,14 @@
+sentence-transformers
+scikit-learn
+numpy
+tqdm
+nltk
+
+
+numpy
+scikit-learn
+sentence-transformers
+hdbscan
+umap-learn
+tqdm
+matplotlib

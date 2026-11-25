@@ -1,0 +1,153 @@
+{
+  "CustomersService": {
+    "Ca": 2,
+    "Ce": 5,
+    "Instability": 0.714,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "ConfigService",
+      "ExportsemanticgraphmlService",
+      "ExportstaticgraphgmlService",
+      "ParsefileService",
+      "UnassignedService"
+    ],
+    "Function_Count": 1
+  },
+  "CoreService": {
+    "Ca": 1,
+    "Ce": 2,
+    "Instability": 0.667,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "CustomersService",
+      "UnassignedService"
+    ],
+    "Function_Count": 1
+  },
+  "VisitsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "CustomersService"
+    ],
+    "Function_Count": 1
+  },
+  "VetsService": {
+    "Ca": 0,
+    "Ce": 3,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "CoreService",
+      "GetspecialtiesinternalService",
+      "UnassignedService"
+    ],
+    "Function_Count": 1
+  },
+  "UnassignedService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 5
+  },
+  "ConfigService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "AddinterceptorsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "LocalechangeinterceptorService"
+    ],
+    "Function_Count": 1
+  },
+  "GetnrofspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ],
+    "Function_Count": 1
+  },
+  "TostringService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetnameService"
+    ],
+    "Function_Count": 2
+  },
+  "GetspecialtiesinternalService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "GetspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ],
+    "Function_Count": 1
+  },
+  "ExportstaticgraphgmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "GetnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "ExportsemanticgraphmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "LocalechangeinterceptorService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "ParsefileService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  }
+}

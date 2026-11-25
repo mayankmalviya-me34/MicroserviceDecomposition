@@ -1,0 +1,216 @@
+{
+  "GetnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "TostringService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetnameService"
+    ]
+  },
+  "AddpetService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ]
+  },
+  "AddvisitService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetpetService",
+      "GetvisitsService"
+    ]
+  },
+  "UnassignedService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "GetpetService": {
+    "Ca": 1,
+    "Ce": 1,
+    "Instability": 0.5,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ]
+  },
+  "GetpetsService": {
+    "Ca": 2,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindpaginatedforownerslastnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ProcessfindformService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedforownerslastnameService",
+      "UnassignedService"
+    ]
+  },
+  "GetvisitsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ProcessupdateformService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "UpdatepetdetailsService"
+    ]
+  },
+  "UpdatepetdetailsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "CacheconfigurationService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "PetcliniccacheconfigurationcustomizerService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "CacheconfigurationService"
+    ]
+  },
+  "AddinterceptorsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "LocalechangeinterceptorService"
+    ]
+  },
+  "LocalechangeinterceptorService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "AddspecialtyService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetnrofspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ]
+  },
+  "GetspecialtiesinternalService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "FindpaginatedService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ShowvetlistService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedService",
+      "UnassignedService"
+    ]
+  },
+  "PetclinicgraphextractorService": {
+    "Ca": 0,
+    "Ce": 4,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "ExportsemanticgraphmlService",
+      "ExportstaticgraphgmlService",
+      "ParsefileService",
+      "UnassignedService"
+    ]
+  },
+  "ExportsemanticgraphmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ExportstaticgraphgmlService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "ParsefileService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  }
+}

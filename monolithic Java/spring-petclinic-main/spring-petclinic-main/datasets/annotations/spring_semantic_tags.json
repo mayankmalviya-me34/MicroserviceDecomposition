@@ -1,0 +1,954 @@
+{
+    "org.springframework.samples.petclinic.owner.Pet": {
+        "function": "Pet",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WebConfiguration": {
+        "function": "WebConfiguration",
+        "intent": null,
+        "domain_entity": "Web",
+        "named_entities": [
+            "WebConfiguration"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetController.showResourcesVetList": {
+        "function": "showResourcesVetList",
+        "intent": "Read",
+        "domain_entity": "Resources",
+        "named_entities": [],
+        "business_role": "Resources Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.initOwnerBinder": {
+        "function": "initOwnerBinder",
+        "intent": "Create",
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "Owner Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm": {
+        "function": "initNewVisitForm",
+        "intent": "Create",
+        "domain_entity": "New",
+        "named_entities": [],
+        "business_role": "New Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Visit": {
+        "function": "Visit",
+        "intent": null,
+        "domain_entity": "Visit",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetController.addPaginationModel": {
+        "function": "addPaginationModel",
+        "intent": "Create",
+        "domain_entity": "Pagination",
+        "named_entities": [],
+        "business_role": "Pagination Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WebConfiguration.addInterceptors": {
+        "function": "addInterceptors",
+        "intent": "Create",
+        "domain_entity": "Interceptors",
+        "named_entities": [
+            "addInterceptors"
+        ],
+        "business_role": "Interceptors Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.populatePetTypes": {
+        "function": "populatePetTypes",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor.exportStaticGraphGML": {
+        "function": "exportStaticGraphGML",
+        "intent": null,
+        "domain_entity": "Static",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetValidator": {
+        "function": "PetValidator",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [
+            "PetValidator"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm": {
+        "function": "processUpdateOwnerForm",
+        "intent": "Update",
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "Owner Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.BaseEntity.getId": {
+        "function": "getId",
+        "intent": "Read",
+        "domain_entity": "Id",
+        "named_entities": [
+            "getId"
+        ],
+        "business_role": "Id Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.NamedEntity.setName": {
+        "function": "setName",
+        "intent": "Update",
+        "domain_entity": "Name",
+        "named_entities": [],
+        "business_role": "Name Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints": {
+        "function": "registerHints",
+        "intent": "Create",
+        "domain_entity": "Hints",
+        "named_entities": [],
+        "business_role": "Hints Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.getTelephone": {
+        "function": "getTelephone",
+        "intent": "Read",
+        "domain_entity": "Telephone",
+        "named_entities": [
+            "getTelephone"
+        ],
+        "business_role": "Telephone Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.NamedEntity": {
+        "function": "NamedEntity",
+        "intent": null,
+        "domain_entity": "Named",
+        "named_entities": [
+            "NamedEntity"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vets": {
+        "function": "Vets",
+        "intent": null,
+        "domain_entity": "Vets",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.addVisit": {
+        "function": "addVisit",
+        "intent": "Create",
+        "domain_entity": "Visit",
+        "named_entities": [],
+        "business_role": "Visit Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.findPet": {
+        "function": "findPet",
+        "intent": "Read",
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "Pet Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.processFindForm": {
+        "function": "processFindForm",
+        "intent": "Read",
+        "domain_entity": "Form",
+        "named_entities": [],
+        "business_role": "Form Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.CrashController.triggerException": {
+        "function": "triggerException",
+        "intent": null,
+        "domain_entity": "Exception",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.showOwner": {
+        "function": "showOwner",
+        "intent": "Read",
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "Owner Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.addPet": {
+        "function": "addPet",
+        "intent": "Create",
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "Pet Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.getPet": {
+        "function": "getPet",
+        "intent": "Read",
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "Pet Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetTypeRepository.findPetTypes": {
+        "function": "findPetTypes",
+        "intent": "Read",
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "Pet Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vet": {
+        "function": "Vet",
+        "intent": null,
+        "domain_entity": "Vet",
+        "named_entities": [
+            "Vet"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.BaseEntity.setId": {
+        "function": "setId",
+        "intent": "Update",
+        "domain_entity": "Id",
+        "named_entities": [],
+        "business_role": "Id Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.initCreationForm": {
+        "function": "initCreationForm",
+        "intent": "Create",
+        "domain_entity": "Creation",
+        "named_entities": [
+            "initCreationForm"
+        ],
+        "business_role": "Creation Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Visit.getDate": {
+        "function": "getDate",
+        "intent": "Read",
+        "domain_entity": "Date",
+        "named_entities": [],
+        "business_role": "Date Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.Person.setFirstName": {
+        "function": "setFirstName",
+        "intent": "Update",
+        "domain_entity": "First",
+        "named_entities": [],
+        "business_role": "First Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.addVisit": {
+        "function": "addVisit",
+        "intent": "Create",
+        "domain_entity": "Visit",
+        "named_entities": [],
+        "business_role": "Visit Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "String",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter": {
+        "function": "PetTypeFormatter",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetController": {
+        "function": "VetController",
+        "intent": null,
+        "domain_entity": "Vet",
+        "named_entities": [
+            "VetController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.getPets": {
+        "function": "getPets",
+        "intent": "Read",
+        "domain_entity": "Pets",
+        "named_entities": [],
+        "business_role": "Pets Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.setTelephone": {
+        "function": "setTelephone",
+        "intent": "Update",
+        "domain_entity": "Telephone",
+        "named_entities": [],
+        "business_role": "Telephone Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm": {
+        "function": "processNewVisitForm",
+        "intent": null,
+        "domain_entity": "New",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.setCity": {
+        "function": "setCity",
+        "intent": "Update",
+        "domain_entity": "City",
+        "named_entities": [],
+        "business_role": "City Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.BaseEntity": {
+        "function": "BaseEntity",
+        "intent": null,
+        "domain_entity": "Base",
+        "named_entities": [
+            "BaseEntity"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.PetClinicApplication": {
+        "function": "PetClinicApplication",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerRepository": {
+        "function": "OwnerRepository",
+        "intent": null,
+        "domain_entity": "Owner",
+        "named_entities": [
+            "OwnerRepository"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor": {
+        "function": "PetClinicGraphExtractor",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner": {
+        "function": "Owner",
+        "intent": null,
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.processCreationForm": {
+        "function": "processCreationForm",
+        "intent": null,
+        "domain_entity": "Creation",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.Person": {
+        "function": "Person",
+        "intent": null,
+        "domain_entity": "Person",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName": {
+        "function": "findPaginatedForOwnersLastName",
+        "intent": "Read",
+        "domain_entity": "Paginated",
+        "named_entities": [],
+        "business_role": "Paginated Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerRepository.findById": {
+        "function": "findById",
+        "intent": "Read",
+        "domain_entity": "By",
+        "named_entities": [],
+        "business_role": "By Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetTypeRepository": {
+        "function": "PetTypeRepository",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController": {
+        "function": "OwnerController",
+        "intent": null,
+        "domain_entity": "Owner",
+        "named_entities": [
+            "OwnerController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.Person.setLastName": {
+        "function": "setLastName",
+        "intent": "Update",
+        "domain_entity": "Last",
+        "named_entities": [],
+        "business_role": "Last Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Visit.setDate": {
+        "function": "setDate",
+        "intent": "Update",
+        "domain_entity": "Date",
+        "named_entities": [],
+        "business_role": "Date Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Visit.setDescription": {
+        "function": "setDescription",
+        "intent": "Update",
+        "domain_entity": "Description",
+        "named_entities": [],
+        "business_role": "Description Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm": {
+        "function": "initUpdateOwnerForm",
+        "intent": "Create",
+        "domain_entity": "Update",
+        "named_entities": [],
+        "business_role": "Update Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.getType": {
+        "function": "getType",
+        "intent": "Read",
+        "domain_entity": "Type",
+        "named_entities": [],
+        "business_role": "Type Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.setBirthDate": {
+        "function": "setBirthDate",
+        "intent": "Update",
+        "domain_entity": "Birth",
+        "named_entities": [],
+        "business_role": "Birth Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.CrashController": {
+        "function": "CrashController",
+        "intent": null,
+        "domain_entity": "Crash",
+        "named_entities": [
+            "CrashController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor.exportSemanticJSON": {
+        "function": "exportSemanticJSON",
+        "intent": null,
+        "domain_entity": "Semantic",
+        "named_entities": [
+            "exportSemanticJSON"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.processUpdateForm": {
+        "function": "processUpdateForm",
+        "intent": "Update",
+        "domain_entity": "Form",
+        "named_entities": [],
+        "business_role": "Form Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Specialty": {
+        "function": "Specialty",
+        "intent": null,
+        "domain_entity": "Specialty",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WelcomeController.welcome": {
+        "function": "welcome",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vets.getVetList": {
+        "function": "getVetList",
+        "intent": "Read",
+        "domain_entity": "Vet",
+        "named_entities": [],
+        "business_role": "Vet Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer": {
+        "function": "petclinicCacheConfigurationCustomizer",
+        "intent": null,
+        "domain_entity": "Cache",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetController.findPaginated": {
+        "function": "findPaginated",
+        "intent": "Read",
+        "domain_entity": "Paginated",
+        "named_entities": [],
+        "business_role": "Paginated Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Visit.getDescription": {
+        "function": "getDescription",
+        "intent": "Read",
+        "domain_entity": "Description",
+        "named_entities": [],
+        "business_role": "Description Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.CacheConfiguration": {
+        "function": "CacheConfiguration",
+        "intent": null,
+        "domain_entity": "Cache",
+        "named_entities": [
+            "CacheConfiguration"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration": {
+        "function": "cacheConfiguration",
+        "intent": null,
+        "domain_entity": "Configuration",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.initPetBinder": {
+        "function": "initPetBinder",
+        "intent": "Create",
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "Pet Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.initCreationForm": {
+        "function": "initCreationForm",
+        "intent": "Create",
+        "domain_entity": "Creation",
+        "named_entities": [
+            "initCreationForm"
+        ],
+        "business_role": "Creation Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.PetClinicRuntimeHints": {
+        "function": "PetClinicRuntimeHints",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal": {
+        "function": "getSpecialtiesInternal",
+        "intent": "Read",
+        "domain_entity": "Specialties",
+        "named_entities": [
+            "getSpecialtiesInternal"
+        ],
+        "business_role": "Specialties Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.initUpdateForm": {
+        "function": "initUpdateForm",
+        "intent": "Create",
+        "domain_entity": "Update",
+        "named_entities": [],
+        "business_role": "Update Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel": {
+        "function": "addPaginationModel",
+        "intent": "Create",
+        "domain_entity": "Pagination",
+        "named_entities": [],
+        "business_role": "Pagination Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.VisitController.setAllowedFields": {
+        "function": "setAllowedFields",
+        "intent": "Update",
+        "domain_entity": "Allowed",
+        "named_entities": [],
+        "business_role": "Allowed Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetValidator.validate": {
+        "function": "validate",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.getCity": {
+        "function": "getCity",
+        "intent": "Read",
+        "domain_entity": "City",
+        "named_entities": [],
+        "business_role": "City Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.NamedEntity.getName": {
+        "function": "getName",
+        "intent": "Read",
+        "domain_entity": "Name",
+        "named_entities": [],
+        "business_role": "Name Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetRepository": {
+        "function": "VetRepository",
+        "intent": null,
+        "domain_entity": "Vet",
+        "named_entities": [
+            "VetRepository"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WelcomeController": {
+        "function": "WelcomeController",
+        "intent": null,
+        "domain_entity": "Welcome",
+        "named_entities": [
+            "WelcomeController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.getBirthDate": {
+        "function": "getBirthDate",
+        "intent": "Read",
+        "domain_entity": "Birth",
+        "named_entities": [],
+        "business_role": "Birth Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.getVisits": {
+        "function": "getVisits",
+        "intent": "Read",
+        "domain_entity": "Visits",
+        "named_entities": [],
+        "business_role": "Visits Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.processCreationForm": {
+        "function": "processCreationForm",
+        "intent": null,
+        "domain_entity": "Creation",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetValidator.supports": {
+        "function": "supports",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties": {
+        "function": "getNrOfSpecialties",
+        "intent": "Read",
+        "domain_entity": "Nr",
+        "named_entities": [],
+        "business_role": "Nr Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.Person.getLastName": {
+        "function": "getLastName",
+        "intent": "Read",
+        "domain_entity": "Last",
+        "named_entities": [],
+        "business_role": "Last Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetType": {
+        "function": "PetType",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [
+            "PetType"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.NamedEntity.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "String",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetController.showVetList": {
+        "function": "showVetList",
+        "intent": "Read",
+        "domain_entity": "Vet",
+        "named_entities": [],
+        "business_role": "Vet Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.findOwner": {
+        "function": "findOwner",
+        "intent": "Read",
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "Owner Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.PetClinicApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.BaseEntity.isNew": {
+        "function": "isNew",
+        "intent": null,
+        "domain_entity": "New",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor.parseFile": {
+        "function": "parseFile",
+        "intent": null,
+        "domain_entity": "File",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter.parse": {
+        "function": "parse",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerRepository.findByLastNameStartingWith": {
+        "function": "findByLastNameStartingWith",
+        "intent": "Read",
+        "domain_entity": "By",
+        "named_entities": [],
+        "business_role": "By Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WebConfiguration.localeResolver": {
+        "function": "localeResolver",
+        "intent": null,
+        "domain_entity": "Resolver",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.setAddress": {
+        "function": "setAddress",
+        "intent": "Update",
+        "domain_entity": "Address",
+        "named_entities": [
+            "setAddress"
+        ],
+        "business_role": "Address Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.VisitController": {
+        "function": "VisitController",
+        "intent": null,
+        "domain_entity": "Visit",
+        "named_entities": [
+            "VisitController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController.updatePetDetails": {
+        "function": "updatePetDetails",
+        "intent": "Update",
+        "domain_entity": "Pet",
+        "named_entities": [
+            "updatePetDetails"
+        ],
+        "business_role": "Pet Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.initFindForm": {
+        "function": "initFindForm",
+        "intent": "Create",
+        "domain_entity": "Find",
+        "named_entities": [],
+        "business_role": "Find Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter.print": {
+        "function": "print",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "tools.PetClinicGraphExtractor.exportSemanticGraphML": {
+        "function": "exportSemanticGraphML",
+        "intent": null,
+        "domain_entity": "Semantic",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vet.getSpecialties": {
+        "function": "getSpecialties",
+        "intent": "Read",
+        "domain_entity": "Specialties",
+        "named_entities": [],
+        "business_role": "Specialties Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.model.Person.getFirstName": {
+        "function": "getFirstName",
+        "intent": "Read",
+        "domain_entity": "First",
+        "named_entities": [],
+        "business_role": "First Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit": {
+        "function": "loadPetWithVisit",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.findOwner": {
+        "function": "findOwner",
+        "intent": "Read",
+        "domain_entity": "Owner",
+        "named_entities": [],
+        "business_role": "Owner Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Owner.getAddress": {
+        "function": "getAddress",
+        "intent": "Read",
+        "domain_entity": "Address",
+        "named_entities": [],
+        "business_role": "Address Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.PetController": {
+        "function": "PetController",
+        "intent": null,
+        "domain_entity": "Pet",
+        "named_entities": [
+            "PetController"
+        ],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields": {
+        "function": "setAllowedFields",
+        "intent": "Update",
+        "domain_entity": "Allowed",
+        "named_entities": [],
+        "business_role": "Allowed Update Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.VetRepository.findAll": {
+        "function": "findAll",
+        "intent": "Read",
+        "domain_entity": "All",
+        "named_entities": [],
+        "business_role": "All Read Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.system.WebConfiguration.localeChangeInterceptor": {
+        "function": "localeChangeInterceptor",
+        "intent": null,
+        "domain_entity": "Change",
+        "named_entities": [],
+        "business_role": "General Processing",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.vet.Vet.addSpecialty": {
+        "function": "addSpecialty",
+        "intent": "Create",
+        "domain_entity": "Specialty",
+        "named_entities": [],
+        "business_role": "Specialty Create Service",
+        "code": ""
+    },
+    "org.springframework.samples.petclinic.owner.Pet.setType": {
+        "function": "setType",
+        "intent": "Update",
+        "domain_entity": "Type",
+        "named_entities": [],
+        "business_role": "Type Update Service",
+        "code": ""
+    }
+}

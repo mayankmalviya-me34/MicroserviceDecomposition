@@ -1,0 +1,1515 @@
+{
+  "functions": [
+    {
+      "name": "func_2",
+      "calls": [
+        "app.use"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "service.SubscribeEvents",
+        "console.log",
+        "console.log",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "SubscribeMessage",
+        "app.post",
+        "app.post",
+        "app.post",
+        "app.get",
+        "app.get",
+        "app.get",
+        "app.get"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_13",
+      "calls": [
+        "service.SignUp",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_20",
+      "calls": [
+        "service.SignIn",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_30",
+      "calls": [
+        "service.AddNewAddress",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_44",
+      "calls": [
+        "service.GetProfile",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_52",
+      "calls": [
+        "service.GetShopingDetails",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_59",
+      "calls": [
+        "service.GetWishList",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_65",
+      "calls": [
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js"
+    },
+    {
+      "name": "func_2",
+      "calls": [
+        "ValidateSignature",
+        "next",
+        "res.status(403).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\middlewares\\auth.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "mongoose.connect",
+        "console.log",
+        "console.error",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\connection.js"
+    },
+    {
+      "name": "transform",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\models\\Customer.js"
+    },
+    {
+      "name": "CreateCustomer",
+      "calls": [
+        "customer.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "CreateAddress",
+      "calls": [
+        "CustomerModel.findById",
+        "newAddress.save",
+        "profile.address.push",
+        "profile.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "FindCustomer",
+      "calls": [
+        "CustomerModel.findOne"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "FindCustomerById",
+      "calls": [
+        "CustomerModel.findById(id).populate",
+        "CustomerModel.findById"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "Wishlist",
+      "calls": [
+        "CustomerModel.findById(customerId).populate",
+        "CustomerModel.findById"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "AddWishlistItem",
+      "calls": [
+        "CustomerModel.findById(customerId).populate",
+        "CustomerModel.findById",
+        "wishlist.map",
+        "wishlist.push",
+        "wishlist.push",
+        "profile.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "func_78",
+      "calls": [
+        "item._id.toString",
+        "product._id.toString",
+        "wishlist.indexOf",
+        "wishlist.splice"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "AddCartItem",
+      "calls": [
+        "CustomerModel.findById(customerId).populate",
+        "CustomerModel.findById",
+        "cartItems.map",
+        "cartItems.push",
+        "cartItems.push",
+        "profile.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "func_121",
+      "calls": [
+        "item.product._id.toString",
+        "_id.toString",
+        "cartItems.splice",
+        "cartItems.indexOf"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "AddOrderToProfile",
+      "calls": [
+        "CustomerModel.findById",
+        "profile.orders.push",
+        "profile.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "app.use",
+        "express.json",
+        "app.use",
+        "cors",
+        "app.use",
+        "express.static",
+        "CreateChannel",
+        "customer"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\express-app.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "express",
+        "databaseConnection",
+        "CreateChannel",
+        "expressApp",
+        "app.listen(PORT, () => {\n          console.log(`listening to port ${PORT}`);\n    })\n    .on('error', (err) => {\n        console.log(err);\n        process.exit();\n    })\n    .on",
+        "app.listen(PORT, () => {\n          console.log(`listening to port ${PORT}`);\n    })\n    .on",
+        "app.listen"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\index.js"
+    },
+    {
+      "name": "func_17",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\index.js"
+    },
+    {
+      "name": "func_20",
+      "calls": [
+        "console.log",
+        "process.exit"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\index.js"
+    },
+    {
+      "name": "func_24",
+      "calls": [
+        "channel.close"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\index.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "SignIn",
+      "calls": [
+        "this.repository.FindCustomer",
+        "ValidatePassword",
+        "GenerateSignature",
+        "FormateData",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "SignUp",
+      "calls": [
+        "GenerateSalt",
+        "GeneratePassword",
+        "this.repository.CreateCustomer",
+        "GenerateSignature",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "AddNewAddress",
+      "calls": [
+        "this.repository.CreateAddress",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "GetProfile",
+      "calls": [
+        "this.repository.FindCustomerById",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "GetShopingDetails",
+      "calls": [
+        "this.repository.FindCustomerById",
+        "FormateData",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "GetWishList",
+      "calls": [
+        "this.repository.Wishlist",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "AddToWishlist",
+      "calls": [
+        "this.repository.AddWishlistItem",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "ManageCart",
+      "calls": [
+        "this.repository.AddCartItem",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "ManageOrder",
+      "calls": [
+        "this.repository.AddOrderToProfile",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "SubscribeEvents",
+      "calls": [
+        "console.log",
+        "JSON.parse",
+        "this.AddToWishlist",
+        "this.ManageCart",
+        "this.ManageCart",
+        "this.ManageOrder"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js"
+    },
+    {
+      "name": "func_1",
+      "calls": [
+        "describe"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.test.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "test",
+        "test"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.test.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.test.js"
+    },
+    {
+      "name": "func_7",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.test.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [
+        "super",
+        "Object.setPrototypeOf",
+        "Error.captureStackTrace",
+        "super",
+        "super",
+        "super"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "logError",
+      "calls": [
+        "console.log",
+        "LogErrors.log",
+        "JSON.stringify",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "isTrustError",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_36",
+      "calls": [
+        "process.on",
+        "process.on",
+        "errorLogger.logError",
+        "errorLogger.isTrustError",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "next"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_40",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_45",
+      "calls": [
+        "errorLogger.logError",
+        "errorLogger.isTrustError"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "bcrypt.genSalt"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_16",
+      "calls": [
+        "bcrypt.hash"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_20",
+      "calls": [
+        "this.GeneratePassword"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_28",
+      "calls": [
+        "jwt.sign",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_37",
+      "calls": [
+        "req.get",
+        "console.log",
+        "jwt.verify",
+        "signature.split",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_50",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_59",
+      "calls": [
+        "amqplib.connect",
+        "connection.createChannel",
+        "channel.assertQueue"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_70",
+      "calls": [
+        "channel.publish",
+        "Buffer.from",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_75",
+      "calls": [
+        "channel.assertExchange",
+        "channel.assertQueue",
+        "console.log",
+        "channel.bindQueue",
+        "channel.consume"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_84",
+      "calls": [
+        "console.log",
+        "msg.content.toString",
+        "service.SubscribeEvents",
+        "msg.content.toString",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\index.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\index.js"
+    },
+    {
+      "name": "func_2",
+      "calls": [
+        "app.use"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "console.log",
+        "console.log",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_2",
+      "calls": [
+        "ValidateSignature",
+        "next",
+        "res.status(403).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\middlewares\\auth.js"
+    },
+    {
+      "name": "func_9",
+      "calls": [
+        "app.post",
+        "app.get",
+        "app.get",
+        "app.post",
+        "app.put",
+        "app.delete",
+        "app.put",
+        "app.delete",
+        "app.get",
+        "app.get"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "service.CreateProduct",
+        "res.json"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_29",
+      "calls": [
+        "service.GetProductsByCategory",
+        "res.status(200).json",
+        "res.status",
+        "res.status(404).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_40",
+      "calls": [
+        "service.GetProductDescription",
+        "res.status(200).json",
+        "res.status",
+        "res.status(404).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_51",
+      "calls": [
+        "service.GetSelectedProducts",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_57",
+      "calls": [
+        "service.GetProductPayload",
+        "PublishMessage",
+        "JSON.stringify",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_72",
+      "calls": [
+        "service.GetProductPayload",
+        "PublishMessage",
+        "JSON.stringify",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_87",
+      "calls": [
+        "service.GetProductPayload",
+        "PublishMessage",
+        "JSON.stringify",
+        "PublishMessage",
+        "JSON.stringify",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_107",
+      "calls": [
+        "service.GetProductPayload",
+        "PublishMessage",
+        "JSON.stringify",
+        "PublishMessage",
+        "JSON.stringify",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_128",
+      "calls": [
+        "res\n      .status(200)\n      .json",
+        "res\n      .status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_135",
+      "calls": [
+        "service.GetProducts",
+        "res.status(200).json",
+        "res.status",
+        "res.status(404).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "mongoose.connect",
+        "console.log",
+        "console.log",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\connection.js"
+    },
+    {
+      "name": "CreateProduct",
+      "calls": [
+        "product.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "Products",
+      "calls": [
+        "ProductModel.find"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "FindById",
+      "calls": [
+        "ProductModel.findById"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "FindByCategory",
+      "calls": [
+        "ProductModel.find"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "FindSelectedProducts",
+      "calls": [
+        "ProductModel.find().where('_id').in(selectedIds.map(_id => _id)).exec",
+        "ProductModel.find().where('_id').in",
+        "ProductModel.find().where",
+        "ProductModel.find",
+        "selectedIds.map"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "func_38",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js"
+    },
+    {
+      "name": "func_7",
+      "calls": [
+        "app.use",
+        "express.json",
+        "app.use",
+        "cors",
+        "app.use",
+        "express.static",
+        "CreateChannel",
+        "products"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\express-app.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "express",
+        "databaseConnection",
+        "expressApp",
+        "app.listen(PORT, () => {\n        console.log(`listening to port ${PORT}`);\n    })\n    .on",
+        "app.listen"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\index.js"
+    },
+    {
+      "name": "func_13",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\index.js"
+    },
+    {
+      "name": "func_16",
+      "calls": [
+        "console.log",
+        "process.exit"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\index.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "CreateProduct",
+      "calls": [
+        "this.repository.CreateProduct",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "GetProducts",
+      "calls": [
+        "this.repository.Products",
+        "products.map",
+        "FormateData",
+        "Object.keys"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "func_22",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "GetProductDescription",
+      "calls": [
+        "this.repository.FindById",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "GetProductsByCategory",
+      "calls": [
+        "this.repository.FindByCategory",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "GetSelectedProducts",
+      "calls": [
+        "this.repository.FindSelectedProducts",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "GetProductPayload",
+      "calls": [
+        "this.repository.FindById",
+        "FormateData",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js"
+    },
+    {
+      "name": "func_1",
+      "calls": [
+        "describe"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.test.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "test",
+        "test"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.test.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.test.js"
+    },
+    {
+      "name": "func_7",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.test.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [
+        "super",
+        "Object.setPrototypeOf",
+        "Error.captureStackTrace",
+        "super",
+        "super",
+        "super"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "logError",
+      "calls": [
+        "console.log",
+        "LogErrors.log",
+        "JSON.stringify",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "isTrustError",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_36",
+      "calls": [
+        "process.on",
+        "process.on",
+        "errorLogger.logError",
+        "errorLogger.isTrustError",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "next"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_40",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_45",
+      "calls": [
+        "errorLogger.logError",
+        "errorLogger.isTrustError"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_13",
+      "calls": [
+        "bcrypt.genSalt"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_17",
+      "calls": [
+        "bcrypt.hash"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_21",
+      "calls": [
+        "this.GeneratePassword"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_29",
+      "calls": [
+        "jwt.sign",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_38",
+      "calls": [
+        "req.get",
+        "console.log",
+        "jwt.verify",
+        "signature.split",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_51",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_60",
+      "calls": [
+        "axios.post"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_70",
+      "calls": [
+        "axios.post"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_82",
+      "calls": [
+        "amqplib.connect",
+        "connection.createChannel",
+        "channel.assertQueue"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_93",
+      "calls": [
+        "channel.publish",
+        "Buffer.from",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\index.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\index.js"
+    },
+    {
+      "name": "func_2",
+      "calls": [
+        "app.use"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "console.log",
+        "console.log",
+        "service.SubscribeEvents",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\app-events.js"
+    },
+    {
+      "name": "func_2",
+      "calls": [
+        "ValidateSignature",
+        "next",
+        "res.status(403).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\middlewares\\auth.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "SubscribeMessage",
+        "app.post",
+        "app.get",
+        "app.put",
+        "app.delete",
+        "app.get",
+        "app.get"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "service.PlaceOrder",
+        "service.GetOrderPayload",
+        "PublishMessage",
+        "JSON.stringify",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_28",
+      "calls": [
+        "service.GetOrders",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_38",
+      "calls": [
+        "service.AddToCart",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_48",
+      "calls": [
+        "service.AddToCart",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_59",
+      "calls": [
+        "service.GetCart",
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_68",
+      "calls": [
+        "res.status(200).json",
+        "res.status"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "mongoose.connect",
+        "console.log",
+        "console.log",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\connection.js"
+    },
+    {
+      "name": "transform",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\models\\Order.js"
+    },
+    {
+      "name": "Orders",
+      "calls": [
+        "OrderModel.find"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "Cart",
+      "calls": [
+        "CartModel.find"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "AddCartItem",
+      "calls": [
+        "CartModel.findOne",
+        "cartItems.map",
+        "cartItems.push",
+        "cart.save",
+        "CartModel.create"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "func_44",
+      "calls": [
+        "item.product._id.toString",
+        "_id.toString",
+        "cartItems.splice",
+        "cartItems.indexOf"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "CreateNewOrder",
+      "calls": [
+        "CartModel.findOne",
+        "cartItems.map",
+        "uuidv4",
+        "order.save",
+        "cart.save"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "func_91",
+      "calls": [
+        "parseInt",
+        "parseInt"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js"
+    },
+    {
+      "name": "func_6",
+      "calls": [
+        "app.use",
+        "express.json",
+        "app.use",
+        "cors",
+        "app.use",
+        "express.static",
+        "CreateChannel",
+        "shopping"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\express-app.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [
+        "express",
+        "databaseConnection",
+        "expressApp",
+        "app.listen(PORT, () => {\n        console.log(`listening to port ${PORT}`);\n    })\n    .on",
+        "app.listen"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\index.js"
+    },
+    {
+      "name": "func_13",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\index.js"
+    },
+    {
+      "name": "func_16",
+      "calls": [
+        "console.log",
+        "process.exit"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\index.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "GetCart",
+      "calls": [
+        "this.repository.Cart",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "PlaceOrder",
+      "calls": [
+        "this.repository.CreateNewOrder",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "GetOrders",
+      "calls": [
+        "this.repository.Orders",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "GetOrderDetails",
+      "calls": [
+        "this.repository.Orders",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "ManageCart",
+      "calls": [
+        "this.repository.AddCartItem",
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "SubscribeEvents",
+      "calls": [
+        "JSON.parse",
+        "this.ManageCart",
+        "this.ManageCart"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "GetOrderPayload",
+      "calls": [
+        "FormateData"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js"
+    },
+    {
+      "name": "func_1",
+      "calls": [
+        "describe"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js"
+    },
+    {
+      "name": "func_3",
+      "calls": [
+        "test",
+        "test"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js"
+    },
+    {
+      "name": "func_5",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js"
+    },
+    {
+      "name": "func_7",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [
+        "super",
+        "Object.setPrototypeOf",
+        "Error.captureStackTrace",
+        "super",
+        "super",
+        "super"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\app-errors.js"
+    },
+    {
+      "name": "constructor",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "logError",
+      "calls": [
+        "console.log",
+        "LogErrors.log",
+        "JSON.stringify",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "isTrustError",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_36",
+      "calls": [
+        "process.on",
+        "process.on",
+        "errorLogger.logError",
+        "errorLogger.isTrustError",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "res.status(err.statusCode).json",
+        "res.status",
+        "next"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_40",
+      "calls": [
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_45",
+      "calls": [
+        "errorLogger.logError",
+        "errorLogger.isTrustError"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js"
+    },
+    {
+      "name": "func_12",
+      "calls": [
+        "bcrypt.genSalt"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_16",
+      "calls": [
+        "bcrypt.hash"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_20",
+      "calls": [
+        "this.GeneratePassword"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_28",
+      "calls": [
+        "jwt.sign",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_37",
+      "calls": [
+        "req.get",
+        "console.log",
+        "jwt.verify",
+        "signature.split",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_50",
+      "calls": [],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_60",
+      "calls": [
+        "amqplib.connect",
+        "connection.createChannel",
+        "channel.assertQueue"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_71",
+      "calls": [
+        "channel.publish",
+        "Buffer.from",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_76",
+      "calls": [
+        "channel.assertExchange",
+        "channel.assertQueue",
+        "console.log",
+        "channel.bindQueue",
+        "channel.consume"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    },
+    {
+      "name": "func_85",
+      "calls": [
+        "console.log",
+        "msg.content.toString",
+        "service.SubscribeEvents",
+        "msg.content.toString",
+        "console.log"
+      ],
+      "file": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <graph edgedefault="directed" id="G">
+        <node id="n0">
+            <data>org.springframework.samples.petclinic.owner.Pet</data>
+        </node>
+        <node id="n1">
+            <data>org.springframework.samples.petclinic.system.WebConfiguration</data>
+        </node>
+        <node id="n2">
+            <data>org.springframework.samples.petclinic.system.CrashController</data>
+        </node>
+        <node id="n3">
+            <data>org.springframework.samples.petclinic.owner.Visit</data>
+        </node>
+        <node id="n4">
+            <data>org.springframework.samples.petclinic.vet.Specialty</data>
+        </node>
+        <node id="n5">
+            <data>org.springframework.samples.petclinic.owner.PetTypeFormatter</data>
+        </node>
+        <node id="n6">
+            <data>org.springframework.samples.petclinic.vet.VetController</data>
+        </node>
+        <node id="n7">
+            <data>org.springframework.samples.petclinic.owner.PetValidator</data>
+        </node>
+        <node id="n8">
+            <data>org.springframework.samples.petclinic.system.CacheConfiguration</data>
+        </node>
+        <node id="n9">
+            <data>org.springframework.samples.petclinic.owner.VisitController</data>
+        </node>
+        <node id="n10">
+            <data>org.springframework.samples.petclinic.PetClinicRuntimeHints</data>
+        </node>
+        <node id="n11">
+            <data>org.springframework.samples.petclinic.model.BaseEntity</data>
+        </node>
+        <node id="n12">
+            <data>org.springframework.samples.petclinic.PetClinicApplication</data>
+        </node>
+        <node id="n13">
+            <data>org.springframework.samples.petclinic.model.NamedEntity</data>
+        </node>
+        <node id="n14">
+            <data>org.springframework.samples.petclinic.vet.Vets</data>
+        </node>
+        <node id="n15">
+            <data>org.springframework.samples.petclinic.vet.VetRepository</data>
+        </node>
+        <node id="n16">
+            <data>org.springframework.samples.petclinic.owner.OwnerRepository</data>
+        </node>
+        <node id="n17">
+            <data>org.springframework.samples.petclinic.system.WelcomeController</data>
+        </node>
+        <node id="n18">
+            <data>tools.PetClinicGraphExtractor</data>
+        </node>
+        <node id="n19">
+            <data>org.springframework.samples.petclinic.owner.Owner</data>
+        </node>
+        <node id="n20">
+            <data>org.springframework.samples.petclinic.model.Person</data>
+        </node>
+        <node id="n21">
+            <data>org.springframework.samples.petclinic.owner.PetType</data>
+        </node>
+        <node id="n22">
+            <data>org.springframework.samples.petclinic.owner.PetController</data>
+        </node>
+        <node id="n23">
+            <data>org.springframework.samples.petclinic.owner.PetTypeRepository</data>
+        </node>
+        <node id="n24">
+            <data>org.springframework.samples.petclinic.owner.OwnerController</data>
+        </node>
+        <node id="n25">
+            <data>org.springframework.samples.petclinic.vet.Vet</data>
+        </node>
+    </graph>
+</graphml>

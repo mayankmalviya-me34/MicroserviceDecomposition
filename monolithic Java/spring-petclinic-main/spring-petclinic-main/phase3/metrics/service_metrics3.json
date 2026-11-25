@@ -1,0 +1,177 @@
+{
+  "GetnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "TostringService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetnameService"
+    ],
+    "Function_Count": 2
+  },
+  "AddpetService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ],
+    "Function_Count": 1
+  },
+  "AddvisitService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 0.4,
+    "Depends_On": [
+      "GetpetService",
+      "GetvisitsService"
+    ],
+    "Function_Count": 2
+  },
+  "GetpetService": {
+    "Ca": 1,
+    "Ce": 1,
+    "Instability": 0.5,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetpetsService"
+    ],
+    "Function_Count": 1
+  },
+  "GetpetsService": {
+    "Ca": 2,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "FindpaginatedforownerslastnameService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "ProcessfindformService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedforownerslastnameService"
+    ],
+    "Function_Count": 1
+  },
+  "GetvisitsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "ProcessupdateformService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "UpdatepetdetailsService"
+    ],
+    "Function_Count": 1
+  },
+  "UpdatepetdetailsService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "AddinterceptorsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "LocalechangeinterceptorService"
+    ],
+    "Function_Count": 1
+  },
+  "LocalechangeinterceptorService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "AddspecialtyService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ],
+    "Function_Count": 1
+  },
+  "GetnrofspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ],
+    "Function_Count": 1
+  },
+  "GetspecialtiesService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GetspecialtiesinternalService"
+    ],
+    "Function_Count": 1
+  },
+  "GetspecialtiesinternalService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "FindpaginatedService": {
+    "Ca": 1,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Function_Count": 1
+  },
+  "ShowvetlistService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "FindpaginatedService"
+    ],
+    "Function_Count": 1
+  }
+}

@@ -1,0 +1,1038 @@
+{
+  "nodes": [
+    {
+      "id": "controller::OwnerController",
+      "type": "controller",
+      "label": "OwnerController",
+      "domain": "owner",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerController.java"
+    },
+    {
+      "id": "method::OwnerController::setAllowedFields",
+      "type": "handler",
+      "label": "setAllowedFields",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "method::OwnerController::findOwner",
+      "type": "handler",
+      "label": "findOwner",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "method::OwnerController::initCreationForm",
+      "type": "handler",
+      "label": "initCreationForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::GET::/owner/new",
+      "type": "endpoint",
+      "label": "GET /owner/new",
+      "http_method": "GET",
+      "path": "/owner/new"
+    },
+    {
+      "id": "method::OwnerController::processCreationForm",
+      "type": "handler",
+      "label": "processCreationForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::POST::/owner/new",
+      "type": "endpoint",
+      "label": "POST /owner/new",
+      "http_method": "POST",
+      "path": "/owner/new"
+    },
+    {
+      "id": "method::OwnerController::initFindForm",
+      "type": "handler",
+      "label": "initFindForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::GET::/owner/find",
+      "type": "endpoint",
+      "label": "GET /owner/find",
+      "http_method": "GET",
+      "path": "/owner/find"
+    },
+    {
+      "id": "method::OwnerController::processFindForm",
+      "type": "handler",
+      "label": "processFindForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::GET::/owner",
+      "type": "endpoint",
+      "label": "GET /owner",
+      "http_method": "GET",
+      "path": "/owner"
+    },
+    {
+      "id": "method::OwnerController::addPaginationModel",
+      "type": "handler",
+      "label": "addPaginationModel",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "method::OwnerController::findPaginatedForOwnersLastName",
+      "type": "handler",
+      "label": "findPaginatedForOwnersLastName",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "method::OwnerController::initUpdateOwnerForm",
+      "type": "handler",
+      "label": "initUpdateOwnerForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::GET::/owner/{id}/edit",
+      "type": "endpoint",
+      "label": "GET /owner/{id}/edit",
+      "http_method": "GET",
+      "path": "/owner/{id}/edit"
+    },
+    {
+      "id": "method::OwnerController::processUpdateOwnerForm",
+      "type": "handler",
+      "label": "processUpdateOwnerForm",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::PUT::/owner/{id}/edit",
+      "type": "endpoint",
+      "label": "PUT /owner/{id}/edit",
+      "http_method": "PUT",
+      "path": "/owner/{id}/edit"
+    },
+    {
+      "id": "method::OwnerController::showOwner",
+      "type": "handler",
+      "label": "showOwner",
+      "controller": "OwnerController",
+      "domain": "owner"
+    },
+    {
+      "id": "endpoint::GET::/owner/{id}",
+      "type": "endpoint",
+      "label": "GET /owner/{id}",
+      "http_method": "GET",
+      "path": "/owner/{id}"
+    },
+    {
+      "id": "controller::PetController",
+      "type": "controller",
+      "label": "PetController",
+      "domain": "pet",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\PetController.java"
+    },
+    {
+      "id": "method::PetController::populatePetTypes",
+      "type": "handler",
+      "label": "populatePetTypes",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "method::PetController::findOwner",
+      "type": "handler",
+      "label": "findOwner",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "method::PetController::findPet",
+      "type": "handler",
+      "label": "findPet",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "method::PetController::initOwnerBinder",
+      "type": "handler",
+      "label": "initOwnerBinder",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "method::PetController::initPetBinder",
+      "type": "handler",
+      "label": "initPetBinder",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "method::PetController::initCreationForm",
+      "type": "handler",
+      "label": "initCreationForm",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "endpoint::GET::/pet/new",
+      "type": "endpoint",
+      "label": "GET /pet/new",
+      "http_method": "GET",
+      "path": "/pet/new"
+    },
+    {
+      "id": "method::PetController::processCreationForm",
+      "type": "handler",
+      "label": "processCreationForm",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "endpoint::POST::/pet/new",
+      "type": "endpoint",
+      "label": "POST /pet/new",
+      "http_method": "POST",
+      "path": "/pet/new"
+    },
+    {
+      "id": "method::PetController::initUpdateForm",
+      "type": "handler",
+      "label": "initUpdateForm",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "endpoint::GET::/pet/{id}/edit",
+      "type": "endpoint",
+      "label": "GET /pet/{id}/edit",
+      "http_method": "GET",
+      "path": "/pet/{id}/edit"
+    },
+    {
+      "id": "method::PetController::processUpdateForm",
+      "type": "handler",
+      "label": "processUpdateForm",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "endpoint::PUT::/pet/{id}/edit",
+      "type": "endpoint",
+      "label": "PUT /pet/{id}/edit",
+      "http_method": "PUT",
+      "path": "/pet/{id}/edit"
+    },
+    {
+      "id": "method::PetController::updatePetDetails",
+      "type": "handler",
+      "label": "updatePetDetails",
+      "controller": "PetController",
+      "domain": "pet"
+    },
+    {
+      "id": "controller::VisitController",
+      "type": "controller",
+      "label": "VisitController",
+      "domain": "visit",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitController.java"
+    },
+    {
+      "id": "method::VisitController::setAllowedFields",
+      "type": "handler",
+      "label": "setAllowedFields",
+      "controller": "VisitController",
+      "domain": "visit"
+    },
+    {
+      "id": "method::VisitController::loadPetWithVisit",
+      "type": "handler",
+      "label": "loadPetWithVisit",
+      "controller": "VisitController",
+      "domain": "visit"
+    },
+    {
+      "id": "method::VisitController::initNewVisitForm",
+      "type": "handler",
+      "label": "initNewVisitForm",
+      "controller": "VisitController",
+      "domain": "visit"
+    },
+    {
+      "id": "endpoint::GET::/owners/{ownerId}/pets/{petId}/visits/new",
+      "type": "endpoint",
+      "label": "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "http_method": "GET",
+      "path": "/owners/{ownerId}/pets/{petId}/visits/new"
+    },
+    {
+      "id": "method::VisitController::processNewVisitForm",
+      "type": "handler",
+      "label": "processNewVisitForm",
+      "controller": "VisitController",
+      "domain": "visit"
+    },
+    {
+      "id": "endpoint::POST::/owners/{ownerId}/pets/{petId}/visits/new",
+      "type": "endpoint",
+      "label": "POST /owners/{ownerId}/pets/{petId}/visits/new",
+      "http_method": "POST",
+      "path": "/owners/{ownerId}/pets/{petId}/visits/new"
+    },
+    {
+      "id": "controller::CrashController",
+      "type": "controller",
+      "label": "CrashController",
+      "domain": "crash",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\CrashController.java"
+    },
+    {
+      "id": "method::CrashController::triggerException",
+      "type": "handler",
+      "label": "triggerException",
+      "controller": "CrashController",
+      "domain": "crash"
+    },
+    {
+      "id": "endpoint::GET::/oups",
+      "type": "endpoint",
+      "label": "GET /oups",
+      "http_method": "GET",
+      "path": "/oups"
+    },
+    {
+      "id": "controller::WelcomeController",
+      "type": "controller",
+      "label": "WelcomeController",
+      "domain": "welcome",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\system\\WelcomeController.java"
+    },
+    {
+      "id": "method::WelcomeController::welcome",
+      "type": "handler",
+      "label": "welcome",
+      "controller": "WelcomeController",
+      "domain": "welcome"
+    },
+    {
+      "id": "endpoint::GET::/",
+      "type": "endpoint",
+      "label": "GET /",
+      "http_method": "GET",
+      "path": "/"
+    },
+    {
+      "id": "controller::VetController",
+      "type": "controller",
+      "label": "VetController",
+      "domain": "vet",
+      "file": "../src\\main\\java\\org\\springframework\\samples\\petclinic\\vet\\VetController.java"
+    },
+    {
+      "id": "method::VetController::showVetList",
+      "type": "handler",
+      "label": "showVetList",
+      "controller": "VetController",
+      "domain": "vet"
+    },
+    {
+      "id": "endpoint::GET::/vets",
+      "type": "endpoint",
+      "label": "GET /vets",
+      "http_method": "GET",
+      "path": "/vets"
+    },
+    {
+      "id": "method::VetController::addPaginationModel",
+      "type": "handler",
+      "label": "addPaginationModel",
+      "controller": "VetController",
+      "domain": "vet"
+    },
+    {
+      "id": "method::VetController::findPaginated",
+      "type": "handler",
+      "label": "findPaginated",
+      "controller": "VetController",
+      "domain": "vet"
+    },
+    {
+      "id": "method::VetController::showResourcesVetList",
+      "type": "handler",
+      "label": "showResourcesVetList",
+      "controller": "VetController",
+      "domain": "vet"
+    },
+    {
+      "id": "endpoint::GET::/vets.json",
+      "type": "endpoint",
+      "label": "GET /vets.json",
+      "http_method": "GET",
+      "path": "/vets.json"
+    },
+    {
+      "id": "controller::OwnerControllerTests",
+      "type": "controller",
+      "label": "OwnerControllerTests",
+      "domain": "ownertests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\OwnerControllerTests.java"
+    },
+    {
+      "id": "method::OwnerControllerTests::george",
+      "type": "handler",
+      "label": "george",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::setup",
+      "type": "handler",
+      "label": "setup",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testInitCreationForm",
+      "type": "handler",
+      "label": "testInitCreationForm",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessCreationFormSuccess",
+      "type": "handler",
+      "label": "testProcessCreationFormSuccess",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessCreationFormHasErrors",
+      "type": "handler",
+      "label": "testProcessCreationFormHasErrors",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testInitFindForm",
+      "type": "handler",
+      "label": "testInitFindForm",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessFindFormSuccess",
+      "type": "handler",
+      "label": "testProcessFindFormSuccess",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessFindFormByLastName",
+      "type": "handler",
+      "label": "testProcessFindFormByLastName",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessFindFormNoOwnersFound",
+      "type": "handler",
+      "label": "testProcessFindFormNoOwnersFound",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testInitUpdateOwnerForm",
+      "type": "handler",
+      "label": "testInitUpdateOwnerForm",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessUpdateOwnerFormSuccess",
+      "type": "handler",
+      "label": "testProcessUpdateOwnerFormSuccess",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessUpdateOwnerFormUnchangedSuccess",
+      "type": "handler",
+      "label": "testProcessUpdateOwnerFormUnchangedSuccess",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessUpdateOwnerFormHasErrors",
+      "type": "handler",
+      "label": "testProcessUpdateOwnerFormHasErrors",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testShowOwner",
+      "type": "handler",
+      "label": "testShowOwner",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "method::OwnerControllerTests::testProcessUpdateOwnerFormWithIdMismatch",
+      "type": "handler",
+      "label": "testProcessUpdateOwnerFormWithIdMismatch",
+      "controller": "OwnerControllerTests",
+      "domain": "ownertests"
+    },
+    {
+      "id": "controller::PetControllerTests",
+      "type": "controller",
+      "label": "PetControllerTests",
+      "domain": "pettests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\PetControllerTests.java"
+    },
+    {
+      "id": "method::PetControllerTests::setup",
+      "type": "handler",
+      "label": "setup",
+      "controller": "PetControllerTests",
+      "domain": "pettests"
+    },
+    {
+      "id": "method::PetControllerTests::testInitCreationForm",
+      "type": "handler",
+      "label": "testInitCreationForm",
+      "controller": "PetControllerTests",
+      "domain": "pettests"
+    },
+    {
+      "id": "method::PetControllerTests::testProcessCreationFormSuccess",
+      "type": "handler",
+      "label": "testProcessCreationFormSuccess",
+      "controller": "PetControllerTests",
+      "domain": "pettests"
+    },
+    {
+      "id": "method::PetControllerTests::testProcessUpdateFormSuccess",
+      "type": "handler",
+      "label": "testProcessUpdateFormSuccess",
+      "controller": "PetControllerTests",
+      "domain": "pettests"
+    },
+    {
+      "id": "controller::VisitControllerTests",
+      "type": "controller",
+      "label": "VisitControllerTests",
+      "domain": "visittests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\owner\\VisitControllerTests.java"
+    },
+    {
+      "id": "method::VisitControllerTests::init",
+      "type": "handler",
+      "label": "init",
+      "controller": "VisitControllerTests",
+      "domain": "visittests"
+    },
+    {
+      "id": "method::VisitControllerTests::testInitNewVisitForm",
+      "type": "handler",
+      "label": "testInitNewVisitForm",
+      "controller": "VisitControllerTests",
+      "domain": "visittests"
+    },
+    {
+      "id": "method::VisitControllerTests::testProcessNewVisitFormSuccess",
+      "type": "handler",
+      "label": "testProcessNewVisitFormSuccess",
+      "controller": "VisitControllerTests",
+      "domain": "visittests"
+    },
+    {
+      "id": "method::VisitControllerTests::testProcessNewVisitFormHasErrors",
+      "type": "handler",
+      "label": "testProcessNewVisitFormHasErrors",
+      "controller": "VisitControllerTests",
+      "domain": "visittests"
+    },
+    {
+      "id": "controller::CrashControllerIntegrationTests",
+      "type": "controller",
+      "label": "CrashControllerIntegrationTests",
+      "domain": "crashintegrationtests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerIntegrationTests.java"
+    },
+    {
+      "id": "method::CrashControllerIntegrationTests::testTriggerExceptionJson",
+      "type": "handler",
+      "label": "testTriggerExceptionJson",
+      "controller": "CrashControllerIntegrationTests",
+      "domain": "crashintegrationtests"
+    },
+    {
+      "id": "method::CrashControllerIntegrationTests::testTriggerExceptionHtml",
+      "type": "handler",
+      "label": "testTriggerExceptionHtml",
+      "controller": "CrashControllerIntegrationTests",
+      "domain": "crashintegrationtests"
+    },
+    {
+      "id": "controller::CrashControllerTests",
+      "type": "controller",
+      "label": "CrashControllerTests",
+      "domain": "crashtests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\system\\CrashControllerTests.java"
+    },
+    {
+      "id": "method::CrashControllerTests::testTriggerException",
+      "type": "handler",
+      "label": "testTriggerException",
+      "controller": "CrashControllerTests",
+      "domain": "crashtests"
+    },
+    {
+      "id": "controller::VetControllerTests",
+      "type": "controller",
+      "label": "VetControllerTests",
+      "domain": "vettests",
+      "file": "../src\\test\\java\\org\\springframework\\samples\\petclinic\\vet\\VetControllerTests.java"
+    },
+    {
+      "id": "method::VetControllerTests::james",
+      "type": "handler",
+      "label": "james",
+      "controller": "VetControllerTests",
+      "domain": "vettests"
+    },
+    {
+      "id": "method::VetControllerTests::helen",
+      "type": "handler",
+      "label": "helen",
+      "controller": "VetControllerTests",
+      "domain": "vettests"
+    },
+    {
+      "id": "method::VetControllerTests::setup",
+      "type": "handler",
+      "label": "setup",
+      "controller": "VetControllerTests",
+      "domain": "vettests"
+    },
+    {
+      "id": "method::VetControllerTests::testShowVetListHtml",
+      "type": "handler",
+      "label": "testShowVetListHtml",
+      "controller": "VetControllerTests",
+      "domain": "vettests"
+    },
+    {
+      "id": "method::VetControllerTests::testShowResourcesVetList",
+      "type": "handler",
+      "label": "testShowResourcesVetList",
+      "controller": "VetControllerTests",
+      "domain": "vettests"
+    }
+  ],
+  "edges": [
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::setAllowedFields",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::findOwner",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::initCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::processCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::initFindForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::processFindForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::addPaginationModel",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::findPaginatedForOwnersLastName",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::initUpdateOwnerForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::processUpdateOwnerForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerController",
+      "target": "method::OwnerController::showOwner",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/owner/new",
+      "target": "method::OwnerController::initCreationForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::POST::/owner/new",
+      "target": "method::OwnerController::processCreationForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/owner/find",
+      "target": "method::OwnerController::initFindForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/owner",
+      "target": "method::OwnerController::processFindForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/owner/{id}/edit",
+      "target": "method::OwnerController::initUpdateOwnerForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::PUT::/owner/{id}/edit",
+      "target": "method::OwnerController::processUpdateOwnerForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/owner/{id}",
+      "target": "method::OwnerController::showOwner",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::populatePetTypes",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::findOwner",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::findPet",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::initOwnerBinder",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::initPetBinder",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::initCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::processCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::initUpdateForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::processUpdateForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetController",
+      "target": "method::PetController::updatePetDetails",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/pet/new",
+      "target": "method::PetController::initCreationForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::POST::/pet/new",
+      "target": "method::PetController::processCreationForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/pet/{id}/edit",
+      "target": "method::PetController::initUpdateForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::PUT::/pet/{id}/edit",
+      "target": "method::PetController::processUpdateForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::VisitController",
+      "target": "method::VisitController::setAllowedFields",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitController",
+      "target": "method::VisitController::loadPetWithVisit",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitController",
+      "target": "method::VisitController::initNewVisitForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitController",
+      "target": "method::VisitController::processNewVisitForm",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/owners/{ownerId}/pets/{petId}/visits/new",
+      "target": "method::VisitController::initNewVisitForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::POST::/owners/{ownerId}/pets/{petId}/visits/new",
+      "target": "method::VisitController::processNewVisitForm",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::CrashController",
+      "target": "method::CrashController::triggerException",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/oups",
+      "target": "method::CrashController::triggerException",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::WelcomeController",
+      "target": "method::WelcomeController::welcome",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/",
+      "target": "method::WelcomeController::welcome",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::VetController",
+      "target": "method::VetController::showVetList",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetController",
+      "target": "method::VetController::addPaginationModel",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetController",
+      "target": "method::VetController::findPaginated",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetController",
+      "target": "method::VetController::showResourcesVetList",
+      "relation": "handles"
+    },
+    {
+      "source": "endpoint::GET::/vets",
+      "target": "method::VetController::showVetList",
+      "relation": "routes_to"
+    },
+    {
+      "source": "endpoint::GET::/vets.json",
+      "target": "method::VetController::showResourcesVetList",
+      "relation": "routes_to"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::george",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::setup",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testInitCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessCreationFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessCreationFormHasErrors",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testInitFindForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessFindFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessFindFormByLastName",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessFindFormNoOwnersFound",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testInitUpdateOwnerForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessUpdateOwnerFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessUpdateOwnerFormUnchangedSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessUpdateOwnerFormHasErrors",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testShowOwner",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::OwnerControllerTests",
+      "target": "method::OwnerControllerTests::testProcessUpdateOwnerFormWithIdMismatch",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetControllerTests",
+      "target": "method::PetControllerTests::setup",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetControllerTests",
+      "target": "method::PetControllerTests::testInitCreationForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetControllerTests",
+      "target": "method::PetControllerTests::testProcessCreationFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::PetControllerTests",
+      "target": "method::PetControllerTests::testProcessUpdateFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitControllerTests",
+      "target": "method::VisitControllerTests::init",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitControllerTests",
+      "target": "method::VisitControllerTests::testInitNewVisitForm",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitControllerTests",
+      "target": "method::VisitControllerTests::testProcessNewVisitFormSuccess",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VisitControllerTests",
+      "target": "method::VisitControllerTests::testProcessNewVisitFormHasErrors",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::CrashControllerIntegrationTests",
+      "target": "method::CrashControllerIntegrationTests::testTriggerExceptionJson",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::CrashControllerIntegrationTests",
+      "target": "method::CrashControllerIntegrationTests::testTriggerExceptionHtml",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::CrashControllerTests",
+      "target": "method::CrashControllerTests::testTriggerException",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetControllerTests",
+      "target": "method::VetControllerTests::james",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetControllerTests",
+      "target": "method::VetControllerTests::helen",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetControllerTests",
+      "target": "method::VetControllerTests::setup",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetControllerTests",
+      "target": "method::VetControllerTests::testShowVetListHtml",
+      "relation": "handles"
+    },
+    {
+      "source": "controller::VetControllerTests",
+      "target": "method::VetControllerTests::testShowResourcesVetList",
+      "relation": "handles"
+    }
+  ]
+}

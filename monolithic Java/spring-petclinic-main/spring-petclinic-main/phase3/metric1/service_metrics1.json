@@ -1,0 +1,98 @@
+{
+  "ApplicationService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 0.8,
+    "Depends_On": [
+      "ModelService",
+      "VetService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 4,
+    "Classes": [
+      "",
+      "PetClinicApplication",
+      "PetClinicRuntimeHints"
+    ]
+  },
+  "ModelService": {
+    "Ca": 3,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.7,
+    "Depends_On": [],
+    "Depended_By": [
+      "ApplicationService",
+      "OwnerService",
+      "VetService"
+    ],
+    "Function_Count": 13,
+    "Classes": [
+      "",
+      "BaseEntity",
+      "NamedEntity",
+      "Person"
+    ]
+  },
+  "OwnerService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.3,
+    "Depends_On": [
+      "ModelService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 64,
+    "Classes": [
+      "",
+      "Owner",
+      "OwnerController",
+      "OwnerRepository",
+      "Pet",
+      "PetController",
+      "PetTypeFormatter",
+      "PetTypeRepository",
+      "PetValidator",
+      "Visit",
+      "VisitController"
+    ]
+  },
+  "SystemService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.6,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 11,
+    "Classes": [
+      "",
+      "CacheConfiguration",
+      "CrashController",
+      "WebConfiguration",
+      "WelcomeController"
+    ]
+  },
+  "VetService": {
+    "Ca": 1,
+    "Ce": 1,
+    "Instability": 0.5,
+    "Cohesion": 0.6,
+    "Depends_On": [
+      "ModelService"
+    ],
+    "Depended_By": [
+      "ApplicationService"
+    ],
+    "Function_Count": 15,
+    "Classes": [
+      "",
+      "Vet",
+      "VetController",
+      "VetRepository",
+      "Vets"
+    ]
+  }
+}

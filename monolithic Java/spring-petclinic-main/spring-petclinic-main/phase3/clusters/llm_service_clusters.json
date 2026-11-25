@@ -1,0 +1,567 @@
+[
+  {
+    "function": "org.springframework.samples.petclinic.PetClinicApplication",
+    "cluster_id": "PetclinicapplicationService",
+    "business_role": "Petclinicapplication Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.PetClinicApplication.main",
+    "cluster_id": "PetclinicapplicationService",
+    "business_role": "Petclinicapplication Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.PetClinicRuntimeHints",
+    "cluster_id": "PetclinicruntimehintsService",
+    "business_role": "Petclinicruntimehints Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints",
+    "cluster_id": "RegisterhintsService",
+    "business_role": "Registerhints Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.BaseEntity",
+    "cluster_id": "BaseentityService",
+    "business_role": "Baseentity Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.BaseEntity.getId",
+    "cluster_id": "GetidService",
+    "business_role": "Getid Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.BaseEntity.isNew",
+    "cluster_id": "IsnewService",
+    "business_role": "Isnew Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.BaseEntity.setId",
+    "cluster_id": "SetidService",
+    "business_role": "Setid Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.NamedEntity",
+    "cluster_id": "NamedentityService",
+    "business_role": "Namedentity Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.NamedEntity.getName",
+    "cluster_id": "GetnameService",
+    "business_role": "Getname Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.NamedEntity.setName",
+    "cluster_id": "SetnameService",
+    "business_role": "Setname Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.NamedEntity.toString",
+    "cluster_id": "TostringService",
+    "business_role": "Tostring Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.Person",
+    "cluster_id": "PersonService",
+    "business_role": "Person Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.Person.getFirstName",
+    "cluster_id": "GetfirstnameService",
+    "business_role": "Getfirstname Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.Person.getLastName",
+    "cluster_id": "GetlastnameService",
+    "business_role": "Getlastname Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.Person.setFirstName",
+    "cluster_id": "SetfirstnameService",
+    "business_role": "Setfirstname Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.model.Person.setLastName",
+    "cluster_id": "SetlastnameService",
+    "business_role": "Setlastname Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner",
+    "cluster_id": "OwnerService",
+    "business_role": "Owner Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.addPet",
+    "cluster_id": "AddpetService",
+    "business_role": "Addpet Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.addVisit",
+    "cluster_id": "AddvisitService",
+    "business_role": "Addvisit Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.getAddress",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.getCity",
+    "cluster_id": "GetcityService",
+    "business_role": "Getcity Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.getPet",
+    "cluster_id": "GetpetService",
+    "business_role": "Getpet Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.getPets",
+    "cluster_id": "GetpetsService",
+    "business_role": "Getpets Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.getTelephone",
+    "cluster_id": "GettelephoneService",
+    "business_role": "Gettelephone Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.setAddress",
+    "cluster_id": "SetaddressService",
+    "business_role": "Setaddress Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.setCity",
+    "cluster_id": "SetcityService",
+    "business_role": "Setcity Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.setTelephone",
+    "cluster_id": "SettelephoneService",
+    "business_role": "Settelephone Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Owner.toString",
+    "cluster_id": "TostringService",
+    "business_role": "Tostring Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController",
+    "cluster_id": "OwnercontrollerService",
+    "business_role": "Ownercontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.findOwner",
+    "cluster_id": "FindownerService",
+    "business_role": "Findowner Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName",
+    "cluster_id": "FindpaginatedforownerslastnameService",
+    "business_role": "Findpaginatedforownerslastname Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.initCreationForm",
+    "cluster_id": "InitcreationformService",
+    "business_role": "Initcreationform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.initFindForm",
+    "cluster_id": "InitfindformService",
+    "business_role": "Initfindform Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm",
+    "cluster_id": "InitupdateownerformService",
+    "business_role": "Initupdateownerform Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.processCreationForm",
+    "cluster_id": "ProcesscreationformService",
+    "business_role": "Processcreationform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.processFindForm",
+    "cluster_id": "ProcessfindformService",
+    "business_role": "Processfindform Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm",
+    "cluster_id": "ProcessupdateownerformService",
+    "business_role": "Processupdateownerform Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields",
+    "cluster_id": "SetallowedfieldsService",
+    "business_role": "Setallowedfields Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerController.showOwner",
+    "cluster_id": "ShowownerService",
+    "business_role": "Showowner Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerRepository",
+    "cluster_id": "OwnerrepositoryService",
+    "business_role": "Ownerrepository Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerRepository.findById",
+    "cluster_id": "FindbyidService",
+    "business_role": "Findbyid Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.OwnerRepository.findByLastNameStartingWith",
+    "cluster_id": "FindbylastnamestartingwithService",
+    "business_role": "Findbylastnamestartingwith Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet",
+    "cluster_id": "OwnerService",
+    "business_role": "Owner Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.addVisit",
+    "cluster_id": "AddvisitService",
+    "business_role": "Addvisit Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.getBirthDate",
+    "cluster_id": "GetbirthdateService",
+    "business_role": "Getbirthdate Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.getType",
+    "cluster_id": "GettypeService",
+    "business_role": "Gettype Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.getVisits",
+    "cluster_id": "GetvisitsService",
+    "business_role": "Getvisits Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.setBirthDate",
+    "cluster_id": "SetbirthdateService",
+    "business_role": "Setbirthdate Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Pet.setType",
+    "cluster_id": "SettypeService",
+    "business_role": "Settype Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController",
+    "cluster_id": "PetcontrollerService",
+    "business_role": "Petcontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.findOwner",
+    "cluster_id": "FindownerService",
+    "business_role": "Findowner Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.findPet",
+    "cluster_id": "FindpetService",
+    "business_role": "Findpet Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.initCreationForm",
+    "cluster_id": "InitcreationformService",
+    "business_role": "Initcreationform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.initOwnerBinder",
+    "cluster_id": "InitownerbinderService",
+    "business_role": "Initownerbinder Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.initPetBinder",
+    "cluster_id": "InitpetbinderService",
+    "business_role": "Initpetbinder Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.initUpdateForm",
+    "cluster_id": "InitupdateformService",
+    "business_role": "Initupdateform Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.populatePetTypes",
+    "cluster_id": "PopulatepettypesService",
+    "business_role": "Populatepettypes Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.processCreationForm",
+    "cluster_id": "ProcesscreationformService",
+    "business_role": "Processcreationform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.processUpdateForm",
+    "cluster_id": "ProcessupdateformService",
+    "business_role": "Processupdateform Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetController.updatePetDetails",
+    "cluster_id": "UpdatepetdetailsService",
+    "business_role": "Updatepetdetails Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetType",
+    "cluster_id": "PettypeService",
+    "business_role": "Pettype Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "cluster_id": "PettypeformatterService",
+    "business_role": "Pettypeformatter Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetTypeFormatter.parse",
+    "cluster_id": "ParseService",
+    "business_role": "Parse Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetTypeFormatter.print",
+    "cluster_id": "PrintService",
+    "business_role": "Print Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetTypeRepository",
+    "cluster_id": "PettyperepositoryService",
+    "business_role": "Pettyperepository Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetTypeRepository.findPetTypes",
+    "cluster_id": "FindpettypesService",
+    "business_role": "Findpettypes Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetValidator",
+    "cluster_id": "PetvalidatorService",
+    "business_role": "Petvalidator Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetValidator.supports",
+    "cluster_id": "SupportsService",
+    "business_role": "Supports Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.PetValidator.validate",
+    "cluster_id": "ValidateService",
+    "business_role": "Validate Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Visit",
+    "cluster_id": "VisitService",
+    "business_role": "Visit Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Visit.getDate",
+    "cluster_id": "GetdateService",
+    "business_role": "Getdate Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Visit.getDescription",
+    "cluster_id": "GetdescriptionService",
+    "business_role": "Getdescription Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Visit.setDate",
+    "cluster_id": "SetdateService",
+    "business_role": "Setdate Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.Visit.setDescription",
+    "cluster_id": "SetdescriptionService",
+    "business_role": "Setdescription Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.VisitController",
+    "cluster_id": "VisitcontrollerService",
+    "business_role": "Visitcontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm",
+    "cluster_id": "InitnewvisitformService",
+    "business_role": "Initnewvisitform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit",
+    "cluster_id": "LoadpetwithvisitService",
+    "business_role": "Loadpetwithvisit Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm",
+    "cluster_id": "ProcessnewvisitformService",
+    "business_role": "Processnewvisitform Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.owner.VisitController.setAllowedFields",
+    "cluster_id": "SetallowedfieldsService",
+    "business_role": "Setallowedfields Update Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "cluster_id": "CacheconfigurationService",
+    "business_role": "Cacheconfiguration Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration",
+    "cluster_id": "CacheconfigurationService",
+    "business_role": "Cacheconfiguration Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer",
+    "cluster_id": "PetcliniccacheconfigurationcustomizerService",
+    "business_role": "Petcliniccacheconfigurationcustomizer Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.CrashController",
+    "cluster_id": "CrashcontrollerService",
+    "business_role": "Crashcontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.CrashController.triggerException",
+    "cluster_id": "TriggerexceptionService",
+    "business_role": "Triggerexception Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WebConfiguration",
+    "cluster_id": "WebconfigurationService",
+    "business_role": "Webconfiguration Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WebConfiguration.addInterceptors",
+    "cluster_id": "AddinterceptorsService",
+    "business_role": "Addinterceptors Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WebConfiguration.localeChangeInterceptor",
+    "cluster_id": "LocalechangeinterceptorService",
+    "business_role": "Localechangeinterceptor Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WebConfiguration.localeResolver",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WelcomeController",
+    "cluster_id": "WelcomecontrollerService",
+    "business_role": "Welcomecontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.system.WelcomeController.welcome",
+    "cluster_id": "WelcomeService",
+    "business_role": "Welcome Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Specialty",
+    "cluster_id": "SpecialtyService",
+    "business_role": "Specialty Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vet",
+    "cluster_id": "PetclinicService",
+    "business_role": "Petclinic Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vet.addSpecialty",
+    "cluster_id": "AddspecialtyService",
+    "business_role": "Addspecialty Creation Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties",
+    "cluster_id": "GetnrofspecialtiesService",
+    "business_role": "Getnrofspecialties Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vet.getSpecialties",
+    "cluster_id": "GetspecialtiesService",
+    "business_role": "Getspecialties Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal",
+    "cluster_id": "GetspecialtiesinternalService",
+    "business_role": "Getspecialtiesinternal Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetController",
+    "cluster_id": "VetcontrollerService",
+    "business_role": "Vetcontroller Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetController.addPaginationModel",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetController.findPaginated",
+    "cluster_id": "FindpaginatedService",
+    "business_role": "Findpaginated Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetController.showResourcesVetList",
+    "cluster_id": "ShowresourcesvetlistService",
+    "business_role": "Showresourcesvetlist Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetController.showVetList",
+    "cluster_id": "ShowvetlistService",
+    "business_role": "Showvetlist Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetRepository",
+    "cluster_id": "VetrepositoryService",
+    "business_role": "Vetrepository Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.VetRepository.findAll",
+    "cluster_id": "FindallService",
+    "business_role": "Findall Query Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vets",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Processing Service"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vet.Vets.getVetList",
+    "cluster_id": "GetvetlistService",
+    "business_role": "Getvetlist Query Service"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor",
+    "cluster_id": "PetclinicgraphextractorService",
+    "business_role": "Petclinicgraphextractor Processing Service"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor.exportSemanticGraphML",
+    "cluster_id": "ExportsemanticgraphmlService",
+    "business_role": "Exportsemanticgraphml Processing Service"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor.exportSemanticJSON",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor.exportStaticGraphGML",
+    "cluster_id": "ExportstaticgraphgmlService",
+    "business_role": "Exportstaticgraphgml Processing Service"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor.main",
+    "cluster_id": "PetclinicgraphextractorService",
+    "business_role": "Petclinicgraphextractor Processing Service"
+  },
+  {
+    "function": "tools.PetClinicGraphExtractor.parseFile",
+    "cluster_id": "ParsefileService",
+    "business_role": "Parsefile Processing Service"
+  }
+]

@@ -1,0 +1,1160 @@
+{
+  "AddinterceptorsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "WebConfiguration.addInterceptors"
+    ]
+  },
+  "AddpetService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.addPet"
+    ]
+  },
+  "AddspecialtyService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService",
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Vet.addSpecialty"
+    ]
+  },
+  "AddvisitService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 0.833,
+    "Depends_On": [
+      "SetlastnameService",
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "Owner.addVisit",
+      "Pet.addVisit"
+    ]
+  },
+  "BaseentityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "model.BaseEntity"
+    ]
+  },
+  "CrashcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "system.CrashController"
+    ]
+  },
+  "FindallService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VetRepository.findAll"
+    ]
+  },
+  "FindbyidService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerRepository.findById"
+    ]
+  },
+  "FindbylastnamestartingwithService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerRepository.findByLastNameStartingWith"
+    ]
+  },
+  "FindownerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "OwnerController.findOwner",
+      "PetController.findOwner"
+    ]
+  },
+  "FindpaginatedService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VetController.findPaginated"
+    ]
+  },
+  "FindpaginatedforownerslastnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.findPaginatedForOwnersLastName"
+    ]
+  },
+  "FindpetService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.findPet"
+    ]
+  },
+  "FindpettypesService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetTypeRepository.findPetTypes"
+    ]
+  },
+  "GetbirthdateService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Pet.getBirthDate"
+    ]
+  },
+  "GetcityService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.getCity"
+    ]
+  },
+  "GetdateService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetidService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Visit.getDate"
+    ]
+  },
+  "GetdescriptionService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetidService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Visit.getDescription"
+    ]
+  },
+  "GetfirstnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Person.getFirstName"
+    ]
+  },
+  "GetidService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "BaseEntity.getId"
+    ]
+  },
+  "GetlastnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Person.getLastName"
+    ]
+  },
+  "GetnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "NamedEntity.getName"
+    ]
+  },
+  "GetnrofspecialtiesService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService",
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Vet.getNrOfSpecialties"
+    ]
+  },
+  "GetpetService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.getPet"
+    ]
+  },
+  "GetpetsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.getPets"
+    ]
+  },
+  "GetspecialtiesService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService",
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Vet.getSpecialties"
+    ]
+  },
+  "GetspecialtiesinternalService": {
+    "Ca": 0,
+    "Ce": 2,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService",
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Vet.getSpecialtiesInternal"
+    ]
+  },
+  "GettelephoneService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.getTelephone"
+    ]
+  },
+  "GettypeService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Pet.getType"
+    ]
+  },
+  "GetvetlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Vets.getVetList"
+    ]
+  },
+  "GetvisitsService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Pet.getVisits"
+    ]
+  },
+  "InitcreationformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "OwnerController.initCreationForm",
+      "PetController.initCreationForm"
+    ]
+  },
+  "InitfindformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.initFindForm"
+    ]
+  },
+  "InitnewvisitformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VisitController.initNewVisitForm"
+    ]
+  },
+  "InitownerbinderService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.initOwnerBinder"
+    ]
+  },
+  "InitpetbinderService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.initPetBinder"
+    ]
+  },
+  "InitupdateformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.initUpdateForm"
+    ]
+  },
+  "InitupdateownerformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.initUpdateOwnerForm"
+    ]
+  },
+  "IsnewService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "BaseEntity.isNew"
+    ]
+  },
+  "LoadpetwithvisitService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VisitController.loadPetWithVisit"
+    ]
+  },
+  "LocalechangeinterceptorService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "WebConfiguration.localeChangeInterceptor"
+    ]
+  },
+  "NamedentityService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "model.NamedEntity"
+    ]
+  },
+  "OwnerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "owner.Owner",
+      "owner.Pet"
+    ]
+  },
+  "OwnercontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.OwnerController"
+    ]
+  },
+  "OwnerrepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.OwnerRepository"
+    ]
+  },
+  "PersonService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "model.Person"
+    ]
+  },
+  "PetclinicService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "vet.Vet"
+    ]
+  },
+  "PetclinicapplicationService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "petclinic.PetClinicApplication",
+      "PetClinicApplication.main"
+    ]
+  },
+  "PetcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.PetController"
+    ]
+  },
+  "PettypeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.PetType"
+    ]
+  },
+  "PettypeformatterService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.PetTypeFormatter"
+    ]
+  },
+  "PettyperepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.PetTypeRepository"
+    ]
+  },
+  "PetvalidatorService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.PetValidator"
+    ]
+  },
+  "PopulatepettypesService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.populatePetTypes"
+    ]
+  },
+  "PrintService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetTypeFormatter.print"
+    ]
+  },
+  "ProcesscreationformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "OwnerController.processCreationForm",
+      "PetController.processCreationForm"
+    ]
+  },
+  "ProcessfindformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.processFindForm"
+    ]
+  },
+  "ProcessnewvisitformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VisitController.processNewVisitForm"
+    ]
+  },
+  "ProcessupdateformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.processUpdateForm"
+    ]
+  },
+  "ProcessupdateownerformService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.processUpdateOwnerForm"
+    ]
+  },
+  "SetaddressService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.setAddress"
+    ]
+  },
+  "SetallowedfieldsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 0.833,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 2,
+    "Functions": [
+      "OwnerController.setAllowedFields",
+      "VisitController.setAllowedFields"
+    ]
+  },
+  "SetbirthdateService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Pet.setBirthDate"
+    ]
+  },
+  "SetcityService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.setCity"
+    ]
+  },
+  "SetdateService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetidService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Visit.setDate"
+    ]
+  },
+  "SetdescriptionService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetidService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Visit.setDescription"
+    ]
+  },
+  "SetfirstnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Person.setFirstName"
+    ]
+  },
+  "SetidService": {
+    "Ca": 4,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [
+      "GetdateService",
+      "GetdescriptionService",
+      "SetdateService",
+      "SetdescriptionService"
+    ],
+    "Function_Count": 1,
+    "Functions": [
+      "BaseEntity.setId"
+    ]
+  },
+  "SetlastnameService": {
+    "Ca": 14,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [
+      "AddpetService",
+      "AddspecialtyService",
+      "AddvisitService",
+      "GetcityService",
+      "GetnrofspecialtiesService",
+      "GetpetService",
+      "GetpetsService",
+      "GetspecialtiesService",
+      "GetspecialtiesinternalService",
+      "GettelephoneService",
+      "SetaddressService",
+      "SetcityService",
+      "SettelephoneService",
+      "TostringService"
+    ],
+    "Function_Count": 1,
+    "Functions": [
+      "Person.setLastName"
+    ]
+  },
+  "SetnameService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "NamedEntity.setName"
+    ]
+  },
+  "SettelephoneService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Owner.setTelephone"
+    ]
+  },
+  "SettypeService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "TostringService"
+    ],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "Pet.setType"
+    ]
+  },
+  "ShowownerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "OwnerController.showOwner"
+    ]
+  },
+  "ShowresourcesvetlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VetController.showResourcesVetList"
+    ]
+  },
+  "ShowvetlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "VetController.showVetList"
+    ]
+  },
+  "SpecialtyService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "vet.Specialty"
+    ]
+  },
+  "SupportsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetValidator.supports"
+    ]
+  },
+  "TostringService": {
+    "Ca": 10,
+    "Ce": 1,
+    "Instability": 0.091,
+    "Cohesion": 0.833,
+    "Depends_On": [
+      "SetlastnameService"
+    ],
+    "Depended_By": [
+      "AddspecialtyService",
+      "AddvisitService",
+      "GetbirthdateService",
+      "GetnrofspecialtiesService",
+      "GetspecialtiesService",
+      "GetspecialtiesinternalService",
+      "GettypeService",
+      "GetvisitsService",
+      "SetbirthdateService",
+      "SettypeService"
+    ],
+    "Function_Count": 2,
+    "Functions": [
+      "NamedEntity.toString",
+      "Owner.toString"
+    ]
+  },
+  "TriggerexceptionService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "CrashController.triggerException"
+    ]
+  },
+  "UpdatepetdetailsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetController.updatePetDetails"
+    ]
+  },
+  "ValidateService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "PetValidator.validate"
+    ]
+  },
+  "VetcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "vet.VetController"
+    ]
+  },
+  "VetrepositoryService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "vet.VetRepository"
+    ]
+  },
+  "VetsService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "vet.Vets"
+    ]
+  },
+  "VisitService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.Visit"
+    ]
+  },
+  "VisitcontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "owner.VisitController"
+    ]
+  },
+  "WebconfigurationService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "system.WebConfiguration"
+    ]
+  },
+  "WelcomeService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "WelcomeController.welcome"
+    ]
+  },
+  "WelcomecontrollerService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": [],
+    "Depended_By": [],
+    "Function_Count": 1,
+    "Functions": [
+      "system.WelcomeController"
+    ]
+  }
+}

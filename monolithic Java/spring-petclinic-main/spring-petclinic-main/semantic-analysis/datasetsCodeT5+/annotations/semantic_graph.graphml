@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d3" for="node" attr.name="business_role" attr.type="string"/>
+<key id="d2" for="node" attr.name="domain" attr.type="string"/>
+<key id="d1" for="node" attr.name="intent" attr.type="string"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="directed"><node id="../src\main\java\org\springframework\samples\petclinic\PetClinicApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\PetClinicApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">PetClinic</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\PetClinicRuntimeHints.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\PetClinicRuntimeHints.java::registerHints">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\BaseEntity.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\BaseEntity.java::getId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">JavaBean</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\NamedEntity.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\NamedEntity.java::getName">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">JavaBean</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\package-info.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\package-info.java::">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">class</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\Person.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\model\Person.java::getFirstName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">JavaBean</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Owner.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Owner.java::getAddress">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">@link</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\OwnerController.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\OwnerController.java::OwnerController">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">Custom</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\OwnerRepository.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\OwnerRepository.java::findByLastNameStartingWith">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">@link</data>
+  <data key="d3">REPOSITORY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Pet.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Pet.java::setBirthDate">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">business</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetController.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetController.java::PetController">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">detail</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetType.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetType.java::">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">@author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeFormatter.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeFormatter.java::PetTypeFormatter">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">instruct</data>
+  <data key="d3">COMPONENT</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeRepository.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeRepository.java::findPetTypes">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">@link</data>
+  <data key="d3">REPOSITORY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetValidator.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\PetValidator.java::validate">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">Validator</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Visit.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\Visit.java::Visit">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">instance</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\VisitController.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\owner\VisitController.java::VisitController">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">method</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\CacheConfiguration.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\CacheConfiguration.java::petclinicCacheConfigurationCustomizer">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">configuration</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\CrashController.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\CrashController.java::added">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">Controller</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\WebConfiguration.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\system\WebConfiguration.java::internationalization">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">register</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Specialty.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Specialty.java::">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">model</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Vet.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Vet.java::getSpecialtiesInternal">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">JavaBean</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\VetController.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\VetController.java::VetController">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">@author</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\VetRepository.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\VetRepository.java::findAll">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">code</data>
+  <data key="d3">REPOSITORY</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Vets.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\org\springframework\samples\petclinic\vet\Vets.java::getVetList">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">domain</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\main\java\tools\PetClinicGraphExtractor.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\main\java\tools\PetClinicGraphExtractor.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">graph</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\MySqlIntegrationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\MySqlIntegrationTests.java::testFindAll">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">localhost</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\MysqlTestApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\MysqlTestApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">PetClinic</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\PetClinicIntegrationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\PetClinicIntegrationTests.java::testFindAll">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">localhost</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\PostgresIntegrationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\PostgresIntegrationTests.java::available">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">localhost</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\model\ValidatorTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\model\ValidatorTests.java::working">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">@author</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\OwnerControllerTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\OwnerControllerTests.java::george">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetControllerTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetControllerTests.java::setup">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">COMPONENT</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetTypeFormatterTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetTypeFormatterTests.java::setup">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">helper</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetValidatorTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\PetValidatorTests.java::setUp">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\VisitControllerTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\owner\VisitControllerTests.java::init">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\service\ClinicServiceTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\service\ClinicServiceTests.java::shouldFindOwnersByLastName">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">integration</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\service\EntityUtils.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\service\EntityUtils.java::getById">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">entity</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerIntegrationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerIntegrationTests.java::testTriggerExceptionJson">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">Integration</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerTests.java::CrashController">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\I18nPropertiesSyncTest.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\system\I18nPropertiesSyncTest.java::checkNonInternationalizedStrings">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\vet\VetControllerTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\vet\VetControllerTests.java::james">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\vet\VetTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="../src\test\java\org\springframework\samples\petclinic\vet\VetTests.java::testSerialization">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">@author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<edge source="../src\main\java\org\springframework\samples\petclinic\PetClinicApplication.java" target="../src\main\java\org\springframework\samples\petclinic\PetClinicApplication.java::main">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\PetClinicRuntimeHints.java" target="../src\main\java\org\springframework\samples\petclinic\PetClinicRuntimeHints.java::registerHints">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\model\BaseEntity.java" target="../src\main\java\org\springframework\samples\petclinic\model\BaseEntity.java::getId">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\model\NamedEntity.java" target="../src\main\java\org\springframework\samples\petclinic\model\NamedEntity.java::getName">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\model\package-info.java" target="../src\main\java\org\springframework\samples\petclinic\model\package-info.java::">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\model\Person.java" target="../src\main\java\org\springframework\samples\petclinic\model\Person.java::getFirstName">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\Owner.java" target="../src\main\java\org\springframework\samples\petclinic\owner\Owner.java::getAddress">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\OwnerController.java" target="../src\main\java\org\springframework\samples\petclinic\owner\OwnerController.java::OwnerController">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\OwnerRepository.java" target="../src\main\java\org\springframework\samples\petclinic\owner\OwnerRepository.java::findByLastNameStartingWith">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\Pet.java" target="../src\main\java\org\springframework\samples\petclinic\owner\Pet.java::setBirthDate">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\PetController.java" target="../src\main\java\org\springframework\samples\petclinic\owner\PetController.java::PetController">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\PetType.java" target="../src\main\java\org\springframework\samples\petclinic\owner\PetType.java::">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeFormatter.java" target="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeFormatter.java::PetTypeFormatter">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeRepository.java" target="../src\main\java\org\springframework\samples\petclinic\owner\PetTypeRepository.java::findPetTypes">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\PetValidator.java" target="../src\main\java\org\springframework\samples\petclinic\owner\PetValidator.java::validate">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\Visit.java" target="../src\main\java\org\springframework\samples\petclinic\owner\Visit.java::Visit">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\owner\VisitController.java" target="../src\main\java\org\springframework\samples\petclinic\owner\VisitController.java::VisitController">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\system\CacheConfiguration.java" target="../src\main\java\org\springframework\samples\petclinic\system\CacheConfiguration.java::petclinicCacheConfigurationCustomizer">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\system\CrashController.java" target="../src\main\java\org\springframework\samples\petclinic\system\CrashController.java::added">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\system\WebConfiguration.java" target="../src\main\java\org\springframework\samples\petclinic\system\WebConfiguration.java::internationalization">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\vet\Specialty.java" target="../src\main\java\org\springframework\samples\petclinic\vet\Specialty.java::">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\vet\Vet.java" target="../src\main\java\org\springframework\samples\petclinic\vet\Vet.java::getSpecialtiesInternal">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\vet\VetController.java" target="../src\main\java\org\springframework\samples\petclinic\vet\VetController.java::VetController">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\vet\VetRepository.java" target="../src\main\java\org\springframework\samples\petclinic\vet\VetRepository.java::findAll">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\org\springframework\samples\petclinic\vet\Vets.java" target="../src\main\java\org\springframework\samples\petclinic\vet\Vets.java::getVetList">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\main\java\tools\PetClinicGraphExtractor.java" target="../src\main\java\tools\PetClinicGraphExtractor.java::main">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\MySqlIntegrationTests.java" target="../src\test\java\org\springframework\samples\petclinic\MySqlIntegrationTests.java::testFindAll">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\MysqlTestApplication.java" target="../src\test\java\org\springframework\samples\petclinic\MysqlTestApplication.java::main">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\PetClinicIntegrationTests.java" target="../src\test\java\org\springframework\samples\petclinic\PetClinicIntegrationTests.java::testFindAll">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\PostgresIntegrationTests.java" target="../src\test\java\org\springframework\samples\petclinic\PostgresIntegrationTests.java::available">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\model\ValidatorTests.java" target="../src\test\java\org\springframework\samples\petclinic\model\ValidatorTests.java::working">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\owner\OwnerControllerTests.java" target="../src\test\java\org\springframework\samples\petclinic\owner\OwnerControllerTests.java::george">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\owner\PetControllerTests.java" target="../src\test\java\org\springframework\samples\petclinic\owner\PetControllerTests.java::setup">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\owner\PetTypeFormatterTests.java" target="../src\test\java\org\springframework\samples\petclinic\owner\PetTypeFormatterTests.java::setup">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\owner\PetValidatorTests.java" target="../src\test\java\org\springframework\samples\petclinic\owner\PetValidatorTests.java::setUp">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\owner\VisitControllerTests.java" target="../src\test\java\org\springframework\samples\petclinic\owner\VisitControllerTests.java::init">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\service\ClinicServiceTests.java" target="../src\test\java\org\springframework\samples\petclinic\service\ClinicServiceTests.java::shouldFindOwnersByLastName">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\service\EntityUtils.java" target="../src\test\java\org\springframework\samples\petclinic\service\EntityUtils.java::getById">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerIntegrationTests.java" target="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerIntegrationTests.java::testTriggerExceptionJson">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerTests.java" target="../src\test\java\org\springframework\samples\petclinic\system\CrashControllerTests.java::CrashController">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\system\I18nPropertiesSyncTest.java" target="../src\test\java\org\springframework\samples\petclinic\system\I18nPropertiesSyncTest.java::checkNonInternationalizedStrings">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\vet\VetControllerTests.java" target="../src\test\java\org\springframework\samples\petclinic\vet\VetControllerTests.java::james">
+  <data key="d4">contains</data>
+</edge>
+<edge source="../src\test\java\org\springframework\samples\petclinic\vet\VetTests.java" target="../src\test\java\org\springframework\samples\petclinic\vet\VetTests.java::testSerialization">
+  <data key="d4">contains</data>
+</edge>
+</graph></graphml>

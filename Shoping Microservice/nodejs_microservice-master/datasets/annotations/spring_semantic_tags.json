@@ -1,0 +1,965 @@
+{
+    "func_2": {
+        "label": "func_2",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\middlewares\\auth.js",
+        "semantic_roles": [
+            {
+                "text": "func_2",
+                "lemma": "func_2",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_5": {
+        "label": "func_5",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js",
+        "semantic_roles": []
+    },
+    "func_13": {
+        "label": "func_13",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_13",
+                "lemma": "func_13",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_20": {
+        "label": "func_20",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_20",
+                "lemma": "func_20",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_30": {
+        "label": "func_30",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js",
+        "semantic_roles": [
+            {
+                "text": "func_30",
+                "lemma": "func_30",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_44": {
+        "label": "func_44",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "func_44",
+                "lemma": "func_44",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_52": {
+        "label": "func_52",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js",
+        "semantic_roles": [
+            {
+                "text": "func_52",
+                "lemma": "func_52",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_59": {
+        "label": "func_59",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js",
+        "semantic_roles": [
+            {
+                "text": "func_59",
+                "lemma": "func_59",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_65": {
+        "label": "func_65",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\api\\customer.js",
+        "semantic_roles": [
+            {
+                "text": "func_65",
+                "lemma": "func_65",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_3": {
+        "label": "func_3",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js",
+        "semantic_roles": [
+            {
+                "text": "func_3",
+                "lemma": "func_3",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "transform": {
+        "label": "transform",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\models\\Order.js",
+        "semantic_roles": [
+            {
+                "text": "transform",
+                "lemma": "transform",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "CreateCustomer": {
+        "label": "CreateCustomer",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "CreateCustomer",
+                "lemma": "CreateCustomer",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "CreateAddress": {
+        "label": "CreateAddress",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "CreateAddress",
+                "lemma": "CreateAddress",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "FindCustomer": {
+        "label": "FindCustomer",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "FindCustomer",
+                "lemma": "FindCustomer",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "FindCustomerById": {
+        "label": "FindCustomerById",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "FindCustomerById",
+                "lemma": "FindCustomerById",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "Wishlist": {
+        "label": "Wishlist",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": []
+    },
+    "AddWishlistItem": {
+        "label": "AddWishlistItem",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "AddWishlistItem",
+                "lemma": "addwishlistitem",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_78": {
+        "label": "func_78",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": [
+            {
+                "text": "func_78",
+                "lemma": "func_78",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "AddCartItem": {
+        "label": "AddCartItem",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "AddCartItem",
+                "lemma": "addcartitem",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_121": {
+        "label": "func_121",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": []
+    },
+    "AddOrderToProfile": {
+        "label": "AddOrderToProfile",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\database\\repository\\customer-repository.js",
+        "semantic_roles": []
+    },
+    "func_6": {
+        "label": "func_6",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\express-app.js",
+        "semantic_roles": [
+            {
+                "text": "func_6",
+                "lemma": "func_6",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_17": {
+        "label": "func_17",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": []
+    },
+    "func_24": {
+        "label": "func_24",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\index.js",
+        "semantic_roles": []
+    },
+    "constructor": {
+        "label": "constructor",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": [
+            {
+                "text": "constructor",
+                "lemma": "constructor",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "SignIn": {
+        "label": "SignIn",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "SignIn",
+                "lemma": "SignIn",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "SignUp": {
+        "label": "SignUp",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "SignUp",
+                "lemma": "signup",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "AddNewAddress": {
+        "label": "AddNewAddress",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "AddNewAddress",
+                "lemma": "addnewaddress",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetProfile": {
+        "label": "GetProfile",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetProfile",
+                "lemma": "getprofile",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetShopingDetails": {
+        "label": "GetShopingDetails",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetShopingDetails",
+                "lemma": "getshopingdetail",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetWishList": {
+        "label": "GetWishList",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetWishList",
+                "lemma": "getwishlist",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "AddToWishlist": {
+        "label": "AddToWishlist",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "AddToWishlist",
+                "lemma": "AddToWishlist",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "ManageCart": {
+        "label": "ManageCart",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "ManageCart",
+                "lemma": "managecart",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "ManageOrder": {
+        "label": "ManageOrder",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\services\\customer-service.js",
+        "semantic_roles": [
+            {
+                "text": "ManageOrder",
+                "lemma": "ManageOrder",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "SubscribeEvents": {
+        "label": "SubscribeEvents",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "SubscribeEvents",
+                "lemma": "subscribeevent",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_1": {
+        "label": "func_1",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js",
+        "semantic_roles": [
+            {
+                "text": "func_1",
+                "lemma": "func_1",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_7": {
+        "label": "func_7",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.test.js",
+        "semantic_roles": [
+            {
+                "text": "func_7",
+                "lemma": "func_7",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "logError": {
+        "label": "logError",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": []
+    },
+    "isTrustError": {
+        "label": "isTrustError",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": [
+            {
+                "text": "isTrustError",
+                "lemma": "isTrustError",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_36": {
+        "label": "func_36",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": []
+    },
+    "func_40": {
+        "label": "func_40",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": [
+            {
+                "text": "func_40",
+                "lemma": "func_40",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_45": {
+        "label": "func_45",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\error-handler.js",
+        "semantic_roles": [
+            {
+                "text": "func_45",
+                "lemma": "func_45",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_12": {
+        "label": "func_12",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_12",
+                "lemma": "func_12",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_16": {
+        "label": "func_16",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_16",
+                "lemma": "func_16",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_28": {
+        "label": "func_28",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_28",
+                "lemma": "func_28",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_37": {
+        "label": "func_37",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_37",
+                "lemma": "func_37",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_50": {
+        "label": "func_50",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_50",
+                "lemma": "func_50",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_70": {
+        "label": "func_70",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_70",
+                "lemma": "func_70",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_75": {
+        "label": "func_75",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_75",
+                "lemma": "func_75",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_84": {
+        "label": "func_84",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\customer\\src\\utils\\index.js",
+        "semantic_roles": []
+    },
+    "func_9": {
+        "label": "func_9",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_9",
+                "lemma": "func_9",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_29": {
+        "label": "func_29",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": []
+    },
+    "func_51": {
+        "label": "func_51",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": []
+    },
+    "func_57": {
+        "label": "func_57",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_57",
+                "lemma": "func_57",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_72": {
+        "label": "func_72",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_72",
+                "lemma": "func_72",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_87": {
+        "label": "func_87",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_87",
+                "lemma": "func_87",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_107": {
+        "label": "func_107",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": []
+    },
+    "func_128": {
+        "label": "func_128",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_128",
+                "lemma": "func_128",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_135": {
+        "label": "func_135",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\api\\products.js",
+        "semantic_roles": [
+            {
+                "text": "func_135",
+                "lemma": "func_135",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "CreateProduct": {
+        "label": "CreateProduct",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "CreateProduct",
+                "lemma": "CreateProduct",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "Products": {
+        "label": "Products",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js",
+        "semantic_roles": [
+            {
+                "text": "Products",
+                "lemma": "product",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "FindById": {
+        "label": "FindById",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js",
+        "semantic_roles": [
+            {
+                "text": "FindById",
+                "lemma": "FindById",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "FindByCategory": {
+        "label": "FindByCategory",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js",
+        "semantic_roles": [
+            {
+                "text": "FindByCategory",
+                "lemma": "findbycategory",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "FindSelectedProducts": {
+        "label": "FindSelectedProducts",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\database\\repository\\product-repository.js",
+        "semantic_roles": [
+            {
+                "text": "FindSelectedProducts",
+                "lemma": "findselectedproduct",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_38": {
+        "label": "func_38",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js",
+        "semantic_roles": [
+            {
+                "text": "func_38",
+                "lemma": "func_38",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetProducts": {
+        "label": "GetProducts",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetProducts",
+                "lemma": "getproduct",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_22": {
+        "label": "func_22",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": []
+    },
+    "GetProductDescription": {
+        "label": "GetProductDescription",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetProductDescription",
+                "lemma": "GetProductDescription",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetProductsByCategory": {
+        "label": "GetProductsByCategory",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetProductsByCategory",
+                "lemma": "getproductsbycategory",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetSelectedProducts": {
+        "label": "GetSelectedProducts",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetSelectedProducts",
+                "lemma": "getselectedproduct",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetProductPayload": {
+        "label": "GetProductPayload",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\services\\product-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetProductPayload",
+                "lemma": "GetProductPayload",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_21": {
+        "label": "func_21",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_21",
+                "lemma": "func_21",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_60": {
+        "label": "func_60",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_60",
+                "lemma": "func_60",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_82": {
+        "label": "func_82",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_82",
+                "lemma": "func_82",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_93": {
+        "label": "func_93",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\products\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_93",
+                "lemma": "func_93",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_48": {
+        "label": "func_48",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js",
+        "semantic_roles": []
+    },
+    "func_68": {
+        "label": "func_68",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\api\\shopping.js",
+        "semantic_roles": [
+            {
+                "text": "func_68",
+                "lemma": "func_68",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "Orders": {
+        "label": "Orders",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "Orders",
+                "lemma": "order",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "Cart": {
+        "label": "Cart",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "Cart",
+                "lemma": "cart",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "CreateNewOrder": {
+        "label": "CreateNewOrder",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "CreateNewOrder",
+                "lemma": "createneworder",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_91": {
+        "label": "func_91",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\database\\repository\\shopping-repository.js",
+        "semantic_roles": [
+            {
+                "text": "func_91",
+                "lemma": "func_91",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetCart": {
+        "label": "GetCart",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetCart",
+                "lemma": "getcart",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "PlaceOrder": {
+        "label": "PlaceOrder",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "PlaceOrder",
+                "lemma": "PlaceOrder",
+                "pos": "PROPN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetOrders": {
+        "label": "GetOrders",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetOrders",
+                "lemma": "getorder",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetOrderDetails": {
+        "label": "GetOrderDetails",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": [
+            {
+                "text": "GetOrderDetails",
+                "lemma": "getorderdetail",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "GetOrderPayload": {
+        "label": "GetOrderPayload",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\services\\shopping-service.js",
+        "semantic_roles": []
+    },
+    "func_71": {
+        "label": "func_71",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_71",
+                "lemma": "func_71",
+                "pos": "NOUN",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_76": {
+        "label": "func_76",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_76",
+                "lemma": "func_76",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    },
+    "func_85": {
+        "label": "func_85",
+        "code": "F:\\Main Project\\Shoping Microservice\\nodejs_microservice-master\\shopping\\src\\utils\\index.js",
+        "semantic_roles": [
+            {
+                "text": "func_85",
+                "lemma": "func_85",
+                "pos": "VERB",
+                "dep": "ROOT"
+            }
+        ]
+    }
+}

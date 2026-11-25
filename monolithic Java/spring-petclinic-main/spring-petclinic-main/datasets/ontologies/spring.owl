@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://petclinic.semantic.graph#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Specialties_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Specialties Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_NamedEntity_setName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.NamedEntity.setName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Name"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Name_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_setAllowedFields">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Allowed"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Allowed_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_getTelephone">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.getTelephone</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Telephone"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Telephone_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_addVisit">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.addVisit</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Visit"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Visit_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_findPet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.findPet</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WebConfiguration">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WebConfiguration</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Web"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_NamedEntity_getName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.NamedEntity.getName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Name"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Name_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_getType">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.getType</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Type"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Type_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_Person_getLastName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.Person.getLastName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Last"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Last_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetValidator_validate">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetValidator.validate</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_findOwner">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.findOwner</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Owner_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WelcomeController_welcome">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WelcomeController.welcome</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_processUpdateOwnerForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Owner_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Allowed_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Allowed Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetController_findPaginated">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetController.findPaginated</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Paginated"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Paginated_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_processUpdateForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.processUpdateForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Form"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Form_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Cache">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Cache</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Birth_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Birth Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_initPetBinder">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.initPetBinder</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#By">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>By</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WebConfiguration_localeChangeInterceptor">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WebConfiguration.localeChangeInterceptor</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Change"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vet</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_NamedEntity_toString">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.NamedEntity.toString</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#String"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vet_addSpecialty">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vet.addSpecialty</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Specialty"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Specialty_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerRepository_findByLastNameStartingWith">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerRepository.findByLastNameStartingWith</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#By"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#By_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WebConfiguration_addInterceptors">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WebConfiguration.addInterceptors</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Interceptors"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Interceptors_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Creation_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Creation Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Resources_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Resources Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Paginated_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Paginated Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Form">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Form</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_setCity">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.setCity</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#City"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#City_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_initUpdateOwnerForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Update"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Update_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_initOwnerBinder">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.initOwnerBinder</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Owner_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_getPets">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.getPets</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pets"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pets_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_getAddress">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.getAddress</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Address"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Address_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Visit_getDescription">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Visit.getDescription</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Description"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Description_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_BaseEntity_isNew">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.BaseEntity.isNew</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#New"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Visits_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Visits Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_findPaginatedForOwnersLastName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Paginated"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Paginated_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_populatePetTypes">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.populatePetTypes</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_CacheConfiguration_cacheConfiguration">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Configuration"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Address_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Address Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Paginated">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Paginated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_BaseEntity">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.BaseEntity</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Base"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Vets">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Vets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#General_Processing">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>General Processing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_CrashController_triggerException">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.CrashController.triggerException</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Exception"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_setType">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.setType</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Type"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Type_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Last_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Last Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetValidator">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetValidator</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetTypeFormatter">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetTypeFormatter</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_processCreationForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.processCreationForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Creation"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor_parseFile">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor.parseFile</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#File"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vets">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vets</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vets"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Form_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Form Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerRepository_findById">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerRepository.findById</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#By"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#By_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_CrashController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.CrashController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Crash"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pet_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Pet Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_NamedEntity">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.NamedEntity</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Named"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_PetClinicRuntimeHints_registerHints">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Hints"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Hints_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetTypeRepository">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetTypeRepository</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_getPet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.getPet</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#First_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>First Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Allowed">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Allowed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetController_showResourcesVetList">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetController.showResourcesVetList</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Resources"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Resources_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#File">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>File</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_processFindForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.processFindForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Form"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Form_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vet_getSpecialtiesInternal">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Specialties"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Specialties_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Hints_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Hints Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_setBirthDate">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.setBirthDate</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Birth"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Birth_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor_exportStaticGraphGML">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor.exportStaticGraphGML</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Static"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor_main">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor.main</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_setTelephone">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.setTelephone</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Telephone"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Telephone_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vet_getNrOfSpecialties">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Nr"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Nr_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetTypeFormatter_parse">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetTypeFormatter.parse</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Id_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Id Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_PetClinicRuntimeHints">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.PetClinicRuntimeHints</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#hasBusinessRole">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Telephone_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Telephone Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_setAddress">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.setAddress</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Address"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Address_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerRepository">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerRepository</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Visit_getDate">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Visit.getDate</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Date"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Date_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Base">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Base</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pet_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Pet Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Visit_setDate">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Visit.setDate</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Date"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Date_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_BaseEntity_getId">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.BaseEntity.getId</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Id"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Id_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Update_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Update Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_showOwner">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.showOwner</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Owner_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_CacheConfiguration">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.CacheConfiguration</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Cache"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Visit">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Visit</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Visit"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Name_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Name Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Find">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Find</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vet_getSpecialties">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vet.getSpecialties</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Specialties"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Specialties_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_initCreationForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.initCreationForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Creation"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Creation_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Crash">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Crash</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetTypeRepository_findPetTypes">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetTypeRepository.findPetTypes</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Telephone_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Telephone Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_initCreationForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.initCreationForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Creation"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Creation_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_VisitController_processNewVisitForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#New"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#All_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>All Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_BaseEntity_setId">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.BaseEntity.setId</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Id"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Id_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Visit_setDescription">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Visit.setDescription</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Description"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Description_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Delete">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_getCity">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.getCity</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#City"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#City_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Owner_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Owner Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Date_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Date Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Type">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Semantic">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Semantic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Last_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Last Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Vet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Vet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_toString">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.toString</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#String"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_Person">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.Person</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Person"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Creation">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Creation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_addPaginationModel">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pagination"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pagination_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_findOwner">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.findOwner</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Owner_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_PetClinicApplication">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.PetClinicApplication</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Static">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Static</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pagination">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Pagination</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Address">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Address</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_CacheConfiguration_petclinicCacheConfigurationCustomizer">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Cache"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_VisitController_setAllowedFields">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.VisitController.setAllowedFields</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Allowed"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Allowed_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Interceptors_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Interceptors Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Birth_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Birth Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_getVisits">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.getVisits</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Visits"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Visits_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_VisitController_initNewVisitForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#New"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#New_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetRepository_findAll">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetRepository.findAll</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#All"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#All_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController_initFindForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController.initFindForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Find"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Find_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_updatePetDetails">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.updatePetDetails</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#First">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>First</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetValidator_supports">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetValidator.supports</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Configuration">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Configuration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_Person_getFirstName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.Person.getFirstName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#First"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#First_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Id">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WelcomeController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WelcomeController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Welcome"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Exception">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Exception</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Description">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_Person_setFirstName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.Person.setFirstName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#First"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#First_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetController_showVetList">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetController.showVetList</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Vet_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_system_WebConfiguration_localeResolver">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.system.WebConfiguration.localeResolver</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Resolver"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Specialty_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Specialty Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#City">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>City</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor_exportSemanticGraphML">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor.exportSemanticGraphML</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Semantic"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_processCreationForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.processCreationForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Creation"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_OwnerController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.OwnerController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Owner"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_VisitController_loadPetWithVisit">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_VisitController">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.VisitController</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Visit"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_addVisit">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.addVisit</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Visit"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Visit_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Person">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Hints">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Hints</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Type_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Type Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#All">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>All</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#hasDomainConcept">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet_getBirthDate">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet.getBirthDate</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Birth"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Birth_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Specialties">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Specialties</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Date">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Nr_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Nr Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#APIEndpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Visit_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Visit Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Description_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Description Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Vet_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Vet Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Specialty">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Specialty</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Specialty"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#CRUDIntent">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#String">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>String</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#First_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>First Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetRepository">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetRepository</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pets_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Pets Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetType">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetType</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Visits">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Visits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Id_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Id Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Find_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Find Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Resources">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Resources</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Nr">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Nr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Update">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#CRUDIntent"/>
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Update</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#City_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>City Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_VetController_addPaginationModel">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.VetController.addPaginationModel</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pagination"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pagination_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_vet_Vets_getVetList">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.vet.Vets.getVetList</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Vet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Vet_Read_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Named">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Named</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetTypeFormatter_print">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetTypeFormatter.print</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Pet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Type_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Type Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Name">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Pet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Pet</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Description_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Description Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Unknown">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Unknown</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#By_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>By Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_Owner_addPet">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.Owner.addPet</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Pet"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Pet_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_model_Person_setLastName">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.model.Person.setLastName</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Last"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Last_Update_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Update"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pets">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Pets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#addPetEndpoint">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#APIEndpoint"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+    <rdfs:label>POST /owners/{ownerId}/pets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Owner_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Owner Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Date_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Date Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pagination_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Pagination Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Owner_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Owner Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Welcome">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Welcome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#tools_PetClinicGraphExtractor_exportSemanticJSON">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>tools.PetClinicGraphExtractor.exportSemanticJSON</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Semantic"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_owner_PetController_initUpdateForm">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.owner.PetController.initUpdateForm</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Update"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#Update_Create_Service"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Birth">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Birth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Visit">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Visit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Specialty">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Specialty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Pet_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Pet Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Address_Read_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Address Read Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Owner">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Owner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#BusinessRole">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#org_springframework_samples_petclinic_PetClinicApplication_main">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#Function"/>
+    <rdfs:label>org.springframework.samples.petclinic.PetClinicApplication.main</rdfs:label>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Unknown"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#General_Processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Create">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Read">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#City_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>City Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Resolver">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Resolver</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Last">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Last</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Change">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Change</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Interceptors">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Interceptors</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#New_Create_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>New Create Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Telephone">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Telephone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Name_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Name Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#New">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>New</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#DomainConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Process">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#hasCRUDIntent">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Form_Update_Service">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#BusinessRole"/>
+    <rdfs:label>Form Update Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://petclinic.semantic.graph#Web">
+    <rdf:type rdf:resource="http://petclinic.semantic.graph#DomainConcept"/>
+    <rdfs:label>Web</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

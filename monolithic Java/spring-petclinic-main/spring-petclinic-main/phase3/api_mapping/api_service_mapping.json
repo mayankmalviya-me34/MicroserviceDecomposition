@@ -1,0 +1,104 @@
+[
+  {
+    "endpoint": "/owners/new",
+    "method": "GET",
+    "business_role": "Findowner Query Service",
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "/owners/new",
+    "method": "POST",
+    "business_role": "Owner Processing Service",
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "/owners/find",
+    "method": "GET",
+    "business_role": "Findowner Query Service",
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "/owners",
+    "method": "GET",
+    "business_role": "Owner Processing Service",
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}/edit",
+    "method": "GET",
+    "business_role": "Owner Processing Service",
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}/edit",
+    "method": "POST",
+    "business_role": "Owner Processing Service",
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}",
+    "method": "GET",
+    "business_role": "Findowner Query Service",
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}",
+    "method": "REQUEST",
+    "business_role": "Owner Processing Service",
+    "cluster_id": "OwnerService"
+  },
+  {
+    "endpoint": "/pets/new",
+    "method": "GET",
+    "business_role": "Getpets Query Service",
+    "cluster_id": "GetpetsService"
+  },
+  {
+    "endpoint": "/pets/new",
+    "method": "POST",
+    "business_role": "Addpet Creation Service",
+    "cluster_id": "AddpetService"
+  },
+  {
+    "endpoint": "/pets/{petId}/edit",
+    "method": "GET",
+    "business_role": "Petvalidator Processing Service",
+    "cluster_id": "PetvalidatorService"
+  },
+  {
+    "endpoint": "/pets/{petId}/edit",
+    "method": "POST",
+    "business_role": "Petvalidator Processing Service",
+    "cluster_id": "PetvalidatorService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}/pets/{petId}/visits/new",
+    "method": "GET",
+    "business_role": "Findowner Query Service",
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}/pets/{petId}/visits/new",
+    "method": "POST",
+    "business_role": "Findowner Query Service",
+    "cluster_id": "FindownerService"
+  },
+  {
+    "endpoint": "/oups",
+    "method": "GET",
+    "business_role": "Getvisits Query Service",
+    "cluster_id": "GetvisitsService"
+  },
+  {
+    "endpoint": "/",
+    "method": "GET",
+    "business_role": "Gettype Query Service",
+    "cluster_id": "GettypeService"
+  },
+  {
+    "endpoint": "/vets.html",
+    "method": "GET",
+    "business_role": "Vets Processing Service",
+    "cluster_id": "VetsService"
+  }
+]

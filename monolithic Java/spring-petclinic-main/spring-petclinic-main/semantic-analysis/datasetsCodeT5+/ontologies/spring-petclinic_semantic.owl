@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ex="http://petclinic.semantic.graph#"
+>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_tools_PetClinicGraphExtractor_main">
+    <rdfs:label>...src.main.tools.PetClinicGraphExtractor.main</rdfs:label>
+    <ex:hasComment>---------- Static Graph ----------</ex:hasComment>
+    <ex:hasComment>---------- Function-level Semantic Data ----------</ex:hasComment>
+    <ex:hasComment>-------- Imports --------</ex:hasComment>
+    <ex:hasComment>-------- Static Call Graph --------</ex:hasComment>
+    <ex:hasComment>-------- Semantic JSON (Function Level) --------</ex:hasComment>
+    <ex:hasComment>================= STATIC GRAPH =================</ex:hasComment>
+    <ex:hasComment>================= SEMANTIC JSON =================</ex:hasComment>
+    <ex:hasComment>================= SEMANTIC GRAPHML =================</ex:hasComment>
+    <ex:hasComment>graphml.graphdrawing.org/xmlns");</ex:hasComment>
+    <ex:hasComment>* * Extracts static and semantic graphs from the Spring PetClinic project.</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Static">
+        <rdfs:label>Static</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#function">
+        <rdfs:label>function</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#import">
+        <rdfs:label>import</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#call">
+        <rdfs:label>call</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#JSON">
+        <rdfs:label>JSON</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#_">
+        <rdfs:label>=</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#graphml_graphdrawing_org_xmlns">
+        <rdfs:label>graphml.graphdrawing.org/xmlns</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#graph">
+        <rdfs:label>graph</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#UNKNOWN">
+        <rdfs:label>UNKNOWN</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Semantic_Data">
+        <rdfs:label>Semantic Data</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#GRAPHML">
+        <rdfs:label>GRAPHML</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Spring">
+        <rdfs:label>Spring</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#PetClinic">
+        <rdfs:label>PetClinic</rdfs:label>
+      </ex:DomainConcept>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_vet_VetControllerTests_james">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.vet.VetControllerTests.james</rdfs:label>
+    <ex:hasComment>* * Test class for the {@link VetController}</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#test">
+        <rdfs:label>test</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#CONTROLLER">
+        <rdfs:label>CONTROLLER</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#VetController">
+        <rdfs:label>VetController</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_PetClinicIntegrationTests_testFindAll">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.PetClinicIntegrationTests.testFindAll</rdfs:label>
+    <ex:hasComment>served from cache</ex:hasComment>
+    <ex:hasComment>localhost:" + port).build();</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#cache">
+        <rdfs:label>cache</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#localhost">
+        <rdfs:label>localhost</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_owner_PetTypeFormatterTests_setup">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.owner.PetTypeFormatterTests.setup</rdfs:label>
+    <ex:hasComment>* * Test class for {@link PetTypeFormatter} * * @author Colin But</ex:hasComment>
+    <ex:hasComment>* * Helper method to produce some sample pet types just for test purpose * @return {@link Collection} of {@link PetType}</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#helper">
+        <rdfs:label>helper</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Colin">
+        <rdfs:label>Colin</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#PetType_">
+        <rdfs:label>PetType}</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_model_NamedEntity_getName">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.model.NamedEntity.getName</rdfs:label>
+    <ex:hasComment><![CDATA[* * Simple JavaBean domain object adds a name property to <code>BaseEntity</code>. Used as * a base class for objects needing these properties. * * @author Ken Krebs * @author Juergen Hoeller * @author Wick Dynex]]></ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#JavaBean">
+        <rdfs:label>JavaBean</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#ENTITY">
+        <rdfs:label>ENTITY</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:hasCRUDIntent>
+      <ex:CRUDIntent rdf:about="http://petclinic.semantic.graph#CREATE">
+        <rdfs:label>CREATE</rdfs:label>
+      </ex:CRUDIntent>
+    </ex:hasCRUDIntent>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Ken_Krebs__">
+        <rdfs:label>Ken Krebs *</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Juergen_Hoeller">
+        <rdfs:label>Juergen Hoeller</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Wick_Dynex">
+        <rdfs:label>Wick Dynex</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_owner_PetControllerTests_setup">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.owner.PetControllerTests.setup</rdfs:label>
+    <ex:hasComment>* * Test class for the {@link PetController} * * @author Colin But * @author Wick Dynex</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#COMPONENT">
+        <rdfs:label>COMPONENT</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#PetController">
+        <rdfs:label>PetController</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Colin"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_service_EntityUtils_getById">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.service.EntityUtils.getById</rdfs:label>
+    <ex:hasComment>* * Utility methods for handling entities. Separate from the BaseEntity class mainly * because of dependency on the ORM-associated ObjectRetrievalFailureException. * * @author Juergen Hoeller * @author Sam Brannen * @see org.springframework.samples.petclinic.model.BaseEntity * @since 29.10.2003</ex:hasComment>
+    <ex:hasComment>* * Look up the entity of the given class with the given id in the given collection. * @param entities the collection to search * @param entityClass the entity class to look up * @param entityId the entity id to look up * @return the found entity * @throws ObjectRetrievalFailureException if the entity was not found</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#utility">
+        <rdfs:label>utility</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#entity">
+        <rdfs:label>entity</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#SERVICE">
+        <rdfs:label>SERVICE</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#BaseEntity">
+        <rdfs:label>BaseEntity</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Sam_Brannen__">
+        <rdfs:label>Sam Brannen *</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent>
+      <ex:CRUDIntent rdf:about="http://petclinic.semantic.graph#READ">
+        <rdfs:label>READ</rdfs:label>
+      </ex:CRUDIntent>
+    </ex:hasCRUDIntent>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_system_CrashControllerTests_CrashController">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.system.CrashControllerTests.CrashController</rdfs:label>
+    <ex:hasComment>Waiting https://github.com/spring-projects/spring-boot/issues/5574 ..good</ex:hasComment>
+    <ex:hasComment>luck ((plain(st) UNIT test)! :)</ex:hasComment>
+    <ex:hasComment>* * Test class for {@link CrashController} * * @author Colin But * @author Alex Lutz</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#https___github_com_spring_projects_spring_boot_issues_5574">
+        <rdfs:label>https://github.com/spring-projects/spring-boot/issues/5574</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#luck">
+        <rdfs:label>luck</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#plain_st">
+        <rdfs:label>plain(st</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Colin"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Alex_Lutz">
+        <rdfs:label>Alex Lutz</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_PetClinicApplication_main">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.PetClinicApplication.main</rdfs:label>
+    <ex:hasComment>* * PetClinic Spring Boot Application. * * @author Dave Syer</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#PetClinic"/>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#APPLICATION">
+        <rdfs:label>APPLICATION</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#PetClinic_Spring_Boot_Application">
+        <rdfs:label>PetClinic Spring Boot Application</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Dave_Syer">
+        <rdfs:label>Dave Syer</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_PetTypeFormatter_PetTypeFormatter">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.PetTypeFormatter.PetTypeFormatter</rdfs:label>
+    <ex:hasComment>docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format</ex:hasComment>
+    <ex:hasComment>* * Instructs Spring MVC on how to parse and print elements of type 'PetType'. Starting * from Spring 3.0, Formatters have come as an improvement in comparison to legacy * PropertyEditors. See the following links for more details: - The Spring ref doc: * https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format * * @author Mark Fisher * @author Juergen Hoeller * @author Michael Isvy</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#docs_spring_io_spring_framework_docs_current_spring_framework_reference_core_html_format">
+        <rdfs:label>docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#instruct">
+        <rdfs:label>instruct</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#COMPONENT"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#PetType">
+        <rdfs:label>PetType</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Spring_3_0">
+        <rdfs:label>Spring 3.0</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Formatters">
+        <rdfs:label>Formatters</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Spring"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Mark_Fisher">
+        <rdfs:label>Mark Fisher</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Michael_Isvy">
+        <rdfs:label>Michael Isvy</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_vet_VetController_VetController">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.vet.VetController.VetController</rdfs:label>
+    <ex:hasComment>Here we are returning an object of type 'Vets' rather than a collection of Vet</ex:hasComment>
+    <ex:hasComment>objects so it is simpler for Object-Xml mapping</ex:hasComment>
+    <ex:hasComment>objects so it is simpler for JSon/Object mapping</ex:hasComment>
+    <ex:hasComment>* * @author Juergen Hoeller * @author Mark Fisher * @author Ken Krebs * @author Arjen Poutsma</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#object">
+        <rdfs:label>object</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#_author">
+        <rdfs:label>@author</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Vet">
+        <rdfs:label>Vet</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#JSon">
+        <rdfs:label>JSon</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Mark_Fisher"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Ken_Krebs">
+        <rdfs:label>Ken Krebs</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Arjen_Poutsma">
+        <rdfs:label>Arjen Poutsma</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_service_ClinicServiceTests_shouldFindOwnersByLastName">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.service.ClinicServiceTests.shouldFindOwnersByLastName</rdfs:label>
+    <ex:hasComment>Ensure that if the mysql profile is active we connect to the real database:</ex:hasComment>
+    <ex:hasComment>@TestPropertySource("/application-postgres.properties")</ex:hasComment>
+    <ex:hasComment>retrieving new name from database</ex:hasComment>
+    <ex:hasComment>checks that id has been generated</ex:hasComment>
+    <ex:hasComment><![CDATA[* * Integration test of the Service and the Repository layer. * <p> * ClinicServiceSpringDataJpaTests subclasses benefit from the following services provided * by the Spring TestContext Framework: * </p> * <ul> * <li><strong>Spring IoC container caching</strong> which spares us unnecessary set up * time between test execution.</li> * <li><strong>Dependency Injection</strong> of test fixture instances, meaning that we * don't need to perform application context lookups. See the use of * {@link Autowired @Autowired} on the <code> </code> instance variable, which uses * autowiring <em>by type</em>. * <li><strong>Transaction management</strong>, meaning each test method is executed in * its own transaction, which is automatically rolled back by default. Thus, even if tests * insert or otherwise change database state, there is no need for a teardown or cleanup * script. * <li>An {@link org.springframework.context.ApplicationContext ApplicationContext} is * also inherited and can be used for explicit bean lookup if necessary.</li> * </ul> * * @author Ken Krebs * @author Rod Johnson * @author Juergen Hoeller * @author Sam Brannen * @author Michael Isvy * @author Dave Syer]]></ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#mysql">
+        <rdfs:label>mysql</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#_testpropertysource___application">
+        <rdfs:label>@testpropertysource("/application</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#name">
+        <rdfs:label>name</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#check">
+        <rdfs:label>check</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#integration">
+        <rdfs:label>integration</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#SERVICE"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+    <ex:hasCRUDIntent>
+      <ex:CRUDIntent rdf:about="http://petclinic.semantic.graph#UPDATE">
+        <rdfs:label>UPDATE</rdfs:label>
+      </ex:CRUDIntent>
+    </ex:hasCRUDIntent>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Repository">
+        <rdfs:label>Repository</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Rod_Johnson">
+        <rdfs:label>Rod Johnson</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Dave_Syer"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_VisitController_VisitController">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.VisitController.VisitController</rdfs:label>
+    <ex:hasComment>Spring MVC calls method loadPetWithVisit(...) before initNewVisitForm is</ex:hasComment>
+    <ex:hasComment>called</ex:hasComment>
+    <ex:hasComment>Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is</ex:hasComment>
+    <ex:hasComment>* * @author Juergen Hoeller * @author Ken Krebs * @author Arjen Poutsma * @author Michael Isvy * @author Dave Syer * @author Wick Dynex</ex:hasComment>
+    <ex:hasComment>* * Called before each and every @RequestMapping annotated method. 2 goals: - Make sure * we always have fresh data - Since we do not use the session scope, make sure that * Pet object always has an id (Even though id is not part of the form fields) * @param petId * @return Pet</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#Spring"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_author"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#method">
+        <rdfs:label>method</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#MVC">
+        <rdfs:label>MVC</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Arjen_Poutsma"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Dave_Syer__">
+        <rdfs:label>Dave Syer *</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#2">
+        <rdfs:label>2</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_Owner_getAddress">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.Owner.getAddress</rdfs:label>
+    <ex:hasComment>* * Simple JavaBean domain object representing an owner. * * @author Ken Krebs * @author Juergen Hoeller * @author Sam Brannen * @author Michael Isvy * @author Oliver Drotbohm * @author Wick Dynex</ex:hasComment>
+    <ex:hasComment>* * Return the Pet with the given name, or null if none found for this Owner. * @param name to test * @return the Pet with the given name, or null if no such Pet exists for this Owner</ex:hasComment>
+    <ex:hasComment>* * Return the Pet with the given id, or null if none found for this Owner. * @param id to test * @return the Pet with the given id, or null if no such Pet exists for this Owner</ex:hasComment>
+    <ex:hasComment>* * Return the Pet with the given name, or null if none found for this Owner. * @param name to test * @param ignoreNew whether to ignore new pets (pets that are not saved yet) * @return the Pet with the given name, or null if no such Pet exists for this Owner</ex:hasComment>
+    <ex:hasComment>* * Adds the given {@link Visit} to the {@link Pet} with the given identifier. * @param petId the identifier of the {@link Pet}, must not be {@literal null}. * @param visit the visit to add, must not be {@literal null}.</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#JavaBean"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Pet">
+        <rdfs:label>Pet</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#_link">
+        <rdfs:label>@link</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Oliver_Drotbohm">
+        <rdfs:label>Oliver Drotbohm</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Owner">
+        <rdfs:label>Owner</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#CREATE"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_PetController_PetController">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.PetController.PetController</rdfs:label>
+    <ex:hasComment>checking if the pet name already exists for the owner</ex:hasComment>
+    <ex:hasComment>Update existing pet's properties</ex:hasComment>
+    <ex:hasComment>* * @author Juergen Hoeller * @author Ken Krebs * @author Arjen Poutsma * @author Wick Dynex</ex:hasComment>
+    <ex:hasComment>* * Updates the pet details if it exists or adds a new pet to the owner. * @param owner The owner of the pet * @param pet The pet with updated details</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#name"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#pet">
+        <rdfs:label>pet</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_author"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#detail">
+        <rdfs:label>detail</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#UPDATE"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Arjen_Poutsma"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_system_I18nPropertiesSyncTest_checkNonInternationalizedStrings">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.system.I18nPropertiesSyncTest.checkNonInternationalizedStrings</rdfs:label>
+    <ex:hasComment>") || line.startsWith("@") || line.contains("log.")</ex:hasComment>
+    <ex:hasComment>We use fallback logic to include english strings, hence messages_en is not</ex:hasComment>
+    <ex:hasComment>populated.</ex:hasComment>
+    <ex:hasComment>* * This test ensures that there are no hard-coded strings without internationalization in * any HTML files. Also ensures that a string is translated in every language to avoid * partial translations. * * @author Anuj Ashok Potdar</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#__">
+        <rdfs:label>||</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#logic">
+        <rdfs:label>logic</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#english">
+        <rdfs:label>english</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#messages_en">
+        <rdfs:label>messages_en</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#HTML">
+        <rdfs:label>HTML</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Anuj_Ashok_Potdar">
+        <rdfs:label>Anuj Ashok Potdar</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_OwnerController_OwnerController">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.OwnerController.OwnerController</rdfs:label>
+    <ex:hasComment>allow parameterless GET request for /owners to return all records</ex:hasComment>
+    <ex:hasComment>empty string signifies broadest possible search</ex:hasComment>
+    <ex:hasComment>find owners by last name</ex:hasComment>
+    <ex:hasComment>no owners found</ex:hasComment>
+    <ex:hasComment>1 owner found</ex:hasComment>
+    <ex:hasComment>multiple owners found</ex:hasComment>
+    <ex:hasComment>* * @author Juergen Hoeller * @author Ken Krebs * @author Arjen Poutsma * @author Michael Isvy * @author Wick Dynex</ex:hasComment>
+    <ex:hasComment>* * Custom handler for displaying an owner. * @param ownerId the ID of the owner to display * @return a ModelMap with the model attributes for the view</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#GET">
+        <rdfs:label>GET</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#string">
+        <rdfs:label>string</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#owner">
+        <rdfs:label>owner</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_author"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Custom">
+        <rdfs:label>Custom</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#1">
+        <rdfs:label>1</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Arjen_Poutsma"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#ModelMap">
+        <rdfs:label>ModelMap</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_system_CrashControllerIntegrationTests_testTriggerExceptionJson">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.system.CrashControllerIntegrationTests.testTriggerExceptionJson</rdfs:label>
+    <ex:hasComment>NOT Waiting https://github.com/spring-projects/spring-boot/issues/5574</ex:hasComment>
+    <ex:hasComment>localhost:" + port + "/oups").build(),</ex:hasComment>
+    <ex:hasComment>localhost:" + port + "/oups", HttpMethod.GET,</ex:hasComment>
+    <ex:hasComment>html:</ex:hasComment>
+    <ex:hasComment>Not the whitelabel error page:</ex:hasComment>
+    <ex:hasComment>* * Integration Test for {@link CrashController}. * * @author Alex Lutz</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#https___github_com_spring_projects_spring_boot_issues_5574"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#localhost"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#html">
+        <rdfs:label>html</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#whitelabel">
+        <rdfs:label>whitelabel</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Integration">
+        <rdfs:label>Integration</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#HttpMethod">
+        <rdfs:label>HttpMethod</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Alex_Lutz"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_Visit_Visit">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.Visit.Visit</rdfs:label>
+    <ex:hasComment>* * Simple JavaBean domain object representing a visit. * * @author Ken Krebs * @author Dave Syer</ex:hasComment>
+    <ex:hasComment>* * Creates a new instance of Visit for the current date</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#JavaBean"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#instance">
+        <rdfs:label>instance</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Dave_Syer"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#CREATE"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_OwnerRepository_findByLastNameStartingWith">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.OwnerRepository.findByLastNameStartingWith</rdfs:label>
+    <ex:hasComment>docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation</ex:hasComment>
+    <ex:hasComment><![CDATA[* * Repository class for <code>Owner</code> domain objects. All method names are compliant * with Spring Data naming conventions so this interface can easily be extended for Spring * Data. See: * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation * * @author Ken Krebs * @author Juergen Hoeller * @author Sam Brannen * @author Michael Isvy * @author Wick Dynex]]></ex:hasComment>
+    <ex:hasComment><![CDATA[* * Retrieve {@link Owner}s from the data store by last name, returning all owners * whose last name <i>starts</i> with the given name. * @param lastName Value to search for * @return a Collection of matching {@link Owner}s (or an empty Collection if none * found)]]></ex:hasComment>
+    <ex:hasComment><![CDATA[* * Retrieve an {@link Owner} from the data store by id. * <p> * This method returns an {@link Optional} containing the {@link Owner} if found. If * no {@link Owner} is found with the provided id, it will return an empty * {@link Optional}. * </p> * @param id the id to search for * @return an {@link Optional} containing the {@link Owner} if found, or an empty * {@link Optional} if not found. * @throws IllegalArgumentException if the id is null (assuming null is not a valid * input for id)]]></ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#docs_spring_io_spring_data_jpa_docs_current_reference_html__repositories_query_methods_query_creation">
+        <rdfs:label>docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#repository">
+        <rdfs:label>repository</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#retrieve">
+        <rdfs:label>retrieve</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_link"/>
+    <ex:hasBusinessRole>
+      <ex:BusinessRole rdf:about="http://petclinic.semantic.graph#REPOSITORY">
+        <rdfs:label>REPOSITORY</rdfs:label>
+      </ex:BusinessRole>
+    </ex:hasBusinessRole>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Spring_Data">
+        <rdfs:label>Spring Data</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Spring___Data">
+        <rdfs:label>Spring * Data</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Collection">
+        <rdfs:label>Collection</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#IllegalArgumentException">
+        <rdfs:label>IllegalArgumentException</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_system_CrashController_added">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.system.CrashController.added</rdfs:label>
+    <ex:hasComment><![CDATA[* * Controller used to showcase what happens when an exception is thrown * * @author Michael Isvy * <p/> * Also see how a view that resolves to "error" has been added ("error.html").]]></ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Controller">
+        <rdfs:label>Controller</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#CREATE"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#error_html">
+        <rdfs:label>error.html</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_vet_VetRepository_findAll">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.vet.VetRepository.findAll</rdfs:label>
+    <ex:hasComment>docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation</ex:hasComment>
+    <ex:hasComment><![CDATA[* * Repository class for <code>Vet</code> domain objects All method names are compliant * with Spring Data naming conventions so this interface can easily be extended for Spring * Data. See: * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation * * @author Ken Krebs * @author Juergen Hoeller * @author Sam Brannen * @author Michael Isvy]]></ex:hasComment>
+    <ex:hasComment><![CDATA[* * Retrieve all <code>Vet</code>s from the data store. * @return a <code>Collection</code> of <code>Vet</code>s]]></ex:hasComment>
+    <ex:hasComment><![CDATA[* * Retrieve all <code>Vet</code>s from data store in Pages * @param pageable * @return * @throws DataAccessException]]></ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#docs_spring_io_spring_data_jpa_docs_current_reference_html__repositories_query_methods_query_creation"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#repository"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#code">
+        <rdfs:label>code</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#REPOSITORY"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Spring_Data"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Spring___Data"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Michael_Isvy"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Pages">
+        <rdfs:label>Pages</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_owner_OwnerControllerTests_george">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.owner.OwnerControllerTests.george</rdfs:label>
+    <ex:hasComment>* * Test class for {@link OwnerController} * * @author Colin But * @author Wick Dynex</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#OwnerController">
+        <rdfs:label>OwnerController</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Colin"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_vet_Vets_getVetList">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.vet.Vets.getVetList</rdfs:label>
+    <ex:hasComment>* * Simple domain object representing a list of veterinarians. Mostly here to be used for * the 'vets' {@link org.springframework.web.servlet.view.xml.MarshallingView}. * * @author Arjen Poutsma</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#domain">
+        <rdfs:label>domain</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Arjen_Poutsma"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_system_CacheConfiguration_petclinicCacheConfigurationCustomizer">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer</rdfs:label>
+    <ex:hasComment>* * Cache configuration intended for caches providing the JCache API. This configuration * creates the used cache for the application and enables statistics that become * accessible via JMX.</ex:hasComment>
+    <ex:hasComment><![CDATA[* * Create a simple configuration that enable statistics via the JCache programmatic * configuration API. * <p> * Within the configuration object that is provided by the JCache API standard, there * is only a very limited set of configuration options. The really relevant * configuration options (like the size limit) must be set via a configuration * mechanism that is provided by the selected JCache implementation.]]></ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#cache"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#configuration">
+        <rdfs:label>configuration</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#CREATE"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#UPDATE"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#the_JCache_API">
+        <rdfs:label>the JCache API</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#JMX">
+        <rdfs:label>JMX</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#JCache">
+        <rdfs:label>JCache</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#API">
+        <rdfs:label>API</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#JCache_API">
+        <rdfs:label>JCache API</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_vet_Vet_getSpecialtiesInternal">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal</rdfs:label>
+    <ex:hasComment>* * Simple JavaBean domain object representing a veterinarian. * * @author Ken Krebs * @author Juergen Hoeller * @author Sam Brannen * @author Arjen Poutsma</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#JavaBean"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Arjen_Poutsma"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_MySqlIntegrationTests_testFindAll">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.MySqlIntegrationTests.testFindAll</rdfs:label>
+    <ex:hasComment>served from cache</ex:hasComment>
+    <ex:hasComment>localhost:" + port).build();</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#cache"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#localhost"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#SERVICE"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_Pet_setBirthDate">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.Pet.setBirthDate</rdfs:label>
+    <ex:hasComment>* * Simple business object representing a pet. * * @author Ken Krebs * @author Juergen Hoeller * @author Sam Brannen * @author Wick Dynex</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#business">
+        <rdfs:label>business</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Sam_Brannen__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_system_WebConfiguration_internationalization">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.system.WebConfiguration.internationalization</rdfs:label>
+    <ex:hasComment><![CDATA[* * Configures internationalization (i18n) support for the application. * * <p> * Handles loading language-specific messages, tracking the user's language, and allowing * language changes via the URL parameter (e.g., <code>?lang=de</code>). * </p> * * @author Anuj Ashok Potdar]]></ex:hasComment>
+    <ex:hasComment>* * Uses session storage to remember the user’s language setting across requests. * Defaults to English if nothing is specified. * @return session-based {@link LocaleResolver}</ex:hasComment>
+    <ex:hasComment><![CDATA[* * Allows the app to switch languages using a URL parameter like * <code>?lang=es</code>. * @return a {@link LocaleChangeInterceptor} that handles the change]]></ex:hasComment>
+    <ex:hasComment>* * Registers the locale change interceptor so it can run on each request. * @param registry where interceptors are added</ex:hasComment>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Configures">
+        <rdfs:label>Configures</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#use">
+        <rdfs:label>use</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#app">
+        <rdfs:label>app</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#register">
+        <rdfs:label>register</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Anuj_Ashok_Potdar"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#English">
+        <rdfs:label>English</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#UPDATE"/>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#CREATE"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_PetValidator_validate">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.PetValidator.validate</rdfs:label>
+    <ex:hasComment>name validation</ex:hasComment>
+    <ex:hasComment>type validation</ex:hasComment>
+    <ex:hasComment>birth date validation</ex:hasComment>
+    <ex:hasComment><![CDATA[* * <code>Validator</code> for <code>Pet</code> forms. * <p> * We're not using Bean Validation annotations here because it is easier to define such * validation rule in Java. * </p> * * @author Ken Krebs * @author Juergen Hoeller]]></ex:hasComment>
+    <ex:hasComment>* * This Validator validates *just* Pet instances</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#name"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#type">
+        <rdfs:label>type</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#birth">
+        <rdfs:label>birth</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#code"/>
+    <ex:hasDomainConcept>
+      <ex:DomainConcept rdf:about="http://petclinic.semantic.graph#Validator">
+        <rdfs:label>Validator</rdfs:label>
+      </ex:DomainConcept>
+    </ex:hasDomainConcept>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Bean_Validation">
+        <rdfs:label>Bean Validation</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Java">
+        <rdfs:label>Java</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_owner_PetValidatorTests_setUp">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.owner.PetValidatorTests.setUp</rdfs:label>
+    <ex:hasComment>* * Test class for {@link PetValidator} * * @author Wick Dynex</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_MysqlTestApplication_main">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.MysqlTestApplication.main</rdfs:label>
+    <ex:hasComment>* * PetClinic Spring Boot Application. * * @author Dave Syer</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#PetClinic"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#SERVICE"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#PetClinic_Spring_Boot_Application"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Dave_Syer"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_model_BaseEntity_getId">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.model.BaseEntity.getId</rdfs:label>
+    <ex:hasComment>* * Simple JavaBean domain object with an id property. Used as a base class for objects * needing this property. * * @author Ken Krebs * @author Juergen Hoeller</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#JavaBean"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#ENTITY"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs__"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Juergen_Hoeller"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_PostgresIntegrationTests_available">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.PostgresIntegrationTests.available</rdfs:label>
+    <ex:hasComment>served from cache</ex:hasComment>
+    <ex:hasComment>localhost:" + port).build();</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#cache"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#localhost"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_vet_VetTests_testSerialization">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.vet.VetTests.testSerialization</rdfs:label>
+    <ex:hasComment>* * @author Dave Syer</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_author"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Dave_Syer"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_model_ValidatorTests_working">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.model.ValidatorTests.working</rdfs:label>
+    <ex:hasComment>* * @author Michael Isvy Simple test to make sure that Bean Validation is working (useful * when upgrading to a new version of Hibernate Validator/ Bean Validation)</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_author"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#ENTITY"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Michael_Isvy_Simple">
+        <rdfs:label>Michael Isvy Simple</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Bean_Validation"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Hibernate_Validator__Bean_Validation">
+        <rdfs:label>Hibernate Validator/ Bean Validation</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_model_Person_getFirstName">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.model.Person.getFirstName</rdfs:label>
+    <ex:hasComment>* * Simple JavaBean domain object representing an person. * * @author Ken Krebs</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#JavaBean"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#ENTITY"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Ken_Krebs"/>
+  </ex:Function>
+  <owl:ObjectProperty rdf:about="http://petclinic.semantic.graph#mentionsEntity"/>
+  <owl:ObjectProperty rdf:about="http://petclinic.semantic.graph#hasCRUDIntent"/>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_test_org_springframework_samples_petclinic_owner_VisitControllerTests_init">
+    <rdfs:label>...src.test.org.springframework.samples.petclinic.owner.VisitControllerTests.init</rdfs:label>
+    <ex:hasComment>* * Test class for {@link VisitController} * * @author Colin But * @author Wick Dynex</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#test"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#CONTROLLER"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#VisitController_____">
+        <rdfs:label>VisitController} * *</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Colin"/>
+    <ex:mentionsEntity rdf:resource="http://petclinic.semantic.graph#Wick_Dynex"/>
+  </ex:Function>
+  <owl:ObjectProperty rdf:about="http://petclinic.semantic.graph#hasBusinessRole"/>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_owner_PetTypeRepository_findPetTypes">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.owner.PetTypeRepository.findPetTypes</rdfs:label>
+    <ex:hasComment><![CDATA[* * Repository class for <code>PetType</code> domain objects. * * @author Patrick Baumgartner]]></ex:hasComment>
+    <ex:hasComment>* * Retrieve all {@link PetType}s from the data store. * @return a Collection of {@link PetType}s.</ex:hasComment>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#repository"/>
+    <ex:hasDomainConcept rdf:resource="http://petclinic.semantic.graph#_link"/>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#REPOSITORY"/>
+    <ex:mentionsEntity>
+      <ex:NamedEntity rdf:about="http://petclinic.semantic.graph#Patrick_Baumgartner">
+        <rdfs:label>Patrick Baumgartner</rdfs:label>
+      </ex:NamedEntity>
+    </ex:mentionsEntity>
+    <ex:hasCRUDIntent rdf:resource="http://petclinic.semantic.graph#READ"/>
+  </ex:Function>
+  <ex:Function rdf:about="http://petclinic.semantic.graph#___src_main_org_springframework_samples_petclinic_PetClinicRuntimeHints_registerHints">
+    <rdfs:label>...src.main.org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints</rdfs:label>
+    <ex:hasComment>https://github.com/spring-projects/spring-boot/issues/32654</ex:hasComment>
+    <ex:hasBusinessRole rdf:resource="http://petclinic.semantic.graph#UNKNOWN"/>
+  </ex:Function>
+  <owl:DatatypeProperty rdf:about="http://petclinic.semantic.graph#hasComment">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://petclinic.semantic.graph#hasDomainConcept"/>
+  <owl:Class rdf:about="http://petclinic.semantic.graph#Function"/>
+  <owl:Class rdf:about="http://petclinic.semantic.graph#CRUDIntent"/>
+  <owl:Class rdf:about="http://petclinic.semantic.graph#NamedEntity"/>
+  <owl:Class rdf:about="http://petclinic.semantic.graph#DomainConcept"/>
+  <owl:Class rdf:about="http://petclinic.semantic.graph#BusinessRole"/>
+</rdf:RDF>

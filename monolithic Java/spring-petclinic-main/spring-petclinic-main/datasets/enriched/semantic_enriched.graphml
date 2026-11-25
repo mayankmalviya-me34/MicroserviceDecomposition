@@ -1,0 +1,934 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="node" attr.name="code" attr.type="string"/>
+<key id="d4" for="node" attr.name="business_role" attr.type="string"/>
+<key id="d3" for="node" attr.name="named_entities" attr.type="string"/>
+<key id="d2" for="node" attr.name="domain_entity" attr.type="string"/>
+<key id="d1" for="node" attr.name="intent" attr.type="string"/>
+<key id="d0" for="node" attr.name="function" attr.type="string"/>
+<graph edgedefault="directed"><node id="org.springframework.samples.petclinic.owner.Pet">
+  <data key="d0">Pet</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WebConfiguration">
+  <data key="d0">WebConfiguration</data>
+  <data key="d1"></data>
+  <data key="d2">Web</data>
+  <data key="d3">["WebConfiguration"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetController.showResourcesVetList">
+  <data key="d0">showResourcesVetList</data>
+  <data key="d1">Read</data>
+  <data key="d2">Resources</data>
+  <data key="d3">[]</data>
+  <data key="d4">Resources Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.initOwnerBinder">
+  <data key="d0">initOwnerBinder</data>
+  <data key="d1">Create</data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">Owner Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm">
+  <data key="d0">initNewVisitForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">New</data>
+  <data key="d3">[]</data>
+  <data key="d4">New Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Visit">
+  <data key="d0">Visit</data>
+  <data key="d1"></data>
+  <data key="d2">Visit</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetController.addPaginationModel">
+  <data key="d0">addPaginationModel</data>
+  <data key="d1">Create</data>
+  <data key="d2">Pagination</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pagination Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WebConfiguration.addInterceptors">
+  <data key="d0">addInterceptors</data>
+  <data key="d1">Create</data>
+  <data key="d2">Interceptors</data>
+  <data key="d3">["addInterceptors"]</data>
+  <data key="d4">Interceptors Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.populatePetTypes">
+  <data key="d0">populatePetTypes</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor.exportStaticGraphGML">
+  <data key="d0">exportStaticGraphGML</data>
+  <data key="d1"></data>
+  <data key="d2">Static</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetValidator">
+  <data key="d0">PetValidator</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">["PetValidator"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm">
+  <data key="d0">processUpdateOwnerForm</data>
+  <data key="d1">Update</data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">Owner Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.BaseEntity.getId">
+  <data key="d0">getId</data>
+  <data key="d1">Read</data>
+  <data key="d2">Id</data>
+  <data key="d3">["getId"]</data>
+  <data key="d4">Id Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.NamedEntity.setName">
+  <data key="d0">setName</data>
+  <data key="d1">Update</data>
+  <data key="d2">Name</data>
+  <data key="d3">[]</data>
+  <data key="d4">Name Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints">
+  <data key="d0">registerHints</data>
+  <data key="d1">Create</data>
+  <data key="d2">Hints</data>
+  <data key="d3">[]</data>
+  <data key="d4">Hints Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.getTelephone">
+  <data key="d0">getTelephone</data>
+  <data key="d1">Read</data>
+  <data key="d2">Telephone</data>
+  <data key="d3">["getTelephone"]</data>
+  <data key="d4">Telephone Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.NamedEntity">
+  <data key="d0">NamedEntity</data>
+  <data key="d1"></data>
+  <data key="d2">Named</data>
+  <data key="d3">["NamedEntity"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vets">
+  <data key="d0">Vets</data>
+  <data key="d1"></data>
+  <data key="d2">Vets</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.addVisit">
+  <data key="d0">addVisit</data>
+  <data key="d1">Create</data>
+  <data key="d2">Visit</data>
+  <data key="d3">[]</data>
+  <data key="d4">Visit Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.findPet">
+  <data key="d0">findPet</data>
+  <data key="d1">Read</data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pet Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.processFindForm">
+  <data key="d0">processFindForm</data>
+  <data key="d1">Read</data>
+  <data key="d2">Form</data>
+  <data key="d3">[]</data>
+  <data key="d4">Form Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.CrashController.triggerException">
+  <data key="d0">triggerException</data>
+  <data key="d1"></data>
+  <data key="d2">Exception</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.showOwner">
+  <data key="d0">showOwner</data>
+  <data key="d1">Read</data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">Owner Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.addPet">
+  <data key="d0">addPet</data>
+  <data key="d1">Create</data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pet Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.getPet">
+  <data key="d0">getPet</data>
+  <data key="d1">Read</data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pet Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetTypeRepository.findPetTypes">
+  <data key="d0">findPetTypes</data>
+  <data key="d1">Read</data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pet Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vet">
+  <data key="d0">Vet</data>
+  <data key="d1"></data>
+  <data key="d2">Vet</data>
+  <data key="d3">["Vet"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.BaseEntity.setId">
+  <data key="d0">setId</data>
+  <data key="d1">Update</data>
+  <data key="d2">Id</data>
+  <data key="d3">[]</data>
+  <data key="d4">Id Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.initCreationForm">
+  <data key="d0">initCreationForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">Creation</data>
+  <data key="d3">["initCreationForm"]</data>
+  <data key="d4">Creation Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Visit.getDate">
+  <data key="d0">getDate</data>
+  <data key="d1">Read</data>
+  <data key="d2">Date</data>
+  <data key="d3">[]</data>
+  <data key="d4">Date Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.Person.setFirstName">
+  <data key="d0">setFirstName</data>
+  <data key="d1">Update</data>
+  <data key="d2">First</data>
+  <data key="d3">[]</data>
+  <data key="d4">First Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.addVisit">
+  <data key="d0">addVisit</data>
+  <data key="d1">Create</data>
+  <data key="d2">Visit</data>
+  <data key="d3">[]</data>
+  <data key="d4">Visit Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.toString">
+  <data key="d0">toString</data>
+  <data key="d1"></data>
+  <data key="d2">String</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetTypeFormatter">
+  <data key="d0">PetTypeFormatter</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetController">
+  <data key="d0">VetController</data>
+  <data key="d1"></data>
+  <data key="d2">Vet</data>
+  <data key="d3">["VetController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.getPets">
+  <data key="d0">getPets</data>
+  <data key="d1">Read</data>
+  <data key="d2">Pets</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pets Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.setTelephone">
+  <data key="d0">setTelephone</data>
+  <data key="d1">Update</data>
+  <data key="d2">Telephone</data>
+  <data key="d3">[]</data>
+  <data key="d4">Telephone Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm">
+  <data key="d0">processNewVisitForm</data>
+  <data key="d1"></data>
+  <data key="d2">New</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.setCity">
+  <data key="d0">setCity</data>
+  <data key="d1">Update</data>
+  <data key="d2">City</data>
+  <data key="d3">[]</data>
+  <data key="d4">City Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.BaseEntity">
+  <data key="d0">BaseEntity</data>
+  <data key="d1"></data>
+  <data key="d2">Base</data>
+  <data key="d3">["BaseEntity"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.PetClinicApplication">
+  <data key="d0">PetClinicApplication</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerRepository">
+  <data key="d0">OwnerRepository</data>
+  <data key="d1"></data>
+  <data key="d2">Owner</data>
+  <data key="d3">["OwnerRepository"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor">
+  <data key="d0">PetClinicGraphExtractor</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner">
+  <data key="d0">Owner</data>
+  <data key="d1"></data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.processCreationForm">
+  <data key="d0">processCreationForm</data>
+  <data key="d1"></data>
+  <data key="d2">Creation</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.Person">
+  <data key="d0">Person</data>
+  <data key="d1"></data>
+  <data key="d2">Person</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName">
+  <data key="d0">findPaginatedForOwnersLastName</data>
+  <data key="d1">Read</data>
+  <data key="d2">Paginated</data>
+  <data key="d3">[]</data>
+  <data key="d4">Paginated Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerRepository.findById">
+  <data key="d0">findById</data>
+  <data key="d1">Read</data>
+  <data key="d2">By</data>
+  <data key="d3">[]</data>
+  <data key="d4">By Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetTypeRepository">
+  <data key="d0">PetTypeRepository</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController">
+  <data key="d0">OwnerController</data>
+  <data key="d1"></data>
+  <data key="d2">Owner</data>
+  <data key="d3">["OwnerController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.Person.setLastName">
+  <data key="d0">setLastName</data>
+  <data key="d1">Update</data>
+  <data key="d2">Last</data>
+  <data key="d3">[]</data>
+  <data key="d4">Last Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Visit.setDate">
+  <data key="d0">setDate</data>
+  <data key="d1">Update</data>
+  <data key="d2">Date</data>
+  <data key="d3">[]</data>
+  <data key="d4">Date Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Visit.setDescription">
+  <data key="d0">setDescription</data>
+  <data key="d1">Update</data>
+  <data key="d2">Description</data>
+  <data key="d3">[]</data>
+  <data key="d4">Description Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm">
+  <data key="d0">initUpdateOwnerForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">Update</data>
+  <data key="d3">[]</data>
+  <data key="d4">Update Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.getType">
+  <data key="d0">getType</data>
+  <data key="d1">Read</data>
+  <data key="d2">Type</data>
+  <data key="d3">[]</data>
+  <data key="d4">Type Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.setBirthDate">
+  <data key="d0">setBirthDate</data>
+  <data key="d1">Update</data>
+  <data key="d2">Birth</data>
+  <data key="d3">[]</data>
+  <data key="d4">Birth Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.CrashController">
+  <data key="d0">CrashController</data>
+  <data key="d1"></data>
+  <data key="d2">Crash</data>
+  <data key="d3">["CrashController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor.exportSemanticJSON">
+  <data key="d0">exportSemanticJSON</data>
+  <data key="d1"></data>
+  <data key="d2">Semantic</data>
+  <data key="d3">["exportSemanticJSON"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.processUpdateForm">
+  <data key="d0">processUpdateForm</data>
+  <data key="d1">Update</data>
+  <data key="d2">Form</data>
+  <data key="d3">[]</data>
+  <data key="d4">Form Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Specialty">
+  <data key="d0">Specialty</data>
+  <data key="d1"></data>
+  <data key="d2">Specialty</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WelcomeController.welcome">
+  <data key="d0">welcome</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vets.getVetList">
+  <data key="d0">getVetList</data>
+  <data key="d1">Read</data>
+  <data key="d2">Vet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Vet Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer">
+  <data key="d0">petclinicCacheConfigurationCustomizer</data>
+  <data key="d1"></data>
+  <data key="d2">Cache</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetController.findPaginated">
+  <data key="d0">findPaginated</data>
+  <data key="d1">Read</data>
+  <data key="d2">Paginated</data>
+  <data key="d3">[]</data>
+  <data key="d4">Paginated Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Visit.getDescription">
+  <data key="d0">getDescription</data>
+  <data key="d1">Read</data>
+  <data key="d2">Description</data>
+  <data key="d3">[]</data>
+  <data key="d4">Description Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.CacheConfiguration">
+  <data key="d0">CacheConfiguration</data>
+  <data key="d1"></data>
+  <data key="d2">Cache</data>
+  <data key="d3">["CacheConfiguration"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration">
+  <data key="d0">cacheConfiguration</data>
+  <data key="d1"></data>
+  <data key="d2">Configuration</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.initPetBinder">
+  <data key="d0">initPetBinder</data>
+  <data key="d1">Create</data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pet Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.initCreationForm">
+  <data key="d0">initCreationForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">Creation</data>
+  <data key="d3">["initCreationForm"]</data>
+  <data key="d4">Creation Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.PetClinicRuntimeHints">
+  <data key="d0">PetClinicRuntimeHints</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal">
+  <data key="d0">getSpecialtiesInternal</data>
+  <data key="d1">Read</data>
+  <data key="d2">Specialties</data>
+  <data key="d3">["getSpecialtiesInternal"]</data>
+  <data key="d4">Specialties Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.initUpdateForm">
+  <data key="d0">initUpdateForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">Update</data>
+  <data key="d3">[]</data>
+  <data key="d4">Update Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel">
+  <data key="d0">addPaginationModel</data>
+  <data key="d1">Create</data>
+  <data key="d2">Pagination</data>
+  <data key="d3">[]</data>
+  <data key="d4">Pagination Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.VisitController.setAllowedFields">
+  <data key="d0">setAllowedFields</data>
+  <data key="d1">Update</data>
+  <data key="d2">Allowed</data>
+  <data key="d3">[]</data>
+  <data key="d4">Allowed Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetValidator.validate">
+  <data key="d0">validate</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.getCity">
+  <data key="d0">getCity</data>
+  <data key="d1">Read</data>
+  <data key="d2">City</data>
+  <data key="d3">[]</data>
+  <data key="d4">City Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.NamedEntity.getName">
+  <data key="d0">getName</data>
+  <data key="d1">Read</data>
+  <data key="d2">Name</data>
+  <data key="d3">[]</data>
+  <data key="d4">Name Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetRepository">
+  <data key="d0">VetRepository</data>
+  <data key="d1"></data>
+  <data key="d2">Vet</data>
+  <data key="d3">["VetRepository"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WelcomeController">
+  <data key="d0">WelcomeController</data>
+  <data key="d1"></data>
+  <data key="d2">Welcome</data>
+  <data key="d3">["WelcomeController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.getBirthDate">
+  <data key="d0">getBirthDate</data>
+  <data key="d1">Read</data>
+  <data key="d2">Birth</data>
+  <data key="d3">[]</data>
+  <data key="d4">Birth Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.getVisits">
+  <data key="d0">getVisits</data>
+  <data key="d1">Read</data>
+  <data key="d2">Visits</data>
+  <data key="d3">[]</data>
+  <data key="d4">Visits Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.processCreationForm">
+  <data key="d0">processCreationForm</data>
+  <data key="d1"></data>
+  <data key="d2">Creation</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetValidator.supports">
+  <data key="d0">supports</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor.main">
+  <data key="d0">main</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties">
+  <data key="d0">getNrOfSpecialties</data>
+  <data key="d1">Read</data>
+  <data key="d2">Nr</data>
+  <data key="d3">[]</data>
+  <data key="d4">Nr Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.Person.getLastName">
+  <data key="d0">getLastName</data>
+  <data key="d1">Read</data>
+  <data key="d2">Last</data>
+  <data key="d3">[]</data>
+  <data key="d4">Last Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetType">
+  <data key="d0">PetType</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">["PetType"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.NamedEntity.toString">
+  <data key="d0">toString</data>
+  <data key="d1"></data>
+  <data key="d2">String</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetController.showVetList">
+  <data key="d0">showVetList</data>
+  <data key="d1">Read</data>
+  <data key="d2">Vet</data>
+  <data key="d3">[]</data>
+  <data key="d4">Vet Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.findOwner">
+  <data key="d0">findOwner</data>
+  <data key="d1">Read</data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">Owner Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.PetClinicApplication.main">
+  <data key="d0">main</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.BaseEntity.isNew">
+  <data key="d0">isNew</data>
+  <data key="d1"></data>
+  <data key="d2">New</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor.parseFile">
+  <data key="d0">parseFile</data>
+  <data key="d1"></data>
+  <data key="d2">File</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetTypeFormatter.parse">
+  <data key="d0">parse</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerRepository.findByLastNameStartingWith">
+  <data key="d0">findByLastNameStartingWith</data>
+  <data key="d1">Read</data>
+  <data key="d2">By</data>
+  <data key="d3">[]</data>
+  <data key="d4">By Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WebConfiguration.localeResolver">
+  <data key="d0">localeResolver</data>
+  <data key="d1"></data>
+  <data key="d2">Resolver</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.setAddress">
+  <data key="d0">setAddress</data>
+  <data key="d1">Update</data>
+  <data key="d2">Address</data>
+  <data key="d3">["setAddress"]</data>
+  <data key="d4">Address Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.VisitController">
+  <data key="d0">VisitController</data>
+  <data key="d1"></data>
+  <data key="d2">Visit</data>
+  <data key="d3">["VisitController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController.updatePetDetails">
+  <data key="d0">updatePetDetails</data>
+  <data key="d1">Update</data>
+  <data key="d2">Pet</data>
+  <data key="d3">["updatePetDetails"]</data>
+  <data key="d4">Pet Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.initFindForm">
+  <data key="d0">initFindForm</data>
+  <data key="d1">Create</data>
+  <data key="d2">Find</data>
+  <data key="d3">[]</data>
+  <data key="d4">Find Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetTypeFormatter.print">
+  <data key="d0">print</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="tools.PetClinicGraphExtractor.exportSemanticGraphML">
+  <data key="d0">exportSemanticGraphML</data>
+  <data key="d1"></data>
+  <data key="d2">Semantic</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vet.getSpecialties">
+  <data key="d0">getSpecialties</data>
+  <data key="d1">Read</data>
+  <data key="d2">Specialties</data>
+  <data key="d3">[]</data>
+  <data key="d4">Specialties Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.model.Person.getFirstName">
+  <data key="d0">getFirstName</data>
+  <data key="d1">Read</data>
+  <data key="d2">First</data>
+  <data key="d3">[]</data>
+  <data key="d4">First Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit">
+  <data key="d0">loadPetWithVisit</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.findOwner">
+  <data key="d0">findOwner</data>
+  <data key="d1">Read</data>
+  <data key="d2">Owner</data>
+  <data key="d3">[]</data>
+  <data key="d4">Owner Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Owner.getAddress">
+  <data key="d0">getAddress</data>
+  <data key="d1">Read</data>
+  <data key="d2">Address</data>
+  <data key="d3">[]</data>
+  <data key="d4">Address Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.PetController">
+  <data key="d0">PetController</data>
+  <data key="d1"></data>
+  <data key="d2">Pet</data>
+  <data key="d3">["PetController"]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields">
+  <data key="d0">setAllowedFields</data>
+  <data key="d1">Update</data>
+  <data key="d2">Allowed</data>
+  <data key="d3">[]</data>
+  <data key="d4">Allowed Update Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.VetRepository.findAll">
+  <data key="d0">findAll</data>
+  <data key="d1">Read</data>
+  <data key="d2">All</data>
+  <data key="d3">[]</data>
+  <data key="d4">All Read Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.system.WebConfiguration.localeChangeInterceptor">
+  <data key="d0">localeChangeInterceptor</data>
+  <data key="d1"></data>
+  <data key="d2">Change</data>
+  <data key="d3">[]</data>
+  <data key="d4">General Processing</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.vet.Vet.addSpecialty">
+  <data key="d0">addSpecialty</data>
+  <data key="d1">Create</data>
+  <data key="d2">Specialty</data>
+  <data key="d3">[]</data>
+  <data key="d4">Specialty Create Service</data>
+  <data key="d5"></data>
+</node>
+<node id="org.springframework.samples.petclinic.owner.Pet.setType">
+  <data key="d0">setType</data>
+  <data key="d1">Update</data>
+  <data key="d2">Type</data>
+  <data key="d3">[]</data>
+  <data key="d4">Type Update Service</data>
+  <data key="d5"></data>
+</node>
+<edge source="org.springframework.samples.petclinic.system.WebConfiguration.addInterceptors" target="org.springframework.samples.petclinic.system.WebConfiguration.localeChangeInterceptor"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.addVisit" target="org.springframework.samples.petclinic.owner.Owner.getPet"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.addVisit" target="org.springframework.samples.petclinic.owner.Owner.addVisit"/>
+<edge source="org.springframework.samples.petclinic.owner.OwnerController.processFindForm" target="org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel"/>
+<edge source="org.springframework.samples.petclinic.owner.OwnerController.processFindForm" target="org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.addPet" target="org.springframework.samples.petclinic.owner.Owner.getPets"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.getPet" target="org.springframework.samples.petclinic.owner.Owner.getPet"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.getPet" target="org.springframework.samples.petclinic.owner.Owner.getPets"/>
+<edge source="org.springframework.samples.petclinic.owner.Pet.addVisit" target="org.springframework.samples.petclinic.owner.Pet.getVisits"/>
+<edge source="org.springframework.samples.petclinic.owner.Owner.toString" target="org.springframework.samples.petclinic.owner.Owner.toString"/>
+<edge source="org.springframework.samples.petclinic.owner.PetController.processUpdateForm" target="org.springframework.samples.petclinic.owner.PetController.updatePetDetails"/>
+<edge source="org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer" target="org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration"/>
+<edge source="tools.PetClinicGraphExtractor.main" target="tools.PetClinicGraphExtractor.exportStaticGraphGML"/>
+<edge source="tools.PetClinicGraphExtractor.main" target="tools.PetClinicGraphExtractor.parseFile"/>
+<edge source="tools.PetClinicGraphExtractor.main" target="tools.PetClinicGraphExtractor.exportSemanticJSON"/>
+<edge source="tools.PetClinicGraphExtractor.main" target="tools.PetClinicGraphExtractor.exportSemanticGraphML"/>
+<edge source="org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties" target="org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal"/>
+<edge source="org.springframework.samples.petclinic.model.NamedEntity.toString" target="org.springframework.samples.petclinic.model.NamedEntity.getName"/>
+<edge source="org.springframework.samples.petclinic.vet.VetController.showVetList" target="org.springframework.samples.petclinic.vet.VetController.addPaginationModel"/>
+<edge source="org.springframework.samples.petclinic.vet.VetController.showVetList" target="org.springframework.samples.petclinic.vet.VetController.findPaginated"/>
+<edge source="org.springframework.samples.petclinic.vet.Vet.getSpecialties" target="org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal"/>
+<edge source="org.springframework.samples.petclinic.vet.Vet.addSpecialty" target="org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal"/>
+</graph></graphml>

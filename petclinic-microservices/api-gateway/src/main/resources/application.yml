@@ -1,0 +1,90 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        # Specific UI routes SABSE PEHLE honi chahiye
+        - id: system-owners-uimvn
+          uri: lb://system-service
+          predicates:
+            - Path=/owners/find, /owners/new, /owners/*/edit, /owners/*/pets/**, /owners/*/visits/**, /owners/search
+
+        - id: system-vets-html
+          uri: lb://system-service
+          predicates:
+            - Path=/vets.html
+
+        - id: static-resources
+          uri: lb://system-service
+          predicates:
+            - Path=/resources/**
+          filters:
+            - RewritePath=/resources/(?<segment>.*), /resources/$\{segment}
+
+        # Route 3: /oups → system-service
+        - id: system-service
+          uri: lb://system-service
+          predicates:
+            - Path=/oups/**
+
+        # Route 2: /vets/** → vet-service
+        - id: vet-service
+          uri: lb://vet-service
+          predicates:
+            - Path=/vets/**
+
+        # Route 1: /owners/** → owner-service (generic, baad mein)
+        - id: owner-service
+          uri: lb://owner-service
+          predicates:
+            - Path=/owners/**
+
+        # Route 4: /petTypes
+        - id: pettype-service
+          uri: lb://owner-service
+          predicates:
+            - Path=/petTypes/**
+
+        - id: specialties-service
+          uri: lb://vet-service
+          predicates:
+            - Path=/specialties/**
+
+        # Route 5: / → system-service (welcome page) — sabse last
+        - id: welcome-service
+          uri: lb://system-service
+          predicates:
+            - Path=/
+          filters:
+            - RewritePath=/, /
+
+# Eureka server ka address
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Gateway ko Eureka se services dhundhne do
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
