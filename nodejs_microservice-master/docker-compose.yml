@@ -1,0 +1,89 @@
+services:
+  nosql-db:
+    image: mvertes/alpine-mongo
+    ports:
+      - "27018:27017"
+    container_name: nosql-db
+    volumes:
+      - ./db/:/data/db
+    cpus: 0.4
+    mem_limit: 0.5g
+
+  rabbitmq:
+    image: rabbitmq:3.11-alpine
+    container_name: rabbitmq
+    ports:
+      - '5672:5672'
+    cpus: 0.4
+    mem_limit: 0.5g
+
+  products:
+    build:
+      dockerfile: Dockerfile
+      context: ./products
+    container_name: products
+    ports:
+      - "8002:8002"
+    restart: always
+    depends_on:
+      - "nosql-db"
+      - "rabbitmq"
+    volumes:
+      - .:/app
+      - /app/products/node_modules
+    env_file:
+      - ./products/.env.dev
+    cpus: 1.4
+    mem_limit: 1.35g
+
+  shopping:
+    build:
+      dockerfile: Dockerfile
+      context: ./shopping
+    container_name: shopping
+    ports:
+      - "8003:8003"
+    restart: always
+    depends_on:
+      - "nosql-db"
+      - "rabbitmq"
+    volumes:
+      - .:/app
+      - /app/shopping/node_modules
+    env_file:
+      - ./shopping/.env.dev
+    cpus: 0.4
+    mem_limit: 0.4g
+
+  customer:
+    build:
+      dockerfile: Dockerfile
+      context: ./customer
+    container_name: customer
+    ports:
+      - "8001:8001"
+    restart: always
+    depends_on:
+      - "nosql-db"
+      - "rabbitmq"
+    volumes:
+      - .:/app/
+      - /app/customer/node_modules
+    env_file:
+      - ./customer/.env.dev
+    cpus: 1.0
+    mem_limit: 0.95g
+
+  nginx-proxy:
+    build:
+      dockerfile: Dockerfile
+      context: ./proxy
+    container_name: nginx-proxy
+    depends_on:
+      - products
+      - shopping
+      - customer
+    ports:
+      - 80:80
+    cpus: 0.4
+    mem_limit: 0.3g

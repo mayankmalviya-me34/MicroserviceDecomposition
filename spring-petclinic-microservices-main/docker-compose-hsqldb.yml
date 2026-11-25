@@ -1,0 +1,106 @@
+services:
+  config-server:
+    image: springcommunity/spring-petclinic-config-server
+    container_name: config-server
+    cpus: 0.4
+    mem_limit: 0.5g
+    healthcheck:
+      test: ["CMD", "curl", "-I", "http://config-server:8888"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 90s
+    ports:
+      - 8888:8888
+
+  discovery-server:
+    image: springcommunity/spring-petclinic-discovery-server
+    container_name: discovery-server
+    cpus: 0.4
+    mem_limit: 0.5g
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://discovery-server:8761"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 90s
+    depends_on:
+      config-server:
+        condition: service_healthy
+    ports:
+      - 8761:8761
+
+  customers-service:
+    image: springcommunity/spring-petclinic-customers-service
+    container_name: customers-service
+    cpus: 1.6
+    mem_limit: 1.5g
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+    ports:
+      - 8081:8081
+
+  visits-service:
+    image: springcommunity/spring-petclinic-visits-service
+    container_name: visits-service
+    cpus: 0.2
+    mem_limit: 0.25g
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+    ports:
+      - 8082:8082
+
+  vets-service:
+    image: springcommunity/spring-petclinic-vets-service
+    container_name: vets-service
+    cpus: 0.6
+    mem_limit: 0.55g
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+    ports:
+      - 8083:8083
+
+  api-gateway:
+    image: springcommunity/spring-petclinic-api-gateway
+    container_name: api-gateway
+    cpus: 0.8
+    mem_limit: 0.7g
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+
+# ---------------------------------------------------------------
+# EXCLUDED from this run (and from the resource-parity budget):
+#
+#   genai-service      - optional AI feature, requires external API keys,
+#                        not exercised by the k6 load-testing workload.
+#   tracing-server      - Zipkin, observability tooling (no monolith equivalent).
+#   admin-server        - observability dashboard; also clashes with cAdvisor
+#                        on port 9090.
+#   grafana-server /
+#   prometheus-server    - monitoring dashboards; cAdvisor is already used as the
+#                        common monitoring tool for both monolith and microservices.
+#
+# Total business-logic + infra budget above:
+#   config(0.4) + discovery(0.4) + gateway(0.8) + customers(1.6) + vets(0.6) + visits(0.2)
+#   = 4.0 vCPU
+#   0.5 + 0.5 + 0.7 + 1.5 + 0.55 + 0.25 = 4.0 GB
+#   (matches the Monolith side: 3 vCPU/3GB app + 1 vCPU/1GB MySQL)
+#
+# NOTE: config-server/discovery-server memory was raised from an initial 0.3g to
+# 0.5g after config-server failed its healthcheck (OOM during JVM startup) at 0.3g.
+# customers-service was reduced correspondingly to keep the total budget unchanged.
+# ---------------------------------------------------------------

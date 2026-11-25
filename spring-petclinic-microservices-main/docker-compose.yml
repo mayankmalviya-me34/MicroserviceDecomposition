@@ -1,0 +1,269 @@
+services:
+  # ------------------------- APP TIER: 3.0 vCPU / 3.0 GB -------------------------
+  config-server:
+    image: springcommunity/spring-petclinic-config-server
+    container_name: config-server
+    cpus: 0.2
+    mem_limit: 0.35g
+    healthcheck:
+      test: ["CMD", "curl", "-I", "http://config-server:8888"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 90s
+    ports:
+      - 8888:8888
+
+  discovery-server:
+    image: springcommunity/spring-petclinic-discovery-server
+    container_name: discovery-server
+    cpus: 0.3
+    mem_limit: 0.4g
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://discovery-server:8761"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 150s
+    depends_on:
+      config-server:
+        condition: service_healthy
+    ports:
+      - 8761:8761
+
+  api-gateway:
+    image: springcommunity/spring-petclinic-api-gateway
+    container_name: api-gateway
+    cpus: 0.6
+    mem_limit: 0.5g
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://api-gateway:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 330s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      customers-service:
+        condition: service_healthy
+      vets-service:
+        condition: service_healthy
+      visits-service:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+
+  customers-service:
+    image: springcommunity/spring-petclinic-customers-service
+    container_name: customers-service
+    cpus: 1.1
+    mem_limit: 1.05g
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker,mysql
+      - SPRING_DATASOURCE_URL=jdbc:mysql://customers-db:3306/petclinic
+      - SPRING_DATASOURCE_USERNAME=petclinic
+      - SPRING_DATASOURCE_PASSWORD=petclinic
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://customers-service:8081/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 40
+      start_period: 400s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      customers-db:
+        condition: service_healthy
+    ports:
+      - 8081:8081
+
+  vets-service:
+    image: springcommunity/spring-petclinic-vets-service
+    container_name: vets-service
+    cpus: 0.45
+    mem_limit: 0.4g
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker,mysql
+      - SPRING_DATASOURCE_URL=jdbc:mysql://vets-db:3306/petclinic
+      - SPRING_DATASOURCE_USERNAME=petclinic
+      - SPRING_DATASOURCE_PASSWORD=petclinic
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://vets-service:8083/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 40
+      start_period: 400s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      vets-db:
+        condition: service_healthy
+    ports:
+      - 8083:8083
+
+  visits-service:
+    image: springcommunity/spring-petclinic-visits-service
+    container_name: visits-service
+    cpus: 0.35
+    mem_limit: 0.4g
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker,mysql
+      - SPRING_DATASOURCE_URL=jdbc:mysql://visits-db:3306/petclinic
+      - SPRING_DATASOURCE_USERNAME=petclinic
+      - SPRING_DATASOURCE_PASSWORD=petclinic
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://visits-service:8082/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 60
+      start_period: 600s
+    depends_on:
+      config-server:
+        condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+      visits-db:
+        condition: service_healthy
+    ports:
+      - 8082:8082
+
+  # ------------------------- DB TIER: 1.0 vCPU / 1.0 GB -------------------------
+  # Split proportionally to the same k6 endpoint-traffic weights used for the
+  # business services above (customers 65% / vets 25% / visits 10%).
+  customers-db:
+    image: mysql:9.6
+    container_name: customers-db
+    cpus: 0.6
+    mem_limit: 0.45g
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_USER=petclinic
+      - MYSQL_PASSWORD=petclinic
+      - MYSQL_DATABASE=petclinic
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "petclinic", "-ppetclinic"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+
+  vets-db:
+    image: mysql:9.6
+    container_name: vets-db
+    cpus: 0.25
+    mem_limit: 0.25g
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_USER=petclinic
+      - MYSQL_PASSWORD=petclinic
+      - MYSQL_DATABASE=petclinic
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "petclinic", "-ppetclinic"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+
+  visits-db:
+    image: mysql:9.6
+    container_name: visits-db
+    cpus: 0.15
+    mem_limit: 0.3g
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_USER=petclinic
+      - MYSQL_PASSWORD=petclinic
+      - MYSQL_DATABASE=petclinic
+    volumes:
+      - ./visits-db-init.sql:/docker-entrypoint-initdb.d/init-pets-stub.sql:ro
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "petclinic", "-ppetclinic" ]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      start_period: 60s
+
+# ---------------------------------------------------------------
+# EXCLUDED from this run (and from the resource-parity budget):
+#
+#   genai-service      - optional AI feature, requires external API keys,
+#                        not exercised by the k6 load-testing workload.
+#   tracing-server      - Zipkin, observability tooling (no monolith equivalent).
+#   admin-server        - observability dashboard; also clashes with cAdvisor
+#                        on port 9090.
+#   grafana-server /
+#   prometheus-server    - monitoring dashboards; cAdvisor is already used as the
+#                        common monitoring tool for both monolith and microservices.
+#
+# BUDGET SUMMARY (rebalanced after visits-service CPU-starvation fix):
+#   App tier:  config(0.2) + discovery(0.3) + gateway(0.6) + customers(1.1)
+#              + vets(0.45) + visits(0.35)               = 3.0 vCPU / 3.0 GB
+#   DB tier:   customers-db(0.6/0.45g) + vets-db(0.25/0.25g) + visits-db(0.15/0.3g)
+#                                                          = 1.0 vCPU / 1.0 GB
+#   TOTAL:                                                  4.0 vCPU / 4.0 GB
+#   (Monolith side: 3 vCPU/3GB app + 1 vCPU/1GB MySQL — identical total)
+#
+# DATABASE ASYMMETRY FIX:
+#   The upstream image defaults to an in-memory HSQLDB profile unless the
+#   'mysql' Spring profile is explicitly activated (confirmed via
+#   `docker logs customers-service` showing an HSQLDB HikariPool connection
+#   before this fix). Each business service now explicitly activates
+#   SPRING_PROFILES_ACTIVE=docker,mysql and points at its own MySQL container,
+#   matching the Monolith's persistent MySQL backing store.
+#
+# VISITS-DB CPU/MEM REBALANCE (earlier fix):
+#   Original visits-db (cpus:0.1, mem:0.1g then 0.2g) was repeatedly OOMKilled —
+#   root cause was CPU starvation (not memory alone): under 0.1 vCPU, MySQL's
+#   InnoDB init took 3+ minutes, and the temporary-server startup phase spiked
+#   memory beyond the container limit during that extended window. Rebalanced
+#   to cpus:0.15/mem:0.3g to give MySQL enough headroom to initialize reliably.
+#
+# VISITS-SERVICE CPU/MEM REBALANCE (this fix):
+#   Under baseline load, visits-service (previously cpus:0.15, mem:0.2g) showed
+#   0% success rate for the pet_visits endpoint with P95/P99 pinned at ~10s
+#   (a hard timeout signature, not organic slowness). `docker stats` confirmed
+#   memory pinned at 99.96% of limit and HikariPool logs showed
+#   "Thread starvation or clock leap detected" plus Eureka heartbeat
+#   TimedSupervisorTask timeouts — classic symptoms of a container too
+#   CPU-starved to service its own connection-pool housekeeper thread, let
+#   alone incoming HTTP requests. Application startup itself took 577s
+#   (vs. ~50-60s for the other business services at their original budgets).
+#   Rebalanced visits-service to cpus:0.35/mem:0.4g, funded by trimming
+#   config-server (0.3->0.2, safe since its load is front-loaded at startup
+#   and negligible during steady-state test execution) and customers-service
+#   (1.2->1.1, still generously above its ~65% traffic share). App tier total
+#   held at exactly 3.0 vCPU / 3.0 GB.
+#
+# DISCOVERY-SERVER / API-GATEWAY HEALTHCHECKS (earlier fixes):
+#   Observed real startup times (~238s discovery-server, ~268s api-gateway)
+#   exceeded original healthcheck budgets, causing k6 runs to start against
+#   a stack that reported "Up" in `docker ps` but wasn't yet accepting
+#   traffic. start_period/retries increased with comfortable margin above
+#   observed values.
+#
+# CUSTOMERS-SERVICE / VETS-SERVICE / VISITS-SERVICE HEALTHCHECKS (this fix):
+#   Added explicit /actuator/health healthchecks to all three business
+#   services (previously only DBs and infra services had healthchecks;
+#   the business services just used depends_on without a completion
+#   signal). visits-service in particular has been observed to take up to
+#   ~600s to become fully ready, so its budget is set at
+#   start_period:600s + retries:60x10s (~1200s total) to avoid a repeat of
+#   the false-start problem. api-gateway now also depends_on all three
+#   business services with condition: service_healthy, so the gateway
+#   itself will not report healthy until the entire backend chain
+#   (config -> discovery -> DBs -> business services) is confirmed ready.
+#   This means: once `docker inspect --format='{{.State.Health.Status}}'
+#   api-gateway` returns "healthy", the whole stack is genuinely ready for
+#   k6 traffic — a single check is now sufficient instead of polling each
+#   service individually.
+# ---------------------------------------------------------------

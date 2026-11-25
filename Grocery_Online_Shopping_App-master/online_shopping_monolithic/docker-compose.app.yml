@@ -1,0 +1,28 @@
+version: "3"
+services:
+  mongo-monolithic:
+    image: mvertes/alpine-mongo
+    container_name: mongo-monolithic
+    ports:
+      - "27019:27017"
+    volumes:
+      - ./db-monolithic/:/data/db
+    cpus: 1.0
+    mem_limit: 1g
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: monolithic-app
+    ports:
+      - "8001:8001"
+    restart: always
+    depends_on:
+      - mongo-monolithic
+    environment:
+      MONGODB_URI: mongodb://mongo-monolithic:27017/amazon_demo
+    env_file:
+      - ./.env.dev
+    cpus: 3.0
+    mem_limit: 3g

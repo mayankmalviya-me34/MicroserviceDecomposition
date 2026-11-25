@@ -1,0 +1,36 @@
+services:
+  petclinic-monolith:
+    build: .
+    ports:
+      - "8080:8080"
+    cpus: 3.0
+    mem_limit: 3g
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      - SPRING_PROFILES_ACTIVE=mysql
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/petclinic
+      - SPRING_DATASOURCE_USERNAME=petclinic
+      - SPRING_DATASOURCE_PASSWORD=petclinic
+
+  mysql:
+    image: mysql:9.6
+    cpus: 1.0
+    mem_limit: 1g
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_USER=petclinic
+      - MYSQL_PASSWORD=petclinic
+      - MYSQL_DATABASE=petclinic
+    volumes:
+      - "./conf.d:/etc/mysql/conf.d:ro"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "petclinic", "-ppetclinic"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
