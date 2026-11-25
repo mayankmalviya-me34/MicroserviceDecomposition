@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d0" for="node" attr.name="node_type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="online_shopping_monolithic\src\database\models\Customer.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\models\Customer.js::transform">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\models\Order.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\models\Order.js::transform">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateCustomer">
+      <data key="d0">method</data>
+    </node>
+    <node id="save">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateAddress">
+      <data key="d0">method</data>
+    </node>
+    <node id="findById">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomer">
+      <data key="d0">method</data>
+    </node>
+    <node id="findOne">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById">
+      <data key="d0">method</data>
+    </node>
+    <node id="populate">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::Wishlist">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddOrderToProfile">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::CreateProduct">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::Products">
+      <data key="d0">method</data>
+    </node>
+    <node id="find">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindById">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindByCategory">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts">
+      <data key="d0">method</data>
+    </node>
+    <node id="where">
+      <data key="d0">external</data>
+    </node>
+    <node id="exec">
+      <data key="d0">external</data>
+    </node>
+    <node id="in">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\shopping-repository.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders">
+      <data key="d0">method</data>
+    </node>
+    <node id="APIError">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder">
+      <data key="d0">method</data>
+    </node>
+    <node id="execPopulate">
+      <data key="d0">external</data>
+    </node>
+    <node id="uuidv4">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn">
+      <data key="d0">method</data>
+    </node>
+    <node id="GenerateSignature">
+      <data key="d0">external</data>
+    </node>
+    <node id="ValidatePassword">
+      <data key="d0">external</data>
+    </node>
+    <node id="FormateData">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp">
+      <data key="d0">method</data>
+    </node>
+    <node id="GenerateSalt">
+      <data key="d0">external</data>
+    </node>
+    <node id="GeneratePassword">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddNewAddress">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetProfile">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetShopingDetails">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetWishList">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddToWishlist">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageCart">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageOrder">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SubscribeEvents">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::CreateProduct">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProducts">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductDescription">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductsByCategory">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::GetSelectedProducts">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductById">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\shopping-service.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::PlaceOrder">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::GetOrders">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::AppError">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::AppError::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="captureStackTrace">
+      <data key="d0">external</data>
+    </node>
+    <node id="setPrototypeOf">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::APIError">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::APIError::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::BadRequestError">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::BadRequestError::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::ValidationError">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\app-errors.js::ValidationError::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\error-handler.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger">
+      <data key="d0">class</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::constructor">
+      <data key="d0">method</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::logError">
+      <data key="d0">method</data>
+    </node>
+    <node id="log">
+      <data key="d0">external</data>
+    </node>
+    <node id="stringify">
+      <data key="d0">external</data>
+    </node>
+    <node id="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::isTrustError">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\App.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="frontend\frontend\src\App.js::App">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\shpping-slice.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="frontend\frontend\src\store\shpping-slice.js::landingProducts">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\shpping-slice.js::productDetails">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js">
+      <data key="d0">file</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::userLogin">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::userSignup">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::userProfile">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::addNewAddress">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::addToWishlist">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::removeFromWishlist">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::addToCart">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::removeFromCart">
+      <data key="d0">method</data>
+    </node>
+    <node id="frontend\frontend\src\store\user-slice.js::placeOrder">
+      <data key="d0">method</data>
+    </node>
+    <edge source="online_shopping_monolithic\src\database\models\Customer.js" target="online_shopping_monolithic\src\database\models\Customer.js::transform">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\models\Order.js" target="online_shopping_monolithic\src\database\models\Order.js::transform">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateCustomer">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateAddress">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomer">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::Wishlist">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddOrderToProfile">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateCustomer" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateAddress" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateAddress" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomer" target="findOne">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::Wishlist" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::Wishlist" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddOrderToProfile" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddOrderToProfile" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::CreateProduct">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::Products">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindById">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindByCategory">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::CreateProduct" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::Products" target="find">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindById" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindByCategory" target="find">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts" target="where">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts" target="find">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts" target="exec">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts" target="in">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js" target="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository" target="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository" target="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders" target="find">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders" target="APIError">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="execPopulate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="populate">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="save">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="APIError">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="uuidv4">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder" target="findById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddNewAddress">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetProfile">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetShopingDetails">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetWishList">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddToWishlist">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageCart">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageOrder">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SubscribeEvents">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn" target="GenerateSignature">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn" target="ValidatePassword">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomer">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignIn" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp" target="GenerateSignature">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateCustomer">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp" target="GenerateSalt">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SignUp" target="GeneratePassword">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddNewAddress" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddNewAddress" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::CreateAddress">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetProfile" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetProfile" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetShopingDetails" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetShopingDetails" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::FindCustomerById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetWishList" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::Wishlist">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::GetWishList" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddToWishlist" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddWishlistItem">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddToWishlist" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageCart" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageCart" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddCartItem">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageOrder" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageOrder" target="online_shopping_monolithic\src\database\repository\customer-repository.js::CustomerRepository::AddOrderToProfile">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SubscribeEvents" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageOrder">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SubscribeEvents" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::AddToWishlist">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\customer-service.js::CustomerService::SubscribeEvents" target="online_shopping_monolithic\src\services\customer-service.js::CustomerService::ManageCart">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js" target="online_shopping_monolithic\src\services\product-service.js::ProductService">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::CreateProduct">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProducts">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductDescription">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductsByCategory">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::GetSelectedProducts">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService" target="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductById">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::CreateProduct" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::CreateProduct" target="online_shopping_monolithic\src\services\product-service.js::ProductService::CreateProduct">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProducts" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProducts" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::Products">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductDescription" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductDescription" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductsByCategory" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductsByCategory" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindByCategory">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetSelectedProducts" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetSelectedProducts" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindSelectedProducts">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\product-service.js::ProductService::GetProductById" target="online_shopping_monolithic\src\database\repository\product-repository.js::ProductRepository::FindById">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js" target="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService" target="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService" target="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::PlaceOrder">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService" target="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::GetOrders">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::PlaceOrder" target="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::CreateNewOrder">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::PlaceOrder" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::GetOrders" target="online_shopping_monolithic\src\database\repository\shopping-repository.js::ShoppingRepository::Orders">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\services\shopping-service.js::ShoppingService::GetOrders" target="FormateData">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js" target="online_shopping_monolithic\src\utils\app-errors.js::AppError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js" target="online_shopping_monolithic\src\utils\app-errors.js::APIError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js" target="online_shopping_monolithic\src\utils\app-errors.js::BadRequestError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js" target="online_shopping_monolithic\src\utils\app-errors.js::ValidationError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::AppError" target="online_shopping_monolithic\src\utils\app-errors.js::AppError::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::AppError::constructor" target="captureStackTrace">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::AppError::constructor" target="setPrototypeOf">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::APIError" target="online_shopping_monolithic\src\utils\app-errors.js::APIError::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::BadRequestError" target="online_shopping_monolithic\src\utils\app-errors.js::BadRequestError::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\app-errors.js::ValidationError" target="online_shopping_monolithic\src\utils\app-errors.js::ValidationError::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js" target="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger" target="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::constructor">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger" target="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::logError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger" target="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::isTrustError">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::logError" target="log">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="online_shopping_monolithic\src\utils\error-handler.js::ErrorLogger::logError" target="stringify">
+      <data key="d1">calls</data>
+    </edge>
+    <edge source="frontend\frontend\src\App.js" target="frontend\frontend\src\App.js::App">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\shpping-slice.js" target="frontend\frontend\src\store\shpping-slice.js::landingProducts">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\shpping-slice.js" target="frontend\frontend\src\store\shpping-slice.js::productDetails">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::userLogin">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::userSignup">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::userProfile">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::addNewAddress">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::addToWishlist">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::removeFromWishlist">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::addToCart">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::removeFromCart">
+      <data key="d1">contains</data>
+    </edge>
+    <edge source="frontend\frontend\src\store\user-slice.js" target="frontend\frontend\src\store\user-slice.js::placeOrder">
+      <data key="d1">contains</data>
+    </edge>
+  </graph>
+</graphml>

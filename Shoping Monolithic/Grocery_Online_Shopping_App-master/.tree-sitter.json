@@ -1,0 +1,8 @@
+{
+  "parsers": [
+    {
+      "name": "javascript",
+      "dir": "./tree-sitter-javascript"
+    }
+  ]
+}

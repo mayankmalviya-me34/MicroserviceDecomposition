@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#updateOrder">
+    <rdf:type rdf:resource="http://example.org/ontology#Function"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Read">
+    <rdf:type rdf:resource="http://example.org/ontology#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIntent">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#listOrders">
+    <rdf:type rdf:resource="http://example.org/ontology#Function"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#api_orders">
+    <rdf:type rdf:resource="http://example.org/ontology#APIEndpoint"/>
+    <ex:hasIntent rdf:resource="http://example.org/ontology#Delete"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Delete">
+    <rdf:type rdf:resource="http://example.org/ontology#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#APIEndpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#DomainConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer">
+    <rdf:type rdf:resource="http://example.org/ontology#DomainConcept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#placeOrder">
+    <rdf:type rdf:resource="http://example.org/ontology#Function"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Order"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Create">
+    <rdf:type rdf:resource="http://example.org/ontology#CRUDIntent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#implements">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cancelOrder">
+    <rdf:type rdf:resource="http://example.org/ontology#Function"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CRUDIntent">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#api_products">
+    <rdf:type rdf:resource="http://example.org/ontology#APIEndpoint"/>
+    <ex:hasIntent rdf:resource="http://example.org/ontology#Read"/>
+    <ex:hasIntent rdf:resource="http://example.org/ontology#Create"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#listCustomers">
+    <rdf:type rdf:resource="http://example.org/ontology#Function"/>
+    <ex:implements rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#api_customers">
+    <rdf:type rdf:resource="http://example.org/ontology#APIEndpoint"/>
+    <ex:hasIntent rdf:resource="http://example.org/ontology#Read"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Order">
+    <rdf:type rdf:resource="http://example.org/ontology#DomainConcept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Update">
+    <rdf:type rdf:resource="http://example.org/ontology#CRUDIntent"/>
+  </rdf:Description>
+</rdf:RDF>

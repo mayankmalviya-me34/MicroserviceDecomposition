@@ -1,0 +1,861 @@
+[
+    {
+        "file": "online_shopping_monolithic\\src\\database\\models\\Customer.js",
+        "function": "Customer.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [
+            {
+                "text": "Customer.js",
+                "label": "PERSON"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\models\\Customer.js",
+        "function": "transform",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "transform(doc, ret)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\models\\Order.js",
+        "function": "Order.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [
+            {
+                "text": "Order.js",
+                "label": "CARDINAL"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\models\\Order.js",
+        "function": "transform",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "transform(doc, ret)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "customer-repository.js",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "CustomerRepository",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "CustomerRepository",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "CreateCustomer",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "customer",
+        "named_entities": [
+            {
+                "text": "CreateCustomer",
+                "label": "ORG"
+            }
+        ],
+        "signature": "CreateCustomer()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "CreateAddress",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "address",
+        "named_entities": [
+            {
+                "text": "CreateAddress",
+                "label": "ORG"
+            }
+        ],
+        "signature": "CreateAddress()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "FindCustomer",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "customer",
+        "named_entities": [
+            {
+                "text": "FindCustomer",
+                "label": "ORG"
+            }
+        ],
+        "signature": "FindCustomer()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "FindCustomerById",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "id",
+        "named_entities": [],
+        "signature": "FindCustomerById()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "Wishlist",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [
+            {
+                "text": "Wishlist",
+                "label": "ORG"
+            }
+        ],
+        "signature": "Wishlist(customerId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "AddWishlistItem",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "item",
+        "named_entities": [],
+        "signature": "AddWishlistItem(customerId, product)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "AddCartItem",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "item",
+        "named_entities": [],
+        "signature": "AddCartItem(customerId, product, qty, isRemove)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js",
+        "function": "AddOrderToProfile",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "profile",
+        "named_entities": [],
+        "signature": "AddOrderToProfile(customerId, order)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "product-repository.js",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "ProductRepository",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "ProductRepository",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "CreateProduct",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "product",
+        "named_entities": [
+            {
+                "text": "CreateProduct",
+                "label": "ORG"
+            }
+        ],
+        "signature": "CreateProduct()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "Products",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "Products()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "FindById",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "id",
+        "named_entities": [],
+        "signature": "FindById(id)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "FindByCategory",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "category",
+        "named_entities": [],
+        "signature": "FindByCategory(category)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js",
+        "function": "FindSelectedProducts",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "products",
+        "named_entities": [],
+        "signature": "FindSelectedProducts(selectedIds)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js",
+        "function": "shopping-repository.js",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js",
+        "function": "ShoppingRepository",
+        "business_role": "REPOSITORY",
+        "intent": null,
+        "domain_entity": "repository",
+        "named_entities": [
+            {
+                "text": "ShoppingRepository",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js",
+        "function": "Orders",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "Orders(customerId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js",
+        "function": "CreateNewOrder",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "order",
+        "named_entities": [],
+        "signature": "CreateNewOrder(customerId, txnId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "customer-service.js",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "CustomerService",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "service",
+        "named_entities": [
+            {
+                "text": "CustomerService",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "SignIn",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "in",
+        "named_entities": [],
+        "signature": "SignIn(userInputs)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "SignUp",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "up",
+        "named_entities": [],
+        "signature": "SignUp(userInputs)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "AddNewAddress",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "address",
+        "named_entities": [],
+        "signature": "AddNewAddress(_id, userInputs)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "GetProfile",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "profile",
+        "named_entities": [
+            {
+                "text": "GetProfile",
+                "label": "ORG"
+            }
+        ],
+        "signature": "GetProfile(id)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "GetShopingDetails",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "details",
+        "named_entities": [],
+        "signature": "GetShopingDetails(id)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "GetWishList",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "list",
+        "named_entities": [],
+        "signature": "GetWishList(customerId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "AddToWishlist",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "wishlist",
+        "named_entities": [],
+        "signature": "AddToWishlist(customerId, product)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "ManageCart",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "cart",
+        "named_entities": [
+            {
+                "text": "ManageCart",
+                "label": "ORG"
+            }
+        ],
+        "signature": "ManageCart(customerId, product, qty, isRemove)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "ManageOrder",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "order",
+        "named_entities": [
+            {
+                "text": "ManageOrder",
+                "label": "ORG"
+            }
+        ],
+        "signature": "ManageOrder(customerId, order)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\customer-service.js",
+        "function": "SubscribeEvents",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "events",
+        "named_entities": [
+            {
+                "text": "SubscribeEvents",
+                "label": "ORG"
+            }
+        ],
+        "signature": "SubscribeEvents(payload)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "product-service.js",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "ProductService",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "service",
+        "named_entities": [
+            {
+                "text": "ProductService",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "CreateProduct",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "product",
+        "named_entities": [
+            {
+                "text": "CreateProduct",
+                "label": "ORG"
+            }
+        ],
+        "signature": "CreateProduct(productInputs)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "GetProducts",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "products",
+        "named_entities": [
+            {
+                "text": "GetProducts",
+                "label": "ORG"
+            }
+        ],
+        "signature": "GetProducts()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "GetProductDescription",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "description",
+        "named_entities": [],
+        "signature": "GetProductDescription(productId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "GetProductsByCategory",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "category",
+        "named_entities": [],
+        "signature": "GetProductsByCategory(category)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "GetSelectedProducts",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "products",
+        "named_entities": [],
+        "signature": "GetSelectedProducts(selectedIds)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\product-service.js",
+        "function": "GetProductById",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "id",
+        "named_entities": [],
+        "signature": "GetProductById(productId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\shopping-service.js",
+        "function": "shopping-service.js",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\shopping-service.js",
+        "function": "ShoppingService",
+        "business_role": "SERVICE",
+        "intent": null,
+        "domain_entity": "service",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\shopping-service.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\shopping-service.js",
+        "function": "PlaceOrder",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "order",
+        "named_entities": [
+            {
+                "text": "PlaceOrder",
+                "label": "ORG"
+            }
+        ],
+        "signature": "PlaceOrder(userInput)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\services\\shopping-service.js",
+        "function": "GetOrders",
+        "business_role": "METHOD",
+        "intent": "READ",
+        "domain_entity": "orders",
+        "named_entities": [
+            {
+                "text": "GetOrders",
+                "label": "ORG"
+            }
+        ],
+        "signature": "GetOrders(customerId)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "app-errors.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [
+            {
+                "text": "app-errors.js",
+                "label": "CARDINAL"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "AppError",
+        "business_role": "CLASS",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            {
+                "text": "AppError",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor(name, statusCode, description, isOperational, errorStack, logingErrorResponse)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "APIError",
+        "business_role": "CLASS",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            {
+                "text": "APIError",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor(name)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "BadRequestError",
+        "business_role": "CLASS",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor(logingErrorResponse)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "ValidationError",
+        "business_role": "CLASS",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            {
+                "text": "ValidationError",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\app-errors.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor(errorStack)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\error-handler.js",
+        "function": "error-handler.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\error-handler.js",
+        "function": "ErrorLogger",
+        "business_role": "CLASS",
+        "intent": null,
+        "domain_entity": "logger",
+        "named_entities": [
+            {
+                "text": "ErrorLogger",
+                "label": "ORG"
+            }
+        ],
+        "signature": ""
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\error-handler.js",
+        "function": "constructor",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "constructor()"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\error-handler.js",
+        "function": "logError",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            {
+                "text": "logError",
+                "label": "ORG"
+            }
+        ],
+        "signature": "logError(err)"
+    },
+    {
+        "file": "online_shopping_monolithic\\src\\utils\\error-handler.js",
+        "function": "isTrustError",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [],
+        "signature": "isTrustError(error)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\App.js",
+        "function": "App.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "frontend\\frontend\\src\\App.js",
+        "function": "App",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "signature": "App()"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\shpping-slice.js",
+        "function": "shpping-slice.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\shpping-slice.js",
+        "function": "landingProducts",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "products",
+        "named_entities": [],
+        "signature": "landingProducts(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\shpping-slice.js",
+        "function": "productDetails",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "details",
+        "named_entities": [],
+        "signature": "productDetails(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "user-slice.js",
+        "business_role": "FILE",
+        "intent": null,
+        "domain_entity": "js",
+        "named_entities": [],
+        "signature": ""
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "userLogin",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "login",
+        "named_entities": [],
+        "signature": "userLogin(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "userSignup",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "signup",
+        "named_entities": [],
+        "signature": "userSignup(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "userProfile",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "profile",
+        "named_entities": [],
+        "signature": "userProfile(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "addNewAddress",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "address",
+        "named_entities": [],
+        "signature": "addNewAddress(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "addToWishlist",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "wishlist",
+        "named_entities": [],
+        "signature": "addToWishlist(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "removeFromWishlist",
+        "business_role": "METHOD",
+        "intent": "DELETE",
+        "domain_entity": "wishlist",
+        "named_entities": [],
+        "signature": "removeFromWishlist(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "addToCart",
+        "business_role": "METHOD",
+        "intent": "CREATE",
+        "domain_entity": "cart",
+        "named_entities": [],
+        "signature": "addToCart(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "removeFromCart",
+        "business_role": "METHOD",
+        "intent": "DELETE",
+        "domain_entity": "cart",
+        "named_entities": [],
+        "signature": "removeFromCart(state, action)"
+    },
+    {
+        "file": "frontend\\frontend\\src\\store\\user-slice.js",
+        "function": "placeOrder",
+        "business_role": "METHOD",
+        "intent": null,
+        "domain_entity": "order",
+        "named_entities": [],
+        "signature": "placeOrder(state, action)"
+    }
+]

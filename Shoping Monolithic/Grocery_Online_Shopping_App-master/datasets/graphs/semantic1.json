@@ -1,0 +1,800 @@
+{
+    "functions": [
+        {
+            "function": "transform",
+            "class": "",
+            "signature": "transform(doc, ret)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require('mongoose')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\models\\Customer.js"
+        },
+        {
+            "function": "transform",
+            "class": "",
+            "signature": "transform(doc, ret)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require('mongoose')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\models\\Order.js"
+        },
+        {
+            "function": "CreateCustomer",
+            "class": "CustomerRepository",
+            "signature": "CreateCustomer()",
+            "return_type": "unknown",
+            "calls": [
+                "save"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "CreateAddress",
+            "class": "CustomerRepository",
+            "signature": "CreateAddress()",
+            "return_type": "unknown",
+            "calls": [
+                "save",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "FindCustomer",
+            "class": "CustomerRepository",
+            "signature": "FindCustomer()",
+            "return_type": "unknown",
+            "calls": [
+                "findOne"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "FindCustomerById",
+            "class": "CustomerRepository",
+            "signature": "FindCustomerById()",
+            "return_type": "unknown",
+            "calls": [
+                "populate",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "Wishlist",
+            "class": "CustomerRepository",
+            "signature": "Wishlist(customerId)",
+            "return_type": "unknown",
+            "calls": [
+                "populate",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "AddWishlistItem",
+            "class": "CustomerRepository",
+            "signature": "AddWishlistItem(customerId, product)",
+            "return_type": "unknown",
+            "calls": [
+                "save",
+                "populate",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "AddCartItem",
+            "class": "CustomerRepository",
+            "signature": "AddCartItem(customerId, product, qty, isRemove)",
+            "return_type": "unknown",
+            "calls": [
+                "save",
+                "populate",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "AddOrderToProfile",
+            "class": "CustomerRepository",
+            "signature": "AddOrderToProfile(customerId, order)",
+            "return_type": "unknown",
+            "calls": [
+                "save",
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\customer-repository.js"
+        },
+        {
+            "function": "CreateProduct",
+            "class": "ProductRepository",
+            "signature": "CreateProduct()",
+            "return_type": "unknown",
+            "calls": [
+                "save"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js"
+        },
+        {
+            "function": "Products",
+            "class": "ProductRepository",
+            "signature": "Products()",
+            "return_type": "unknown",
+            "calls": [
+                "find"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js"
+        },
+        {
+            "function": "FindById",
+            "class": "ProductRepository",
+            "signature": "FindById(id)",
+            "return_type": "unknown",
+            "calls": [
+                "findById"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js"
+        },
+        {
+            "function": "FindByCategory",
+            "class": "ProductRepository",
+            "signature": "FindByCategory(category)",
+            "return_type": "unknown",
+            "calls": [
+                "find"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js"
+        },
+        {
+            "function": "FindSelectedProducts",
+            "class": "ProductRepository",
+            "signature": "FindSelectedProducts(selectedIds)",
+            "return_type": "unknown",
+            "calls": [
+                "where",
+                "find",
+                "exec",
+                "in"
+            ],
+            "imports": [
+                "require(\"../models\")",
+                "require(\"../../utils/app-errors\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\product-repository.js"
+        },
+        {
+            "function": "Orders",
+            "class": "ShoppingRepository",
+            "signature": "Orders(customerId)",
+            "return_type": "unknown",
+            "calls": [
+                "populate",
+                "find",
+                "APIError"
+            ],
+            "imports": [
+                "require('../models')",
+                "require('uuid')",
+                "require('../../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js"
+        },
+        {
+            "function": "CreateNewOrder",
+            "class": "ShoppingRepository",
+            "signature": "CreateNewOrder(customerId, txnId)",
+            "return_type": "unknown",
+            "calls": [
+                "execPopulate",
+                "populate",
+                "save",
+                "APIError",
+                "uuidv4",
+                "findById"
+            ],
+            "imports": [
+                "require('../models')",
+                "require('uuid')",
+                "require('../../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\database\\repository\\shopping-repository.js"
+        },
+        {
+            "function": "constructor",
+            "class": "CustomerService",
+            "signature": "constructor()",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "SignIn",
+            "class": "CustomerService",
+            "signature": "SignIn(userInputs)",
+            "return_type": "unknown",
+            "calls": [
+                "GenerateSignature",
+                "ValidatePassword",
+                "FindCustomer",
+                "FormateData"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "SignUp",
+            "class": "CustomerService",
+            "signature": "SignUp(userInputs)",
+            "return_type": "unknown",
+            "calls": [
+                "GenerateSignature",
+                "CreateCustomer",
+                "FormateData",
+                "GenerateSalt",
+                "GeneratePassword"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "AddNewAddress",
+            "class": "CustomerService",
+            "signature": "AddNewAddress(_id, userInputs)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "CreateAddress"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "GetProfile",
+            "class": "CustomerService",
+            "signature": "GetProfile(id)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "FindCustomerById"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "GetShopingDetails",
+            "class": "CustomerService",
+            "signature": "GetShopingDetails(id)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "FindCustomerById"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "GetWishList",
+            "class": "CustomerService",
+            "signature": "GetWishList(customerId)",
+            "return_type": "unknown",
+            "calls": [
+                "Wishlist",
+                "FormateData"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "AddToWishlist",
+            "class": "CustomerService",
+            "signature": "AddToWishlist(customerId, product)",
+            "return_type": "unknown",
+            "calls": [
+                "AddWishlistItem",
+                "FormateData"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "ManageCart",
+            "class": "CustomerService",
+            "signature": "ManageCart(customerId, product, qty, isRemove)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "AddCartItem"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "ManageOrder",
+            "class": "CustomerService",
+            "signature": "ManageOrder(customerId, order)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "AddOrderToProfile"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "SubscribeEvents",
+            "class": "CustomerService",
+            "signature": "SubscribeEvents(payload)",
+            "return_type": "unknown",
+            "calls": [
+                "ManageOrder",
+                "AddToWishlist",
+                "ManageCart"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require('../utils')",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\customer-service.js"
+        },
+        {
+            "function": "constructor",
+            "class": "ProductService",
+            "signature": "constructor()",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "CreateProduct",
+            "class": "ProductService",
+            "signature": "CreateProduct(productInputs)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "CreateProduct"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "GetProducts",
+            "class": "ProductService",
+            "signature": "GetProducts()",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "Products"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "GetProductDescription",
+            "class": "ProductService",
+            "signature": "GetProductDescription(productId)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "FindById"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "GetProductsByCategory",
+            "class": "ProductService",
+            "signature": "GetProductsByCategory(category)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "FindByCategory"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "GetSelectedProducts",
+            "class": "ProductService",
+            "signature": "GetSelectedProducts(selectedIds)",
+            "return_type": "unknown",
+            "calls": [
+                "FormateData",
+                "FindSelectedProducts"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "GetProductById",
+            "class": "ProductService",
+            "signature": "GetProductById(productId)",
+            "return_type": "unknown",
+            "calls": [
+                "FindById"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")",
+                "require('../utils/app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\product-service.js"
+        },
+        {
+            "function": "constructor",
+            "class": "ShoppingService",
+            "signature": "constructor()",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\shopping-service.js"
+        },
+        {
+            "function": "PlaceOrder",
+            "class": "ShoppingService",
+            "signature": "PlaceOrder(userInput)",
+            "return_type": "unknown",
+            "calls": [
+                "CreateNewOrder",
+                "FormateData"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\shopping-service.js"
+        },
+        {
+            "function": "GetOrders",
+            "class": "ShoppingService",
+            "signature": "GetOrders(customerId)",
+            "return_type": "unknown",
+            "calls": [
+                "Orders",
+                "FormateData"
+            ],
+            "imports": [
+                "require(\"../database\")",
+                "require(\"../utils\")"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\services\\shopping-service.js"
+        },
+        {
+            "function": "constructor",
+            "class": "AppError",
+            "signature": "constructor(name, statusCode, description, isOperational, errorStack, logingErrorResponse)",
+            "return_type": "unknown",
+            "calls": [
+                "captureStackTrace",
+                "setPrototypeOf"
+            ],
+            "imports": [],
+            "source_file": "online_shopping_monolithic\\src\\utils\\app-errors.js"
+        },
+        {
+            "function": "constructor",
+            "class": "APIError",
+            "signature": "constructor(name)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [],
+            "source_file": "online_shopping_monolithic\\src\\utils\\app-errors.js"
+        },
+        {
+            "function": "constructor",
+            "class": "BadRequestError",
+            "signature": "constructor(logingErrorResponse)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [],
+            "source_file": "online_shopping_monolithic\\src\\utils\\app-errors.js"
+        },
+        {
+            "function": "constructor",
+            "class": "ValidationError",
+            "signature": "constructor(errorStack)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [],
+            "source_file": "online_shopping_monolithic\\src\\utils\\app-errors.js"
+        },
+        {
+            "function": "constructor",
+            "class": "ErrorLogger",
+            "signature": "constructor()",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require('winston')",
+                "require('./app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\utils\\error-handler.js"
+        },
+        {
+            "function": "logError",
+            "class": "ErrorLogger",
+            "signature": "logError(err)",
+            "return_type": "unknown",
+            "calls": [
+                "log",
+                "stringify"
+            ],
+            "imports": [
+                "require('winston')",
+                "require('./app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\utils\\error-handler.js"
+        },
+        {
+            "function": "isTrustError",
+            "class": "ErrorLogger",
+            "signature": "isTrustError(error)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "require('winston')",
+                "require('./app-errors')"
+            ],
+            "source_file": "online_shopping_monolithic\\src\\utils\\error-handler.js"
+        },
+        {
+            "function": "App",
+            "class": "",
+            "signature": "App()",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import \"./App.css\";",
+                "import { BrowserRouter, Route, Routes } from \"react-router-dom\";",
+                "import { Login } from \"./pages\";",
+                "import { Home } from \"./pages\";",
+                "import { Header } from \"./components\";",
+                "import { ProductDetails } from \"./pages/ProductDetail\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\App.js"
+        },
+        {
+            "function": "landingProducts",
+            "class": "",
+            "signature": "landingProducts(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\shpping-slice.js"
+        },
+        {
+            "function": "productDetails",
+            "class": "",
+            "signature": "productDetails(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\shpping-slice.js"
+        },
+        {
+            "function": "userLogin",
+            "class": "",
+            "signature": "userLogin(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "userSignup",
+            "class": "",
+            "signature": "userSignup(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "userProfile",
+            "class": "",
+            "signature": "userProfile(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "addNewAddress",
+            "class": "",
+            "signature": "addNewAddress(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "addToWishlist",
+            "class": "",
+            "signature": "addToWishlist(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "removeFromWishlist",
+            "class": "",
+            "signature": "removeFromWishlist(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "addToCart",
+            "class": "",
+            "signature": "addToCart(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "removeFromCart",
+            "class": "",
+            "signature": "removeFromCart(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        },
+        {
+            "function": "placeOrder",
+            "class": "",
+            "signature": "placeOrder(state, action)",
+            "return_type": "unknown",
+            "calls": [],
+            "imports": [
+                "import { createSlice } from \"@reduxjs/toolkit\";"
+            ],
+            "source_file": "frontend\\frontend\\src\\store\\user-slice.js"
+        }
+    ]
+}
