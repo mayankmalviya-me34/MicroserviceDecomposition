@@ -1,0 +1,3045 @@
+[
+  {
+    "file": "spring-petclinic-admin-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\admin\\SpringBootAdminApplication.java",
+    "class": "SpringBootAdminApplication",
+    "function": "main",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.core.env.Environment;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "class": "ApiGatewayApplication",
+    "function": "main",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar ApiGatewayApplication = (function () {\n    function ApiGatewayApplication() {\n    }\n\n    ApiGatewayApplication.prototype.main = function () {\n        console.log(\"Main method called\");\n    };\n\n    return ApiGatewayApplication;\n})();\n\nvar ApiGatewayApplication = (function () {\n    function ApiGatewayApplication() {\n    }\n\n    ApiGatewayApplication.prototype.main = function () {\n        console.log(\"Main method called\");\n    };\n\n    return ApiGateway"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "class": "ApiGatewayApplication",
+    "function": "loadBalancedRestTemplate",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar ApiGatewayApplication = (function () {\n    function ApiGatewayApplication() {\n    }\n\n    ApiGatewayApplication.prototype.loadBalancedRestTemplate = function () {\n        var self = this;\n\n        this.loadBalancedRestTemplate = function () {\n            var self = this;\n\n            self.loadBalancedRestTemplate = function () {\n                var self = this;\n\n                self.loadBalancedRestTemplate = function () {\n                    var self = self;\n\n                    self.loadBalance"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "class": "ApiGatewayApplication",
+    "function": "loadBalancedWebClientBuilder",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar ApiGatewayApplication = (function () {\n    function ApiGatewayApplication() {\n    }\n\n    ApiGatewayApplication.prototype.loadBalancedWebClientBuilder = function () {\n        var _this = this;\n\n        return new Promise(function (resolve, reject) {\n            _this.loadBalancedWebClientBuilder = function (options) {\n                var _this = _this;\n\n                options = options || {};\n                options.baseUrl = options.baseUrl || 'https://api.gateway.com';"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "class": "ApiGatewayApplication",
+    "function": "routerFunction",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "workaround",
+    "named_entities": [
+      {
+        "text": "href=\"https://github.com",
+        "label": "ORG"
+      }
+    ],
+    "comment": "/**\n     * workaround solution for forwarding to index.html\n     * @see <a href=\"https://github.com/spring-projects/spring-boot/issues/9785\">#9785</a>\n     */",
+    "llm_hint": "/*\n * Copyright (c) 2008-2021, Hazelcast, Inc. All Rights Reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "class": "ApiGatewayApplication",
+    "function": "defaultCustomizer",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "default",
+    "named_entities": [],
+    "comment": "/**\n     * Default Resilience4j circuit breaker configuration\n     */",
+    "llm_hint": "\nWhat is this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\CustomersServiceClient.java",
+    "class": "CustomersServiceClient",
+    "function": "getOwner",
+    "business_role": "SERVICE",
+    "intent": "READ",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?\n\nWhat is the owner of this class?"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "class": "VisitsServiceClient",
+    "function": "getVisitsForPets",
+    "business_role": "SERVICE",
+    "intent": "READ",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar VisitsServiceClient = function() {\n\n\t// Constructor\n\tthis.getVisitsForPets = function() {\n\n\t\t// Get all visits\n\t\tthis.getVisitsForPets();\n\n\t};\n\n\tthis.getVisitsForPets = function() {\n\n\t\t// Get all visits\n\t\tthis.getVisitsForPets();\n\n\t};\n\n\tthis.getVisitsForPets = function() {\n\n\t\t// Get all visits\n\t\t"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "class": "VisitsServiceClient",
+    "function": "joinIds",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\nAuthor: Maciej Szarlinski\n*/\n\nvar VisitsServiceClient = function() {\n\n    var self = this;\n\n    self.joinIds = function(ids) {\n        var self = this;\n\n        if (!ids) {\n            ids = [];\n        }\n\n        ids.forEach(function(id) {\n            self.joinId(id);\n        });\n    };\n\n    self.joinId = function(id) {\n        var self = this;\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "class": "VisitsServiceClient",
+    "function": "setHostname",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar VisitsServiceClient = function(hostname) {\n\tthis.hostname = hostname;\n\tthis.setHostname = function(hostname) {\n\t\tthis.hostname = hostname;\n\t};\n\tthis.getHostname = function() {\n\t\treturn this.hostname;\n\t};\n\tthis.setHostname = function(hostname) {\n\t\tthis.hostname = hostname;\n\t};\n\tthis.getHostname = function() {\n\t\treturn this.hostname;\n\t};\n\tthis.setHostname"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "class": "ApiGatewayController",
+    "function": "getOwnerDetails",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar ApiGatewayController = {\n    getOwnerDetails: function(req, res, next) {\n        var owner = req.params.owner;\n\n        if (!owner) {\n            return res.status(400).send({\n                message: 'Invalid owner'\n            });\n        }\n\n        var ownerDetails = ApiGatewayController.getOwnerDetails(owner);\n\n        if (!ownerDetails) {\n            return res.status(400).send({\n                message: 'Invalid owner'\n            });\n        }"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "class": "ApiGatewayController",
+    "function": "addVisitsToOwner",
+    "business_role": "CONTROLLER",
+    "intent": "CREATE",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar ApiGatewayController = {\n    addVisitsToOwner: function(visitsToOwner) {\n        var self = this;\n\n        var apiGatewayController = this;\n\n        apiGatewayController.addVisitsToOwner = function(visitsToOwner) {\n            apiGatewayController.addVisitsToOwner(visitsToOwner);\n        };\n\n        apiGatewayController.addVisitsToOwner = function(visitsToOwner) {\n            apiGatewayController.addVisitsToOwner(visitsToOwner);\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "class": "ApiGatewayController",
+    "function": "emptyVisitsForPets",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "﻿using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ApiGatewayController\n{\n    public class EmptyVisitsForPetsController : ApiGatewayControllerBase\n    {\n        public EmptyVisitsForPetsController()\n        {\n        }\n\n        public override void EmptyVisitsForPets()\n        {\n        }\n    }\n}\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\FallbackController.java",
+    "class": "FallbackController",
+    "function": "fallback",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar FallbackController = Backbone.Controller.extend({\n\tinitialize: function() {\n\t\tthis.fallback = {};\n\t},\n\t\n\trender: function() {\n\t\tthis.$el.html(this.template());\n\t},\n\t\n\ttemplate: function() {\n\t\tvar fallback = this.fallback;\n\t\treturn '<div class=\"fallback-container\">' +\n\t\t\t'<div class=\"fallback-container-inner\">' +\n\t\t\t\t'<div class=\"fallback-container-inner"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplicationTests.java",
+    "class": "ApiGatewayApplicationTests",
+    "function": "contextLoads",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": " \nWhat is the name of the method?\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "class": "VisitsServiceClientIntegrationTest",
+    "function": "setUp",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": ".\n*/\n\nvar VisitsServiceClientIntegrationTest = require('../../../../../../test/integration/visitsServiceClientIntegrationTest');\nvar VisitsServiceClient = require('../../../../../../test/integration/visitsServiceClient');\nvar VisitsServiceClientIntegrationTest = require('../../../../../../test/integration/visitsServiceClientIntegrationTest');\nvar VisitsServiceClientIntegrationTest = require('../../../../../../test/integration/visitsServiceClientIntegrationTest');\nvar VisitsServiceClientIntegrationTest = require('../../../../../../test/integration/"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "class": "VisitsServiceClientIntegrationTest",
+    "function": "shutdown",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar VisitsServiceClientIntegrationTest = Class.create(VisitsServiceClientIntegrationTest, {\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t//\n\n\t// Properties\n\t"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "class": "VisitsServiceClientIntegrationTest",
+    "function": "getVisitsForPets_withAvailableVisitsService",
+    "business_role": "SERVICE",
+    "intent": "READ",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "class": "VisitsServiceClientIntegrationTest",
+    "function": "assertVisitDescriptionEquals",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\nWhat is the description of the visit?\n*/\n\nvar VisitsServiceClientIntegrationTest = {\n\n    setUp: function() {\n        this.visitsServiceClient = new VisitsServiceClient();\n    },\n\n    tearDown: function() {\n        this.visitsServiceClient = null;\n    },\n\n    assertVisitDescriptionEquals: function(visitDescription) {\n        var visit = this.visitsServiceClient.getVisit(visitDescription.id);\n\n        this.assertVisitDescriptionEquals(visit.description"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "class": "VisitsServiceClientIntegrationTest",
+    "function": "prepareResponse",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\nWhat is the response from the server?\n*/\n\nvar VisitsServiceClientIntegrationTest = function() {\n\n    var VisitsServiceClient = require('../../../client/VisitsServiceClient');\n    var VisitsServiceClientIntegrationTest = require('../../../client/VisitsServiceClientIntegrationTest');\n    var VisitsServiceClientIntegrationTest = require('../../../client/VisitsServiceClientIntegrationTest');\n    var VisitsServiceClientIntegrationTest = require('../../../client/VisitsServiceClientIntegrationTest');\n    var VisitsService"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayControllerTest.java",
+    "class": "ApiGatewayControllerTest",
+    "function": "getOwnerDetails_withAvailableVisitsService",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "test",
+    "named_entities": [],
+    "comment": "*\n     * Test Resilience4j fallback method",
+    "llm_hint": "﻿using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ApiGatewayControllerTest\n{\n    public class getOwnerDetails_withAvailableVisitsService : ApiGatewayControllerTestBase\n    {\n        public getOwnerDetails_withAvailableVisitsService()\n        {\n        }\n\n        [Test]\n        public async Task GetOwnerDetails_withAvailableVisitsService()\n        {\n            // Arrange\n            var apiGatewayController = new"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayControllerTest.java",
+    "class": "ApiGatewayControllerTest",
+    "function": "getOwnerDetails_withServiceError",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "test",
+    "named_entities": [],
+    "comment": "/**\n     * Test Resilience4j fallback method\n     */",
+    "llm_hint": "﻿using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ApiGatewayControllerTest\n{\n    public class getOwnerDetails_withServiceError : ApiGatewayControllerTest\n    {\n        public void GetOwnerDetails_withServiceError()\n        {\n            // Arrange\n            var apiGatewayController = new ApiGatewayController();\n            var apiGatewayControllerTest = new ApiGatewayControllerTest();\n\n            // Act\n            var owner"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "class": "CircuitBreakerConfiguration",
+    "function": "circuitBreakerRegistry",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar CircuitBreakerConfiguration = (function () {\n    function CircuitBreakerConfiguration() {\n    }\n    CircuitBreakerConfiguration.prototype.getCircuitBreakerRegistry = function () {\n        return this.circuitBreakerRegistry;\n    };\n    CircuitBreakerConfiguration.prototype.setCircuitBreakerRegistry = function (circuitBreakerRegistry) {\n        this.circuitBreakerRegistry = circuitBreakerRegistry;\n    };\n    CircuitBreakerConfiguration.prototype.getCircuitBreakerConfiguration = function () {\n        return this.circuitBreakerConfiguration;\n    };\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "class": "CircuitBreakerConfiguration",
+    "function": "timeLimiterRegistry",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "class": "CircuitBreakerConfiguration",
+    "function": "resilience4JConfigurationProperties",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-config-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\config\\ConfigServerApplication.java",
+    "class": "ConfigServerApplication",
+    "function": "main",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServerApplication.h\"\n#include \"ConfigServer"
+  },
+  {
+    "file": "spring-petclinic-config-server\\src\\test\\java\\org\\springframework\\samples\\petclinic\\config\\PetclinicConfigServerApplicationTests.java",
+    "class": "PetclinicConfigServerApplicationTests",
+    "function": "contextLoads",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\n#include \"PetclinicConfigServerApplicationTests.h\"\n#include \"PetclinicConfigServerApplication.h\"\n#include \"PetclinicConfigServerApplicationConfiguration.h\"\n#include \"PetclinicConfigServerApplicationConfigurationConfiguration.h\"\n#include \"PetclinicConfigServerApplicationConfigurationConfigurationConfiguration.h\"\n#include \"PetclinicConfigServerApplicationConfigurationConfigurationConfiguration.h\"\n#include \"PetclinicConfigServerApplicationConfigurationConfigurationConfiguration."
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\CustomersServiceApplication.java",
+    "class": "CustomersServiceApplication",
+    "function": "main",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar CustomersServiceApplication = (function () {\n    function CustomersServiceApplication() {\n    }\n\n    CustomersServiceApplication.prototype.init = function () {\n        var self = this;\n\n        self.customersService = new CustomersService();\n        self.customersService.init();\n    };\n\n    CustomersServiceApplication.prototype.getCustomers = function () {\n        return this.customersService.getCustomers();\n    };\n\n    CustomersServiceApplication.prototype"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\config\\MetricConfig.java",
+    "class": "MetricConfig",
+    "function": "metricsCommonTags",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar MetricConfig = function() {\n\n\tvar config = {};\n\n\tconfig.metricsCommonTags = [];\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\config\\MetricConfig.java",
+    "class": "MetricConfig",
+    "function": "timedAspect",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\nclass MetricConfig {\n    constructor(config) {\n        this.config = config;\n    }\n\n    /**\n     * \n*/\n    get(name) {\n        return this.config[name];\n    }\n\n    /**\n     * \n*/\n    set(name, value) {\n        this.config[name] = value;\n    }\n\n    /**\n     * \n*/\n    get(name) {\n        return this.config[name];\n    }\n\n   "
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getPetsInternal",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\npackage org.sakaiproject.entity;\n\nimport java.util.List;\n\nimport org.sakaiproject.entity.api.Entity;\nimport org.sakaiproject.entity.api.EntityReference;\nimport org.sakaiproject.entity.api.EntityReferenceImpl;\nimport org.sakaiproject.entity.api.User;\nimport org.sakaiproject.entity.api.UserRepository;\nimport org.sakaiproject."
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getPets",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the owner's name?\n\nOwner\n\nWhat is the owner's age?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\nOwner\n\nWhat is the owner's gender?\n\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "addPet",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "toString",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the owner class?\n\nOwner is a JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Michael Isvy\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is the owner class?\n\nOwner is a JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoeller\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nSimple JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Michael Isvy\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is this class?\n\nSimple JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Br"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getFirstName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the first name of an owner?\n\nThe first name of an owner is the first name of the owner.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the last name of the owner.\n\nWhat is the age of an owner?\n\nThe age of an owner is the age of the owner.\n\nWhat is the gender of an owner?\n\nThe gender of an owner is the gender of the owner.\n\nWhat is the gender of an owner?\n\nThe gender of an owner"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getLastName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who is the owner.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who is the owner.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who is the owner.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who is the owner"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getAddress",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "/*\n * Copyright (c) 2008-2021, Hazelcast, Inc. All Rights Reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getCity",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the owner class?\n\nOwner is a simple JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Michael Isvy\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is the owner class?\n\nOwner is a simple JavaBean domain object representing an owner.\n\n@author Ken Krebs\n@author Juergen Hoel"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "getTelephone",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nvar Owner = (function() {\n    function Owner() {\n    }\n\n    Owner.getTelephone = function() {\n        var phone = document.getElementById(\"phone\").value;\n        return phone;\n    };\n\n    Owner.getTelephone = function() {\n        var phone = document.getElementById(\"phone\").value;\n        return phone;\n    };\n\n    Owner.getTelephone = function() {\n        var phone = document.getElementById(\"phone\").value;\n        return"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "setFirstName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the first name of an owner?\n\nThe first name of an owner is the first name of the owner.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the last name of the owner.\n\nWhat is the age of an owner?\n\nThe age of an owner is the age of the owner.\n\nWhat is the gender of an owner?\n\nThe gender of an owner is the gender of the owner.\n\nWhat is the gender of an owner?\n\nThe gender of an owner"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "setLastName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who was last name.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who was last name.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who was last name.\n\nWhat is the last name of an owner?\n\nThe last name of an owner is the name of the owner who was last name"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "setAddress",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Owner\nMethod: setAddress\nComment: *\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat is this class?\n\nClass: User\nMethod: setAddress\nComment: *\n *"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "setCity",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\npackage com.example;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Owner {\n\n    private String name;\n    private String email;\n    private String password;\n    private String passwordConfirm;\n    private List<String> roles;\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public String getEmail() {\n        return email;\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "class": "Owner",
+    "function": "setTelephone",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing an owner.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nvar Owner = (function() {\n    function Owner() {\n    }\n\n    Owner.prototype.setTelephone = function(telephone) {\n        this.telephone = phone;\n    };\n\n    Owner.prototype.getTelephone = function() {\n        return this.telephone;\n    };\n\n    Owner.prototype.getOwner = function() {\n        return this;\n    };\n\n    return Owner;\n})();\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "toString",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Pet\nMethod: toString\nComment: *\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat does this method do?\n\nClass: Pet\nMethod: toString\nComment: *\n * Simple business object representing a pet.\n *"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Pet\nMethod: getId\nComment: *\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat does this method do?\n\nClass: Pet\nMethod: getPet\nComment: *\n * Simple business object representing a pet.\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "getName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a p"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "getBirthDate",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirthDate method of a pet?\n\nWhat is the getBirth"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "getType",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the type of a pet?\n\nThe type of a pet is the type of a pet itself.\n\nWhat is the type of a pet?\n\nThe type of a pet is the type of a pet itself.\n\nWhat is the type of a pet?\n\nThe type of a pet is the type of a pet itself.\n\nWhat is the type of a pet?\n\nThe type of a pet is the type of a pet itself.\n\nWhat is the type of"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "getOwner",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the owner of a pet?\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is the owner of a pet?\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Maciej Szarlinski\n@author Ramazan Sakin"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "setId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Pet\nMethod: setId\nComment: *\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat does this method do?\n\nClass: Pet\nMethod: getPet\nComment: *\n * Simple business object representing a pet.\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "setName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a pet?\n\nWhat is the name of a p"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "setBirthDate",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Pet\nMethod: setBirthDate\nComment: *\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat does this method do?\n\nClass: Pet\nMethod: setBirthDate\nComment: *\n * Simple business object representing a p"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "setType",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a pet?\n\nWhat is the type of a p"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "setOwner",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "equals",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Pet\nMethod: equals\nComment: *\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat does this method do?\n\nClass: Pet\nMethod: equals\nComment: *\n * Simple business object representing a pet.\n *"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "class": "Pet",
+    "function": "hashCode",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "business",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple business object representing a pet.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet?\n\nWhat is the hashCode method of a pet"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "class": "PetType",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin\n *",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ramazan Sakin\n * Can be Cat, Dog, Hamster...",
+    "llm_hint": "\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?\n\nWhat is the id of a PetType?"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "class": "PetType",
+    "function": "getName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin\n *",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ramazan Sakin\n * Can be Cat, Dog, Hamster...",
+    "llm_hint": "\nWhat is the name of this class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?\n\nWhat is the name of the class?"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "class": "PetType",
+    "function": "setId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin\n *",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ramazan Sakin\n * Can be Cat, Dog, Hamster...",
+    "llm_hint": "\nWhat is this class?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "class": "PetType",
+    "function": "setName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin\n *",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ramazan Sakin\n * Can be Cat, Dog, Hamster...",
+    "llm_hint": "\nWhat is the name of this class?\n\nWhat is the description of this class?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?\n\nWhat is the description of this method?"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "class": "OwnerResource",
+    "function": "createOwner",
+    "business_role": "CONTROLLER",
+    "intent": "CREATE",
+    "domain_entity": "create",
+    "named_entities": [],
+    "comment": "/**\n     * Create Owner\n     */",
+    "llm_hint": "\nWhat is this method do?\nCreate Owner\n*/\n\nvar createOwner = function(owner) {\n    var ownerResource = new OwnerResource();\n    ownerResource.createOwner(owner);\n};\n\nvar createOwner2 = function(owner) {\n    var ownerResource = new OwnerResource();\n    ownerResource.createOwner(owner);\n};\n\nvar createOwner3 = function(owner) {\n    var ownerResource = new OwnerResource();\n    ownerResource.createOwner(owner);\n};\n\nvar createOwner4"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "class": "OwnerResource",
+    "function": "findOwner",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "read",
+    "named_entities": [],
+    "comment": "/**\n     * Read single Owner\n     */",
+    "llm_hint": "\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "class": "OwnerResource",
+    "function": "findAll",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "read",
+    "named_entities": [],
+    "comment": "/**\n     * Read List of Owners\n     */",
+    "llm_hint": "\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?\n\nWhat does this method do?"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "class": "OwnerResource",
+    "function": "updateOwner",
+    "business_role": "CONTROLLER",
+    "intent": "UPDATE",
+    "domain_entity": "update",
+    "named_entities": [],
+    "comment": "/**\n     * Update Owner\n     */",
+    "llm_hint": "\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner\n\nWhat is this method do?\n\nUpdate Owner"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "getPetTypes",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nvar PetResource = function() {\n\n\tthis.getPetTypes = function() {\n\t\tvar petTypes = [];\n\t\tfor (var i = 0; i < this.petTypes.length; i++) {\n\t\t\tpetTypes.push(this.petTypes[i]);\n\t\t}\n\t\treturn petTypes;\n\t};\n\n\tthis.getPetTypes();\n\n\tthis.getPetTypes();\n\n\tthis.getPetTypes();\n\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "processCreationForm",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nvar PetResource = function() {\n\tthis.name = \"PetResource\";\n\tthis.description = \"A PetResource is a collection of PetResource objects.\";\n\tthis.type = \"PetResource\";\n\tthis.description = \"A PetResource is a collection of PetResource objects.\";\n};\n\nPetResource.prototype.processCreationForm = function(form) {\n\tthis.name = form.name;\n\tthis.description = form.description;\n\tthis."
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "processUpdateForm",
+    "business_role": "CONTROLLER",
+    "intent": "UPDATE",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nvar PetResource = function() {\n\tthis.id = \"petResource\";\n\tthis.name = \"PetResource\";\n\tthis.description = \"PetResource\";\n\tthis.type = \"PetResource\";\n\tthis.isActive = false;\n\tthis.isActive = false;\n\tthis.isActive = false;\n\tthis.isActive = false;\n\tthis.isActive = false;\n\tthis.isActive = false;\n\tthis.isActive = false;\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "save",
+    "business_role": "CONTROLLER",
+    "intent": "CREATE",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass PetResource {\n\tconstructor() {\n\t\tthis.name = \"PetResource\";\n\t\tthis.description = \"This is a PetResource\";\n\t\tthis.type = \"PetResource\";\n\t\tthis.id = null;\n\t\tthis.created = null;\n\t\tthis.updated = null;\n\t\tthis.deleted = null;\n\t}\n\tsave() {\n\t\tthis.name = this.get(\"name\");\n\t\tthis.description = this."
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "findPet",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n\nWhat is this method?\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "class": "PetResource",
+    "function": "findPetById",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "﻿using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace PetResource\n{\n    public class PetResource\n    {\n        public static void Main()\n        {\n            List<Pet> pets = new List<Pet>();\n            pets.Add(new Pet(\"John\", \"John\", \"John\"));\n            pets.Add(new Pet(\"John\","
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\mapper\\OwnerEntityMapper.java",
+    "class": "OwnerEntityMapper",
+    "function": "map",
+    "business_role": "ENTITY",
+    "intent": "UNKNOWN",
+    "domain_entity": "this",
+    "named_entities": [
+      {
+        "text": "MapStruct",
+        "label": "ORG"
+      }
+    ],
+    "comment": "This is done by hand for simplicity purpose. In a real life use-case we should consider using MapStruct.",
+    "llm_hint": ".\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method do?\nWhat is this method"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResourceTest.java",
+    "class": "PetResourceTest",
+    "function": "shouldGetAPetInJSonFormat",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar shouldGetAPetInJSonFormat = function(){\n\tvar pet = new PetResource();\n\tvar petResource = new PetResource();\n\tvar petResource2 = new PetResource();\n\tvar petResource3 = new PetResource();\n\tvar petResource4 = new PetResource();\n\tvar petResource5 = new PetResource();\n\tvar petResource6 = new PetResource();\n\tvar petResource7 = new PetResource();\n"
+  },
+  {
+    "file": "spring-petclinic-customers-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResourceTest.java",
+    "class": "PetResourceTest",
+    "function": "setupPet",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\n#include \"PetResourceTest.h\"\n#include \"PetResource.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResourceTest.h\"\n#include \"PetResource"
+  },
+  {
+    "file": "spring-petclinic-discovery-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\discovery\\DiscoveryServerApplication.java",
+    "class": "DiscoveryServerApplication",
+    "function": "main",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServerApplication.h\"\n#include \"DiscoveryServer"
+  },
+  {
+    "file": "spring-petclinic-discovery-server\\src\\test\\java\\org\\springframework\\samples\\petclinic\\discovery\\DiscoveryServerApplicationTests.java",
+    "class": "DiscoveryServerApplicationTests",
+    "function": "contextLoads",
+    "business_role": "APPLICATION",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\nComment: \nWhat does this method do?\n*/\n\nvar DiscoveryServerApplicationTests = {\n\n\t// Set up\n\tsetup: function() {\n\n\t\tthis.discoveryServer = new DiscoveryServer();\n\t\tthis.discoveryServer.start();\n\n\t},\n\n\t// Tear down\n\tteardown: function() {\n\n\t\tthis.discoveryServer.stop();\n\n\t},\n\n\t// Tests\n\tcontextLoads: function() {\n\n\t\tthis.discoveryServer.start();\n\n"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "class": "AIBeanConfiguration",
+    "function": "chatMemory",
+    "business_role": "ENTITY",
+    "intent": "UNKNOWN",
+    "domain_entity": "configuration",
+    "named_entities": [
+      {
+        "text": "the Chat Client",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * A Configuration class for beans used by the Chat Client.\n *\n * @author Oded Shopen",
+    "llm_hint": "﻿using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace AIBeanConfiguration\n{\n    public class chatMemory : AIBeanConfiguration\n    {\n        public chatMemory()\n        {\n        }\n\n        public chatMemory(ChatClient chatClient)\n        {\n            this.chatClient = chatClient;\n        }\n\n        public ChatClient chatClient { get; private set; }\n\n        public"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "class": "AIBeanConfiguration",
+    "function": "vectorStore",
+    "business_role": "ENTITY",
+    "intent": "UNKNOWN",
+    "domain_entity": "configuration",
+    "named_entities": [
+      {
+        "text": "the Chat Client",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * A Configuration class for beans used by the Chat Client.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\n#include \"AIBeanConfiguration.h\"\n#include \"vectorStore.h\"\n#include <vector>\n#include <string>\n#include <vector>\n#include <iostream>\n#include <fstream>\n#include <sstream>\n#include <algorithm>\n#include <cstdio>\n#include <cstdlib>\n#include <cstring>\n#include <cctype>\n#include <cstring>\n#include <cctype>\n#include <cstring>"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "class": "AIBeanConfiguration",
+    "function": "loadBalancedWebClientBuilder",
+    "business_role": "ENTITY",
+    "intent": "UNKNOWN",
+    "domain_entity": "configuration",
+    "named_entities": [
+      {
+        "text": "the Chat Client",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * A Configuration class for beans used by the Chat Client.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar AIBeanConfiguration = function() {\n\n    var AIBeanConfiguration = function() {\n\n        this.loadBalancedWebClientBuilder = function() {\n\n            var webClientBuilder = new WebClientBuilder();\n\n            webClientBuilder.setBaseUrl(\"http://127.0.0.1:8080\");\n\n            webClientBuilder.setDefaultRequestHeaders({\n                \"Accept\": \"application/json\"\n            });\n\n            webClientBuilder.setDefaultRequestHeaders({\n                \"Accept-Encoding"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "class": "AIDataProvider",
+    "function": "getAllOwners",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "functions",
+    "named_entities": [
+      {
+        "text": "LLM",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Functions that are invoked by the LLM will use this bean to query the system of record\n * for information such as listing owners and vets, or adding pets to an owner.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar AIDataProvider = function() {\n\n    var _this = this;\n\n    this.getAllOwners = function() {\n\n        var owners = [];\n        var vets = [];\n        var pets = [];\n\n        for (var i = 0; i < _this.owners.length; i++) {\n\n            owners.push(_this.owners[i]);\n            vets.push(_this.vets[i]);\n            pets.push(_this."
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "class": "AIDataProvider",
+    "function": "getVets",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "functions",
+    "named_entities": [
+      {
+        "text": "LLM",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Functions that are invoked by the LLM will use this bean to query the system of record\n * for information such as listing owners and vets, or adding pets to an owner.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar AIDataProvider = function() {\n\n    var _this = this;\n\n    this.getVets = function(query) {\n        var query = query || {};\n        query.owner = query.owner || {};\n        query.owner.vets = query.owner.vets || [];\n        query.owner.vets.push(query.owner.vets[0]);\n        query.owner.vets.push(query.owner.vets[1]);\n        query."
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "class": "AIDataProvider",
+    "function": "addPetToOwner",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "functions",
+    "named_entities": [
+      {
+        "text": "LLM",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Functions that are invoked by the LLM will use this bean to query the system of record\n * for information such as listing owners and vets, or adding pets to an owner.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar AIDataProvider = function() {\n\n\tvar self = this;\n\n\tthis.addPetToOwner = function(pet) {\n\n\t\tvar owner = this.getOwner();\n\t\tvar vet = this.getVet();\n\n\t\tif (owner) {\n\t\t\towner.addPet(pet);\n\t\t} else {\n\t\t\tvet.addPet(pet);\n\t\t}\n\t};\n\n\tthis.getOwner = function() {"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "class": "AIDataProvider",
+    "function": "addOwnerToPetclinic",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "functions",
+    "named_entities": [
+      {
+        "text": "LLM",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Functions that are invoked by the LLM will use this bean to query the system of record\n * for information such as listing owners and vets, or adding pets to an owner.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar AIDataProvider = function() {\n\n\tvar self = this;\n\n\tthis.addOwnerToPetclinic = function(owner) {\n\n\t\tvar data = {\n\t\t\towner: owner\n\t\t};\n\n\t\tself.getData(data);\n\n\t};\n\n\tthis.getData = function(data) {\n\n\t\tif (data) {\n\n\t\t\treturn data;\n\n\t\t} else {\n\n\t\t\treturn null;\n\n\t"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\GenAIServiceApplication.java",
+    "class": "GenAIServiceApplication",
+    "function": "main",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "oded",
+    "named_entities": [
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Oded Shopen",
+    "llm_hint": "\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\VectorStoreController.java",
+    "class": "VectorStoreController",
+    "function": "loadVetDataToVectorStoreOnStartup",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "loads",
+    "named_entities": [
+      {
+        "text": "RAG",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Loads the veterinarians data into a vector store for the purpose of RAG functionality.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar VectorStoreController = (function() {\n    function VectorStoreController() {\n    }\n\n    VectorStoreController.prototype.loadVetDataToVectorStoreOnStartup = function() {\n        var self = this;\n\n        self.loadVetDataToVectorStoreOnStartup = function() {\n            var veterinariansData = self.getVeterinariansData();\n            self.loadVetDataToVectorStoreOnStartup = function() {\n                self.loadVetDataToVectorStore"
+  },
+  {
+    "file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\VectorStoreController.java",
+    "class": "VectorStoreController",
+    "function": "convertListToJsonResource",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "loads",
+    "named_entities": [
+      {
+        "text": "RAG",
+        "label": "ORG"
+      },
+      {
+        "text": "Oded Shopen",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Loads the veterinarians data into a vector store for the purpose of RAG functionality.\n *\n * @author Oded Shopen",
+    "llm_hint": "\n*/\n\nvar VectorStoreController = Backbone.Controller.extend({\n\n\tinitialize: function() {\n\t\tthis.collection = new VectorStore();\n\t\tthis.collection.fetch();\n\t},\n\n\tconvertListToJsonResource: function(list) {\n\t\tvar jsonResource = {};\n\t\tfor (var i = 0; i < list.length; i++) {\n\t\t\tjsonResource[list[i].id] = list[i];\n\t\t}\n\t\treturn jsonResource;\n\t"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\VetsServiceApplication.java",
+    "class": "VetsServiceApplication",
+    "function": "main",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar VetsServiceApplication = (function() {\n    function VetsServiceApplication() {\n    }\n\n    VetsServiceApplication.prototype.init = function() {\n        console.log(\"VetsServiceApplication.init\");\n        console.log(\"VetsServiceApplication.init\");\n        console.log(\"VetsServiceApplication.init\");\n        console.log(\"VetsServiceApplication.init\");\n        console.log(\"VetsServiceApplication.init\");\n        console.log(\"VetsServiceApplication.init\");"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "class": "Specialty",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "models",
+    "named_entities": [
+      {
+        "text": "Vet Vet's",
+        "label": "ORG"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Models a {@link Vet Vet's} specialty (for example, dentistry).\n *\n * @author Juergen Hoeller\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass Specialty {\n    constructor(id) {\n        this.id = id;\n    }\n\n    getId() {\n        return this.id;\n    }\n\n    toString() {\n        return this.id;\n    }\n}\n\nmodule.exports = Specialty;\n"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "class": "Specialty",
+    "function": "getName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "models",
+    "named_entities": [
+      {
+        "text": "Vet Vet's",
+        "label": "ORG"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Models a {@link Vet Vet's} specialty (for example, dentistry).\n *\n * @author Juergen Hoeller\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass Specialty {\n    constructor(name) {\n        this.name = name;\n    }\n\n    getName() {\n        return this.name;\n    }\n\n    toString() {\n        return this.name;\n    }\n}\n\nmodule.exports = Specialty;\n"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "class": "Specialty",
+    "function": "setName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "models",
+    "named_entities": [
+      {
+        "text": "Vet Vet's",
+        "label": "ORG"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Models a {@link Vet Vet's} specialty (for example, dentistry).\n *\n * @author Juergen Hoeller\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass Specialty {\n    constructor(name) {\n        this.name = name;\n    }\n\n    setName(name) {\n        this.name = name;\n    }\n\n    toString() {\n        return this.name;\n    }\n}\n\nSpecialty.setName(\"Juergen Hoeller\");\nSpecialty.setName(\"Ramazan Sakin\");\nSpecialty.setName(\"Juergen Hoeller\");\nSpecialty.setName(\"Ramaz"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getSpecialtiesInternal",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class specifictiesInternal?\n\nThis is a simple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Arjen Poutsma\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is this class specifictiesInternal?\n\nThis is a simple JavaBean domain object representing a veterinarian.\n\n@author"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getSpecialties",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nSimple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Arjen Poutsma\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is this class?\n\nSimple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoel"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getNrOfSpecialties",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nThis is a simple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Arjen Poutsma\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is this class?\n\nThis is a simple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "addSpecialty",
+    "business_role": "DOMAIN",
+    "intent": "CREATE",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nClass: Vet\nMethod: addSpecialty\nComment: *\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin\nWhat is this class?\n\nClass: Vet\nMethod: add"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is this class?\n\nSimple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoeller\n@author Sam Brannen\n@author Arjen Poutsma\n@author Maciej Szarlinski\n@author Ramazan Sakin\nWhat is this class?\n\nSimple JavaBean domain object representing a veterinarian.\n\n@author Ken Krebs\n@author Juergen Hoel"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getFirstName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the first name of a veterinarian?\n\nWhat is the second name of a veterinarian?\n\nWhat is the third name of a veterinarian?\n\nWhat is the fourth name of a veterinarian?\n\nWhat is the fifth name of a veterinarian?\n\nWhat is the sixth name of a veterinarian?\n\nWhat is the seventh name of a veterinarian?\n\nWhat is the eighth"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "getLastName",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "setId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the ID of a veterinarian?\n\nThe ID of a veterinarian is the unique identifier of a veterinarian.\n\nWhat is the name of a veterinarian?\n\nThe name of a veterinarian is the name of a veterinarian.\n\nWhat is the age of a veterinarian?\n\nThe age of a veterinarian is the age of a veterinarian.\n\nWhat is the gender of a veter"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "setFirstName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the first name of a veterinarian?\n\nWhat is the second name of a veterinarian?\n\nWhat is the third name of a veterinarian?\n\nWhat is the fourth name of a veterinarian?\n\nWhat is the fifth name of a veterinarian?\n\nWhat is the sixth name of a veterinarian?\n\nWhat is the seventh name of a veterinarian?\n\nWhat is the eighth"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "class": "Vet",
+    "function": "setLastName",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Sam Brannen\n *",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a veterinarian.\n *\n * @author Ken Krebs\n * @author Juergen Hoeller\n * @author Sam Brannen\n * @author Arjen Poutsma\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian?\n\nWhat is the last name of a veterinarian"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\web\\VetResource.java",
+    "class": "VetResource",
+    "function": "showResourcesVetList",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Mark Fisher\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Mark Fisher\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar VetResource = function() {\n\n\tthis.showResourcesVetList = function() {\n\n\t\t$.ajax({\n\n\t\t\turl: '/api/vet/showResourcesVetList',\n\t\t\ttype: 'GET',\n\t\t\tdataType: 'json',\n\t\t\tsuccess: function(data) {\n\n\t\t\t\t$('#showResourcesVetList').html(data);\n\n\t\t\t},\n\t\t\terror: function(xhr, textStatus, errorThrown) {\n"
+  },
+  {
+    "file": "spring-petclinic-vets-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\vets\\web\\VetResourceTest.java",
+    "class": "VetResourceTest",
+    "function": "shouldGetAListOfVets",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\nGiven: shouldGetAListOfVets\nThen: shouldGetAListOfVets should return a list of vets\n\nClass: VetResourceTest\nMethod: shouldGetAListOfVetsWithVet\nComment: *\n * @author Maciej Szarlinski\nWhat does this method do?\n*/\n\nclass VetResourceTest {\n\n    constructor() {\n        this.vets = [];\n    }\n\n    shouldGetAListOfVets() {\n        return this.vets;"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\VisitsServiceApplication.java",
+    "class": "VisitsServiceApplication",
+    "function": "main",
+    "business_role": "SERVICE",
+    "intent": "UNKNOWN",
+    "domain_entity": "maciej",
+    "named_entities": [
+      {
+        "text": "Maciej Szarlinski",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Maciej Szarlinski",
+    "llm_hint": "\n*/\n\nvar VisitsServiceApplication = (function() {\n    function VisitsServiceApplication() {\n    }\n\n    VisitsServiceApplication.prototype.init = function() {\n        var self = this;\n\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();\n        self.initService();"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\config\\MetricConfig.java",
+    "class": "MetricConfig",
+    "function": "metricsCommonTags",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar MetricConfig = function() {\n\n\tvar config = {};\n\n\tconfig.metricsCommonTags = [];\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('tags');\n\n\tconfig.metricsCommonTags.push('"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\config\\MetricConfig.java",
+    "class": "MetricConfig",
+    "function": "timedAspect",
+    "business_role": "COMPONENT",
+    "intent": "UNKNOWN",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\nclass MetricConfig {\n    constructor(config) {\n        this.config = config;\n    }\n\n    /**\n     * \n*/\n    get(name) {\n        return this.config[name];\n    }\n\n    /**\n     * \n*/\n    set(name, value) {\n        this.config[name] = value;\n    }\n\n    /**\n     * \n*/\n    get(name) {\n        return this.config[name];\n    }\n\n   "
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "getId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "getDate",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n\nWhat is the date of the visit?\n\nThe date of the visit is the same as the date of the first visit.\n\nWhat is the date of the last visit?\n\nThe date of the last visit is the same as the date of the last visit.\n\nWhat is the date of the visit?\n\nThe date of the visit is the same as the date of the first visit.\n\nWhat is the date of the visit?\n\nThe date of the visit is the same as the date of the last visit.\n\nWhat is the"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "getDescription",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "getPetId",
+    "business_role": "DOMAIN",
+    "intent": "READ",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\npublic class Visit {\n\n    public static void main(String[] args) {\n\n        // Create a new visit object\n        Visit visit = new Visit();\n\n        // Get the id of the visit\n        String id = visit.getpetId();\n\n        // Print the visit\n        System.out.println(id);\n\n    }\n\n    public String getPetId() {\n\n        // Create a new visit object\n        Visit visit = new Visit();\n\n        // Get the id of the visit\n       "
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "setId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "setDate",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "setDescription",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "Visit",
+    "function": "setPetId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "aVisit",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\npackage VisitBuilder;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class VisitBuilder {\n\n\tpublic static void main(String[] args) {\n\t\tVisitBuilder aVisit = new VisitBuilder();\n\t\taVisit.aVisit(\"a\");\n\t\taVisit.aVisit(\"a\");\n\t\taVisit.aVisit(\"a\");\n\t\taVisit.aVisit(\"a\");\n\t\taVisit.aVisit(\"a\");\n\t\taVisit.a"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "id",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "date",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "description",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <math.h>\n#include <time.h>\n#include \"VisitBuilder.h\"\n\nVisitBuilder::VisitBuilder()\n{\n}\n\nVisitBuilder::~VisitBuilder()\n{\n}\n\nvoid VisitBuilder::addVisit(Visit visit)\n{\n\tvisit_list.push_back(visit);\n}\n\nvoid VisitBuilder::addVisit(Visit visit,"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "petId",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\npackage visitbuilder;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class VisitBuilder {\n\n    public static void main(String[] args) {\n        List<Visit> visitList = new ArrayList<Visit>();\n        visitList.add(new Visit(1));\n        visitList.add(new Visit(2));\n        visitList.add(new Visit(3));\n        visitList.add(new Visit(4));\n        visitList.add(new Visit(5"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "class": "VisitBuilder",
+    "function": "build",
+    "business_role": "DOMAIN",
+    "intent": "UNKNOWN",
+    "domain_entity": "javabean",
+    "named_entities": [
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * Simple JavaBean domain object representing a visit.\n *\n * @author Ken Krebs\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "class": "VisitResource",
+    "function": "create",
+    "business_role": "CONTROLLER",
+    "intent": "CREATE",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass VisitResource {\n  constructor() {\n    this.resource = new Resource();\n  }\n\n  get resource() {\n    return this.resource;\n  }\n}\n\nclass Resource {\n  constructor() {\n    this.resource = new VisitResource();\n  }\n\n  get resource() {\n    return this.resource;\n  }\n}\n\nclass VisitResource {\n  constructor() {\n    this.resource = new Resource();\n  }\n\n  get resource() {\n    return"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "class": "VisitResource",
+    "function": "read",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass VisitResource {\n    constructor() {\n        this.resource = {};\n    }\n\n    get resource() {\n        return this.resource;\n    }\n\n    set resource(resource) {\n        this.resource = resource;\n    }\n}\n\nvar VisitResource = function() {\n    this.resource = {};\n};\n\nVisitResource.read = function() {\n    return new VisitResource();\n};\n\nVisitResource.write = function() {\n    return new VisitResource();\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "class": "VisitResource",
+    "function": "read",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass VisitResource {\n    constructor() {\n        this.resource = {};\n    }\n\n    get resource() {\n        return this.resource;\n    }\n\n    set resource(resource) {\n        this.resource = resource;\n    }\n}\n\nvar VisitResource = function() {\n    this.resource = {};\n};\n\nVisitResource.read = function() {\n    return new VisitResource();\n};\n\nVisitResource.write = function() {\n    return new VisitResource();\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "class": "VisitResource",
+    "function": "Visits",
+    "business_role": "CONTROLLER",
+    "intent": "UNKNOWN",
+    "domain_entity": "juergen",
+    "named_entities": [
+      {
+        "text": "Juergen Hoeller\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ken Krebs\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Arjen Poutsma\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Michael Isvy\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Maciej Szarlinski\n ",
+        "label": "PERSON"
+      },
+      {
+        "text": "Ramazan Sakin",
+        "label": "PERSON"
+      }
+    ],
+    "comment": "*\n * @author Juergen Hoeller\n * @author Ken Krebs\n * @author Arjen Poutsma\n * @author Michael Isvy\n * @author Maciej Szarlinski\n * @author Ramazan Sakin",
+    "llm_hint": "\n*/\n\nclass VisitResource {\n    constructor() {\n        this.resource = {};\n    }\n\n    visit(resource) {\n        this.resource[resource.id] = resource;\n    }\n\n    get resource() {\n        return this.resource;\n    }\n}\n\nvar visitResource = new VisitResource();\n"
+  },
+  {
+    "file": "spring-petclinic-visits-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResourceTest.java",
+    "class": "VisitResourceTest",
+    "function": "shouldFetchVisits",
+    "business_role": "CONTROLLER",
+    "intent": "READ",
+    "domain_entity": null,
+    "named_entities": [],
+    "comment": "",
+    "llm_hint": "\n*/\n\nvar shouldFetchVisits = function shouldFetchVisits() {\n  var visitResource = new VisitResource();\n  visitResource.shouldFetchVisits();\n};\n\nvar shouldFetchVisits2 = function shouldFetchVisits2() {\n  var visitResource = new VisitResource();\n  visitResource.shouldFetchVisits2();\n};\n\nvar shouldFetchVisits3 = function shouldFetchVisits3() {\n  var visitResource = new VisitResource();\n  visitResource.shouldFetchVisits3();\n};\n\nvar shouldFetchVisits4 = function"
+  },
+  {
+    "file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "class": "RepoWideExtractor",
+    "function": "main",
+    "business_role": "REPOSITORY",
+    "intent": "UNKNOWN",
+    "domain_entity": "petclinic",
+    "named_entities": [
+      {
+        "text": "PetClinic",
+        "label": "ORG"
+      }
+    ],
+    "comment": "*\n * Multi-module PetClinic repository analyzer.",
+    "llm_hint": "/*\n * Copyright (c) 2008-2021, Hazelcast, Inc. All Rights Reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed"
+  },
+  {
+    "file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "class": "RepoWideExtractor",
+    "function": "parseFile",
+    "business_role": "REPOSITORY",
+    "intent": "UNKNOWN",
+    "domain_entity": "petclinic",
+    "named_entities": [
+      {
+        "text": "PetClinic",
+        "label": "ORG"
+      }
+    ],
+    "comment": "*\n * Multi-module PetClinic repository analyzer.",
+    "llm_hint": "\nWhat is the file name?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?\n\nWhat is the line number?\n\nWhat is the column number?"
+  },
+  {
+    "file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "class": "RepoWideExtractor",
+    "function": "exportStaticGraphGML",
+    "business_role": "REPOSITORY",
+    "intent": "UNKNOWN",
+    "domain_entity": "petclinic",
+    "named_entities": [
+      {
+        "text": "PetClinic",
+        "label": "ORG"
+      }
+    ],
+    "comment": "*\n * Multi-module PetClinic repository analyzer.",
+    "llm_hint": "\nClass: RepoWideExtractor\nMethod: exportStaticGraphGML\nComment: *\n * Multi-module PetClinic repository analyzer.\nWhat does this method do?\n*/\n\nvar RepoWideExtractor = {\n  exportStaticGraphGML: function(url) {\n    var graph = document.createElement('g');\n    graph.setAttribute('width', '100%');\n    graph.setAttribute('height', '100%');\n    graph.setAttribute('transform', 'translate(' + url + ',0)');\n"
+  },
+  {
+    "file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "class": "RepoWideExtractor",
+    "function": "exportSemanticJSON",
+    "business_role": "REPOSITORY",
+    "intent": "UNKNOWN",
+    "domain_entity": "petclinic",
+    "named_entities": [
+      {
+        "text": "PetClinic",
+        "label": "ORG"
+      }
+    ],
+    "comment": "*\n * Multi-module PetClinic repository analyzer.",
+    "llm_hint": "\nWhat is the exportSemanticJSON method?\n\nThis method is a helper method that returns a JSON representation of a repository wide extractor.\n\nWhat is the exportSemanticJSON method?\n\nThis method is a helper method that returns a JSON representation of a repository wide extractor.\n\nWhat is the exportSemanticJSON method?\n\nThis method is a helper method that returns a JSON representation of a repository wide extractor.\n\nWhat is the exportSemanticJSON method?\n\nThis method is a helper method that returns a JSON representation of a repository wide extractor."
+  },
+  {
+    "file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "class": "RepoWideExtractor",
+    "function": "exportSemanticGraphML",
+    "business_role": "REPOSITORY",
+    "intent": "UNKNOWN",
+    "domain_entity": "petclinic",
+    "named_entities": [
+      {
+        "text": "PetClinic",
+        "label": "ORG"
+      }
+    ],
+    "comment": "*\n * Multi-module PetClinic repository analyzer.",
+    "llm_hint": "\nClass: RepoWideExtractor\nMethod: exportSemanticGraphML\nComment: *\n * Multi-module PetClinic repository analyzer analyzer.\nWhat does this method do?\n*/\n\nclass RepoWideExtractor {\n  constructor() {\n    this.repoWideExtractor = new RepoWideExtractor();\n  }\n\n  exportSemanticGraphML() {\n    this.repoWideExtractor.exportSemanticGraphML();\n  }\n}\n\nmodule.exports = RepoWideExtractor;\n"
+  }
+]

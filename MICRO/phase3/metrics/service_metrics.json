@@ -1,0 +1,58 @@
+{
+  "CustomersService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GatewayService"
+    ]
+  },
+  "VetsService": {
+    "Ca": 2,
+    "Ce": 2,
+    "Instability": 0.5,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GatewayService",
+      "VisitsService"
+    ]
+  },
+  "DiscoveryService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GatewayService"
+    ]
+  },
+  "VisitsService": {
+    "Ca": 2,
+    "Ce": 2,
+    "Instability": 0.5,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GatewayService",
+      "VetsService"
+    ]
+  },
+  "GatewayService": {
+    "Ca": 5,
+    "Ce": 0,
+    "Instability": 0.0,
+    "Cohesion": 1.0,
+    "Depends_On": []
+  },
+  "InfrastructureService": {
+    "Ca": 0,
+    "Ce": 3,
+    "Instability": 1.0,
+    "Cohesion": 1.0,
+    "Depends_On": [
+      "GatewayService",
+      "VetsService",
+      "VisitsService"
+    ]
+  }
+}

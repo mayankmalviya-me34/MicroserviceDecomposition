@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d5" for="node" attr.name="intent" attr.type="string" />
+  <key id="d4" for="node" attr.name="business_role" attr.type="string" />
+  <key id="d3" for="node" attr.name="domain_entity" attr.type="string" />
+  <key id="d2" for="node" attr.name="type" attr.type="string" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="SpringBootAdminApplication">
+      <data key="d0">SpringBootAdminApplication</data>
+      <data key="d1">Spring Boot Admin Application</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Spring Boot Admin</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="ApiGatewayApplication">
+      <data key="d0">ApiGatewayApplication</data>
+      <data key="d1">API Gateway Application</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">API Gateway</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="CustomersServiceClient">
+      <data key="d0">CustomersServiceClient</data>
+      <data key="d1">Customers Service Client</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Customer Service</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="VisitsServiceClient">
+      <data key="d0">VisitsServiceClient</data>
+      <data key="d1">Visits Service Client</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Visit Service</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="ApiGatewayController">
+      <data key="d0">ApiGatewayController</data>
+      <data key="d1">API Gateway Controller</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">API Gateway</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="FallbackController">
+      <data key="d0">FallbackController</data>
+      <data key="d1">Fallback Controller</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Fallback Controller</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="ConfigServerApplication">
+      <data key="d0">ConfigServerApplication</data>
+      <data key="d1">Config Server Application</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Config Server</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="CustomersServiceApplication">
+      <data key="d0">CustomersServiceApplication</data>
+      <data key="d1">Customers Service Application</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Customer Service</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="MetricConfig">
+      <data key="d0">MetricConfig</data>
+      <data key="d1">Metric Config</data>
+      <data key="d2">service_candidate</data>
+      <data key="d3">Metrics Configuration</data>
+      <data key="d4">API Gateway</data>
+      <data key="d5">API Gateway</data>
+    </node>
+    <node id="Pet">
+      <data key="d0">Pet</data>
+      <data key="d1">Pet</data>
+      <data key="d2">class</data>
+      <data key="d3">Pet</data>
+      <data key="d4">Pet</data>
+      <data key="d5">Pet</data>
+    </node>
+    <node id="Owner">
+      <data key="d0">Owner</data>
+      <data key="d1">Owner</data>
+      <data key="d2">class</data>
+      <data key="d3">Owner</data>
+      <data key="d4">Owner</data>
+      <data key="d5">Owner</data>
+    </node>
+    <node id="PetType">
+      <data key="d0">PetType</data>
+      <data key="d1">Pet Type</data>
+      <data key="d2">class</data>
+      <data key="d3">Pet Type</data>
+      <data key="d4">Pet Type</data>
+      <data key="d5">Pet Type</data>
+    </node>
+    <edge source="SpringBootAdminApplication" target="ApiGatewayApplication">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="CustomersServiceClient">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="VisitsServiceClient">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="ApiGatewayController">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="FallbackController">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="ConfigServerApplication">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="CustomersServiceApplication">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="ApiGatewayApplication" target="MetricConfig">
+      <data key="d6">depends_on</data>
+    </edge>
+    <edge source="CustomersServiceClient" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="CustomersServiceClient" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="CustomersServiceClient" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="VisitsServiceClient" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="VisitsServiceClient" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="VisitsServiceClient" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ApiGatewayController" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ApiGatewayController" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ApiGatewayController" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="FallbackController" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="FallbackController" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="FallbackController" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ConfigServerApplication" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ConfigServerApplication" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="ConfigServerApplication" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="CustomersServiceApplication" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="CustomersServiceApplication" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="CustomersServiceApplication" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="MetricConfig" target="Pet">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="MetricConfig" target="Owner">
+      <data key="d6">uses</data>
+    </edge>
+    <edge source="MetricConfig" target="PetType">
+      <data key="d6">uses</data>
+    </edge>
+  </graph>
+</graphml>

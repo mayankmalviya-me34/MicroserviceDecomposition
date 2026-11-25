@@ -1,0 +1,98 @@
+[
+  {
+    "endpoint": "owners/*/pets/{petId}/visits",
+    "method": "POST",
+    "business_role": "Visits Domain Service",
+    "cluster_id": "VisitsService"
+  },
+  {
+    "endpoint": "owners/*/pets/{petId}/visits",
+    "method": "GET",
+    "business_role": "Visits Domain Service",
+    "cluster_id": "VisitsService"
+  },
+  {
+    "endpoint": "pets/visits",
+    "method": "GET",
+    "business_role": "Visits Domain Service",
+    "cluster_id": "VisitsService"
+  },
+  {
+    "endpoint": "/vets",
+    "method": "REQUEST",
+    "business_role": "Vets Domain Service",
+    "cluster_id": "VetsService"
+  },
+  {
+    "endpoint": "/",
+    "method": "REQUEST",
+    "business_role": "Gateway Service",
+    "cluster_id": "GatewayService"
+  },
+  {
+    "endpoint": "/chatclient",
+    "method": "POST",
+    "business_role": "A Service",
+    "cluster_id": "CustomersService"
+  },
+  {
+    "endpoint": "/owners",
+    "method": "REQUEST",
+    "business_role": "Admin Service",
+    "cluster_id": "InfrastructureService"
+  },
+  {
+    "endpoint": "/{ownerId}",
+    "method": "GET",
+    "business_role": "Gateway Service",
+    "cluster_id": "GatewayService"
+  },
+  {
+    "endpoint": "/{ownerId}",
+    "method": "PUT",
+    "business_role": "Vets Domain Service",
+    "cluster_id": "VetsService"
+  },
+  {
+    "endpoint": "/petTypes",
+    "method": "GET",
+    "business_role": "A Service",
+    "cluster_id": "CustomersService"
+  },
+  {
+    "endpoint": "/owners/{ownerId}/pets",
+    "method": "POST",
+    "business_role": "Vets Domain Service",
+    "cluster_id": "VetsService"
+  },
+  {
+    "endpoint": "/owners/*/pets/{petId}",
+    "method": "PUT",
+    "business_role": "Vets Domain Service",
+    "cluster_id": "VetsService"
+  },
+  {
+    "endpoint": "owners/*/pets/{petId}",
+    "method": "GET",
+    "business_role": "Vets Domain Service",
+    "cluster_id": "VetsService"
+  },
+  {
+    "endpoint": "/api/gateway",
+    "method": "REQUEST",
+    "business_role": "Gateway Service",
+    "cluster_id": "GatewayService"
+  },
+  {
+    "endpoint": "owners/{ownerId}",
+    "method": "GET",
+    "business_role": "Gateway Service",
+    "cluster_id": "GatewayService"
+  },
+  {
+    "endpoint": "/fallback",
+    "method": "POST",
+    "business_role": "Fallback Service",
+    "cluster_id": "DiscoveryService"
+  }
+]

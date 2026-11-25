@@ -1,0 +1,3573 @@
+@prefix base: <http://microservice.graph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+base:APIGateway a base:Service ;
+    rdfs:label "APIGateway" ;
+    base:hasFunction base:fn_ApiGatewayApplicationTests_523,
+        base:fn_ApiGatewayApplication_485,
+        base:fn_ApiGatewayControllerTest_371,
+        base:fn_ApiGatewayController_545 .
+
+base:CustomerService a base:Service ;
+    rdfs:label "CustomerService" ;
+    base:hasFunction base:fn_CustomersServiceApplication_131,
+        base:fn_CustomersServiceClient_508,
+        base:fn_OwnerDetailsBuilder_169,
+        base:fn_OwnerEntityMapper_506,
+        base:fn_OwnerRepository_297,
+        base:fn_OwnerResource_581,
+        base:fn_Owner_236,
+        base:fn_addOwnerToPetclinic_126,
+        base:fn_addOwnerToPetclinic_296,
+        base:fn_addOwnerToPetclinic_50,
+        base:fn_addPetToOwner_19,
+        base:fn_addPetToOwner_2,
+        base:fn_addPetToOwner_387,
+        base:fn_addVisitsToOwner_59,
+        base:fn_anOwnerDetails_284,
+        base:fn_anOwnerDetails_70,
+        base:fn_createOwner_573,
+        base:fn_findOwner_593,
+        base:fn_getAllOwners_516,
+        base:fn_getAllOwners_570,
+        base:fn_getOwnerDetails_266,
+        base:fn_getOwnerDetails_withAvailableVisitsService_34,
+        base:fn_getOwnerDetails_withServiceError_578,
+        base:fn_getOwner_184,
+        base:fn_getOwner_268,
+        base:fn_getOwner_269,
+        base:fn_getOwner_314,
+        base:fn_listOwners_3,
+        base:fn_ownerId_109,
+        base:fn_setOwner_344,
+        base:fn_setOwner_402,
+        base:fn_updateOwner_491 .
+
+base:UnknownService a base:Service ;
+    rdfs:label "UnknownService" ;
+    base:hasFunction base:fn_AIBeanConfiguration_561,
+        base:fn_AIDataProvider_205,
+        base:fn_AIFunctionConfiguration_554,
+        base:fn_CacheConfig_76,
+        base:fn_CircuitBreakerConfiguration_208,
+        base:fn_ConfigServerApplication_293,
+        base:fn_DiscoveryServerApplicationTests_555,
+        base:fn_DiscoveryServerApplication_105,
+        base:fn_FallbackController_460,
+        base:fn_GET_587,
+        base:fn_GenAIServiceApplication_367,
+        base:fn_Mapper_468,
+        base:fn_MetricConfig_132,
+        base:fn_MetricConfig_397,
+        base:fn_PetDetailsBuilder_372,
+        base:fn_PetRepository_481,
+        base:fn_PetResourceTest_97,
+        base:fn_PetResource_95,
+        base:fn_PetType_527,
+        base:fn_Pet_358,
+        base:fn_PetclinicChatClient_501,
+        base:fn_PetclinicConfigServerApplicationTests_419,
+        base:fn_RepoWideExtractor_8,
+        base:fn_ResourceNotFoundException_43,
+        base:fn_Specialty_568,
+        base:fn_SpringBootAdminApplication_28,
+        base:fn_VectorStoreController_69,
+        base:fn_aPetDetails_374,
+        base:fn_aPetDetails_442,
+        base:fn_accept_148,
+        base:fn_accept_509,
+        base:fn_accept_556,
+        base:fn_addAll_141,
+        base:fn_addAll_68,
+        base:fn_addPet_272,
+        base:fn_addPet_439,
+        base:fn_addSpecialty_595,
+        base:fn_add_102,
+        base:fn_add_265,
+        base:fn_add_315,
+        base:fn_add_335,
+        base:fn_add_408,
+        base:fn_add_449,
+        base:fn_add_487,
+        base:fn_add_518,
+        base:fn_add_72,
+        base:fn_address_154,
+        base:fn_address_455,
+        base:fn_andExpect_104,
+        base:fn_andExpect_115,
+        base:fn_andExpect_124,
+        base:fn_andExpect_128,
+        base:fn_andExpect_150,
+        base:fn_andExpect_179,
+        base:fn_andExpect_180,
+        base:fn_andExpect_276,
+        base:fn_andExpect_347,
+        base:fn_andExpect_421,
+        base:fn_andExpect_446,
+        base:fn_andExpect_486,
+        base:fn_andExpect_582,
+        base:fn_andExpect_64,
+        base:fn_andRoute_406,
+        base:fn_appendChild_17,
+        base:fn_appendChild_199,
+        base:fn_appendChild_462,
+        base:fn_appendChild_90,
+        base:fn_append_114,
+        base:fn_append_274,
+        base:fn_append_300,
+        base:fn_append_309,
+        base:fn_append_320,
+        base:fn_append_330,
+        base:fn_append_383,
+        base:fn_append_393,
+        base:fn_append_427,
+        base:fn_append_74,
+        base:fn_asFileAttribute_401,
+        base:fn_asList_396,
+        base:fn_asList_54,
+        base:fn_asString_341,
+        base:fn_assertEquals_135,
+        base:fn_assertNotNull_571,
+        base:fn_birthDate_430,
+        base:fn_birthDate_80,
+        base:fn_block_247,
+        base:fn_block_542,
+        base:fn_block_564,
+        base:fn_block_580,
+        base:fn_block_91,
+        base:fn_bodyToMono_198,
+        base:fn_bodyToMono_227,
+        base:fn_bodyToMono_351,
+        base:fn_bodyToMono_513,
+        base:fn_bodyToMono_65,
+        base:fn_bodyToMono_77,
+        base:fn_bodyValue_14,
+        base:fn_bodyValue_177,
+        base:fn_bodyValue_323,
+        base:fn_body_190,
+        base:fn_build_207,
+        base:fn_build_219,
+        base:fn_build_241,
+        base:fn_build_245,
+        base:fn_build_295,
+        base:fn_build_318,
+        base:fn_build_407,
+        base:fn_build_415,
+        base:fn_build_532,
+        base:fn_build_540,
+        base:fn_build_551,
+        base:fn_build_78,
+        base:fn_builder_557,
+        base:fn_call_120,
+        base:fn_chatMemory_544,
+        base:fn_circuitBreakerConfig_334,
+        base:fn_circuitBreakerRegistry_39,
+        base:fn_city_176,
+        base:fn_city_546,
+        base:fn_close_238,
+        base:fn_collect_164,
+        base:fn_commonTags_435,
+        base:fn_computeIfAbsent_259,
+        base:fn_config_185,
+        base:fn_configureDefault_565,
+        base:fn_containsKey_192,
+        base:fn_contentType_214,
+        base:fn_contentType_51,
+        base:fn_content_345,
+        base:fn_content_405,
+        base:fn_contextLoads_136,
+        base:fn_contextLoads_306,
+        base:fn_contextLoads_361,
+        base:fn_convertListToJsonResource_103,
+        base:fn_createElement_174,
+        base:fn_createTempFile_413,
+        base:fn_create_158,
+        base:fn_create_7,
+        base:fn_custom_93,
+        base:fn_date_216,
+        base:fn_date_52,
+        base:fn_defaultCustomizer_286,
+        base:fn_defaults_363,
+        base:fn_description_398,
+        base:fn_description_457,
+        base:fn_description_504,
+        base:fn_endsWith_287,
+        base:fn_enqueue_359,
+        base:fn_entrySet_53,
+        base:fn_equals_129,
+        base:fn_equals_32,
+        base:fn_error_249,
+        base:fn_error_283,
+        base:fn_error_46,
+        base:fn_exchange_559,
+        base:fn_exchange_574,
+        base:fn_exists_160,
+        base:fn_expectBody_316,
+        base:fn_expectStatus_118,
+        base:fn_exportSemanticGraphML_175,
+        base:fn_exportSemanticJSON_9,
+        base:fn_exportStaticGraphGML_461,
+        base:fn_fallback_278,
+        base:fn_filter_146,
+        base:fn_filter_535,
+        base:fn_findAll_130,
+        base:fn_findAll_235,
+        base:fn_findAll_298,
+        base:fn_findAll_431,
+        base:fn_findAll_533,
+        base:fn_findAll_588,
+        base:fn_findById_222,
+        base:fn_findById_294,
+        base:fn_findByPetIdIn_232,
+        base:fn_findByPetIdIn_244,
+        base:fn_findByPetId_302,
+        base:fn_findByPetId_503,
+        base:fn_findPetById_469,
+        base:fn_findPetTypeById_191,
+        base:fn_findPetTypeById_452,
+        base:fn_findPetTypes_243,
+        base:fn_findPetTypes_514,
+        base:fn_findPet_6,
+        base:fn_firstName_161,
+        base:fn_firstName_336,
+        base:fn_flatMap_445,
+        base:fn_flush_138,
+        base:fn_forEach_193,
+        base:fn_forEach_233,
+        base:fn_forEach_282,
+        base:fn_forEach_342,
+        base:fn_forEach_389,
+        base:fn_forEach_392,
+        base:fn_forEach_42,
+        base:fn_forEach_494,
+        base:fn_forEach_547,
+        base:fn_forEach_81,
+        base:fn_fromString_71,
+        base:fn_from_86,
+        base:fn_getAbsolutePath_484,
+        base:fn_getAddress_482,
+        base:fn_getBirthDate_202,
+        base:fn_getBirthDate_459,
+        base:fn_getBytes_391,
+        base:fn_getCity_66,
+        base:fn_getClass_288,
+        base:fn_getClass_558,
+        base:fn_getContent_577,
+        base:fn_getDate_466,
+        base:fn_getDescription_312,
+        base:fn_getFile_497,
+        base:fn_getFirstName_224,
+        base:fn_getFirstName_239,
+        base:fn_getFirstName_255,
+        base:fn_getFirstName_498,
+        base:fn_getId_123,
+        base:fn_getId_197,
+        base:fn_getId_23,
+        base:fn_getId_256,
+        base:fn_getId_289,
+        base:fn_getId_530,
+        base:fn_getId_585,
+        base:fn_getIdentifier_171,
+        base:fn_getIdentifier_248,
+        base:fn_getImports_395,
+        base:fn_getKey_505,
+        base:fn_getLastName_385,
+        base:fn_getLastName_472,
+        base:fn_getLastName_476,
+        base:fn_getLastName_579,
+        base:fn_getMessage_13,
+        base:fn_getNameAsString_151,
+        base:fn_getNameAsString_338,
+        base:fn_getNameAsString_418,
+        base:fn_getNameAsString_511,
+        base:fn_getNameAsString_576,
+        base:fn_getNameAsString_84,
+        base:fn_getName_144,
+        base:fn_getName_147,
+        base:fn_getName_317,
+        base:fn_getName_329,
+        base:fn_getName_534,
+        base:fn_getNrOfSpecialties_332,
+        base:fn_getPackageDeclaration_73,
+        base:fn_getParameters_178,
+        base:fn_getPetId_25,
+        base:fn_getPetIds_30,
+        base:fn_getPetTypes_458,
+        base:fn_getPetsInternal_423,
+        base:fn_getPets_234,
+        base:fn_getScope_12,
+        base:fn_getScope_228,
+        base:fn_getScope_277,
+        base:fn_getSpecialtiesInternal_526,
+        base:fn_getSpecialties_384,
+        base:fn_getTelephone_502,
+        base:fn_getType_106,
+        base:fn_getType_16,
+        base:fn_getType_386,
+        base:fn_getValue_411,
+        base:fn_get_168,
+        base:fn_get_209,
+        base:fn_get_433,
+        base:fn_get_441,
+        base:fn_get_464,
+        base:fn_get_471,
+        base:fn_get_529,
+        base:fn_get_55,
+        base:fn_get_572,
+        base:fn_get_98,
+        base:fn_given_375,
+        base:fn_given_49,
+        base:fn_given_550,
+        base:fn_hashCode_422,
+        base:fn_hash_275,
+        base:fn_id_101,
+        base:fn_id_165,
+        base:fn_id_252,
+        base:fn_id_382,
+        base:fn_id_40,
+        base:fn_id_428,
+        base:fn_id_434,
+        base:fn_id_44,
+        base:fn_id_563,
+        base:fn_ifPresent_519,
+        base:fn_info_246,
+        base:fn_info_48,
+        base:fn_isEmpty_379,
+        base:fn_isEmpty_499,
+        base:fn_isEqualTo_319,
+        base:fn_isEqualTo_349,
+        base:fn_isOk_304,
+        base:fn_isOk_583,
+        base:fn_items_350,
+        base:fn_joinIds_409,
+        base:fn_joining_5,
+        base:fn_jsonPath_159,
+        base:fn_jsonPath_301,
+        base:fn_jsonPath_346,
+        base:fn_jsonPath_536,
+        base:fn_jsonPath_61,
+        base:fn_just_400,
+        base:fn_keySet_145,
+        base:fn_lastName_195,
+        base:fn_lastName_520,
+        base:fn_loadBalancedRestTemplate_369,
+        base:fn_loadBalancedWebClientBuilder_10,
+        base:fn_loadBalancedWebClientBuilder_206,
+        base:fn_load_429,
+        base:fn_main_133,
+        base:fn_main_152,
+        base:fn_main_186,
+        base:fn_main_210,
+        base:fn_main_213,
+        base:fn_main_331,
+        base:fn_main_420,
+        base:fn_main_425,
+        base:fn_main_426,
+        base:fn_map_218,
+        base:fn_map_26,
+        base:fn_map_326,
+        base:fn_map_36,
+        base:fn_map_370,
+        base:fn_map_4,
+        base:fn_map_467,
+        base:fn_map_475,
+        base:fn_map_496,
+        base:fn_map_594,
+        base:fn_metricsCommonTags_22,
+        base:fn_metricsCommonTags_307,
+        base:fn_mkdirs_352,
+        base:fn_name_273,
+        base:fn_name_31,
+        base:fn_name_92,
+        base:fn_newDocumentBuilder_56,
+        base:fn_newDocument_117,
+        base:fn_newInstance_311,
+        base:fn_newInstance_454,
+        base:fn_newTransformer_62,
+        base:fn_ofDefaults_357,
+        base:fn_ofDefaults_373,
+        base:fn_ofDefaults_96,
+        base:fn_ofSeconds_566,
+        base:fn_of_167,
+        base:fn_of_463,
+        base:fn_ok_378,
+        base:fn_orElseThrow_142,
+        base:fn_orElseThrow_368,
+        base:fn_orElse_229,
+        base:fn_orElse_271,
+        base:fn_orElse_591,
+        base:fn_orElse_87,
+        base:fn_parseFile_137,
+        base:fn_parse_94,
+        base:fn_perform_436,
+        base:fn_petId_11,
+        base:fn_petId_156,
+        base:fn_petId_264,
+        base:fn_petId_356,
+        base:fn_petId_417,
+        base:fn_petId_465,
+        base:fn_petId_67,
+        base:fn_pet_183,
+        base:fn_pets_450,
+        base:fn_pets_521,
+        base:fn_pets_75,
+        base:fn_post_113,
+        base:fn_prepareResponse_251,
+        base:fn_println_303,
+        base:fn_println_89,
+        base:fn_processCreationForm_285,
+        base:fn_processUpdateForm_173,
+        base:fn_prompt_403,
+        base:fn_put_122,
+        base:fn_put_231,
+        base:fn_put_240,
+        base:fn_put_263,
+        base:fn_put_281,
+        base:fn_put_308,
+        base:fn_read_217,
+        base:fn_reduce_250,
+        base:fn_replace_313,
+        base:fn_replace_360,
+        base:fn_replace_362,
+        base:fn_replace_512,
+        base:fn_replace_85,
+        base:fn_resilience4JConfigurationProperties_181,
+        base:fn_resources_100,
+        base:fn_retrieve_121,
+        base:fn_retrieve_223,
+        base:fn_retrieve_343,
+        base:fn_retrieve_477,
+        base:fn_retrieve_549,
+        base:fn_retrieve_569,
+        base:fn_routerFunction_187,
+        base:fn_run_279,
+        base:fn_run_299,
+        base:fn_save_140,
+        base:fn_save_261,
+        base:fn_save_291,
+        base:fn_save_328,
+        base:fn_save_596,
+        base:fn_setAddress_162,
+        base:fn_setAddress_292,
+        base:fn_setAttribute_108,
+        base:fn_setAttribute_24,
+        base:fn_setAttribute_260,
+        base:fn_setAttribute_567,
+        base:fn_setBirthDate_27,
+        base:fn_setBirthDate_492,
+        base:fn_setBody_517,
+        base:fn_setCity_47,
+        base:fn_setCity_60,
+        base:fn_setConfiguration_172,
+        base:fn_setDate_194,
+        base:fn_setDate_196,
+        base:fn_setDescription_377,
+        base:fn_setDescription_590,
+        base:fn_setFirstName_0,
+        base:fn_setFirstName_143,
+        base:fn_setFirstName_376,
+        base:fn_setHeader_538,
+        base:fn_setHostname_116,
+        base:fn_setHostname_321,
+        base:fn_setId_166,
+        base:fn_setId_203,
+        base:fn_setId_258,
+        base:fn_setId_354,
+        base:fn_setId_37,
+        base:fn_setId_432,
+        base:fn_setId_490,
+        base:fn_setId_82,
+        base:fn_setLanguageLevel_438,
+        base:fn_setLastName_470,
+        base:fn_setLastName_495,
+        base:fn_setLastName_531,
+        base:fn_setName_112,
+        base:fn_setName_139,
+        base:fn_setName_340,
+        base:fn_setName_562,
+        base:fn_setOutputProperty_337,
+        base:fn_setPetId_20,
+        base:fn_setPetId_480,
+        base:fn_setTelephone_21,
+        base:fn_setTelephone_537,
+        base:fn_setTextContent_134,
+        base:fn_setType_33,
+        base:fn_setType_355,
+        base:fn_setUp_447,
+        base:fn_setupPet_333,
+        base:fn_shouldGetAPetInJSonFormat_380,
+        base:fn_shutdown_149,
+        base:fn_shutdown_267,
+        base:fn_similaritySearch_83,
+        base:fn_singletonList_15,
+        base:fn_size_18,
+        base:fn_size_364,
+        base:fn_size_456,
+        base:fn_size_489,
+        base:fn_sort_412,
+        base:fn_status_127,
+        base:fn_status_170,
+        base:fn_status_453,
+        base:fn_status_528,
+        base:fn_stream_225,
+        base:fn_stream_253,
+        base:fn_stream_270,
+        base:fn_stream_575,
+        base:fn_telephone_390,
+        base:fn_telephone_448,
+        base:fn_text_204,
+        base:fn_thenReturn_201,
+        base:fn_thenReturn_541,
+        base:fn_timeLimiterConfig_553,
+        base:fn_timeLimiterRegistry_478,
+        base:fn_timedAspect_110,
+        base:fn_timedAspect_473,
+        base:fn_timeoutDuration_548,
+        base:fn_toFile_525,
+        base:fn_toList_280,
+        base:fn_toList_522,
+        base:fn_toString_157,
+        base:fn_toString_211,
+        base:fn_toString_212,
+        base:fn_toString_237,
+        base:fn_toString_339,
+        base:fn_toString_414,
+        base:fn_toString_424,
+        base:fn_toString_451,
+        base:fn_toString_474,
+        base:fn_toString_483,
+        base:fn_toString_57,
+        base:fn_toString_99,
+        base:fn_transform_111,
+        base:fn_transform_500,
+        base:fn_trim_348,
+        base:fn_trim_552,
+        base:fn_typeId_257,
+        base:fn_type_515,
+        base:fn_unmodifiableList_45,
+        base:fn_uri_155,
+        base:fn_uri_305,
+        base:fn_uri_493,
+        base:fn_uri_58,
+        base:fn_url_507,
+        base:fn_user_353,
+        base:fn_value_153,
+        base:fn_value_200,
+        base:fn_value_310,
+        base:fn_value_324,
+        base:fn_value_325,
+        base:fn_value_327,
+        base:fn_value_388,
+        base:fn_value_440,
+        base:fn_value_443,
+        base:fn_value_524,
+        base:fn_values_188,
+        base:fn_values_410,
+        base:fn_vectorStore_365,
+        base:fn_walk_586,
+        base:fn_when_226,
+        base:fn_willReturn_290,
+        base:fn_willReturn_510,
+        base:fn_willReturn_88,
+        base:fn_withQuery_220,
+        base:fn_withTopK_215,
+        base:fn_withTopK_539,
+        base:fn_writeValueAsString_444,
+        base:fn_write_79 .
+
+base:VetService a base:Service ;
+    rdfs:label "VetService" ;
+    base:hasFunction base:fn_VetRepository_543,
+        base:fn_VetResourceTest_592,
+        base:fn_VetResource_366,
+        base:fn_Vet_63,
+        base:fn_VetsServiceApplication_35,
+        base:fn_getVets_437,
+        base:fn_getVets_479,
+        base:fn_listVets_163,
+        base:fn_loadVetDataToVectorStoreOnStartup_125,
+        base:fn_shouldGetAListOfVets_322,
+        base:fn_showResourcesVetList_584,
+        base:fn_vet_560 .
+
+base:VisitService a base:Service ;
+    rdfs:label "VisitService" ;
+    base:hasFunction base:fn_VisitBuilder_254,
+        base:fn_VisitRepository_394,
+        base:fn_VisitResourceTest_381,
+        base:fn_VisitResource_589,
+        base:fn_Visit_404,
+        base:fn_VisitsServiceApplication_230,
+        base:fn_VisitsServiceClientIntegrationTest_41,
+        base:fn_VisitsServiceClient_221,
+        base:fn_aVisit_107,
+        base:fn_aVisit_416,
+        base:fn_aVisit_488,
+        base:fn_assertVisitDescriptionEquals_242,
+        base:fn_emptyVisitsForPets_38,
+        base:fn_getVisitsForPets_119,
+        base:fn_getVisitsForPets_29,
+        base:fn_getVisitsForPets_withAvailableVisitsService_182,
+        base:fn_shouldFetchVisits_399,
+        base:fn_visits_1,
+        base:fn_visits_189,
+        base:fn_visits_262 .
+
+base:hasCRUD a owl:ObjectProperty .
+
+base:hasFunction a owl:ObjectProperty .
+
+base:relatesTo a owl:ObjectProperty .
+
+base:absent a base:DomainEntity ;
+    rdfs:label "absent" .
+
+base:absolute a base:DomainEntity ;
+    rdfs:label "absolute" .
+
+base:byte a base:DomainEntity ;
+    rdfs:label "byte" .
+
+base:cache a base:DomainEntity ;
+    rdfs:label "cache" .
+
+base:chat a base:DomainEntity ;
+    rdfs:label "chat" .
+
+base:code a base:DomainEntity ;
+    rdfs:label "code" .
+
+base:configuration a base:DomainEntity ;
+    rdfs:label "configuration" .
+
+base:configure a base:DomainEntity ;
+    rdfs:label "configure" .
+
+base:custom a base:DomainEntity ;
+    rdfs:label "custom" .
+
+base:element a base:DomainEntity ;
+    rdfs:label "element" .
+
+base:enqueue a base:DomainEntity ;
+    rdfs:label "enqueue" .
+
+base:entry a base:DomainEntity ;
+    rdfs:label "entry" .
+
+base:equals a base:DomainEntity ;
+    rdfs:label "equals" .
+
+base:export a base:DomainEntity ;
+    rdfs:label "export" .
+
+base:fn_AIBeanConfiguration_561 a base:Function ;
+    rdfs:label "AIBeanConfiguration" ;
+    base:relatesTo base:ai .
+
+base:fn_AIDataProvider_205 a base:Function ;
+    rdfs:label "AIDataProvider" ;
+    base:relatesTo base:ai .
+
+base:fn_AIFunctionConfiguration_554 a base:Function ;
+    rdfs:label "AIFunctionConfiguration" ;
+    base:relatesTo base:ai .
+
+base:fn_ApiGatewayApplicationTests_523 a base:Function ;
+    rdfs:label "ApiGatewayApplicationTests" ;
+    base:relatesTo base:api .
+
+base:fn_ApiGatewayApplication_485 a base:Function ;
+    rdfs:label "ApiGatewayApplication" ;
+    base:relatesTo base:api .
+
+base:fn_ApiGatewayControllerTest_371 a base:Function ;
+    rdfs:label "ApiGatewayControllerTest" ;
+    base:relatesTo base:api .
+
+base:fn_ApiGatewayController_545 a base:Function ;
+    rdfs:label "ApiGatewayController" ;
+    base:relatesTo base:api .
+
+base:fn_CacheConfig_76 a base:Function ;
+    rdfs:label "CacheConfig" ;
+    base:relatesTo base:cache .
+
+base:fn_CircuitBreakerConfiguration_208 a base:Function ;
+    rdfs:label "CircuitBreakerConfiguration" ;
+    base:relatesTo base:circuit .
+
+base:fn_ConfigServerApplication_293 a base:Function ;
+    rdfs:label "ConfigServerApplication" ;
+    base:relatesTo base:config .
+
+base:fn_CustomersServiceApplication_131 a base:Function ;
+    rdfs:label "CustomersServiceApplication" ;
+    base:relatesTo base:customers .
+
+base:fn_CustomersServiceClient_508 a base:Function ;
+    rdfs:label "CustomersServiceClient" ;
+    base:relatesTo base:customers .
+
+base:fn_DiscoveryServerApplicationTests_555 a base:Function ;
+    rdfs:label "DiscoveryServerApplicationTests" ;
+    base:relatesTo base:discovery .
+
+base:fn_DiscoveryServerApplication_105 a base:Function ;
+    rdfs:label "DiscoveryServerApplication" ;
+    base:relatesTo base:discovery .
+
+base:fn_FallbackController_460 a base:Function ;
+    rdfs:label "FallbackController" ;
+    base:relatesTo base:fallback .
+
+base:fn_GET_587 a base:Function ;
+    rdfs:label "GET" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_GenAIServiceApplication_367 a base:Function ;
+    rdfs:label "GenAIServiceApplication" ;
+    base:relatesTo base:gen .
+
+base:fn_Mapper_468 a base:Function ;
+    rdfs:label "Mapper" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_MetricConfig_132 a base:Function ;
+    rdfs:label "MetricConfig" ;
+    base:relatesTo base:metric .
+
+base:fn_MetricConfig_397 a base:Function ;
+    rdfs:label "MetricConfig" ;
+    base:relatesTo base:metric .
+
+base:fn_OwnerDetailsBuilder_169 a base:Function ;
+    rdfs:label "OwnerDetailsBuilder" ;
+    base:relatesTo base:owner .
+
+base:fn_OwnerEntityMapper_506 a base:Function ;
+    rdfs:label "OwnerEntityMapper" ;
+    base:relatesTo base:owner .
+
+base:fn_OwnerRepository_297 a base:Function ;
+    rdfs:label "OwnerRepository" ;
+    base:relatesTo base:owner .
+
+base:fn_OwnerResource_581 a base:Function ;
+    rdfs:label "OwnerResource" ;
+    base:relatesTo base:owner .
+
+base:fn_Owner_236 a base:Function ;
+    rdfs:label "Owner" ;
+    base:relatesTo base:owner .
+
+base:fn_PetDetailsBuilder_372 a base:Function ;
+    rdfs:label "PetDetailsBuilder" ;
+    base:relatesTo base:pet .
+
+base:fn_PetRepository_481 a base:Function ;
+    rdfs:label "PetRepository" ;
+    base:relatesTo base:pet .
+
+base:fn_PetResourceTest_97 a base:Function ;
+    rdfs:label "PetResourceTest" ;
+    base:relatesTo base:pet .
+
+base:fn_PetResource_95 a base:Function ;
+    rdfs:label "PetResource" ;
+    base:relatesTo base:pet .
+
+base:fn_PetType_527 a base:Function ;
+    rdfs:label "PetType" ;
+    base:relatesTo base:pet .
+
+base:fn_Pet_358 a base:Function ;
+    rdfs:label "Pet" ;
+    base:relatesTo base:pet .
+
+base:fn_PetclinicChatClient_501 a base:Function ;
+    rdfs:label "PetclinicChatClient" ;
+    base:relatesTo base:petclinic .
+
+base:fn_PetclinicConfigServerApplicationTests_419 a base:Function ;
+    rdfs:label "PetclinicConfigServerApplicationTests" ;
+    base:relatesTo base:petclinic .
+
+base:fn_RepoWideExtractor_8 a base:Function ;
+    rdfs:label "RepoWideExtractor" ;
+    base:relatesTo base:repo .
+
+base:fn_ResourceNotFoundException_43 a base:Function ;
+    rdfs:label "ResourceNotFoundException" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:resource .
+
+base:fn_Specialty_568 a base:Function ;
+    rdfs:label "Specialty" ;
+    base:relatesTo base:specialty .
+
+base:fn_SpringBootAdminApplication_28 a base:Function ;
+    rdfs:label "SpringBootAdminApplication" ;
+    base:relatesTo base:spring .
+
+base:fn_VectorStoreController_69 a base:Function ;
+    rdfs:label "VectorStoreController" ;
+    base:relatesTo base:vector .
+
+base:fn_VetRepository_543 a base:Function ;
+    rdfs:label "VetRepository" ;
+    base:relatesTo base:vet .
+
+base:fn_VetResourceTest_592 a base:Function ;
+    rdfs:label "VetResourceTest" ;
+    base:relatesTo base:vet .
+
+base:fn_VetResource_366 a base:Function ;
+    rdfs:label "VetResource" ;
+    base:relatesTo base:vet .
+
+base:fn_Vet_63 a base:Function ;
+    rdfs:label "Vet" ;
+    base:relatesTo base:vet .
+
+base:fn_VetsServiceApplication_35 a base:Function ;
+    rdfs:label "VetsServiceApplication" ;
+    base:relatesTo base:vets .
+
+base:fn_VisitBuilder_254 a base:Function ;
+    rdfs:label "VisitBuilder" ;
+    base:relatesTo base:builder .
+
+base:fn_VisitRepository_394 a base:Function ;
+    rdfs:label "VisitRepository" ;
+    base:relatesTo base:repository .
+
+base:fn_VisitResourceTest_381 a base:Function ;
+    rdfs:label "VisitResourceTest" ;
+    base:relatesTo base:resource .
+
+base:fn_VisitResource_589 a base:Function ;
+    rdfs:label "VisitResource" ;
+    base:relatesTo base:resource .
+
+base:fn_Visit_404 a base:Function ;
+    rdfs:label "Visit" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_VisitsServiceApplication_230 a base:Function ;
+    rdfs:label "VisitsServiceApplication" ;
+    base:relatesTo base:visits .
+
+base:fn_VisitsServiceClientIntegrationTest_41 a base:Function ;
+    rdfs:label "VisitsServiceClientIntegrationTest" ;
+    base:relatesTo base:visit .
+
+base:fn_VisitsServiceClient_221 a base:Function ;
+    rdfs:label "VisitsServiceClient" ;
+    base:relatesTo base:visit .
+
+base:fn_aPetDetails_374 a base:Function ;
+    rdfs:label "aPetDetails" ;
+    base:relatesTo base:pet .
+
+base:fn_aPetDetails_442 a base:Function ;
+    rdfs:label "aPetDetails" ;
+    base:relatesTo base:pet .
+
+base:fn_aVisit_107 a base:Function ;
+    rdfs:label "aVisit" ;
+    base:relatesTo base:visit .
+
+base:fn_aVisit_416 a base:Function ;
+    rdfs:label "aVisit" ;
+    base:relatesTo base:visit .
+
+base:fn_aVisit_488 a base:Function ;
+    rdfs:label "aVisit" ;
+    base:relatesTo base:visit .
+
+base:fn_accept_148 a base:Function ;
+    rdfs:label "accept" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_accept_509 a base:Function ;
+    rdfs:label "accept" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_accept_556 a base:Function ;
+    rdfs:label "accept" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_addAll_141 a base:Function ;
+    rdfs:label "addAll" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_addAll_68 a base:Function ;
+    rdfs:label "addAll" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_addOwnerToPetclinic_126 a base:Function ;
+    rdfs:label "addOwnerToPetclinic" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:owner .
+
+base:fn_addOwnerToPetclinic_296 a base:Function ;
+    rdfs:label "addOwnerToPetclinic" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:owner .
+
+base:fn_addOwnerToPetclinic_50 a base:Function ;
+    rdfs:label "addOwnerToPetclinic" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:owner .
+
+base:fn_addPetToOwner_19 a base:Function ;
+    rdfs:label "addPetToOwner" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:pet .
+
+base:fn_addPetToOwner_2 a base:Function ;
+    rdfs:label "addPetToOwner" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:pet .
+
+base:fn_addPetToOwner_387 a base:Function ;
+    rdfs:label "addPetToOwner" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:pet .
+
+base:fn_addPet_272 a base:Function ;
+    rdfs:label "addPet" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:pet .
+
+base:fn_addPet_439 a base:Function ;
+    rdfs:label "addPet" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:pet .
+
+base:fn_addSpecialty_595 a base:Function ;
+    rdfs:label "addSpecialty" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:specialty .
+
+base:fn_addVisitsToOwner_59 a base:Function ;
+    rdfs:label "addVisitsToOwner" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:visit .
+
+base:fn_add_102 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_265 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_315 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_335 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_408 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_449 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_487 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_518 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_add_72 a base:Function ;
+    rdfs:label "add" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_address_154 a base:Function ;
+    rdfs:label "address" ;
+    base:relatesTo base:address .
+
+base:fn_address_455 a base:Function ;
+    rdfs:label "address" ;
+    base:relatesTo base:address .
+
+base:fn_anOwnerDetails_284 a base:Function ;
+    rdfs:label "anOwnerDetails" ;
+    base:relatesTo base:owner .
+
+base:fn_anOwnerDetails_70 a base:Function ;
+    rdfs:label "anOwnerDetails" ;
+    base:relatesTo base:owner .
+
+base:fn_andExpect_104 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_115 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_124 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_128 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_150 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_179 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_180 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_276 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_347 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_421 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_446 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_486 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_582 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andExpect_64 a base:Function ;
+    rdfs:label "andExpect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_andRoute_406 a base:Function ;
+    rdfs:label "andRoute" ;
+    base:relatesTo base:route .
+
+base:fn_appendChild_17 a base:Function ;
+    rdfs:label "appendChild" ;
+    base:relatesTo base:child .
+
+base:fn_appendChild_199 a base:Function ;
+    rdfs:label "appendChild" ;
+    base:relatesTo base:child .
+
+base:fn_appendChild_462 a base:Function ;
+    rdfs:label "appendChild" ;
+    base:relatesTo base:child .
+
+base:fn_appendChild_90 a base:Function ;
+    rdfs:label "appendChild" ;
+    base:relatesTo base:child .
+
+base:fn_append_114 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_274 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_300 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_309 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_320 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_330 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_383 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_393 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_427 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_append_74 a base:Function ;
+    rdfs:label "append" ;
+    base:relatesTo base:append .
+
+base:fn_asFileAttribute_401 a base:Function ;
+    rdfs:label "asFileAttribute" ;
+    base:relatesTo base:file .
+
+base:fn_asList_396 a base:Function ;
+    rdfs:label "asList" ;
+    base:relatesTo base:list .
+
+base:fn_asList_54 a base:Function ;
+    rdfs:label "asList" ;
+    base:relatesTo base:list .
+
+base:fn_asString_341 a base:Function ;
+    rdfs:label "asString" ;
+    base:relatesTo base:string .
+
+base:fn_assertEquals_135 a base:Function ;
+    rdfs:label "assertEquals" ;
+    base:relatesTo base:equals .
+
+base:fn_assertNotNull_571 a base:Function ;
+    rdfs:label "assertNotNull" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_assertVisitDescriptionEquals_242 a base:Function ;
+    rdfs:label "assertVisitDescriptionEquals" ;
+    base:relatesTo base:visit .
+
+base:fn_birthDate_430 a base:Function ;
+    rdfs:label "birthDate" ;
+    base:relatesTo base:birth .
+
+base:fn_birthDate_80 a base:Function ;
+    rdfs:label "birthDate" ;
+    base:relatesTo base:birth .
+
+base:fn_block_247 a base:Function ;
+    rdfs:label "block" ;
+    base:relatesTo base:block .
+
+base:fn_block_542 a base:Function ;
+    rdfs:label "block" ;
+    base:relatesTo base:block .
+
+base:fn_block_564 a base:Function ;
+    rdfs:label "block" ;
+    base:relatesTo base:block .
+
+base:fn_block_580 a base:Function ;
+    rdfs:label "block" ;
+    base:relatesTo base:block .
+
+base:fn_block_91 a base:Function ;
+    rdfs:label "block" ;
+    base:relatesTo base:block .
+
+base:fn_bodyToMono_198 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyToMono_227 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyToMono_351 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyToMono_513 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyToMono_65 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyToMono_77 a base:Function ;
+    rdfs:label "bodyToMono" ;
+    base:relatesTo base:body .
+
+base:fn_bodyValue_14 a base:Function ;
+    rdfs:label "bodyValue" ;
+    base:relatesTo base:body .
+
+base:fn_bodyValue_177 a base:Function ;
+    rdfs:label "bodyValue" ;
+    base:relatesTo base:body .
+
+base:fn_bodyValue_323 a base:Function ;
+    rdfs:label "bodyValue" ;
+    base:relatesTo base:body .
+
+base:fn_body_190 a base:Function ;
+    rdfs:label "body" ;
+    base:relatesTo base:body .
+
+base:fn_build_207 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_219 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_241 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_245 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_295 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_318 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_407 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_415 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_532 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_540 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_551 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_build_78 a base:Function ;
+    rdfs:label "build" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_builder_557 a base:Function ;
+    rdfs:label "builder" ;
+    base:relatesTo base:builder .
+
+base:fn_call_120 a base:Function ;
+    rdfs:label "call" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_chatMemory_544 a base:Function ;
+    rdfs:label "chatMemory" ;
+    base:relatesTo base:chat .
+
+base:fn_circuitBreakerConfig_334 a base:Function ;
+    rdfs:label "circuitBreakerConfig" ;
+    base:relatesTo base:circuit .
+
+base:fn_circuitBreakerRegistry_39 a base:Function ;
+    rdfs:label "circuitBreakerRegistry" ;
+    base:relatesTo base:circuit .
+
+base:fn_city_176 a base:Function ;
+    rdfs:label "city" ;
+    base:relatesTo base:city .
+
+base:fn_city_546 a base:Function ;
+    rdfs:label "city" ;
+    base:relatesTo base:city .
+
+base:fn_close_238 a base:Function ;
+    rdfs:label "close" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_collect_164 a base:Function ;
+    rdfs:label "collect" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_commonTags_435 a base:Function ;
+    rdfs:label "commonTags" ;
+    base:relatesTo base:tags .
+
+base:fn_computeIfAbsent_259 a base:Function ;
+    rdfs:label "computeIfAbsent" ;
+    base:relatesTo base:absent .
+
+base:fn_config_185 a base:Function ;
+    rdfs:label "config" ;
+    base:relatesTo base:config .
+
+base:fn_configureDefault_565 a base:Function ;
+    rdfs:label "configureDefault" ;
+    base:relatesTo base:configure .
+
+base:fn_containsKey_192 a base:Function ;
+    rdfs:label "containsKey" ;
+    base:relatesTo base:key .
+
+base:fn_contentType_214 a base:Function ;
+    rdfs:label "contentType" ;
+    base:relatesTo base:content .
+
+base:fn_contentType_51 a base:Function ;
+    rdfs:label "contentType" ;
+    base:relatesTo base:content .
+
+base:fn_content_345 a base:Function ;
+    rdfs:label "content" ;
+    base:relatesTo base:content .
+
+base:fn_content_405 a base:Function ;
+    rdfs:label "content" ;
+    base:relatesTo base:content .
+
+base:fn_contextLoads_136 a base:Function ;
+    rdfs:label "contextLoads" ;
+    base:relatesTo base:context .
+
+base:fn_contextLoads_306 a base:Function ;
+    rdfs:label "contextLoads" ;
+    base:relatesTo base:context .
+
+base:fn_contextLoads_361 a base:Function ;
+    rdfs:label "contextLoads" ;
+    base:relatesTo base:context .
+
+base:fn_convertListToJsonResource_103 a base:Function ;
+    rdfs:label "convertListToJsonResource" ;
+    base:relatesTo base:list .
+
+base:fn_createElement_174 a base:Function ;
+    rdfs:label "createElement" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:element .
+
+base:fn_createOwner_573 a base:Function ;
+    rdfs:label "createOwner" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:owner .
+
+base:fn_createTempFile_413 a base:Function ;
+    rdfs:label "createTempFile" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:temp .
+
+base:fn_create_158 a base:Function ;
+    rdfs:label "create" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_create_7 a base:Function ;
+    rdfs:label "create" ;
+    base:hasCRUD base:Create ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_custom_93 a base:Function ;
+    rdfs:label "custom" ;
+    base:relatesTo base:custom .
+
+base:fn_date_216 a base:Function ;
+    rdfs:label "date" ;
+    base:relatesTo base:date .
+
+base:fn_date_52 a base:Function ;
+    rdfs:label "date" ;
+    base:relatesTo base:date .
+
+base:fn_defaultCustomizer_286 a base:Function ;
+    rdfs:label "defaultCustomizer" ;
+    base:relatesTo base:default .
+
+base:fn_defaults_363 a base:Function ;
+    rdfs:label "defaults" ;
+    base:relatesTo base:default .
+
+base:fn_description_398 a base:Function ;
+    rdfs:label "description" ;
+    base:relatesTo base:description .
+
+base:fn_description_457 a base:Function ;
+    rdfs:label "description" ;
+    base:relatesTo base:description .
+
+base:fn_description_504 a base:Function ;
+    rdfs:label "description" ;
+    base:relatesTo base:description .
+
+base:fn_emptyVisitsForPets_38 a base:Function ;
+    rdfs:label "emptyVisitsForPets" ;
+    base:relatesTo base:visit .
+
+base:fn_endsWith_287 a base:Function ;
+    rdfs:label "endsWith" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_enqueue_359 a base:Function ;
+    rdfs:label "enqueue" ;
+    base:relatesTo base:enqueue .
+
+base:fn_entrySet_53 a base:Function ;
+    rdfs:label "entrySet" ;
+    base:relatesTo base:entry .
+
+base:fn_equals_129 a base:Function ;
+    rdfs:label "equals" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_equals_32 a base:Function ;
+    rdfs:label "equals" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_error_249 a base:Function ;
+    rdfs:label "error" ;
+    base:relatesTo base:error .
+
+base:fn_error_283 a base:Function ;
+    rdfs:label "error" ;
+    base:relatesTo base:error .
+
+base:fn_error_46 a base:Function ;
+    rdfs:label "error" ;
+    base:relatesTo base:error .
+
+base:fn_exchange_559 a base:Function ;
+    rdfs:label "exchange" ;
+    base:relatesTo base:exchange .
+
+base:fn_exchange_574 a base:Function ;
+    rdfs:label "exchange" ;
+    base:relatesTo base:exchange .
+
+base:fn_exists_160 a base:Function ;
+    rdfs:label "exists" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_expectBody_316 a base:Function ;
+    rdfs:label "expectBody" ;
+    base:relatesTo base:body .
+
+base:fn_expectStatus_118 a base:Function ;
+    rdfs:label "expectStatus" ;
+    base:relatesTo base:status .
+
+base:fn_exportSemanticGraphML_175 a base:Function ;
+    rdfs:label "exportSemanticGraphML" ;
+    base:relatesTo base:semantic .
+
+base:fn_exportSemanticJSON_9 a base:Function ;
+    rdfs:label "exportSemanticJSON" ;
+    base:relatesTo base:json .
+
+base:fn_exportStaticGraphGML_461 a base:Function ;
+    rdfs:label "exportStaticGraphGML" ;
+    base:relatesTo base:export .
+
+base:fn_fallback_278 a base:Function ;
+    rdfs:label "fallback" ;
+    base:relatesTo base:fallback .
+
+base:fn_filter_146 a base:Function ;
+    rdfs:label "filter" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_filter_535 a base:Function ;
+    rdfs:label "filter" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_130 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_235 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_298 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_431 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_533 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findAll_588 a base:Function ;
+    rdfs:label "findAll" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_findById_222 a base:Function ;
+    rdfs:label "findById" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_findById_294 a base:Function ;
+    rdfs:label "findById" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_findByPetIdIn_232 a base:Function ;
+    rdfs:label "findByPetIdIn" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findByPetIdIn_244 a base:Function ;
+    rdfs:label "findByPetIdIn" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findByPetId_302 a base:Function ;
+    rdfs:label "findByPetId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findByPetId_503 a base:Function ;
+    rdfs:label "findByPetId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findOwner_593 a base:Function ;
+    rdfs:label "findOwner" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_findPetById_469 a base:Function ;
+    rdfs:label "findPetById" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findPetTypeById_191 a base:Function ;
+    rdfs:label "findPetTypeById" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findPetTypeById_452 a base:Function ;
+    rdfs:label "findPetTypeById" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findPetTypes_243 a base:Function ;
+    rdfs:label "findPetTypes" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findPetTypes_514 a base:Function ;
+    rdfs:label "findPetTypes" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_findPet_6 a base:Function ;
+    rdfs:label "findPet" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_firstName_161 a base:Function ;
+    rdfs:label "firstName" ;
+    base:relatesTo base:first .
+
+base:fn_firstName_336 a base:Function ;
+    rdfs:label "firstName" ;
+    base:relatesTo base:first .
+
+base:fn_flatMap_445 a base:Function ;
+    rdfs:label "flatMap" ;
+    base:relatesTo base:map .
+
+base:fn_flush_138 a base:Function ;
+    rdfs:label "flush" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_193 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_233 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_282 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_342 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_389 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_392 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_42 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_494 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_547 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_forEach_81 a base:Function ;
+    rdfs:label "forEach" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_fromString_71 a base:Function ;
+    rdfs:label "fromString" ;
+    base:relatesTo base:string .
+
+base:fn_from_86 a base:Function ;
+    rdfs:label "from" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_getAbsolutePath_484 a base:Function ;
+    rdfs:label "getAbsolutePath" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:absolute .
+
+base:fn_getAddress_482 a base:Function ;
+    rdfs:label "getAddress" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:address .
+
+base:fn_getAllOwners_516 a base:Function ;
+    rdfs:label "getAllOwners" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getAllOwners_570 a base:Function ;
+    rdfs:label "getAllOwners" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getBirthDate_202 a base:Function ;
+    rdfs:label "getBirthDate" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:birth .
+
+base:fn_getBirthDate_459 a base:Function ;
+    rdfs:label "getBirthDate" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:birth .
+
+base:fn_getBytes_391 a base:Function ;
+    rdfs:label "getBytes" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:byte .
+
+base:fn_getCity_66 a base:Function ;
+    rdfs:label "getCity" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:city .
+
+base:fn_getClass_288 a base:Function ;
+    rdfs:label "getClass" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:class .
+
+base:fn_getClass_558 a base:Function ;
+    rdfs:label "getClass" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:class .
+
+base:fn_getContent_577 a base:Function ;
+    rdfs:label "getContent" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:content .
+
+base:fn_getDate_466 a base:Function ;
+    rdfs:label "getDate" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:date .
+
+base:fn_getDescription_312 a base:Function ;
+    rdfs:label "getDescription" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:description .
+
+base:fn_getFile_497 a base:Function ;
+    rdfs:label "getFile" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:file .
+
+base:fn_getFirstName_224 a base:Function ;
+    rdfs:label "getFirstName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:first .
+
+base:fn_getFirstName_239 a base:Function ;
+    rdfs:label "getFirstName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:first .
+
+base:fn_getFirstName_255 a base:Function ;
+    rdfs:label "getFirstName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:first .
+
+base:fn_getFirstName_498 a base:Function ;
+    rdfs:label "getFirstName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:first .
+
+base:fn_getId_123 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_197 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_23 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_256 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_289 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_530 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getId_585 a base:Function ;
+    rdfs:label "getId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:i .
+
+base:fn_getIdentifier_171 a base:Function ;
+    rdfs:label "getIdentifier" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:identifier .
+
+base:fn_getIdentifier_248 a base:Function ;
+    rdfs:label "getIdentifier" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:identifier .
+
+base:fn_getImports_395 a base:Function ;
+    rdfs:label "getImports" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:import .
+
+base:fn_getKey_505 a base:Function ;
+    rdfs:label "getKey" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_getLastName_385 a base:Function ;
+    rdfs:label "getLastName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getLastName_472 a base:Function ;
+    rdfs:label "getLastName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getLastName_476 a base:Function ;
+    rdfs:label "getLastName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getLastName_579 a base:Function ;
+    rdfs:label "getLastName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getMessage_13 a base:Function ;
+    rdfs:label "getMessage" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:message .
+
+base:fn_getNameAsString_151 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNameAsString_338 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNameAsString_418 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNameAsString_511 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNameAsString_576 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNameAsString_84 a base:Function ;
+    rdfs:label "getNameAsString" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getName_144 a base:Function ;
+    rdfs:label "getName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getName_147 a base:Function ;
+    rdfs:label "getName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getName_317 a base:Function ;
+    rdfs:label "getName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getName_329 a base:Function ;
+    rdfs:label "getName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getName_534 a base:Function ;
+    rdfs:label "getName" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:name .
+
+base:fn_getNrOfSpecialties_332 a base:Function ;
+    rdfs:label "getNrOfSpecialties" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:nr .
+
+base:fn_getOwnerDetails_266 a base:Function ;
+    rdfs:label "getOwnerDetails" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwnerDetails_withAvailableVisitsService_34 a base:Function ;
+    rdfs:label "getOwnerDetails_withAvailableVisitsService" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwnerDetails_withServiceError_578 a base:Function ;
+    rdfs:label "getOwnerDetails_withServiceError" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwner_184 a base:Function ;
+    rdfs:label "getOwner" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwner_268 a base:Function ;
+    rdfs:label "getOwner" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwner_269 a base:Function ;
+    rdfs:label "getOwner" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getOwner_314 a base:Function ;
+    rdfs:label "getOwner" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:owner .
+
+base:fn_getPackageDeclaration_73 a base:Function ;
+    rdfs:label "getPackageDeclaration" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:package .
+
+base:fn_getParameters_178 a base:Function ;
+    rdfs:label "getParameters" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:parameter .
+
+base:fn_getPetId_25 a base:Function ;
+    rdfs:label "getPetId" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_getPetIds_30 a base:Function ;
+    rdfs:label "getPetIds" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_getPetTypes_458 a base:Function ;
+    rdfs:label "getPetTypes" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_getPetsInternal_423 a base:Function ;
+    rdfs:label "getPetsInternal" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pets .
+
+base:fn_getPets_234 a base:Function ;
+    rdfs:label "getPets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_getScope_12 a base:Function ;
+    rdfs:label "getScope" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:scope .
+
+base:fn_getScope_228 a base:Function ;
+    rdfs:label "getScope" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:scope .
+
+base:fn_getScope_277 a base:Function ;
+    rdfs:label "getScope" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:scope .
+
+base:fn_getSpecialtiesInternal_526 a base:Function ;
+    rdfs:label "getSpecialtiesInternal" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:specialties .
+
+base:fn_getSpecialties_384 a base:Function ;
+    rdfs:label "getSpecialties" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:specialty .
+
+base:fn_getTelephone_502 a base:Function ;
+    rdfs:label "getTelephone" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:telephone .
+
+base:fn_getType_106 a base:Function ;
+    rdfs:label "getType" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:type .
+
+base:fn_getType_16 a base:Function ;
+    rdfs:label "getType" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:type .
+
+base:fn_getType_386 a base:Function ;
+    rdfs:label "getType" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:type .
+
+base:fn_getValue_411 a base:Function ;
+    rdfs:label "getValue" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:value .
+
+base:fn_getVets_437 a base:Function ;
+    rdfs:label "getVets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:vet .
+
+base:fn_getVets_479 a base:Function ;
+    rdfs:label "getVets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:vet .
+
+base:fn_getVisitsForPets_119 a base:Function ;
+    rdfs:label "getVisitsForPets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:visit .
+
+base:fn_getVisitsForPets_29 a base:Function ;
+    rdfs:label "getVisitsForPets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:visit .
+
+base:fn_getVisitsForPets_withAvailableVisitsService_182 a base:Function ;
+    rdfs:label "getVisitsForPets_withAvailableVisitsService" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:visit .
+
+base:fn_get_168 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_209 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_433 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_441 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_464 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_471 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_529 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_55 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_572 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_get_98 a base:Function ;
+    rdfs:label "get" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_given_375 a base:Function ;
+    rdfs:label "given" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_given_49 a base:Function ;
+    rdfs:label "given" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_given_550 a base:Function ;
+    rdfs:label "given" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_hashCode_422 a base:Function ;
+    rdfs:label "hashCode" ;
+    base:relatesTo base:code .
+
+base:fn_hash_275 a base:Function ;
+    rdfs:label "hash" ;
+    base:relatesTo base:hash .
+
+base:fn_id_101 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_165 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_252 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_382 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_40 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_428 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_434 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_44 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_id_563 a base:Function ;
+    rdfs:label "id" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_ifPresent_519 a base:Function ;
+    rdfs:label "ifPresent" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_info_246 a base:Function ;
+    rdfs:label "info" ;
+    base:relatesTo base:info .
+
+base:fn_info_48 a base:Function ;
+    rdfs:label "info" ;
+    base:relatesTo base:info .
+
+base:fn_isEmpty_379 a base:Function ;
+    rdfs:label "isEmpty" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_isEmpty_499 a base:Function ;
+    rdfs:label "isEmpty" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_isEqualTo_319 a base:Function ;
+    rdfs:label "isEqualTo" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_isEqualTo_349 a base:Function ;
+    rdfs:label "isEqualTo" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_isOk_304 a base:Function ;
+    rdfs:label "isOk" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_isOk_583 a base:Function ;
+    rdfs:label "isOk" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_items_350 a base:Function ;
+    rdfs:label "items" ;
+    base:relatesTo base:item .
+
+base:fn_joinIds_409 a base:Function ;
+    rdfs:label "joinIds" ;
+    base:relatesTo base:ids .
+
+base:fn_joining_5 a base:Function ;
+    rdfs:label "joining" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_jsonPath_159 a base:Function ;
+    rdfs:label "jsonPath" ;
+    base:relatesTo base:json .
+
+base:fn_jsonPath_301 a base:Function ;
+    rdfs:label "jsonPath" ;
+    base:relatesTo base:json .
+
+base:fn_jsonPath_346 a base:Function ;
+    rdfs:label "jsonPath" ;
+    base:relatesTo base:json .
+
+base:fn_jsonPath_536 a base:Function ;
+    rdfs:label "jsonPath" ;
+    base:relatesTo base:json .
+
+base:fn_jsonPath_61 a base:Function ;
+    rdfs:label "jsonPath" ;
+    base:relatesTo base:json .
+
+base:fn_just_400 a base:Function ;
+    rdfs:label "just" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_keySet_145 a base:Function ;
+    rdfs:label "keySet" ;
+    base:relatesTo base:set .
+
+base:fn_lastName_195 a base:Function ;
+    rdfs:label "lastName" ;
+    base:relatesTo base:name .
+
+base:fn_lastName_520 a base:Function ;
+    rdfs:label "lastName" ;
+    base:relatesTo base:name .
+
+base:fn_listOwners_3 a base:Function ;
+    rdfs:label "listOwners" ;
+    base:relatesTo base:list .
+
+base:fn_listVets_163 a base:Function ;
+    rdfs:label "listVets" ;
+    base:relatesTo base:list .
+
+base:fn_loadBalancedRestTemplate_369 a base:Function ;
+    rdfs:label "loadBalancedRestTemplate" ;
+    base:relatesTo base:balanced .
+
+base:fn_loadBalancedWebClientBuilder_10 a base:Function ;
+    rdfs:label "loadBalancedWebClientBuilder" ;
+    base:relatesTo base:balanced .
+
+base:fn_loadBalancedWebClientBuilder_206 a base:Function ;
+    rdfs:label "loadBalancedWebClientBuilder" ;
+    base:relatesTo base:balanced .
+
+base:fn_loadVetDataToVectorStoreOnStartup_125 a base:Function ;
+    rdfs:label "loadVetDataToVectorStoreOnStartup" ;
+    base:relatesTo base:load .
+
+base:fn_load_429 a base:Function ;
+    rdfs:label "load" ;
+    base:relatesTo base:load .
+
+base:fn_main_133 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_152 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_186 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_210 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_213 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_331 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_420 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_425 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_main_426 a base:Function ;
+    rdfs:label "main" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_map_218 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_26 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_326 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_36 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_370 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_4 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_467 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_475 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_496 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_map_594 a base:Function ;
+    rdfs:label "map" ;
+    base:relatesTo base:map .
+
+base:fn_metricsCommonTags_22 a base:Function ;
+    rdfs:label "metricsCommonTags" ;
+    base:relatesTo base:metric .
+
+base:fn_metricsCommonTags_307 a base:Function ;
+    rdfs:label "metricsCommonTags" ;
+    base:relatesTo base:metric .
+
+base:fn_mkdirs_352 a base:Function ;
+    rdfs:label "mkdirs" ;
+    base:relatesTo base:mkdir .
+
+base:fn_name_273 a base:Function ;
+    rdfs:label "name" ;
+    base:relatesTo base:name .
+
+base:fn_name_31 a base:Function ;
+    rdfs:label "name" ;
+    base:relatesTo base:name .
+
+base:fn_name_92 a base:Function ;
+    rdfs:label "name" ;
+    base:relatesTo base:name .
+
+base:fn_newDocumentBuilder_56 a base:Function ;
+    rdfs:label "newDocumentBuilder" ;
+    base:relatesTo base:new .
+
+base:fn_newDocument_117 a base:Function ;
+    rdfs:label "newDocument" ;
+    base:relatesTo base:new .
+
+base:fn_newInstance_311 a base:Function ;
+    rdfs:label "newInstance" ;
+    base:relatesTo base:new .
+
+base:fn_newInstance_454 a base:Function ;
+    rdfs:label "newInstance" ;
+    base:relatesTo base:new .
+
+base:fn_newTransformer_62 a base:Function ;
+    rdfs:label "newTransformer" ;
+    base:relatesTo base:new .
+
+base:fn_ofDefaults_357 a base:Function ;
+    rdfs:label "ofDefaults" ;
+    base:relatesTo base:default .
+
+base:fn_ofDefaults_373 a base:Function ;
+    rdfs:label "ofDefaults" ;
+    base:relatesTo base:default .
+
+base:fn_ofDefaults_96 a base:Function ;
+    rdfs:label "ofDefaults" ;
+    base:relatesTo base:default .
+
+base:fn_ofSeconds_566 a base:Function ;
+    rdfs:label "ofSeconds" ;
+    base:relatesTo base:second .
+
+base:fn_of_167 a base:Function ;
+    rdfs:label "of" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_of_463 a base:Function ;
+    rdfs:label "of" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_ok_378 a base:Function ;
+    rdfs:label "ok" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_orElseThrow_142 a base:Function ;
+    rdfs:label "orElseThrow" ;
+    base:relatesTo base:else .
+
+base:fn_orElseThrow_368 a base:Function ;
+    rdfs:label "orElseThrow" ;
+    base:relatesTo base:else .
+
+base:fn_orElse_229 a base:Function ;
+    rdfs:label "orElse" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_orElse_271 a base:Function ;
+    rdfs:label "orElse" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_orElse_591 a base:Function ;
+    rdfs:label "orElse" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_orElse_87 a base:Function ;
+    rdfs:label "orElse" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_ownerId_109 a base:Function ;
+    rdfs:label "ownerId" ;
+    base:relatesTo base:owner .
+
+base:fn_parseFile_137 a base:Function ;
+    rdfs:label "parseFile" ;
+    base:relatesTo base:parse .
+
+base:fn_parse_94 a base:Function ;
+    rdfs:label "parse" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_perform_436 a base:Function ;
+    rdfs:label "perform" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_petId_11 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_156 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_264 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_356 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_417 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_465 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_petId_67 a base:Function ;
+    rdfs:label "petId" ;
+    base:relatesTo base:pet .
+
+base:fn_pet_183 a base:Function ;
+    rdfs:label "pet" ;
+    base:relatesTo base:pet .
+
+base:fn_pets_450 a base:Function ;
+    rdfs:label "pets" ;
+    base:relatesTo base:pet .
+
+base:fn_pets_521 a base:Function ;
+    rdfs:label "pets" ;
+    base:relatesTo base:pet .
+
+base:fn_pets_75 a base:Function ;
+    rdfs:label "pets" ;
+    base:relatesTo base:pet .
+
+base:fn_post_113 a base:Function ;
+    rdfs:label "post" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_prepareResponse_251 a base:Function ;
+    rdfs:label "prepareResponse" ;
+    base:relatesTo base:response .
+
+base:fn_println_303 a base:Function ;
+    rdfs:label "println" ;
+    base:relatesTo base:println .
+
+base:fn_println_89 a base:Function ;
+    rdfs:label "println" ;
+    base:relatesTo base:println .
+
+base:fn_processCreationForm_285 a base:Function ;
+    rdfs:label "processCreationForm" ;
+    base:relatesTo base:process .
+
+base:fn_processUpdateForm_173 a base:Function ;
+    rdfs:label "processUpdateForm" ;
+    base:relatesTo base:process .
+
+base:fn_prompt_403 a base:Function ;
+    rdfs:label "prompt" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_122 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_231 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_240 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_263 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_281 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_put_308 a base:Function ;
+    rdfs:label "put" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_read_217 a base:Function ;
+    rdfs:label "read" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_reduce_250 a base:Function ;
+    rdfs:label "reduce" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_replace_313 a base:Function ;
+    rdfs:label "replace" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_replace_360 a base:Function ;
+    rdfs:label "replace" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_replace_362 a base:Function ;
+    rdfs:label "replace" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_replace_512 a base:Function ;
+    rdfs:label "replace" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_replace_85 a base:Function ;
+    rdfs:label "replace" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_resilience4JConfigurationProperties_181 a base:Function ;
+    rdfs:label "resilience4JConfigurationProperties" ;
+    base:relatesTo base:resilience .
+
+base:fn_resources_100 a base:Function ;
+    rdfs:label "resources" ;
+    base:relatesTo base:resource .
+
+base:fn_retrieve_121 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_retrieve_223 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_retrieve_343 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_retrieve_477 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_retrieve_549 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_retrieve_569 a base:Function ;
+    rdfs:label "retrieve" ;
+    base:relatesTo base:retrieve .
+
+base:fn_routerFunction_187 a base:Function ;
+    rdfs:label "routerFunction" ;
+    base:relatesTo base:router .
+
+base:fn_run_279 a base:Function ;
+    rdfs:label "run" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_run_299 a base:Function ;
+    rdfs:label "run" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_save_140 a base:Function ;
+    rdfs:label "save" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_save_261 a base:Function ;
+    rdfs:label "save" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_save_291 a base:Function ;
+    rdfs:label "save" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_save_328 a base:Function ;
+    rdfs:label "save" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_save_596 a base:Function ;
+    rdfs:label "save" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_setAddress_162 a base:Function ;
+    rdfs:label "setAddress" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:address .
+
+base:fn_setAddress_292 a base:Function ;
+    rdfs:label "setAddress" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:address .
+
+base:fn_setAttribute_108 a base:Function ;
+    rdfs:label "setAttribute" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:attribute .
+
+base:fn_setAttribute_24 a base:Function ;
+    rdfs:label "setAttribute" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:attribute .
+
+base:fn_setAttribute_260 a base:Function ;
+    rdfs:label "setAttribute" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:attribute .
+
+base:fn_setAttribute_567 a base:Function ;
+    rdfs:label "setAttribute" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:attribute .
+
+base:fn_setBirthDate_27 a base:Function ;
+    rdfs:label "setBirthDate" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:birth .
+
+base:fn_setBirthDate_492 a base:Function ;
+    rdfs:label "setBirthDate" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:birth .
+
+base:fn_setBody_517 a base:Function ;
+    rdfs:label "setBody" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:body .
+
+base:fn_setCity_47 a base:Function ;
+    rdfs:label "setCity" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:city .
+
+base:fn_setCity_60 a base:Function ;
+    rdfs:label "setCity" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:city .
+
+base:fn_setConfiguration_172 a base:Function ;
+    rdfs:label "setConfiguration" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:configuration .
+
+base:fn_setDate_194 a base:Function ;
+    rdfs:label "setDate" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:date .
+
+base:fn_setDate_196 a base:Function ;
+    rdfs:label "setDate" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:date .
+
+base:fn_setDescription_377 a base:Function ;
+    rdfs:label "setDescription" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:description .
+
+base:fn_setDescription_590 a base:Function ;
+    rdfs:label "setDescription" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:description .
+
+base:fn_setFirstName_0 a base:Function ;
+    rdfs:label "setFirstName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:first .
+
+base:fn_setFirstName_143 a base:Function ;
+    rdfs:label "setFirstName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:first .
+
+base:fn_setFirstName_376 a base:Function ;
+    rdfs:label "setFirstName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:first .
+
+base:fn_setHeader_538 a base:Function ;
+    rdfs:label "setHeader" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:header .
+
+base:fn_setHostname_116 a base:Function ;
+    rdfs:label "setHostname" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:hostname .
+
+base:fn_setHostname_321 a base:Function ;
+    rdfs:label "setHostname" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:hostname .
+
+base:fn_setId_166 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_203 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_258 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_354 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_37 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_432 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_490 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setId_82 a base:Function ;
+    rdfs:label "setId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:d .
+
+base:fn_setLanguageLevel_438 a base:Function ;
+    rdfs:label "setLanguageLevel" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:language .
+
+base:fn_setLastName_470 a base:Function ;
+    rdfs:label "setLastName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setLastName_495 a base:Function ;
+    rdfs:label "setLastName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setLastName_531 a base:Function ;
+    rdfs:label "setLastName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setName_112 a base:Function ;
+    rdfs:label "setName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setName_139 a base:Function ;
+    rdfs:label "setName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setName_340 a base:Function ;
+    rdfs:label "setName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setName_562 a base:Function ;
+    rdfs:label "setName" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:name .
+
+base:fn_setOutputProperty_337 a base:Function ;
+    rdfs:label "setOutputProperty" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:output .
+
+base:fn_setOwner_344 a base:Function ;
+    rdfs:label "setOwner" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:owner .
+
+base:fn_setOwner_402 a base:Function ;
+    rdfs:label "setOwner" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:owner .
+
+base:fn_setPetId_20 a base:Function ;
+    rdfs:label "setPetId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:pet .
+
+base:fn_setPetId_480 a base:Function ;
+    rdfs:label "setPetId" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:pet .
+
+base:fn_setTelephone_21 a base:Function ;
+    rdfs:label "setTelephone" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:telephone .
+
+base:fn_setTelephone_537 a base:Function ;
+    rdfs:label "setTelephone" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:telephone .
+
+base:fn_setTextContent_134 a base:Function ;
+    rdfs:label "setTextContent" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:text .
+
+base:fn_setType_33 a base:Function ;
+    rdfs:label "setType" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:type .
+
+base:fn_setType_355 a base:Function ;
+    rdfs:label "setType" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:type .
+
+base:fn_setUp_447 a base:Function ;
+    rdfs:label "setUp" ;
+    base:hasCRUD base:Update ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_setupPet_333 a base:Function ;
+    rdfs:label "setupPet" ;
+    base:relatesTo base:setup .
+
+base:fn_shouldFetchVisits_399 a base:Function ;
+    rdfs:label "shouldFetchVisits" ;
+    base:relatesTo base:visit .
+
+base:fn_shouldGetAListOfVets_322 a base:Function ;
+    rdfs:label "shouldGetAListOfVets" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:list .
+
+base:fn_shouldGetAPetInJSonFormat_380 a base:Function ;
+    rdfs:label "shouldGetAPetInJSonFormat" ;
+    base:hasCRUD base:Read ;
+    base:relatesTo base:pet .
+
+base:fn_showResourcesVetList_584 a base:Function ;
+    rdfs:label "showResourcesVetList" ;
+    base:relatesTo base:resources .
+
+base:fn_shutdown_149 a base:Function ;
+    rdfs:label "shutdown" ;
+    base:relatesTo base:shutdown .
+
+base:fn_shutdown_267 a base:Function ;
+    rdfs:label "shutdown" ;
+    base:relatesTo base:shutdown .
+
+base:fn_similaritySearch_83 a base:Function ;
+    rdfs:label "similaritySearch" ;
+    base:relatesTo base:similarity .
+
+base:fn_singletonList_15 a base:Function ;
+    rdfs:label "singletonList" ;
+    base:relatesTo base:singleton .
+
+base:fn_size_18 a base:Function ;
+    rdfs:label "size" ;
+    base:relatesTo base:size .
+
+base:fn_size_364 a base:Function ;
+    rdfs:label "size" ;
+    base:relatesTo base:size .
+
+base:fn_size_456 a base:Function ;
+    rdfs:label "size" ;
+    base:relatesTo base:size .
+
+base:fn_size_489 a base:Function ;
+    rdfs:label "size" ;
+    base:relatesTo base:size .
+
+base:fn_sort_412 a base:Function ;
+    rdfs:label "sort" ;
+    base:relatesTo base:sort .
+
+base:fn_status_127 a base:Function ;
+    rdfs:label "status" ;
+    base:relatesTo base:status .
+
+base:fn_status_170 a base:Function ;
+    rdfs:label "status" ;
+    base:relatesTo base:status .
+
+base:fn_status_453 a base:Function ;
+    rdfs:label "status" ;
+    base:relatesTo base:status .
+
+base:fn_status_528 a base:Function ;
+    rdfs:label "status" ;
+    base:relatesTo base:status .
+
+base:fn_stream_225 a base:Function ;
+    rdfs:label "stream" ;
+    base:relatesTo base:stream .
+
+base:fn_stream_253 a base:Function ;
+    rdfs:label "stream" ;
+    base:relatesTo base:stream .
+
+base:fn_stream_270 a base:Function ;
+    rdfs:label "stream" ;
+    base:relatesTo base:stream .
+
+base:fn_stream_575 a base:Function ;
+    rdfs:label "stream" ;
+    base:relatesTo base:stream .
+
+base:fn_telephone_390 a base:Function ;
+    rdfs:label "telephone" ;
+    base:relatesTo base:telephone .
+
+base:fn_telephone_448 a base:Function ;
+    rdfs:label "telephone" ;
+    base:relatesTo base:telephone .
+
+base:fn_text_204 a base:Function ;
+    rdfs:label "text" ;
+    base:relatesTo base:text .
+
+base:fn_thenReturn_201 a base:Function ;
+    rdfs:label "thenReturn" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_thenReturn_541 a base:Function ;
+    rdfs:label "thenReturn" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_timeLimiterConfig_553 a base:Function ;
+    rdfs:label "timeLimiterConfig" ;
+    base:relatesTo base:time .
+
+base:fn_timeLimiterRegistry_478 a base:Function ;
+    rdfs:label "timeLimiterRegistry" ;
+    base:relatesTo base:time .
+
+base:fn_timedAspect_110 a base:Function ;
+    rdfs:label "timedAspect" ;
+    base:relatesTo base:aspect .
+
+base:fn_timedAspect_473 a base:Function ;
+    rdfs:label "timedAspect" ;
+    base:relatesTo base:aspect .
+
+base:fn_timeoutDuration_548 a base:Function ;
+    rdfs:label "timeoutDuration" ;
+    base:relatesTo base:timeout .
+
+base:fn_toFile_525 a base:Function ;
+    rdfs:label "toFile" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_toList_280 a base:Function ;
+    rdfs:label "toList" ;
+    base:relatesTo base:list .
+
+base:fn_toList_522 a base:Function ;
+    rdfs:label "toList" ;
+    base:relatesTo base:list .
+
+base:fn_toString_157 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_211 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_212 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_237 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_339 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_414 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_424 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_451 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_474 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_483 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_57 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_toString_99 a base:Function ;
+    rdfs:label "toString" ;
+    base:relatesTo base:string .
+
+base:fn_transform_111 a base:Function ;
+    rdfs:label "transform" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_transform_500 a base:Function ;
+    rdfs:label "transform" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_trim_348 a base:Function ;
+    rdfs:label "trim" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_trim_552 a base:Function ;
+    rdfs:label "trim" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_typeId_257 a base:Function ;
+    rdfs:label "typeId" ;
+    base:relatesTo base:type .
+
+base:fn_type_515 a base:Function ;
+    rdfs:label "type" ;
+    base:relatesTo base:type .
+
+base:fn_unmodifiableList_45 a base:Function ;
+    rdfs:label "unmodifiableList" ;
+    base:relatesTo base:list .
+
+base:fn_updateOwner_491 a base:Function ;
+    rdfs:label "updateOwner" ;
+    base:relatesTo base:update .
+
+base:fn_uri_155 a base:Function ;
+    rdfs:label "uri" ;
+    base:relatesTo base:uri .
+
+base:fn_uri_305 a base:Function ;
+    rdfs:label "uri" ;
+    base:relatesTo base:uri .
+
+base:fn_uri_493 a base:Function ;
+    rdfs:label "uri" ;
+    base:relatesTo base:uri .
+
+base:fn_uri_58 a base:Function ;
+    rdfs:label "uri" ;
+    base:relatesTo base:uri .
+
+base:fn_url_507 a base:Function ;
+    rdfs:label "url" ;
+    base:relatesTo base:url .
+
+base:fn_user_353 a base:Function ;
+    rdfs:label "user" ;
+    base:relatesTo base:user .
+
+base:fn_value_153 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_200 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_310 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_324 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_325 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_327 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_388 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_440 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_443 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_value_524 a base:Function ;
+    rdfs:label "value" ;
+    base:relatesTo base:value .
+
+base:fn_values_188 a base:Function ;
+    rdfs:label "values" ;
+    base:relatesTo base:value .
+
+base:fn_values_410 a base:Function ;
+    rdfs:label "values" ;
+    base:relatesTo base:value .
+
+base:fn_vectorStore_365 a base:Function ;
+    rdfs:label "vectorStore" ;
+    base:relatesTo base:vector .
+
+base:fn_vet_560 a base:Function ;
+    rdfs:label "vet" ;
+    base:relatesTo base:vet .
+
+base:fn_visits_1 a base:Function ;
+    rdfs:label "visits" ;
+    base:relatesTo base:visit .
+
+base:fn_visits_189 a base:Function ;
+    rdfs:label "visits" ;
+    base:relatesTo base:visit .
+
+base:fn_visits_262 a base:Function ;
+    rdfs:label "visits" ;
+    base:relatesTo base:visit .
+
+base:fn_walk_586 a base:Function ;
+    rdfs:label "walk" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_when_226 a base:Function ;
+    rdfs:label "when" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_willReturn_290 a base:Function ;
+    rdfs:label "willReturn" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_willReturn_510 a base:Function ;
+    rdfs:label "willReturn" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_willReturn_88 a base:Function ;
+    rdfs:label "willReturn" ;
+    base:relatesTo base:GenericEntity .
+
+base:fn_withQuery_220 a base:Function ;
+    rdfs:label "withQuery" ;
+    base:relatesTo base:query .
+
+base:fn_withTopK_215 a base:Function ;
+    rdfs:label "withTopK" ;
+    base:relatesTo base:k .
+
+base:fn_withTopK_539 a base:Function ;
+    rdfs:label "withTopK" ;
+    base:relatesTo base:k .
+
+base:fn_writeValueAsString_444 a base:Function ;
+    rdfs:label "writeValueAsString" ;
+    base:relatesTo base:value .
+
+base:fn_write_79 a base:Function ;
+    rdfs:label "write" ;
+    base:relatesTo base:GenericEntity .
+
+base:gen a base:DomainEntity ;
+    rdfs:label "gen" .
+
+base:hash a base:DomainEntity ;
+    rdfs:label "hash" .
+
+base:header a base:DomainEntity ;
+    rdfs:label "header" .
+
+base:ids a base:DomainEntity ;
+    rdfs:label "ids" .
+
+base:import a base:DomainEntity ;
+    rdfs:label "import" .
+
+base:item a base:DomainEntity ;
+    rdfs:label "item" .
+
+base:key a base:DomainEntity ;
+    rdfs:label "key" .
+
+base:language a base:DomainEntity ;
+    rdfs:label "language" .
+
+base:message a base:DomainEntity ;
+    rdfs:label "message" .
+
+base:mkdir a base:DomainEntity ;
+    rdfs:label "mkdir" .
+
+base:nr a base:DomainEntity ;
+    rdfs:label "nr" .
+
+base:output a base:DomainEntity ;
+    rdfs:label "output" .
+
+base:package a base:DomainEntity ;
+    rdfs:label "package" .
+
+base:parameter a base:DomainEntity ;
+    rdfs:label "parameter" .
+
+base:parse a base:DomainEntity ;
+    rdfs:label "parse" .
+
+base:pets a base:DomainEntity ;
+    rdfs:label "pets" .
+
+base:query a base:DomainEntity ;
+    rdfs:label "query" .
+
+base:repo a base:DomainEntity ;
+    rdfs:label "repo" .
+
+base:repository a base:DomainEntity ;
+    rdfs:label "repository" .
+
+base:resilience a base:DomainEntity ;
+    rdfs:label "resilience" .
+
+base:resources a base:DomainEntity ;
+    rdfs:label "resources" .
+
+base:response a base:DomainEntity ;
+    rdfs:label "response" .
+
+base:route a base:DomainEntity ;
+    rdfs:label "route" .
+
+base:router a base:DomainEntity ;
+    rdfs:label "router" .
+
+base:second a base:DomainEntity ;
+    rdfs:label "second" .
+
+base:semantic a base:DomainEntity ;
+    rdfs:label "semantic" .
+
+base:set a base:DomainEntity ;
+    rdfs:label "set" .
+
+base:setup a base:DomainEntity ;
+    rdfs:label "setup" .
+
+base:similarity a base:DomainEntity ;
+    rdfs:label "similarity" .
+
+base:singleton a base:DomainEntity ;
+    rdfs:label "singleton" .
+
+base:sort a base:DomainEntity ;
+    rdfs:label "sort" .
+
+base:specialties a base:DomainEntity ;
+    rdfs:label "specialties" .
+
+base:spring a base:DomainEntity ;
+    rdfs:label "spring" .
+
+base:tags a base:DomainEntity ;
+    rdfs:label "tags" .
+
+base:temp a base:DomainEntity ;
+    rdfs:label "temp" .
+
+base:timeout a base:DomainEntity ;
+    rdfs:label "timeout" .
+
+base:update a base:DomainEntity ;
+    rdfs:label "update" .
+
+base:url a base:DomainEntity ;
+    rdfs:label "url" .
+
+base:user a base:DomainEntity ;
+    rdfs:label "user" .
+
+base:vets a base:DomainEntity ;
+    rdfs:label "vets" .
+
+base:visits a base:DomainEntity ;
+    rdfs:label "visits" .
+
+base:aspect a base:DomainEntity ;
+    rdfs:label "aspect" .
+
+base:builder a base:DomainEntity ;
+    rdfs:label "builder" .
+
+base:class a base:DomainEntity ;
+    rdfs:label "class" .
+
+base:config a base:DomainEntity ;
+    rdfs:label "config" .
+
+base:customers a base:DomainEntity ;
+    rdfs:label "customers" .
+
+base:discovery a base:DomainEntity ;
+    rdfs:label "discovery" .
+
+base:else a base:DomainEntity ;
+    rdfs:label "else" .
+
+base:exchange a base:DomainEntity ;
+    rdfs:label "exchange" .
+
+base:fallback a base:DomainEntity ;
+    rdfs:label "fallback" .
+
+base:file a base:DomainEntity ;
+    rdfs:label "file" .
+
+base:hostname a base:DomainEntity ;
+    rdfs:label "hostname" .
+
+base:identifier a base:DomainEntity ;
+    rdfs:label "identifier" .
+
+base:info a base:DomainEntity ;
+    rdfs:label "info" .
+
+base:k a base:DomainEntity ;
+    rdfs:label "k" .
+
+base:load a base:DomainEntity ;
+    rdfs:label "load" .
+
+base:petclinic a base:DomainEntity ;
+    rdfs:label "petclinic" .
+
+base:println a base:DomainEntity ;
+    rdfs:label "println" .
+
+base:process a base:DomainEntity ;
+    rdfs:label "process" .
+
+base:shutdown a base:DomainEntity ;
+    rdfs:label "shutdown" .
+
+base:text a base:DomainEntity ;
+    rdfs:label "text" .
+
+base:time a base:DomainEntity ;
+    rdfs:label "time" .
+
+base:vector a base:DomainEntity ;
+    rdfs:label "vector" .
+
+base:CRUDIntent a owl:Class .
+
+base:ai a base:DomainEntity ;
+    rdfs:label "ai" .
+
+base:balanced a base:DomainEntity ;
+    rdfs:label "balanced" .
+
+base:circuit a base:DomainEntity ;
+    rdfs:label "circuit" .
+
+base:context a base:DomainEntity ;
+    rdfs:label "context" .
+
+base:error a base:DomainEntity ;
+    rdfs:label "error" .
+
+base:scope a base:DomainEntity ;
+    rdfs:label "scope" .
+
+base:specialty a base:DomainEntity ;
+    rdfs:label "specialty" .
+
+base:api a base:DomainEntity ;
+    rdfs:label "api" .
+
+base:attribute a base:DomainEntity ;
+    rdfs:label "attribute" .
+
+base:child a base:DomainEntity ;
+    rdfs:label "child" .
+
+base:metric a base:DomainEntity ;
+    rdfs:label "metric" .
+
+base:resource a base:DomainEntity ;
+    rdfs:label "resource" .
+
+base:size a base:DomainEntity ;
+    rdfs:label "size" .
+
+base:stream a base:DomainEntity ;
+    rdfs:label "stream" .
+
+base:uri a base:DomainEntity ;
+    rdfs:label "uri" .
+
+base:Service a owl:Class .
+
+base:address a base:DomainEntity ;
+    rdfs:label "address" .
+
+base:block a base:DomainEntity ;
+    rdfs:label "block" .
+
+base:city a base:DomainEntity ;
+    rdfs:label "city" .
+
+base:content a base:DomainEntity ;
+    rdfs:label "content" .
+
+base:date a base:DomainEntity ;
+    rdfs:label "date" .
+
+base:default a base:DomainEntity ;
+    rdfs:label "default" .
+
+base:new a base:DomainEntity ;
+    rdfs:label "new" .
+
+base:status a base:DomainEntity ;
+    rdfs:label "status" .
+
+base:telephone a base:DomainEntity ;
+    rdfs:label "telephone" .
+
+base:birth a base:DomainEntity ;
+    rdfs:label "birth" .
+
+base:description a base:DomainEntity ;
+    rdfs:label "description" .
+
+base:json a base:DomainEntity ;
+    rdfs:label "json" .
+
+base:retrieve a base:DomainEntity ;
+    rdfs:label "retrieve" .
+
+base:type a base:DomainEntity ;
+    rdfs:label "type" .
+
+base:vet a base:DomainEntity ;
+    rdfs:label "vet" .
+
+base:d a base:DomainEntity ;
+    rdfs:label "d" .
+
+base:first a base:DomainEntity ;
+    rdfs:label "first" .
+
+base:i a base:DomainEntity ;
+    rdfs:label "i" .
+
+base:list a base:DomainEntity ;
+    rdfs:label "list" .
+
+base:append a base:DomainEntity ;
+    rdfs:label "append" .
+
+base:map a base:DomainEntity ;
+    rdfs:label "map" .
+
+base:body a base:DomainEntity ;
+    rdfs:label "body" .
+
+base:string a base:DomainEntity ;
+    rdfs:label "string" .
+
+base:value a base:DomainEntity ;
+    rdfs:label "value" .
+
+base:visit a base:DomainEntity ;
+    rdfs:label "visit" .
+
+base:owner a base:DomainEntity ;
+    rdfs:label "owner" .
+
+base:Create a base:CRUDIntent ;
+    rdfs:label "Create" .
+
+base:name a base:DomainEntity ;
+    rdfs:label "name" .
+
+base:pet a base:DomainEntity ;
+    rdfs:label "pet" .
+
+base:Update a base:CRUDIntent ;
+    rdfs:label "Update" .
+
+base:Read a base:CRUDIntent ;
+    rdfs:label "Read" .
+
+base:DomainEntity a owl:Class .
+
+base:GenericEntity a base:DomainEntity ;
+    rdfs:label "GenericEntity" .
+
+base:Function a owl:Class .
+

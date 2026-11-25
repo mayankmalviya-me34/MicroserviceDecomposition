@@ -1,0 +1,912 @@
+[
+  {
+    "function": "org.springframework.samples.petclinic.admin.SpringBootAdminApplication",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.admin.SpringBootAdminApplication.main",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticGraphML",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticJSON",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportStaticGraphGML",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor.main",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.analysis.RepoWideExtractor.parseFile",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.defaultCustomizer",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedRestTemplate",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedWebClientBuilder",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.main",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.routerFunction",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests.contextLoads",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.CustomersServiceClient",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.CustomersServiceClient.getOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient.getVisitsForPets",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient.joinIds",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient.setHostname",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertVisitDescriptionEquals",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.getVisitsForPets_withAvailableVisitsService",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.prepareResponse",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.setUp",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.shutdown",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.addVisitsToOwner",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.emptyVisitsForPets",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.getOwnerDetails",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withAvailableVisitsService",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withServiceError",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.circuitBreakerRegistry",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.resilience4JConfigurationProperties",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.timeLimiterRegistry",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.FallbackController",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.api.boundary.web.FallbackController.fallback",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.config.ConfigServerApplication",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.config.ConfigServerApplication.main",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests.contextLoads",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.CustomersServiceApplication",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.CustomersServiceApplication.main",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.config.MetricConfig",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.config.MetricConfig.metricsCommonTags",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.config.MetricConfig.timedAspect",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.addPet",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getAddress",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getCity",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getFirstName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getId",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getLastName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getPets",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getPetsInternal",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.getTelephone",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.setAddress",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.setCity",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.setFirstName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.setLastName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.setTelephone",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Owner.toString",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.OwnerRepository",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.equals",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.getBirthDate",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.getId",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.getName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.getOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.getType",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.hashCode",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.setBirthDate",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.setId",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.setName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.setOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.setType",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.Pet.toString",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetRepository",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypeById",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypes",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetType",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetType.getId",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetType.getName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetType.setId",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.model.PetType.setName",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.OwnerResource",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.OwnerResource.createOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.OwnerResource.findAll",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.OwnerResource.findOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.OwnerResource.updateOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.findPet",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.findPetById",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.getPetTypes",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.processCreationForm",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.processUpdateForm",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResource.save",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResourceTest",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResourceTest.setupPet",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Customerscustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.PetResourceTest.shouldGetAPetInJSonFormat",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.ResourceNotFoundException",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.mapper.Mapper",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.mapper.Mapper.map",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper.map",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication.main",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests.contextLoads",
+    "cluster_id": "DiscoveryService",
+    "business_role": "Discovery Fallback Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIBeanConfiguration",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIBeanConfiguration.chatMemory",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIBeanConfiguration.loadBalancedWebClientBuilder",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIBeanConfiguration.vectorStore",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIDataProvider",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIDataProvider.addOwnerToPetclinic",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIDataProvider.addPetToOwner",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIDataProvider.getAllOwners",
+    "cluster_id": "CustomersService",
+    "business_role": "Customers Processcustomers Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.AIDataProvider.getVets",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.GenAIServiceApplication",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.GenAIServiceApplication.main",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.VectorStoreController",
+    "cluster_id": "GatewayService",
+    "business_role": "Gateway Gatewaygateway Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.VectorStoreController.convertListToJsonResource",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.genai.VectorStoreController.loadVetDataToVectorStoreOnStartup",
+    "cluster_id": "InfrastructureService",
+    "business_role": "Infrastructure Infrastructureinfrastructure Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.VetsServiceApplication",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.VetsServiceApplication.main",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Specialty",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Specialty.getId",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Specialty.getName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Specialty.setName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.addSpecialty",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getFirstName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getId",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getLastName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getNrOfSpecialties",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getSpecialties",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.getSpecialtiesInternal",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Read Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.setFirstName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.setId",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.Vet.setLastName",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.model.VetRepository",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.system.CacheConfig",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.web.VetResource",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.web.VetResource.showResourcesVetList",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.web.VetResourceTest",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.vets.web.VetResourceTest.shouldGetAListOfVets",
+    "cluster_id": "VetsService",
+    "business_role": "Vets Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.VisitsServiceApplication",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.VisitsServiceApplication.main",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.config.MetricConfig",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.config.MetricConfig.metricsCommonTags",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.config.MetricConfig.timedAspect",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.aVisit",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.build",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.date",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.description",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.getDate",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.getDescription",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.getId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.getPetId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.id",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.petId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.setDate",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.setDescription",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.setId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.Visit.setPetId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.aVisit",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.build",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.date",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.description",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.id",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitBuilder.petId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitRepository",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetId",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetIdIn",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Domainservice Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.web.VisitResourceTest",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  },
+  {
+    "function": "org.springframework.samples.petclinic.visits.web.VisitResourceTest.shouldFetchVisits",
+    "cluster_id": "VisitsService",
+    "business_role": "Visits Processvisits Capability"
+  }
+]

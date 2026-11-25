@@ -1,0 +1,98 @@
+[
+  {
+    "endpoint": "POST owners/*/pets/{petId}/visits",
+    "matched_function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.addVisitsToOwner",
+    "similarity_score": 0.377,
+    "assigned_cluster": "VisitsService"
+  },
+  {
+    "endpoint": "GET owners/*/pets/{petId}/visits",
+    "matched_function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient.getVisitsForPets",
+    "similarity_score": 0.473,
+    "assigned_cluster": "VisitsService"
+  },
+  {
+    "endpoint": "GET pets/visits",
+    "matched_function": "org.springframework.samples.petclinic.api.application.VisitsServiceClient.getVisitsForPets",
+    "similarity_score": 0.591,
+    "assigned_cluster": "VisitsService"
+  },
+  {
+    "endpoint": "REQUEST /vets",
+    "matched_function": "org.springframework.samples.petclinic.vets.VetsServiceApplication",
+    "similarity_score": 0.69,
+    "assigned_cluster": "VetsService"
+  },
+  {
+    "endpoint": "REQUEST /",
+    "matched_function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.defaultCustomizer",
+    "similarity_score": 0.572,
+    "assigned_cluster": "GatewayService"
+  },
+  {
+    "endpoint": "POST /chatclient",
+    "matched_function": "org.springframework.samples.petclinic.genai.AIDataProvider.addOwnerToPetclinic",
+    "similarity_score": 0.368,
+    "assigned_cluster": "CustomersService"
+  },
+  {
+    "endpoint": "REQUEST /owners",
+    "matched_function": "org.springframework.samples.petclinic.admin.SpringBootAdminApplication",
+    "similarity_score": 0.513,
+    "assigned_cluster": "InfrastructureService"
+  },
+  {
+    "endpoint": "GET /{ownerId}",
+    "matched_function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.getOwnerDetails",
+    "similarity_score": 0.328,
+    "assigned_cluster": "GatewayService"
+  },
+  {
+    "endpoint": "PUT /{ownerId}",
+    "matched_function": "org.springframework.samples.petclinic.vets.model.Specialty.setName",
+    "similarity_score": 0.273,
+    "assigned_cluster": "VetsService"
+  },
+  {
+    "endpoint": "GET /petTypes",
+    "matched_function": "org.springframework.samples.petclinic.genai.AIDataProvider.getAllOwners",
+    "similarity_score": 0.426,
+    "assigned_cluster": "CustomersService"
+  },
+  {
+    "endpoint": "POST /owners/{ownerId}/pets",
+    "matched_function": "org.springframework.samples.petclinic.vets.model.Vet.addSpecialty",
+    "similarity_score": 0.376,
+    "assigned_cluster": "VetsService"
+  },
+  {
+    "endpoint": "PUT /owners/*/pets/{petId}",
+    "matched_function": "org.springframework.samples.petclinic.vets.model.Specialty.setName",
+    "similarity_score": 0.465,
+    "assigned_cluster": "VetsService"
+  },
+  {
+    "endpoint": "GET owners/*/pets/{petId}",
+    "matched_function": "org.springframework.samples.petclinic.genai.AIDataProvider.getVets",
+    "similarity_score": 0.406,
+    "assigned_cluster": "VetsService"
+  },
+  {
+    "endpoint": "REQUEST /api/gateway",
+    "matched_function": "org.springframework.samples.petclinic.api.ApiGatewayApplication.defaultCustomizer",
+    "similarity_score": 0.905,
+    "assigned_cluster": "GatewayService"
+  },
+  {
+    "endpoint": "GET owners/{ownerId}",
+    "matched_function": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.getOwnerDetails",
+    "similarity_score": 0.302,
+    "assigned_cluster": "GatewayService"
+  },
+  {
+    "endpoint": "POST /fallback",
+    "matched_function": "org.springframework.samples.petclinic.api.boundary.web.FallbackController",
+    "similarity_score": 0.565,
+    "assigned_cluster": "DiscoveryService"
+  }
+]

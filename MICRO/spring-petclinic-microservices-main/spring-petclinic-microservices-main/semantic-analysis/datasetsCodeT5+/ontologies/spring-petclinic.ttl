@@ -1,0 +1,19 @@
+@prefix base: <http://example.org/spring-petclinic/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocab: <http://example.org/spring-petclinic/vocab#> .
+
+base:unknown a vocab:Comment,
+        vocab:SourceFile ;
+    rdfs:label "" .
+
+vocab:Entity a owl:Class .
+
+vocab:Noun a owl:Class .
+
+vocab:Verb a owl:Class .
+
+vocab:Comment a owl:Class .
+
+vocab:SourceFile a owl:Class .
+

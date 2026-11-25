@@ -1,0 +1,11 @@
+{
+  "prompt_version": "v1.0",
+  "reasoning_type": "semantic_inference",
+  "input_granularity": "function_and_class_level",
+  "output_constraints": [
+    "JSON only",
+    "Single intent",
+    "Single domain entity",
+    "Single business role"
+  ]
+}

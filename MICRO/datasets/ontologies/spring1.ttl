@@ -1,0 +1,4316 @@
+@prefix ex: <http://petclinic.semantic.graph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: a owl:Ontology ;
+    rdfs:label "PetClinic Hybrid Ontology - Microservice Decomposition" .
+
+ex:businessRole a owl:DatatypeProperty ;
+    rdfs:label "businessRole" ;
+    rdfs:domain ex:Function ;
+    rdfs:range xsd:string .
+
+ex:fn_CircuitBreakerConfig_ofDefaults a ex:Function ;
+    rdfs:label "CircuitBreakerConfig.ofDefaults" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:default .
+
+ex:fn_CircuitBreakerRegistry_ofDefaults a ex:Function ;
+    rdfs:label "CircuitBreakerRegistry.ofDefaults" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:default .
+
+ex:fn_Collections_singletonList a ex:Function ;
+    rdfs:label "Collections.singletonList" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:singleton .
+
+ex:fn_Collections_unmodifiableList a ex:Function ;
+    rdfs:label "Collections.unmodifiableList" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_DocumentBuilderFactory_newInstance a ex:Function ;
+    rdfs:label "DocumentBuilderFactory.newInstance" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:new .
+
+ex:fn_Document_getContent a ex:Function ;
+    rdfs:label "Document.getContent" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:content ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_Duration_ofSeconds a ex:Function ;
+    rdfs:label "Duration.ofSeconds" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:second .
+
+ex:fn_Files_createTempFile a ex:Function ;
+    rdfs:label "Files.createTempFile" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:temp ;
+    ex:intent "create"^^xsd:string .
+
+ex:fn_Files_createTempFile__vectorstore_____json___attr__toFile a ex:Function ;
+    rdfs:label "Files.createTempFile('vectorstore', '.json', attr).toFile" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "file"^^xsd:string .
+
+ex:fn_Files_walk a ex:Function ;
+    rdfs:label "Files.walk" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "walk"^^xsd:string .
+
+ex:fn_Files_walk_Paths_get_PROJECT_ROOT___filter a ex:Function ;
+    rdfs:label "Files.walk(Paths.get(PROJECT_ROOT)).filter" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "filter"^^xsd:string .
+
+ex:fn_Files_walk_Paths_get_PROJECT_ROOT___filter_p____p_toString___endsWith___java____forEach a ex:Function ;
+    rdfs:label "Files.walk(Paths.get(PROJECT_ROOT)).filter(p -> p.toString().endsWith('.java')).forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_LOG_error a ex:Function ;
+    rdfs:label "LOG.error" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:error .
+
+ex:fn_List_of a ex:Function ;
+    rdfs:label "List.of" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_Mockito_when a ex:Function ;
+    rdfs:label "Mockito.when" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_Mockito_when_customersServiceClient_getOwner_1___thenReturn a ex:Function ;
+    rdfs:label "Mockito.when(customersServiceClient.getOwner(1)).thenReturn" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "return"^^xsd:string .
+
+ex:fn_Mockito_when_visitsServiceClient_getVisitsForPets_Collections_singletonList_cat_id______thenReturn a ex:Function ;
+    rdfs:label "Mockito.when(visitsServiceClient.getVisitsForPets(Collections.singletonList(cat.id()))).thenReturn" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "return"^^xsd:string .
+
+ex:fn_Mono_error a ex:Function ;
+    rdfs:label "Mono.error" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:error .
+
+ex:fn_Mono_just a ex:Function ;
+    rdfs:label "Mono.just" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_Object_toString a ex:Function ;
+    rdfs:label "Object.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_Objects_equals a ex:Function ;
+    rdfs:label "Objects.equals" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "equal"^^xsd:string .
+
+ex:fn_Objects_hash a ex:Function ;
+    rdfs:label "Objects.hash" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:hash .
+
+ex:fn_Optional_of a ex:Function ;
+    rdfs:label "Optional.of" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_OwnerDetails_OwnerDetailsBuilder_anOwnerDetails a ex:Function ;
+    rdfs:label "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_OwnerDetails_OwnerDetailsBuilder_anOwnerDetails___pets a ex:Function ;
+    rdfs:label "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails().pets" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_OwnerDetails_OwnerDetailsBuilder_anOwnerDetails___pets_List_of_cat___build a ex:Function ;
+    rdfs:label "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails().pets(List.of(cat)).build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_Paths_get a ex:Function ;
+    rdfs:label "Paths.get" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_PetDetails_PetDetailsBuilder_aPetDetails a ex:Function ;
+    rdfs:label "PetDetails.PetDetailsBuilder.aPetDetails" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_PetDetails_PetDetailsBuilder_aPetDetails___id a ex:Function ;
+    rdfs:label "PetDetails.PetDetailsBuilder.aPetDetails().id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_PetDetails_PetDetailsBuilder_aPetDetails___id_20__name a ex:Function ;
+    rdfs:label "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name .
+
+ex:fn_PetDetails_PetDetailsBuilder_aPetDetails___id_20__name__Garfield___visits a ex:Function ;
+    rdfs:label "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name('Garfield').visits" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_PetDetails_PetDetailsBuilder_aPetDetails___id_20__name__Garfield___visits_new_ArrayList______build a ex:Function ;
+    rdfs:label "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name('Garfield').visits(new ArrayList<>()).build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_PosixFilePermissions_asFileAttribute a ex:Function ;
+    rdfs:label "PosixFilePermissions.asFileAttribute" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:file .
+
+ex:fn_PosixFilePermissions_fromString a ex:Function ;
+    rdfs:label "PosixFilePermissions.fromString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_PropertyComparator_sort a ex:Function ;
+    rdfs:label "PropertyComparator.sort" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:sort .
+
+ex:fn_RequestPredicates_GET a ex:Function ;
+    rdfs:label "RequestPredicates.GET" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_ResponseEntity_status a ex:Function ;
+    rdfs:label "ResponseEntity.status" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:status .
+
+ex:fn_ResponseEntity_status_HttpStatus_SC_SERVICE_UNAVAILABLE__body a ex:Function ;
+    rdfs:label "ResponseEntity.status(HttpStatus.SC_SERVICE_UNAVAILABLE).body" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_RouterFunctions_resources a ex:Function ;
+    rdfs:label "RouterFunctions.resources" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resource .
+
+ex:fn_RouterFunctions_resources________new_ClassPathResource__static_____andRoute a ex:Function ;
+    rdfs:label "RouterFunctions.resources('/**', new ClassPathResource('static/')).andRoute" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:route .
+
+ex:fn_SearchRequest_defaults a ex:Function ;
+    rdfs:label "SearchRequest.defaults" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:default .
+
+ex:fn_SearchRequest_from a ex:Function ;
+    rdfs:label "SearchRequest.from" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_SearchRequest_from_SearchRequest_defaults____withQuery a ex:Function ;
+    rdfs:label "SearchRequest.from(SearchRequest.defaults()).withQuery" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:query .
+
+ex:fn_SearchRequest_from_SearchRequest_defaults____withQuery_vetAsJson__withTopK a ex:Function ;
+    rdfs:label "SearchRequest.from(SearchRequest.defaults()).withQuery(vetAsJson).withTopK" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:k .
+
+ex:fn_ServerResponse_ok a ex:Function ;
+    rdfs:label "ServerResponse.ok" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_ServerResponse_ok___contentType a ex:Function ;
+    rdfs:label "ServerResponse.ok().contentType" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:content .
+
+ex:fn_ServerResponse_ok___contentType_MediaType_TEXT_HTML__bodyValue a ex:Function ;
+    rdfs:label "ServerResponse.ok().contentType(MediaType.TEXT_HTML).bodyValue" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_SpringApplication_run a ex:Function ;
+    rdfs:label "SpringApplication.run" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "run"^^xsd:string .
+
+ex:fn_StaticJavaParser_parse a ex:Function ;
+    rdfs:label "StaticJavaParser.parse" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "parse"^^xsd:string .
+
+ex:fn_StaticJavaParser_setConfiguration a ex:Function ;
+    rdfs:label "StaticJavaParser.setConfiguration" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:configuration ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_System_err_println a ex:Function ;
+    rdfs:label "System.err.println" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:println .
+
+ex:fn_System_out_println a ex:Function ;
+    rdfs:label "System.out.println" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:println .
+
+ex:fn_TimeLimiterConfig_custom a ex:Function ;
+    rdfs:label "TimeLimiterConfig.custom" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:custom .
+
+ex:fn_TimeLimiterConfig_custom___timeoutDuration a ex:Function ;
+    rdfs:label "TimeLimiterConfig.custom().timeoutDuration" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:timeout .
+
+ex:fn_TimeLimiterConfig_custom___timeoutDuration_Duration_ofSeconds_10___build a ex:Function ;
+    rdfs:label "TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(10)).build" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_TimeLimiterRegistry_ofDefaults a ex:Function ;
+    rdfs:label "TimeLimiterRegistry.ofDefaults" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:default .
+
+ex:fn_TransformerFactory_newInstance a ex:Function ;
+    rdfs:label "TransformerFactory.newInstance" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:new .
+
+ex:fn_TransformerFactory_newInstance___newTransformer a ex:Function ;
+    rdfs:label "TransformerFactory.newInstance().newTransformer" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:new .
+
+ex:fn_Visit_VisitBuilder_aVisit a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_Visit_VisitBuilder_aVisit___id a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_1__petId a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(1).petId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_1__petId_111__build a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(1).petId(111).build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_2__petId a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(2).petId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_2__petId_222__build a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(2).petId(222).build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_3__petId a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(3).petId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_Visit_VisitBuilder_aVisit___id_3__petId_222__build a ex:Function ;
+    rdfs:label "Visit.VisitBuilder.aVisit().id(3).petId(222).build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_WebClient_builder a ex:Function ;
+    rdfs:label "WebClient.builder" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:builder .
+
+ex:fn___SimpleVectorStore__this_vectorStore__load a ex:Function ;
+    rdfs:label "((SimpleVectorStore) this.vectorStore).load" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:load .
+
+ex:fn___SimpleVectorStore__this_vectorStore__save a ex:Function ;
+    rdfs:label "((SimpleVectorStore) this.vectorStore).save" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "save"^^xsd:string .
+
+ex:fn_arr_put a ex:Function ;
+    rdfs:label "arr.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_arr_toString a ex:Function ;
+    rdfs:label "arr.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_builder_newDocument a ex:Function ;
+    rdfs:label "builder.newDocument" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:new .
+
+ex:fn_c_getIdentifier a ex:Function ;
+    rdfs:label "c.getIdentifier" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:identifier ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_c_getNameAsString a ex:Function ;
+    rdfs:label "c.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_c_getScope a ex:Function ;
+    rdfs:label "c.getScope" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:scope ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_c_getScope___map a ex:Function ;
+    rdfs:label "c.getScope().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_c_getScope___map_s____s_toString___________c_getNameAsString____orElse a ex:Function ;
+    rdfs:label "c.getScope().map(s -> s.toString() + '.' + c.getNameAsString()).orElse" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_callGraph_computeIfAbsent a ex:Function ;
+    rdfs:label "callGraph.computeIfAbsent" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:absent .
+
+ex:fn_callGraph_computeIfAbsent_fullMethodName__k____new_HashSet______add a ex:Function ;
+    rdfs:label "callGraph.computeIfAbsent(fullMethodName, k -> new HashSet<>()).add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_callGraph_entrySet a ex:Function ;
+    rdfs:label "callGraph.entrySet" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:entry .
+
+ex:fn_callGraph_values a ex:Function ;
+    rdfs:label "callGraph.values" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_callGraph_values___forEach a ex:Function ;
+    rdfs:label "callGraph.values().forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_call_getNameAsString a ex:Function ;
+    rdfs:label "call.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_call_getScope a ex:Function ;
+    rdfs:label "call.getScope" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:scope ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_call_getScope___map a ex:Function ;
+    rdfs:label "call.getScope().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_call_getScope___map_s____s_toString___________call_getNameAsString____orElse a ex:Function ;
+    rdfs:label "call.getScope().map(s -> s.toString() + '.' + call.getNameAsString()).orElse" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_callsSet_add a ex:Function ;
+    rdfs:label "callsSet.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_calls_put a ex:Function ;
+    rdfs:label "calls.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_cat_id a ex:Function ;
+    rdfs:label "cat.id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_cbFactory_create a ex:Function ;
+    rdfs:label "cbFactory.create" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "create"^^xsd:string .
+
+ex:fn_cb_run a ex:Function ;
+    rdfs:label "cb.run" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "run"^^xsd:string .
+
+ex:fn_classMethods_keySet a ex:Function ;
+    rdfs:label "classMethods.keySet" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:set .
+
+ex:fn_classMethods_put a ex:Function ;
+    rdfs:label "classMethods.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_classMethods_values a ex:Function ;
+    rdfs:label "classMethods.values" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_classMethods_values___forEach a ex:Function ;
+    rdfs:label "classMethods.values().forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_clazz_findAll a ex:Function ;
+    rdfs:label "clazz.findAll" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_clazz_findAll_MethodDeclaration_class__forEach a ex:Function ;
+    rdfs:label "clazz.findAll(MethodDeclaration.class).forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_clazz_getNameAsString a ex:Function ;
+    rdfs:label "clazz.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_client_get a ex:Function ;
+    rdfs:label "client.get" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_client_get___uri a ex:Function ;
+    rdfs:label "client.get().uri" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:uri .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:exchange .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:status ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:body ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody___jsonPath a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:json .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody___jsonPath____pets_0__name___isEqualTo a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody___jsonPath____pets_0__name___isEqualTo__Garfield___jsonPath a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:json .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody___jsonPath____pets_0__name___isEqualTo__Garfield___jsonPath____pets_0__visits_0__description___isEqualTo a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath('$.pets(0).visits(0).description').isEqualTo" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_client_get___uri___api_gateway_owners_1___exchange___expectStatus___isOk___expectBody___jsonPath____pets_0__name___isEqualTo__Garfield___jsonPath____pets_0__visits___isEmpty a ex:Function ;
+    rdfs:label "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath('$.pets(0).visits').isEmpty" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_config_setLanguageLevel a ex:Function ;
+    rdfs:label "config.setLanguageLevel" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:language ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_consumer_accept a ex:Function ;
+    rdfs:label "consumer.accept" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "accept"^^xsd:string .
+
+ex:fn_content___contentType a ex:Function ;
+    rdfs:label "content().contentType" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:content .
+
+ex:fn_cu_findAll a ex:Function ;
+    rdfs:label "cu.findAll" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_cu_findAll_ClassOrInterfaceDeclaration_class__forEach a ex:Function ;
+    rdfs:label "cu.findAll(ClassOrInterfaceDeclaration.class).forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_cu_getImports a ex:Function ;
+    rdfs:label "cu.getImports" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:import ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_cu_getImports___forEach a ex:Function ;
+    rdfs:label "cu.getImports().forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_cu_getPackageDeclaration a ex:Function ;
+    rdfs:label "cu.getPackageDeclaration" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:package ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_cu_getPackageDeclaration___map a ex:Function ;
+    rdfs:label "cu.getPackageDeclaration().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_cu_getPackageDeclaration___map_pd____pd_getNameAsString____orElse a ex:Function ;
+    rdfs:label "cu.getPackageDeclaration().map(pd -> pd.getNameAsString()).orElse" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_customersServiceClient_getOwner a ex:Function ;
+    rdfs:label "customersServiceClient.getOwner" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_customersServiceClient_getOwner_ownerId__flatMap a ex:Function ;
+    rdfs:label "customersServiceClient.getOwner(ownerId).flatMap" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_data_setTextContent a ex:Function ;
+    rdfs:label "data.setTextContent" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:text ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_doc_appendChild a ex:Function ;
+    rdfs:label "doc.appendChild" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:child ;
+    ex:intent "append"^^xsd:string .
+
+ex:fn_doc_createElement a ex:Function ;
+    rdfs:label "doc.createElement" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:element ;
+    ex:intent "create"^^xsd:string .
+
+ex:fn_documents_size a ex:Function ;
+    rdfs:label "documents.size" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:size .
+
+ex:fn_e_getMessage a ex:Function ;
+    rdfs:label "e.getMessage" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:message ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_e_setAttribute a ex:Function ;
+    rdfs:label "e.setAttribute" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:attribute ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_entry_getKey a ex:Function ;
+    rdfs:label "entry.getKey" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_entry_getValue a ex:Function ;
+    rdfs:label "entry.getValue" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_factory_configureDefault a ex:Function ;
+    rdfs:label "factory.configureDefault" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:configure .
+
+ex:fn_factory_newDocumentBuilder a ex:Function ;
+    rdfs:label "factory.newDocumentBuilder" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:new .
+
+ex:fn_file_getAbsolutePath a ex:Function ;
+    rdfs:label "file.getAbsolutePath" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:absolute ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_file_toString a ex:Function ;
+    rdfs:label "file.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_fn_put a ex:Function ;
+    rdfs:label "fn.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_functionSemanticData_add a ex:Function ;
+    rdfs:label "functionSemanticData.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_getPetsInternal___add a ex:Function ;
+    rdfs:label "getPetsInternal().add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_getSpecialtiesInternal___add a ex:Function ;
+    rdfs:label "getSpecialtiesInternal().add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_getSpecialtiesInternal___size a ex:Function ;
+    rdfs:label "getSpecialtiesInternal().size" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:size .
+
+ex:fn_get___owners_2_pets_2___accept a ex:Function ;
+    rdfs:label "get('/owners/2/pets/2').accept" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "accept"^^xsd:string .
+
+ex:fn_get___vets___accept a ex:Function ;
+    rdfs:label "get('/vets').accept" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "accept"^^xsd:string .
+
+ex:fn_given_petRepository_findById_2___willReturn a ex:Function ;
+    rdfs:label "given(petRepository.findById(2)).willReturn" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "return"^^xsd:string .
+
+ex:fn_given_vetRepository_findAll____willReturn a ex:Function ;
+    rdfs:label "given(vetRepository.findAll()).willReturn" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "return"^^xsd:string .
+
+ex:fn_given_visitRepository_findByPetIdIn_asList_111__222____willReturn a ex:Function ;
+    rdfs:label "given(visitRepository.findByPetIdIn(asList(111, 222))).willReturn" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "return"^^xsd:string .
+
+ex:fn_graph_appendChild a ex:Function ;
+    rdfs:label "graph.appendChild" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:child ;
+    ex:intent "append"^^xsd:string .
+
+ex:fn_graph_setAttribute a ex:Function ;
+    rdfs:label "graph.setAttribute" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:attribute ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_graphml_appendChild a ex:Function ;
+    rdfs:label "graphml.appendChild" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:child ;
+    ex:intent "append"^^xsd:string .
+
+ex:fn_graphml_setAttribute a ex:Function ;
+    rdfs:label "graphml.setAttribute" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:attribute ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_i_toString a ex:Function ;
+    rdfs:label "i.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_i_toString___trim a ex:Function ;
+    rdfs:label "i.toString().trim" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "trim"^^xsd:string .
+
+ex:fn_ids_containsKey a ex:Function ;
+    rdfs:label "ids.containsKey" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:key ;
+    ex:intent "contain"^^xsd:string .
+
+ex:fn_ids_get a ex:Function ;
+    rdfs:label "ids.get" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_ids_put a ex:Function ;
+    rdfs:label "ids.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_impArr_put a ex:Function ;
+    rdfs:label "impArr.put" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "put"^^xsd:string .
+
+ex:fn_imports_add a ex:Function ;
+    rdfs:label "imports.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_imports_forEach a ex:Function ;
+    rdfs:label "imports.forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_javaFiles_add a ex:Function ;
+    rdfs:label "javaFiles.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_javaFiles_size a ex:Function ;
+    rdfs:label "javaFiles.size" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:size .
+
+ex:fn_jsonPath____0__id___value a ex:Function ;
+    rdfs:label "jsonPath('$(0).id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____id___value a ex:Function ;
+    rdfs:label "jsonPath('$.id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_0__id___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(0).id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_0__petId___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(0).petId').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_1__id___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(1).id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_1__petId___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(1).petId').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_2__id___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(2).id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____items_2__petId___value a ex:Function ;
+    rdfs:label "jsonPath('$.items(2).petId').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____name___value a ex:Function ;
+    rdfs:label "jsonPath('$.name').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_jsonPath____type_id___value a ex:Function ;
+    rdfs:label "jsonPath('$.type.id').value" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value .
+
+ex:fn_json_getBytes a ex:Function ;
+    rdfs:label "json.getBytes" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:byte ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_log_info a ex:Function ;
+    rdfs:label "log.info" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:info .
+
+ex:fn_logger_error a ex:Function ;
+    rdfs:label "logger.error" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:error .
+
+ex:fn_logger_info a ex:Function ;
+    rdfs:label "logger.info" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:info .
+
+ex:fn_method_findAll a ex:Function ;
+    rdfs:label "method.findAll" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_method_findAll_MethodCallExpr_class__forEach a ex:Function ;
+    rdfs:label "method.findAll(MethodCallExpr.class).forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_method_findAll_MethodReferenceExpr_class__forEach a ex:Function ;
+    rdfs:label "method.findAll(MethodReferenceExpr.class).forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_method_getNameAsString a ex:Function ;
+    rdfs:label "method.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_method_getParameters a ex:Function ;
+    rdfs:label "method.getParameters" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:parameter ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_method_getParameters___stream a ex:Function ;
+    rdfs:label "method.getParameters().stream" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:stream .
+
+ex:fn_method_getParameters___stream___map a ex:Function ;
+    rdfs:label "method.getParameters().stream().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_method_getParameters___stream___map_p____p_getNameAsString____reduce a ex:Function ;
+    rdfs:label "method.getParameters().stream().map(p -> p.getNameAsString()).reduce" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "reduce"^^xsd:string .
+
+ex:fn_method_getParameters___stream___map_p____p_getNameAsString____reduce__a__b_____a__________b__orElse a ex:Function ;
+    rdfs:label "method.getParameters().stream().map(p -> p.getNameAsString()).reduce((a, b) -> a + ', ' + b).orElse" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_method_getType a ex:Function ;
+    rdfs:label "method.getType" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:type ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_method_getType___asString a ex:Function ;
+    rdfs:label "method.getType().asString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_methods_add a ex:Function ;
+    rdfs:label "methods.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_mvc_perform a ex:Function ;
+    rdfs:label "mvc.perform" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "perform"^^xsd:string .
+
+ex:fn_mvc_perform_get___owners_2_pets_2___accept_MediaType_APPLICATION_JSON___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___owners_2_pets_2___accept_MediaType_APPLICATION_JSON___andExpect_status___isOk____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___owners_2_pets_2___accept_MediaType_APPLICATION_JSON___andExpect_status___isOk____andExpect_content___contentType__application_json____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___owners_2_pets_2___accept_MediaType_APPLICATION_JSON___andExpect_status___isOk____andExpect_content___contentType__application_json____andExpect_jsonPath____id___value_2___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect(jsonPath('$.id').value(2)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___owners_2_pets_2___accept_MediaType_APPLICATION_JSON___andExpect_status___isOk____andExpect_content___contentType__application_json____andExpect_jsonPath____id___value_2___andExpect_jsonPath____name___value__Basil____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect(jsonPath('$.id').value(2)).andExpect(jsonPath('$.name').value('Basil')).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect_jsonPath____items_0__id___value_1___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect_jsonPath____items_0__id___value_1___andExpect_jsonPath____items_1__id___value_2___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect_jsonPath____items_0__id___value_1___andExpect_jsonPath____items_1__id___value_2___andExpect_jsonPath____items_2__id___value_3___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect_jsonPath____items_0__id___value_1___andExpect_jsonPath____items_1__id___value_2___andExpect_jsonPath____items_2__id___value_3___andExpect_jsonPath____items_0__petId___value_111___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect(jsonPath('$.items(0).petId').value(111)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___pets_visits_petId_111_222____andExpect_status___isOk____andExpect_jsonPath____items_0__id___value_1___andExpect_jsonPath____items_1__id___value_2___andExpect_jsonPath____items_2__id___value_3___andExpect_jsonPath____items_0__petId___value_111___andExpect_jsonPath____items_1__petId___value_222___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect(jsonPath('$.items(0).petId').value(111)).andExpect(jsonPath('$.items(1).petId').value(222)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___vets___accept_MediaType_APPLICATION_JSON___andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/vets').accept(MediaType.APPLICATION_JSON)).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_mvc_perform_get___vets___accept_MediaType_APPLICATION_JSON___andExpect_status___isOk____andExpect a ex:Function ;
+    rdfs:label "mvc.perform(get('/vets').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "expect"^^xsd:string .
+
+ex:fn_n_appendChild a ex:Function ;
+    rdfs:label "n.appendChild" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:child ;
+    ex:intent "append"^^xsd:string .
+
+ex:fn_n_setAttribute a ex:Function ;
+    rdfs:label "n.setAttribute" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:attribute ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_new_File_OUTPUT_DIR__mkdirs a ex:Function ;
+    rdfs:label "new File(OUTPUT_DIR).mkdirs" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:mkdir .
+
+ex:fn_new_Resilience4JConfigBuilder_id__circuitBreakerConfig a ex:Function ;
+    rdfs:label "new Resilience4JConfigBuilder(id).circuitBreakerConfig" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:circuit .
+
+ex:fn_new_Resilience4JConfigBuilder_id__circuitBreakerConfig_CircuitBreakerConfig_ofDefaults____timeLimiterConfig a ex:Function ;
+    rdfs:label "new Resilience4JConfigBuilder(id).circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()).timeLimiterConfig" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:time .
+
+ex:fn_new_Resilience4JConfigBuilder_id__circuitBreakerConfig_CircuitBreakerConfig_ofDefaults____timeLimiterConfig_TimeLimiterConfig_custom___timeoutDuration_Duration_ofSeconds_10___build____build a ex:Function ;
+    rdfs:label "new Resilience4JConfigBuilder(id).circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()).timeLimiterConfig(TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(10)).build()).build" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_new_ToStringCreator_this__append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__lastName___this_getLastName____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__lastName___this_getLastName____append__firstName___this_getFirstName____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__lastName___this_getLastName____append__firstName___this_getFirstName____append__address___this_address__append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__lastName___this_getLastName____append__firstName___this_getFirstName____append__address___this_address__append__city___this_city__append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append('city', this.city).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__lastName___this_getLastName____append__firstName___this_getFirstName____append__address___this_address__append__city___this_city__append__telephone___this_telephone__toString a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append('city', this.city).append('telephone', this.telephone).toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__name___this_getName____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__name___this_getName____append__birthDate___this_getBirthDate____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__name___this_getName____append__birthDate___this_getBirthDate____append__type___this_getType___getName____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__name___this_getName____append__birthDate___this_getBirthDate____append__type___this_getType___getName____append__ownerFirstname___this_getOwner___getFirstName____append a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append('ownerFirstname', this.getOwner().getFirstName()).append" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:append .
+
+ex:fn_new_ToStringCreator_this__append__id___this_getId____append__name___this_getName____append__birthDate___this_getBirthDate____append__type___this_getType___getName____append__ownerFirstname___this_getOwner___getFirstName____append__ownerLastname___this_getOwner___getLastName____toString a ex:Function ;
+    rdfs:label "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append('ownerFirstname', this.getOwner().getFirstName()).append('ownerLastname', this.getOwner().getLastName()).toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_node_replace a ex:Function ;
+    rdfs:label "node.replace" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "replace"^^xsd:string .
+
+ex:fn_node_replace____________replace a ex:Function ;
+    rdfs:label "node.replace('\\'', ''').replace" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "replace"^^xsd:string .
+
+ex:fn_node_replace____________replace___n________replace a ex:Function ;
+    rdfs:label "node.replace('\\'', ''').replace('\\n', ' ').replace" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "replace"^^xsd:string .
+
+ex:fn_node_replace____________replace___n________replace___r________replace a ex:Function ;
+    rdfs:label "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "replace"^^xsd:string .
+
+ex:fn_node_replace____________replace___n________replace___r________replace___________replace a ex:Function ;
+    rdfs:label "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace('(', '(').replace" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "replace"^^xsd:string .
+
+ex:fn_node_replace____________replace___n________replace___r________replace___________replace___________trim a ex:Function ;
+    rdfs:label "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace('(', '(').replace(')', ')').trim" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "trim"^^xsd:string .
+
+ex:fn_nodes_addAll a ex:Function ;
+    rdfs:label "nodes.addAll" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_o_getClass a ex:Function ;
+    rdfs:label "o.getClass" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:class ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_objectMapper_writeValueAsString a ex:Function ;
+    rdfs:label "objectMapper.writeValueAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:value ;
+    ex:intent "write"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_admin_SpringBootAdminApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.admin.SpringBootAdminApplication" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:spring .
+
+ex:fn_org_springframework_samples_petclinic_admin_SpringBootAdminApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.admin.SpringBootAdminApplication.main" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:repo .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor_exportSemanticGraphML a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticGraphML" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:semantic ;
+    ex:intent "export"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor_exportSemanticJSON a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticJSON" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:json ;
+    ex:intent "export"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor_exportStaticGraphGML a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportStaticGraphGML" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:export .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor.main" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_analysis_RepoWideExtractor_parseFile a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.analysis.RepoWideExtractor.parseFile" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:parse .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:api .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplicationTests a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:api ;
+    ex:intent "test"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplicationTests_contextLoads a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests.contextLoads" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:context .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication_defaultCustomizer a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication.defaultCustomizer" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:default .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication_loadBalancedRestTemplate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedRestTemplate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:balanced ;
+    ex:intent "load"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication_loadBalancedWebClientBuilder a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedWebClientBuilder" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:balanced ;
+    ex:intent "load"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication.main" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_api_ApiGatewayApplication_routerFunction a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.ApiGatewayApplication.routerFunction" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:router .
+
+ex:fn_org_springframework_samples_petclinic_api_application_CustomersServiceClient a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.CustomersServiceClient" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:customers .
+
+ex:fn_org_springframework_samples_petclinic_api_application_CustomersServiceClient_getOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.CustomersServiceClient.getOwner" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClient a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClient" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_assertEquals a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertEquals" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:equals ;
+    ex:intent "assert"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_assertNotNull a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertNotNull" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "assert"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_assertVisitDescriptionEquals a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertVisitDescriptionEquals" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "assert"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_getVisitsForPets_withAvailableVisitsService a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.getVisitsForPets_withAvailableVisitsService" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_prepareResponse a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.prepareResponse" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:response ;
+    ex:intent "prepare"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_setUp a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.setUp" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClientIntegrationTest_shutdown a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.shutdown" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:shutdown .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClient_getVisitsForPets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClient.getVisitsForPets" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClient_joinIds a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClient.joinIds" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:ids ;
+    ex:intent "join"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClient_joining a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClient.joining" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "join"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_application_VisitsServiceClient_setHostname a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.application.VisitsServiceClient.setHostname" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:hostname ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayController a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:api .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayControllerTest a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:api .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayControllerTest_getOwnerDetails_withAvailableVisitsService a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withAvailableVisitsService" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayControllerTest_getOwnerDetails_withServiceError a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withServiceError" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayController_addVisitsToOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.addVisitsToOwner" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayController_emptyVisitsForPets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.emptyVisitsForPets" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_ApiGatewayController_getOwnerDetails a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.getOwnerDetails" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_CircuitBreakerConfiguration a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:circuit .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_CircuitBreakerConfiguration_circuitBreakerRegistry a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.circuitBreakerRegistry" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:circuit .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_CircuitBreakerConfiguration_resilience4JConfigurationProperties a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.resilience4JConfigurationProperties" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resilience .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_CircuitBreakerConfiguration_timeLimiterRegistry a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.timeLimiterRegistry" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:time .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_FallbackController a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.FallbackController" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:fallback .
+
+ex:fn_org_springframework_samples_petclinic_api_boundary_web_FallbackController_fallback a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.boundary.web.FallbackController.fallback" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:fallback .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_address a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.address" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:address .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_anOwnerDetails a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.anOwnerDetails" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_build a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_city a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.city" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:city .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_firstName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.firstName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:first .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_id a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_lastName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.lastName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_pets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.pets" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_OwnerDetailsBuilder_telephone a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.telephone" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:telephone .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_aPetDetails a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.aPetDetails" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_birthDate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.birthDate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:birth .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_build a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.build" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_id a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_name a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.name" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_type a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.type" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:type .
+
+ex:fn_org_springframework_samples_petclinic_api_dto_PetDetailsBuilder_visits a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.visits" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_config_ConfigServerApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.config.ConfigServerApplication" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:config .
+
+ex:fn_org_springframework_samples_petclinic_config_ConfigServerApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.config.ConfigServerApplication.main" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_config_PetclinicConfigServerApplicationTests a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:petclinic .
+
+ex:fn_org_springframework_samples_petclinic_config_PetclinicConfigServerApplicationTests_contextLoads a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests.contextLoads" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:context .
+
+ex:fn_org_springframework_samples_petclinic_customers_CustomersServiceApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.CustomersServiceApplication" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:customers .
+
+ex:fn_org_springframework_samples_petclinic_customers_CustomersServiceApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.CustomersServiceApplication.main" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_customers_config_MetricConfig a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.config.MetricConfig" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:metric .
+
+ex:fn_org_springframework_samples_petclinic_customers_config_MetricConfig_metricsCommonTags a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.config.MetricConfig.metricsCommonTags" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:metric .
+
+ex:fn_org_springframework_samples_petclinic_customers_config_MetricConfig_timedAspect a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.config.MetricConfig.timedAspect" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:aspect ;
+    ex:intent "time"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_OwnerRepository a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.OwnerRepository" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_addPet a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.addPet" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getAddress a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getAddress" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:address ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getCity a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getCity" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:city ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getFirstName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getFirstName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getLastName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getLastName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getPets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getPets" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getPetsInternal a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getPetsInternal" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pets ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_getTelephone a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.getTelephone" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:telephone ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_setAddress a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.setAddress" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:address ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_setCity a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.setCity" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:city ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_setFirstName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.setFirstName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_setLastName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.setLastName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_setTelephone a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.setTelephone" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:telephone ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Owner_toString a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Owner.toString" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetRepository a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetRepository" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetRepository_findPetTypeById a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypeById" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetRepository_findPetTypes a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypes" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetType a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetType" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetType_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetType.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetType_getName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetType.getName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetType_setId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetType.setId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_PetType_setName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.PetType.setName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_equals a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.equals" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "equal"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getBirthDate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getBirthDate" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:birth ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getClass a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getClass" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:class ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getOwner" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_getType a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.getType" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:type ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_hashCode a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.hashCode" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:code ;
+    ex:intent "hash"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_setBirthDate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.setBirthDate" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:birth ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_setId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.setId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_setName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.setName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_setOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.setOwner" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_setType a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.setType" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:type ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_model_Pet_toString a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.model.Pet.toString" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_OwnerResource a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.OwnerResource" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_OwnerResource_createOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.OwnerResource.createOwner" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "create"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_OwnerResource_findAll a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.OwnerResource.findAll" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_OwnerResource_findOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.OwnerResource.findOwner" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_OwnerResource_updateOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.OwnerResource.updateOwner" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:update .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_content a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.content" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:content .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_get a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.get" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_given a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.given" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "give"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_jsonPath a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.jsonPath" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:json .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_setupPet a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.setupPet" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:setup .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_shouldGetAPetInJSonFormat a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.shouldGetAPetInJSonFormat" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResourceTest_status a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResourceTest.status" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:status .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_findPet a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.findPet" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_findPetById a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.findPetById" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_getPetTypes a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.getPetTypes" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_processCreationForm a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.processCreationForm" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:process .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_processUpdateForm a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.processUpdateForm" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:process .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_PetResource_save a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.PetResource.save" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "save"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_ResourceNotFoundException a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.ResourceNotFoundException" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resource ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_mapper_Mapper a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.mapper.Mapper" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_mapper_Mapper_map a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.mapper.Mapper.map" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_mapper_OwnerEntityMapper a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_org_springframework_samples_petclinic_customers_web_mapper_OwnerEntityMapper_map a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper.map" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_org_springframework_samples_petclinic_discovery_DiscoveryServerApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:discovery .
+
+ex:fn_org_springframework_samples_petclinic_discovery_DiscoveryServerApplicationTests a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:discovery .
+
+ex:fn_org_springframework_samples_petclinic_discovery_DiscoveryServerApplicationTests_contextLoads a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests.contextLoads" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:context .
+
+ex:fn_org_springframework_samples_petclinic_discovery_DiscoveryServerApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication.main" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIBeanConfiguration a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIBeanConfiguration" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:ai .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIBeanConfiguration_chatMemory a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIBeanConfiguration.chatMemory" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:chat .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIBeanConfiguration_loadBalancedWebClientBuilder a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIBeanConfiguration.loadBalancedWebClientBuilder" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:balanced ;
+    ex:intent "load"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIBeanConfiguration_vectorStore a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIBeanConfiguration.vectorStore" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:vector .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIDataProvider a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIDataProvider" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:ai .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIDataProvider_addOwnerToPetclinic a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIDataProvider.addOwnerToPetclinic" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIDataProvider_addPetToOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIDataProvider.addPetToOwner" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIDataProvider_getAllOwners a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIDataProvider.getAllOwners" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIDataProvider_getVets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIDataProvider.getVets" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:vet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIFunctionConfiguration a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIFunctionConfiguration" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:ai .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIFunctionConfiguration_addOwnerToPetclinic a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.addOwnerToPetclinic" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIFunctionConfiguration_addPetToOwner a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.addPetToOwner" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIFunctionConfiguration_listOwners a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.listOwners" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_org_springframework_samples_petclinic_genai_AIFunctionConfiguration_listVets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.listVets" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_org_springframework_samples_petclinic_genai_GenAIServiceApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.GenAIServiceApplication" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:gen .
+
+ex:fn_org_springframework_samples_petclinic_genai_GenAIServiceApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.GenAIServiceApplication.main" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_genai_PetclinicChatClient a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.PetclinicChatClient" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:petclinic .
+
+ex:fn_org_springframework_samples_petclinic_genai_PetclinicChatClient_exchange a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.PetclinicChatClient.exchange" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:exchange .
+
+ex:fn_org_springframework_samples_petclinic_genai_VectorStoreController a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.VectorStoreController" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:vector .
+
+ex:fn_org_springframework_samples_petclinic_genai_VectorStoreController_convertListToJsonResource a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.VectorStoreController.convertListToJsonResource" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:list ;
+    ex:intent "convert"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_genai_VectorStoreController_loadVetDataToVectorStoreOnStartup a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.genai.VectorStoreController.loadVetDataToVectorStoreOnStartup" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:load .
+
+ex:fn_org_springframework_samples_petclinic_vets_VetsServiceApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.VetsServiceApplication" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:vets .
+
+ex:fn_org_springframework_samples_petclinic_vets_VetsServiceApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.VetsServiceApplication.main" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Specialty a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Specialty" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:specialty .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Specialty_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Specialty.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Specialty_getName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Specialty.getName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Specialty_setName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Specialty.setName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:vet .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_VetRepository a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.VetRepository" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:vet .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_addSpecialty a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.addSpecialty" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:specialty ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getFirstName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getFirstName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getLastName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getLastName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getNrOfSpecialties a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getNrOfSpecialties" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:nr ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getSpecialties a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getSpecialties" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:specialty ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_getSpecialtiesInternal a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.getSpecialtiesInternal" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:specialties ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_setFirstName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.setFirstName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_setId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.setId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_model_Vet_setLastName a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.model.Vet.setLastName" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_system_CacheConfig a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.system.CacheConfig" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:cache .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResource a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResource" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:vet .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:vet .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_asList a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.asList" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_get a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.get" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_given a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.given" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "give"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_jsonPath a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.jsonPath" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:json .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_shouldGetAListOfVets a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.shouldGetAListOfVets" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:list ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResourceTest_status a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResourceTest.status" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:status .
+
+ex:fn_org_springframework_samples_petclinic_vets_web_VetResource_showResourcesVetList a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.vets.web.VetResource.showResourcesVetList" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resources ;
+    ex:intent "show"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_VisitsServiceApplication a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.VisitsServiceApplication" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visits .
+
+ex:fn_org_springframework_samples_petclinic_visits_VisitsServiceApplication_main a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.VisitsServiceApplication.main" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_org_springframework_samples_petclinic_visits_config_MetricConfig a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.config.MetricConfig" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:metric .
+
+ex:fn_org_springframework_samples_petclinic_visits_config_MetricConfig_metricsCommonTags a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.config.MetricConfig.metricsCommonTags" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:metric .
+
+ex:fn_org_springframework_samples_petclinic_visits_config_MetricConfig_timedAspect a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.config.MetricConfig.timedAspect" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:aspect ;
+    ex:intent "time"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "visit"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:builder ;
+    ex:intent "visit"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_aVisit a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.aVisit" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_build a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.build" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_date a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.date" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:date .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_description a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.description" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:description .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_id a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.id" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitBuilder_petId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitBuilder.petId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitRepository a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitRepository" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:repository ;
+    ex:intent "visit"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitRepository_findByPetId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetId" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_VisitRepository_findByPetIdIn a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetIdIn" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_aVisit a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.aVisit" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_build a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.build" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_date a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.date" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:date .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_description a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.description" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:description .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_getDate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.getDate" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:date ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_getDescription a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.getDescription" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:description ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_getId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.getId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_getPetId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.getPetId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_id a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.id" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_petId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.petId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_setDate a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.setDate" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:date ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_setDescription a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.setDescription" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:description ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_setId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.setId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_model_Visit_setPetId a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.model.Visit.setPetId" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResource a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResource" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resource ;
+    ex:intent "visit"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:resource ;
+    ex:intent "visit"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_asList a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.asList" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_get a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.get" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_given a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.given" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "give"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_jsonPath a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.jsonPath" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:json .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_shouldFetchVisits a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.shouldFetchVisits" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "fetch"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResourceTest_status a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResourceTest.status" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:status .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResource_create a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResource.create" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "create"^^xsd:string .
+
+ex:fn_org_springframework_samples_petclinic_visits_web_VisitResource_read a ex:Function ;
+    rdfs:label "org.springframework.samples.petclinic.visits.web.VisitResource.read" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "read"^^xsd:string .
+
+ex:fn_ownerEntityMapper_map a ex:Function ;
+    rdfs:label "ownerEntityMapper.map" ;
+    ex:businessRole "Domain Model"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Model ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_ownerRepository_findAll a ex:Function ;
+    rdfs:label "ownerRepository.findAll" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_ownerRepository_findById a ex:Function ;
+    rdfs:label "ownerRepository.findById" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_ownerRepository_findById_ownerId__orElseThrow a ex:Function ;
+    rdfs:label "ownerRepository.findById(ownerId).orElseThrow" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:else .
+
+ex:fn_ownerRepository_save a ex:Function ;
+    rdfs:label "ownerRepository.save" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "save"^^xsd:string .
+
+ex:fn_owner_addPet a ex:Function ;
+    rdfs:label "owner.addPet" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_owner_getPetIds a ex:Function ;
+    rdfs:label "owner.getPetIds" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_owner_pets a ex:Function ;
+    rdfs:label "owner.pets" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_owner_pets___forEach a ex:Function ;
+    rdfs:label "owner.pets().forEach" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_owner_setAddress a ex:Function ;
+    rdfs:label "owner.setAddress" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:address ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_owner_setCity a ex:Function ;
+    rdfs:label "owner.setCity" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:city ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_owner_setFirstName a ex:Function ;
+    rdfs:label "owner.setFirstName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_owner_setLastName a ex:Function ;
+    rdfs:label "owner.setLastName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_owner_setTelephone a ex:Function ;
+    rdfs:label "owner.setTelephone" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:telephone ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_p_getNameAsString a ex:Function ;
+    rdfs:label "p.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_p_toString a ex:Function ;
+    rdfs:label "p.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_p_toString___endsWith a ex:Function ;
+    rdfs:label "p.toString().endsWith" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "end"^^xsd:string .
+
+ex:fn_pd_getNameAsString a ex:Function ;
+    rdfs:label "pd.getNameAsString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_petIds_stream a ex:Function ;
+    rdfs:label "petIds.stream" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:stream .
+
+ex:fn_petIds_stream___map a ex:Function ;
+    rdfs:label "petIds.stream().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_petIds_stream___map_Object__toString__collect a ex:Function ;
+    rdfs:label "petIds.stream().map(Object::toString).collect" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "collect"^^xsd:string .
+
+ex:fn_petRepository_findById a ex:Function ;
+    rdfs:label "petRepository.findById" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_petRepository_findById_petId__orElseThrow a ex:Function ;
+    rdfs:label "petRepository.findById(petId).orElseThrow" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:else .
+
+ex:fn_petRepository_findPetTypeById a ex:Function ;
+    rdfs:label "petRepository.findPetTypeById" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_petRepository_findPetTypeById_petRequest_typeId____ifPresent a ex:Function ;
+    rdfs:label "petRepository.findPetTypeById(petRequest.typeId()).ifPresent" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_petRepository_findPetTypes a ex:Function ;
+    rdfs:label "petRepository.findPetTypes" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_petRepository_save a ex:Function ;
+    rdfs:label "petRepository.save" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "save"^^xsd:string .
+
+ex:fn_petRequest_birthDate a ex:Function ;
+    rdfs:label "petRequest.birthDate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:birth .
+
+ex:fn_petRequest_id a ex:Function ;
+    rdfs:label "petRequest.id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_petRequest_name a ex:Function ;
+    rdfs:label "petRequest.name" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name .
+
+ex:fn_petRequest_typeId a ex:Function ;
+    rdfs:label "petRequest.typeId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:type .
+
+ex:fn_petType_setId a ex:Function ;
+    rdfs:label "petType.setId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_id a ex:Function ;
+    rdfs:label "pet.id" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "d"^^xsd:string .
+
+ex:fn_pet_setBirthDate a ex:Function ;
+    rdfs:label "pet.setBirthDate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:birth ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_setId a ex:Function ;
+    rdfs:label "pet.setId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_setName a ex:Function ;
+    rdfs:label "pet.setName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_setOwner a ex:Function ;
+    rdfs:label "pet.setOwner" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_setType a ex:Function ;
+    rdfs:label "pet.setType" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:type ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_pet_visits a ex:Function ;
+    rdfs:label "pet.visits" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:visit .
+
+ex:fn_pet_visits___addAll a ex:Function ;
+    rdfs:label "pet.visits().addAll" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_petclinicAiDataProvider_addOwnerToPetclinic a ex:Function ;
+    rdfs:label "petclinicAiDataProvider.addOwnerToPetclinic" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_petclinicAiProvider_addPetToOwner a ex:Function ;
+    rdfs:label "petclinicAiProvider.addPetToOwner" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_petclinicAiProvider_getAllOwners a ex:Function ;
+    rdfs:label "petclinicAiProvider.getAllOwners" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_petclinicAiProvider_getVets a ex:Function ;
+    rdfs:label "petclinicAiProvider.getVets" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:vet ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_pkg_isEmpty a ex:Function ;
+    rdfs:label "pkg.isEmpty" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_reader_get a ex:Function ;
+    rdfs:label "reader.get" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_ref_getIdentifier a ex:Function ;
+    rdfs:label "ref.getIdentifier" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:identifier ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_ref_getScope a ex:Function ;
+    rdfs:label "ref.getScope" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:scope ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_ref_getScope___toString a ex:Function ;
+    rdfs:label "ref.getScope().toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_registry_config a ex:Function ;
+    rdfs:label "registry.config" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:config .
+
+ex:fn_registry_config___commonTags a ex:Function ;
+    rdfs:label "registry.config().commonTags" ;
+    ex:businessRole "Configuration Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Configuration_Layer ;
+    ex:hasDomainConcept ex:tags .
+
+ex:fn_request_address a ex:Function ;
+    rdfs:label "request.address" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:address .
+
+ex:fn_request_city a ex:Function ;
+    rdfs:label "request.city" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:city .
+
+ex:fn_request_firstName a ex:Function ;
+    rdfs:label "request.firstName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:first .
+
+ex:fn_request_lastName a ex:Function ;
+    rdfs:label "request.lastName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name .
+
+ex:fn_request_ownerId a ex:Function ;
+    rdfs:label "request.ownerId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner .
+
+ex:fn_request_pet a ex:Function ;
+    rdfs:label "request.pet" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_request_telephone a ex:Function ;
+    rdfs:label "request.telephone" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:telephone .
+
+ex:fn_request_vet a ex:Function ;
+    rdfs:label "request.vet" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:vet .
+
+ex:fn_resource_exists a ex:Function ;
+    rdfs:label "resource.exists" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "exist"^^xsd:string .
+
+ex:fn_resource_getFile a ex:Function ;
+    rdfs:label "resource.getFile" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:file ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_response_setHeader a ex:Function ;
+    rdfs:label "response.setHeader" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:header ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_response_setHeader__Content_Type____application_json___setBody a ex:Function ;
+    rdfs:label "response.setHeader('Content-Type', 'application/json').setBody" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:body ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_s_toString a ex:Function ;
+    rdfs:label "s.toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_server_url a ex:Function ;
+    rdfs:label "server.url" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:url .
+
+ex:fn_server_url______toString a ex:Function ;
+    rdfs:label "server.url('/').toString" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:string .
+
+ex:fn_sr_withTopK a ex:Function ;
+    rdfs:label "sr.withTopK" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:k .
+
+ex:fn_status___isOk a ex:Function ;
+    rdfs:label "status().isOk" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_this_chatClient_prompt a ex:Function ;
+    rdfs:label "this.chatClient.prompt" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_this_chatClient_prompt___user a ex:Function ;
+    rdfs:label "this.chatClient.prompt().user" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:user .
+
+ex:fn_this_chatClient_prompt___user_u____u_text_query___call a ex:Function ;
+    rdfs:label "this.chatClient.prompt().user(u -> u.text(query)).call" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "call"^^xsd:string .
+
+ex:fn_this_chatClient_prompt___user_u____u_text_query___call___content a ex:Function ;
+    rdfs:label "this.chatClient.prompt().user(u -> u.text(query)).call().content" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:content .
+
+ex:fn_this_getBirthDate a ex:Function ;
+    rdfs:label "this.getBirthDate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:birth ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getFirstName a ex:Function ;
+    rdfs:label "this.getFirstName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getId a ex:Function ;
+    rdfs:label "this.getId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:i ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getLastName a ex:Function ;
+    rdfs:label "this.getLastName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getName a ex:Function ;
+    rdfs:label "this.getName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getOwner a ex:Function ;
+    rdfs:label "this.getOwner" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:owner ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getOwner___getFirstName a ex:Function ;
+    rdfs:label "this.getOwner().getFirstName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:first ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getOwner___getLastName a ex:Function ;
+    rdfs:label "this.getOwner().getLastName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getType a ex:Function ;
+    rdfs:label "this.getType" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:type ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_getType___getName a ex:Function ;
+    rdfs:label "this.getType().getName" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:name ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_this_server_enqueue a ex:Function ;
+    rdfs:label "this.server.enqueue" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:enqueue .
+
+ex:fn_this_server_shutdown a ex:Function ;
+    rdfs:label "this.server.shutdown" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:shutdown .
+
+ex:fn_this_vectorStore_add a ex:Function ;
+    rdfs:label "this.vectorStore.add" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "add"^^xsd:string .
+
+ex:fn_this_vectorStore_similaritySearch a ex:Function ;
+    rdfs:label "this.vectorStore.similaritySearch" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:similarity .
+
+ex:fn_topMatches_stream a ex:Function ;
+    rdfs:label "topMatches.stream" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:stream .
+
+ex:fn_topMatches_stream___map a ex:Function ;
+    rdfs:label "topMatches.stream().map" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_topMatches_stream___map_Document__getContent__toList a ex:Function ;
+    rdfs:label "topMatches.stream().map(Document::getContent).toList" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_transformer_setOutputProperty a ex:Function ;
+    rdfs:label "transformer.setOutputProperty" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:output ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_transformer_transform a ex:Function ;
+    rdfs:label "transformer.transform" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "transform"^^xsd:string .
+
+ex:fn_u_text a ex:Function ;
+    rdfs:label "u.text" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:text .
+
+ex:fn_v_petId a ex:Function ;
+    rdfs:label "v.petId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_vetRepository_findAll a ex:Function ;
+    rdfs:label "vetRepository.findAll" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_vet_setId a ex:Function ;
+    rdfs:label "vet.setId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visitRepository_findByPetId a ex:Function ;
+    rdfs:label "visitRepository.findByPetId" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_visitRepository_findByPetIdIn a ex:Function ;
+    rdfs:label "visitRepository.findByPetIdIn" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "find"^^xsd:string .
+
+ex:fn_visitRepository_save a ex:Function ;
+    rdfs:label "visitRepository.save" ;
+    ex:businessRole "Data Access Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Data_Access_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "save"^^xsd:string .
+
+ex:fn_visit_setDate a ex:Function ;
+    rdfs:label "visit.setDate" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:date ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visit_setDescription a ex:Function ;
+    rdfs:label "visit.setDescription" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:description ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visit_setId a ex:Function ;
+    rdfs:label "visit.setId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:d ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visit_setPetId a ex:Function ;
+    rdfs:label "visit.setPetId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visitsServiceClient_getVisitsForPets a ex:Function ;
+    rdfs:label "visitsServiceClient.getVisitsForPets" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:visit ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_visitsServiceClient_getVisitsForPets_owner_getPetIds____transform a ex:Function ;
+    rdfs:label "visitsServiceClient.getVisitsForPets(owner.getPetIds()).transform" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "transform"^^xsd:string .
+
+ex:fn_visitsServiceClient_getVisitsForPets_owner_getPetIds____transform_it___________ReactiveCircuitBreaker_cb___cbFactory_create__getOwnerDetails_________return_cb_run_it__throwable____emptyVisitsForPets_________map a ex:Function ;
+    rdfs:label "visitsServiceClient.getVisitsForPets(owner.getPetIds()).transform(it -> {      ReactiveCircuitBreaker cb = cbFactory.create('getOwnerDetails');      return cb.run(it, throwable -> emptyVisitsForPets());  }).map" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:map .
+
+ex:fn_visitsServiceClient_setHostname a ex:Function ;
+    rdfs:label "visitsServiceClient.setHostname" ;
+    ex:businessRole "Business Logic Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:Business_Logic_Layer ;
+    ex:hasDomainConcept ex:hostname ;
+    ex:intent "set"^^xsd:string .
+
+ex:fn_visits_block a ex:Function ;
+    rdfs:label "visits.block" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:block .
+
+ex:fn_visits_items a ex:Function ;
+    rdfs:label "visits.items" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:item .
+
+ex:fn_visits_items___get a ex:Function ;
+    rdfs:label "visits.items().get" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_visits_items___get_0__description a ex:Function ;
+    rdfs:label "visits.items().get(0).description" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:description .
+
+ex:fn_visits_items___get_0__petId a ex:Function ;
+    rdfs:label "visits.items().get(0).petId" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:pet .
+
+ex:fn_visits_items___size a ex:Function ;
+    rdfs:label "visits.items().size" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:size .
+
+ex:fn_visits_items___stream a ex:Function ;
+    rdfs:label "visits.items().stream" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:stream .
+
+ex:fn_visits_items___stream___filter a ex:Function ;
+    rdfs:label "visits.items().stream().filter" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "filter"^^xsd:string .
+
+ex:fn_visits_items___stream___filter_v____v_petId______pet_id____toList a ex:Function ;
+    rdfs:label "visits.items().stream().filter(v -> v.petId() == pet.id()).toList" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:list .
+
+ex:fn_webClientBuilder_build a ex:Function ;
+    rdfs:label "webClientBuilder.build" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "build"^^xsd:string .
+
+ex:fn_webClientBuilder_build___get a ex:Function ;
+    rdfs:label "webClientBuilder.build().get" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_webClientBuilder_build___get___uri a ex:Function ;
+    rdfs:label "webClientBuilder.build().get().uri" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:uri .
+
+ex:fn_webClientBuilder_build___get___uri__http___customers_service_owners__ownerId____ownerId__retrieve a ex:Function ;
+    rdfs:label "webClientBuilder.build().get().uri('http://customers-service/owners/{ownerId}', ownerId).retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClientBuilder_build___get___uri__http___customers_service_owners__ownerId____ownerId__retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClientBuilder.build().get().uri('http://customers-service/owners/{ownerId}', ownerId).retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClientBuilder_build___get___uri_hostname____pets_visits_petId__petId____joinIds_petIds___retrieve a ex:Function ;
+    rdfs:label "webClientBuilder.build().get().uri(hostname + 'pets/visits?petId={petId}', joinIds(petIds)).retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClientBuilder_build___get___uri_hostname____pets_visits_petId__petId____joinIds_petIds___retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClientBuilder.build().get().uri(hostname + 'pets/visits?petId={petId}', joinIds(petIds)).retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_get a ex:Function ;
+    rdfs:label "webClient.get" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "get"^^xsd:string .
+
+ex:fn_webClient_get___uri a ex:Function ;
+    rdfs:label "webClient.get().uri" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:uri .
+
+ex:fn_webClient_get___uri_ownersHostname____owners___retrieve a ex:Function ;
+    rdfs:label "webClient.get().uri(ownersHostname + 'owners').retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClient_get___uri_ownersHostname____owners___retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClient.get().uri(ownersHostname + 'owners').retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_get___uri_ownersHostname____owners___retrieve___bodyToMono_new_ParameterizedTypeReference_List_OwnerDetails___________block a ex:Function ;
+    rdfs:label "webClient.get().uri(ownersHostname + 'owners').retrieve().bodyToMono(new ParameterizedTypeReference<List<OwnerDetails>>() {  }).block" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:block .
+
+ex:fn_webClient_get___uri_vetsHostname____vets___retrieve a ex:Function ;
+    rdfs:label "webClient.get().uri(vetsHostname + 'vets').retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClient_get___uri_vetsHostname____vets___retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClient.get().uri(vetsHostname + 'vets').retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_get___uri_vetsHostname____vets___retrieve___bodyToMono_new_ParameterizedTypeReference_List_Vet___________block a ex:Function ;
+    rdfs:label "webClient.get().uri(vetsHostname + 'vets').retrieve().bodyToMono(new ParameterizedTypeReference<List<Vet>>() {  }).block" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:block .
+
+ex:fn_webClient_post a ex:Function ;
+    rdfs:label "webClient.post" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "post"^^xsd:string .
+
+ex:fn_webClient_post___uri a ex:Function ;
+    rdfs:label "webClient.post().uri" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:uri .
+
+ex:fn_webClient_post___uri_ownersHostname____owners_____request_ownerId_______pets___bodyValue a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_post___uri_ownersHostname____owners_____request_ownerId_______pets___bodyValue_request_pet____retrieve a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClient_post___uri_ownersHostname____owners_____request_ownerId_______pets___bodyValue_request_pet____retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_post___uri_ownersHostname____owners_____request_ownerId_______pets___bodyValue_request_pet____retrieve___bodyToMono_PetDetails_class__block a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve().bodyToMono(PetDetails.class).block" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:block .
+
+ex:fn_webClient_post___uri_ownersHostname____owners___bodyValue a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners').bodyValue" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_post___uri_ownersHostname____owners___bodyValue_ownerRequest__retrieve a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:retrieve .
+
+ex:fn_webClient_post___uri_ownersHostname____owners___bodyValue_ownerRequest__retrieve___bodyToMono a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve().bodyToMono" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:body .
+
+ex:fn_webClient_post___uri_ownersHostname____owners___bodyValue_ownerRequest__retrieve___bodyToMono_OwnerDetails_class__block a ex:Function ;
+    rdfs:label "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve().bodyToMono(OwnerDetails.class).block" ;
+    ex:businessRole "API Layer"^^xsd:string ;
+    ex:hasBusinessRole ex:API_Layer ;
+    ex:hasDomainConcept ex:block .
+
+ex:fn_writer_close a ex:Function ;
+    rdfs:label "writer.close" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_writer_flush a ex:Function ;
+    rdfs:label "writer.flush" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity .
+
+ex:fn_writer_write a ex:Function ;
+    rdfs:label "writer.write" ;
+    ex:businessRole "Domain Logic"^^xsd:string ;
+    ex:hasBusinessRole ex:Domain_Logic ;
+    ex:hasDomainConcept ex:GenericEntity ;
+    ex:intent "write"^^xsd:string .
+
+ex:hasBusinessRole a owl:ObjectProperty ;
+    rdfs:label "hasBusinessRole" ;
+    rdfs:domain ex:Function ;
+    rdfs:range ex:BusinessRole .
+
+ex:hasCRUDIntent a owl:ObjectProperty ;
+    rdfs:label "hasCRUDIntent" ;
+    rdfs:domain ex:Function ;
+    rdfs:range ex:CRUDIntent .
+
+ex:hasDomainConcept a owl:ObjectProperty ;
+    rdfs:label "hasDomainConcept" ;
+    rdfs:domain ex:Function ;
+    rdfs:range ex:DomainConcept .
+
+ex:httpMethod a owl:DatatypeProperty ;
+    rdfs:label "httpMethod" ;
+    rdfs:domain ex:Function ;
+    rdfs:range xsd:string .
+
+ex:intent a owl:DatatypeProperty ;
+    rdfs:label "intent" ;
+    rdfs:domain ex:Function ;
+    rdfs:range xsd:string .
+
+ex:sourceFile a owl:DatatypeProperty ;
+    rdfs:label "sourceFile" ;
+    rdfs:domain ex:Function ;
+    rdfs:range xsd:string .
+
+ex:CRUDIntent a owl:Class .
+
+ex:DomainConcept a owl:Class .
+
+ex:absent a owl:Class ;
+    rdfs:label "absent" .
+
+ex:absolute a owl:Class ;
+    rdfs:label "absolute" .
+
+ex:byte a owl:Class ;
+    rdfs:label "byte" .
+
+ex:cache a owl:Class ;
+    rdfs:label "cache" .
+
+ex:chat a owl:Class ;
+    rdfs:label "chat" .
+
+ex:code a owl:Class ;
+    rdfs:label "code" .
+
+ex:configuration a owl:Class ;
+    rdfs:label "configuration" .
+
+ex:configure a owl:Class ;
+    rdfs:label "configure" .
+
+ex:custom a owl:Class ;
+    rdfs:label "custom" .
+
+ex:element a owl:Class ;
+    rdfs:label "element" .
+
+ex:enqueue a owl:Class ;
+    rdfs:label "enqueue" .
+
+ex:entry a owl:Class ;
+    rdfs:label "entry" .
+
+ex:equals a owl:Class ;
+    rdfs:label "equals" .
+
+ex:export a owl:Class ;
+    rdfs:label "export" .
+
+ex:gen a owl:Class ;
+    rdfs:label "gen" .
+
+ex:hash a owl:Class ;
+    rdfs:label "hash" .
+
+ex:header a owl:Class ;
+    rdfs:label "header" .
+
+ex:ids a owl:Class ;
+    rdfs:label "ids" .
+
+ex:import a owl:Class ;
+    rdfs:label "import" .
+
+ex:item a owl:Class ;
+    rdfs:label "item" .
+
+ex:key a owl:Class ;
+    rdfs:label "key" .
+
+ex:language a owl:Class ;
+    rdfs:label "language" .
+
+ex:message a owl:Class ;
+    rdfs:label "message" .
+
+ex:mkdir a owl:Class ;
+    rdfs:label "mkdir" .
+
+ex:nr a owl:Class ;
+    rdfs:label "nr" .
+
+ex:output a owl:Class ;
+    rdfs:label "output" .
+
+ex:package a owl:Class ;
+    rdfs:label "package" .
+
+ex:parameter a owl:Class ;
+    rdfs:label "parameter" .
+
+ex:parse a owl:Class ;
+    rdfs:label "parse" .
+
+ex:pets a owl:Class ;
+    rdfs:label "pets" .
+
+ex:query a owl:Class ;
+    rdfs:label "query" .
+
+ex:repo a owl:Class ;
+    rdfs:label "repo" .
+
+ex:repository a owl:Class ;
+    rdfs:label "repository" .
+
+ex:resilience a owl:Class ;
+    rdfs:label "resilience" .
+
+ex:resources a owl:Class ;
+    rdfs:label "resources" .
+
+ex:response a owl:Class ;
+    rdfs:label "response" .
+
+ex:route a owl:Class,
+        owl:DatatypeProperty ;
+    rdfs:label "route" ;
+    rdfs:domain ex:Function ;
+    rdfs:range xsd:string .
+
+ex:router a owl:Class ;
+    rdfs:label "router" .
+
+ex:second a owl:Class ;
+    rdfs:label "second" .
+
+ex:semantic a owl:Class ;
+    rdfs:label "semantic" .
+
+ex:set a owl:Class ;
+    rdfs:label "set" .
+
+ex:setup a owl:Class ;
+    rdfs:label "setup" .
+
+ex:similarity a owl:Class ;
+    rdfs:label "similarity" .
+
+ex:singleton a owl:Class ;
+    rdfs:label "singleton" .
+
+ex:sort a owl:Class ;
+    rdfs:label "sort" .
+
+ex:specialties a owl:Class ;
+    rdfs:label "specialties" .
+
+ex:spring a owl:Class ;
+    rdfs:label "spring" .
+
+ex:tags a owl:Class ;
+    rdfs:label "tags" .
+
+ex:temp a owl:Class ;
+    rdfs:label "temp" .
+
+ex:timeout a owl:Class ;
+    rdfs:label "timeout" .
+
+ex:update a owl:Class ;
+    rdfs:label "update" .
+
+ex:url a owl:Class ;
+    rdfs:label "url" .
+
+ex:user a owl:Class ;
+    rdfs:label "user" .
+
+ex:vets a owl:Class ;
+    rdfs:label "vets" .
+
+ex:visits a owl:Class ;
+    rdfs:label "visits" .
+
+ex:aspect a owl:Class ;
+    rdfs:label "aspect" .
+
+ex:builder a owl:Class ;
+    rdfs:label "builder" .
+
+ex:class a owl:Class ;
+    rdfs:label "class" .
+
+ex:config a owl:Class ;
+    rdfs:label "config" .
+
+ex:customers a owl:Class ;
+    rdfs:label "customers" .
+
+ex:discovery a owl:Class ;
+    rdfs:label "discovery" .
+
+ex:else a owl:Class ;
+    rdfs:label "else" .
+
+ex:exchange a owl:Class ;
+    rdfs:label "exchange" .
+
+ex:fallback a owl:Class ;
+    rdfs:label "fallback" .
+
+ex:file a owl:Class ;
+    rdfs:label "file" .
+
+ex:hostname a owl:Class ;
+    rdfs:label "hostname" .
+
+ex:identifier a owl:Class ;
+    rdfs:label "identifier" .
+
+ex:info a owl:Class ;
+    rdfs:label "info" .
+
+ex:k a owl:Class ;
+    rdfs:label "k" .
+
+ex:load a owl:Class ;
+    rdfs:label "load" .
+
+ex:petclinic a owl:Class ;
+    rdfs:label "petclinic" .
+
+ex:println a owl:Class ;
+    rdfs:label "println" .
+
+ex:process a owl:Class ;
+    rdfs:label "process" .
+
+ex:shutdown a owl:Class ;
+    rdfs:label "shutdown" .
+
+ex:text a owl:Class ;
+    rdfs:label "text" .
+
+ex:time a owl:Class ;
+    rdfs:label "time" .
+
+ex:vector a owl:Class ;
+    rdfs:label "vector" .
+
+ex:ai a owl:Class ;
+    rdfs:label "ai" .
+
+ex:balanced a owl:Class ;
+    rdfs:label "balanced" .
+
+ex:circuit a owl:Class ;
+    rdfs:label "circuit" .
+
+ex:context a owl:Class ;
+    rdfs:label "context" .
+
+ex:error a owl:Class ;
+    rdfs:label "error" .
+
+ex:scope a owl:Class ;
+    rdfs:label "scope" .
+
+ex:specialty a owl:Class ;
+    rdfs:label "specialty" .
+
+ex:api a owl:Class ;
+    rdfs:label "api" .
+
+ex:attribute a owl:Class ;
+    rdfs:label "attribute" .
+
+ex:child a owl:Class ;
+    rdfs:label "child" .
+
+ex:metric a owl:Class ;
+    rdfs:label "metric" .
+
+ex:resource a owl:Class ;
+    rdfs:label "resource" .
+
+ex:size a owl:Class ;
+    rdfs:label "size" .
+
+ex:stream a owl:Class ;
+    rdfs:label "stream" .
+
+ex:uri a owl:Class ;
+    rdfs:label "uri" .
+
+ex:address a owl:Class ;
+    rdfs:label "address" .
+
+ex:block a owl:Class ;
+    rdfs:label "block" .
+
+ex:city a owl:Class ;
+    rdfs:label "city" .
+
+ex:content a owl:Class ;
+    rdfs:label "content" .
+
+ex:date a owl:Class ;
+    rdfs:label "date" .
+
+ex:default a owl:Class ;
+    rdfs:label "default" .
+
+ex:new a owl:Class ;
+    rdfs:label "new" .
+
+ex:status a owl:Class ;
+    rdfs:label "status" .
+
+ex:telephone a owl:Class ;
+    rdfs:label "telephone" .
+
+ex:birth a owl:Class ;
+    rdfs:label "birth" .
+
+ex:description a owl:Class ;
+    rdfs:label "description" .
+
+ex:json a owl:Class ;
+    rdfs:label "json" .
+
+ex:retrieve a owl:Class ;
+    rdfs:label "retrieve" .
+
+ex:BusinessRole a owl:Class .
+
+ex:type a owl:Class ;
+    rdfs:label "type" .
+
+ex:vet a owl:Class ;
+    rdfs:label "vet" .
+
+ex:d a owl:Class ;
+    rdfs:label "d" .
+
+ex:first a owl:Class ;
+    rdfs:label "first" .
+
+ex:i a owl:Class ;
+    rdfs:label "i" .
+
+ex:list a owl:Class ;
+    rdfs:label "list" .
+
+ex:append a owl:Class ;
+    rdfs:label "append" .
+
+ex:map a owl:Class ;
+    rdfs:label "map" .
+
+ex:body a owl:Class ;
+    rdfs:label "body" .
+
+ex:string a owl:Class ;
+    rdfs:label "string" .
+
+ex:value a owl:Class ;
+    rdfs:label "value" .
+
+ex:visit a owl:Class ;
+    rdfs:label "visit" .
+
+ex:owner a owl:Class ;
+    rdfs:label "owner" .
+
+ex:Data_Access_Layer a ex:BusinessRole ;
+    rdfs:label "Data Access Layer" .
+
+ex:name a owl:Class ;
+    rdfs:label "name" .
+
+ex:Configuration_Layer a ex:BusinessRole ;
+    rdfs:label "Configuration Layer" .
+
+ex:pet a owl:Class ;
+    rdfs:label "pet" .
+
+ex:Business_Logic_Layer a ex:BusinessRole ;
+    rdfs:label "Business Logic Layer" .
+
+ex:Domain_Model a ex:BusinessRole ;
+    rdfs:label "Domain Model" .
+
+ex:API_Layer a ex:BusinessRole ;
+    rdfs:label "API Layer" .
+
+ex:GenericEntity a owl:Class ;
+    rdfs:label "GenericEntity" .
+
+ex:Domain_Logic a ex:BusinessRole ;
+    rdfs:label "Domain Logic" .
+
+ex:Function a owl:Class ;
+    rdfs:label "Function" .
+

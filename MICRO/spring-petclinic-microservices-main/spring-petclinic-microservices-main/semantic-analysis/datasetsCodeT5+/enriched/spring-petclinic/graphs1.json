@@ -1,0 +1,306 @@
+{
+  "nodes": [
+    {
+      "id": "file::unknown.java"
+    },
+    {
+      "id": "class::UnknownClass"
+    },
+    {
+      "id": "method::UnknownClass::None"
+    },
+    {
+      "id": "code::AIBeanConfiguration.java"
+    },
+    {
+      "id": "ont::File"
+    },
+    {
+      "id": "code::OwnerEntityMapper.java"
+    },
+    {
+      "id": "code::PetResource.java"
+    },
+    {
+      "id": "code::Owner.java"
+    },
+    {
+      "id": "code::OwnerResource.java"
+    },
+    {
+      "id": "code::PetType.java"
+    },
+    {
+      "id": "code::VetResourceTest.java"
+    },
+    {
+      "id": "code::VisitsServiceApplication.java"
+    },
+    {
+      "id": "code::MetricConfig.java"
+    },
+    {
+      "id": "code::AIDataProvider.java"
+    },
+    {
+      "id": "code::Mapper.java"
+    },
+    {
+      "id": "code::ApiGatewayController.java"
+    },
+    {
+      "id": "code::VetResource.java"
+    },
+    {
+      "id": "code::RepoWideExtractor.java"
+    },
+    {
+      "id": "code::CircuitBreakerConfiguration.java"
+    },
+    {
+      "id": "code::PetRepository.java"
+    },
+    {
+      "id": "code::PetResourceTest.java"
+    },
+    {
+      "id": "code::VisitRepository.java"
+    },
+    {
+      "id": "code::VectorStoreController.java"
+    },
+    {
+      "id": "code::ApiGatewayApplication.java"
+    },
+    {
+      "id": "code::DiscoveryServerApplicationTests.java"
+    },
+    {
+      "id": "code::CustomersServiceClient.java"
+    },
+    {
+      "id": "code::VisitResourceTest.java"
+    },
+    {
+      "id": "code::PetclinicConfigServerApplicationTests.java"
+    },
+    {
+      "id": "code::ApiGatewayControllerTest.java"
+    },
+    {
+      "id": "code::SpringBootAdminApplication.java"
+    },
+    {
+      "id": "code::Vet.java"
+    },
+    {
+      "id": "code::Visit.java"
+    },
+    {
+      "id": "code::VisitResource.java"
+    },
+    {
+      "id": "code::DiscoveryServerApplication.java"
+    },
+    {
+      "id": "code::CustomersServiceApplication.java"
+    },
+    {
+      "id": "code::Pet.java"
+    },
+    {
+      "id": "code::Specialty.java"
+    },
+    {
+      "id": "code::VisitsServiceClientIntegrationTest.java"
+    },
+    {
+      "id": "code::VetsServiceApplication.java"
+    },
+    {
+      "id": "code::ApiGatewayApplicationTests.java"
+    },
+    {
+      "id": "code::FallbackController.java"
+    },
+    {
+      "id": "code::ConfigServerApplication.java"
+    },
+    {
+      "id": "code::GenAIServiceApplication.java"
+    },
+    {
+      "id": "code::VisitsServiceClient.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file::unknown.java",
+      "target": "class::UnknownClass"
+    },
+    {
+      "source": "class::UnknownClass",
+      "target": "method::UnknownClass::None"
+    },
+    {
+      "source": "code::AIBeanConfiguration.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::OwnerEntityMapper.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::PetResource.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Owner.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::OwnerResource.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::PetType.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VetResourceTest.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitsServiceApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::MetricConfig.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::AIDataProvider.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Mapper.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::ApiGatewayController.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VetResource.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::RepoWideExtractor.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::CircuitBreakerConfiguration.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::PetRepository.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::PetResourceTest.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitRepository.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VectorStoreController.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::ApiGatewayApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::DiscoveryServerApplicationTests.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::CustomersServiceClient.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitResourceTest.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::PetclinicConfigServerApplicationTests.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::ApiGatewayControllerTest.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::SpringBootAdminApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Vet.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Visit.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitResource.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::DiscoveryServerApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::CustomersServiceApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Pet.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::Specialty.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitsServiceClientIntegrationTest.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VetsServiceApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::ApiGatewayApplicationTests.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::FallbackController.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::ConfigServerApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::GenAIServiceApplication.java",
+      "target": "ont::File"
+    },
+    {
+      "source": "code::VisitsServiceClient.java",
+      "target": "ont::File"
+    }
+  ]
+}

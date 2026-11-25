@@ -1,0 +1,44 @@
+[
+  {
+    "@id": "http://example.org/spring-petclinic/vocab#Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/spring-petclinic/vocab#Comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/spring-petclinic/vocab#SourceFile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/spring-petclinic/vocab#Verb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/spring-petclinic/vocab#Noun",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/spring-petclinic/unknown",
+    "@type": [
+      "http://example.org/spring-petclinic/vocab#SourceFile",
+      "http://example.org/spring-petclinic/vocab#Comment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": ""
+      }
+    ]
+  }
+]

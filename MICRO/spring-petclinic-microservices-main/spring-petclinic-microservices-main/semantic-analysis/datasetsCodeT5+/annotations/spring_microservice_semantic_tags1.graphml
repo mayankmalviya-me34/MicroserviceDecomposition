@@ -1,0 +1,897 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="node" attr.name="business_role" attr.type="string"/>
+<key id="d2" for="node" attr.name="domain" attr.type="string"/>
+<key id="d1" for="node" attr.name="intent" attr.type="string"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="directed"><node id="spring-petclinic-admin-server\src\main\java\org\springframework\samples\petclinic\admin\SpringBootAdminApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-admin-server\src\main\java\org\springframework\samples\petclinic\admin\SpringBootAdminApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">copyright</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">new</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::loadBalancedRestTemplate">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">new</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::loadBalancedWebClientBuilder">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">new</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::routerFunction">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">new</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::defaultCustomizer">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">new</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\CustomersServiceClient.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\CustomersServiceClient.java::getOwner">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">ownerid</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::getVisitsForPets">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2"></data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::joinIds">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::setHostname">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::getOwnerDetails">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">author</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::addVisitsToOwner">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">author</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::emptyVisitsForPets">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java::getOwnerDetails_withAvailableVisitsService">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java::getOwnerDetails_withServiceError">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">test</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-config-server\src\main\java\org\springframework\samples\petclinic\config\ConfigServerApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-config-server\src\main\java\org\springframework\samples\petclinic\config\ConfigServerApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-config-server\src\test\java\org\springframework\samples\petclinic\config\PetclinicConfigServerApplicationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-config-server\src\test\java\org\springframework\samples\petclinic\config\PetclinicConfigServerApplicationTests.java::contextLoads">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">copyright</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\CustomersServiceApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\CustomersServiceApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getPetsInternal">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getPets">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::addPet">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::toString">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getFirstName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getLastName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getAddress">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getCity">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getTelephone">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setFirstName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setLastName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setAddress">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setCity">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setTelephone">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::toString">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getBirthDate">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getType">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getOwner">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setBirthDate">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setType">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setOwner">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::equals">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::hashCode">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::getName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::setId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::setName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::createOwner">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">update</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::findOwner">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">update</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::findAll">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">update</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::updateOwner">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">update</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::getPetTypes">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::processCreationForm">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::processUpdateForm">
+  <data key="d0">function</data>
+  <data key="d1">UPDATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::save">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::findPet">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::findPetById">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\mapper\OwnerEntityMapper.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\mapper\OwnerEntityMapper.java::map">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">this</data>
+  <data key="d3">ENTITY</data>
+</node>
+<node id="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java::shouldGetAPetInJSonFormat">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java::setupPet">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-discovery-server\src\main\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-discovery-server\src\main\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-discovery-server\src\test\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplicationTests.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-discovery-server\src\test\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplicationTests.java::contextLoads">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">copyright</data>
+  <data key="d3">APPLICATION</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::chatMemory">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">a</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::vectorStore">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">a</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::loadBalancedWebClientBuilder">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">a</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::getAllOwners">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">provide</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::getVets">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">provide</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::addPetToOwner">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">provide</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::addOwnerToPetclinic">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">provide</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\GenAIServiceApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\GenAIServiceApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java::loadVetDataToVectorStoreOnStartup">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">create</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java::convertListToJsonResource">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">create</data>
+  <data key="d3">CONTROLLER</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\VetsServiceApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\VetsServiceApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">models</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::getName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">models</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::setName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">models</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getSpecialtiesInternal">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getSpecialties">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getNrOfSpecialties">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::addSpecialty">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getFirstName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getLastName">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setFirstName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setLastName">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\web\VetResource.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\web\VetResource.java::showResourcesVetList">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-vets-service\src\test\java\org\springframework\samples\petclinic\vets\web\VetResourceTest.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-vets-service\src\test\java\org\springframework\samples\petclinic\vets\web\VetResourceTest.java::shouldGetAListOfVets">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">author</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\VisitsServiceApplication.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\VisitsServiceApplication.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">author</data>
+  <data key="d3">SERVICE</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getDate">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getDescription">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getPetId">
+  <data key="d0">function</data>
+  <data key="d1">READ</data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setDate">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setDescription">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setPetId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::aVisit">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::id">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::date">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::description">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::petId">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::build">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2">simple</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java">
+  <data key="d0">file</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::create">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::read">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::Visits">
+  <data key="d0">function</data>
+  <data key="d1">CREATE</data>
+  <data key="d2">petid</data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java">
+  <data key="d0">file</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::main">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::parseFile">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportStaticGraphGML">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportSemanticJSON">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<node id="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportSemanticGraphML">
+  <data key="d0">function</data>
+  <data key="d1"></data>
+  <data key="d2"></data>
+  <data key="d3">UNKNOWN</data>
+</node>
+<edge source="spring-petclinic-admin-server\src\main\java\org\springframework\samples\petclinic\admin\SpringBootAdminApplication.java" target="spring-petclinic-admin-server\src\main\java\org\springframework\samples\petclinic\admin\SpringBootAdminApplication.java::main"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::main"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::loadBalancedRestTemplate"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::loadBalancedWebClientBuilder"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::routerFunction"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\ApiGatewayApplication.java::defaultCustomizer"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\CustomersServiceClient.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\CustomersServiceClient.java::getOwner"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::getVisitsForPets"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::joinIds"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\application\VisitsServiceClient.java::setHostname"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::getOwnerDetails"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::addVisitsToOwner"/>
+<edge source="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java" target="spring-petclinic-api-gateway\src\main\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java::emptyVisitsForPets"/>
+<edge source="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java" target="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java::getOwnerDetails_withAvailableVisitsService"/>
+<edge source="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java" target="spring-petclinic-api-gateway\src\test\java\org\springframework\samples\petclinic\api\boundary\web\ApiGatewayControllerTest.java::getOwnerDetails_withServiceError"/>
+<edge source="spring-petclinic-config-server\src\main\java\org\springframework\samples\petclinic\config\ConfigServerApplication.java" target="spring-petclinic-config-server\src\main\java\org\springframework\samples\petclinic\config\ConfigServerApplication.java::main"/>
+<edge source="spring-petclinic-config-server\src\test\java\org\springframework\samples\petclinic\config\PetclinicConfigServerApplicationTests.java" target="spring-petclinic-config-server\src\test\java\org\springframework\samples\petclinic\config\PetclinicConfigServerApplicationTests.java::contextLoads"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\CustomersServiceApplication.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\CustomersServiceApplication.java::main"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getPetsInternal"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getPets"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::addPet"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::toString"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getId"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getFirstName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getLastName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getAddress"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getCity"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::getTelephone"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setFirstName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setLastName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setAddress"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setCity"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Owner.java::setTelephone"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::toString"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getId"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getBirthDate"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getType"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::getOwner"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setId"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setBirthDate"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setType"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::setOwner"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::equals"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\Pet.java::hashCode"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::getId"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::getName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::setId"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\model\PetType.java::setName"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::createOwner"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::findOwner"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::findAll"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\OwnerResource.java::updateOwner"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::getPetTypes"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::processCreationForm"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::processUpdateForm"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::save"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::findPet"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\PetResource.java::findPetById"/>
+<edge source="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\mapper\OwnerEntityMapper.java" target="spring-petclinic-customers-service\src\main\java\org\springframework\samples\petclinic\customers\web\mapper\OwnerEntityMapper.java::map"/>
+<edge source="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java" target="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java::shouldGetAPetInJSonFormat"/>
+<edge source="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java" target="spring-petclinic-customers-service\src\test\java\org\springframework\samples\petclinic\customers\web\PetResourceTest.java::setupPet"/>
+<edge source="spring-petclinic-discovery-server\src\main\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplication.java" target="spring-petclinic-discovery-server\src\main\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplication.java::main"/>
+<edge source="spring-petclinic-discovery-server\src\test\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplicationTests.java" target="spring-petclinic-discovery-server\src\test\java\org\springframework\samples\petclinic\discovery\DiscoveryServerApplicationTests.java::contextLoads"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::chatMemory"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::vectorStore"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIBeanConfiguration.java::loadBalancedWebClientBuilder"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::getAllOwners"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::getVets"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::addPetToOwner"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\AIDataProvider.java::addOwnerToPetclinic"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\GenAIServiceApplication.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\GenAIServiceApplication.java::main"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java::loadVetDataToVectorStoreOnStartup"/>
+<edge source="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java" target="spring-petclinic-genai-service\src\main\java\org\springframework\samples\petclinic\genai\VectorStoreController.java::convertListToJsonResource"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\VetsServiceApplication.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\VetsServiceApplication.java::main"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::getId"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::getName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Specialty.java::setName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getSpecialtiesInternal"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getSpecialties"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getNrOfSpecialties"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::addSpecialty"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getId"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getFirstName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::getLastName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setId"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setFirstName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\model\Vet.java::setLastName"/>
+<edge source="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\web\VetResource.java" target="spring-petclinic-vets-service\src\main\java\org\springframework\samples\petclinic\vets\web\VetResource.java::showResourcesVetList"/>
+<edge source="spring-petclinic-vets-service\src\test\java\org\springframework\samples\petclinic\vets\web\VetResourceTest.java" target="spring-petclinic-vets-service\src\test\java\org\springframework\samples\petclinic\vets\web\VetResourceTest.java::shouldGetAListOfVets"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\VisitsServiceApplication.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\VisitsServiceApplication.java::main"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getId"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getDate"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getDescription"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::getPetId"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setId"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setDate"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setDescription"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::setPetId"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::aVisit"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::id"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::date"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::description"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::petId"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\model\Visit.java::build"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::create"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::read"/>
+<edge source="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java" target="spring-petclinic-visits-service\src\main\java\org\springframework\samples\petclinic\visits\web\VisitResource.java::Visits"/>
+<edge source="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java" target="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::main"/>
+<edge source="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java" target="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::parseFile"/>
+<edge source="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java" target="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportStaticGraphGML"/>
+<edge source="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java" target="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportSemanticJSON"/>
+<edge source="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java" target="src\main\java\org\springframework\samples\petclinic\analysis\RepoWideExtractor.java::exportSemanticGraphML"/>
+</graph></graphml>

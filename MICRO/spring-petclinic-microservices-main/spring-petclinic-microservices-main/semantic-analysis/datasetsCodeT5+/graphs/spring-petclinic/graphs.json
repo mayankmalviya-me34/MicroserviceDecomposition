@@ -1,0 +1,247 @@
+{
+  "nodes": [
+    {
+      "id": "SpringBootAdminApplication",
+      "label": "Spring Boot Admin Application",
+      "type": "service_candidate",
+      "domain_entity": "Spring Boot Admin",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "ApiGatewayApplication",
+      "label": "API Gateway Application",
+      "type": "service_candidate",
+      "domain_entity": "API Gateway",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "CustomersServiceClient",
+      "label": "Customers Service Client",
+      "type": "service_candidate",
+      "domain_entity": "Customer Service",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "VisitsServiceClient",
+      "label": "Visits Service Client",
+      "type": "service_candidate",
+      "domain_entity": "Visit Service",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "ApiGatewayController",
+      "label": "API Gateway Controller",
+      "type": "service_candidate",
+      "domain_entity": "API Gateway",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "FallbackController",
+      "label": "Fallback Controller",
+      "type": "service_candidate",
+      "domain_entity": "Fallback Controller",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "ConfigServerApplication",
+      "label": "Config Server Application",
+      "type": "service_candidate",
+      "domain_entity": "Config Server",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "CustomersServiceApplication",
+      "label": "Customers Service Application",
+      "type": "service_candidate",
+      "domain_entity": "Customer Service",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "MetricConfig",
+      "label": "Metric Config",
+      "type": "service_candidate",
+      "domain_entity": "Metrics Configuration",
+      "business_role": "API Gateway",
+      "intent": "API Gateway"
+    },
+    {
+      "id": "Pet",
+      "label": "Pet",
+      "type": "class",
+      "domain_entity": "Pet",
+      "business_role": "Pet",
+      "intent": "Pet"
+    },
+    {
+      "id": "Owner",
+      "label": "Owner",
+      "type": "class",
+      "domain_entity": "Owner",
+      "business_role": "Owner",
+      "intent": "Owner"
+    },
+    {
+      "id": "PetType",
+      "label": "Pet Type",
+      "type": "class",
+      "domain_entity": "Pet Type",
+      "business_role": "Pet Type",
+      "intent": "Pet Type"
+    }
+  ],
+  "edges": [
+    {
+      "source": "SpringBootAdminApplication",
+      "target": "ApiGatewayApplication",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "CustomersServiceClient",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "VisitsServiceClient",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "ApiGatewayController",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "FallbackController",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "ConfigServerApplication",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "CustomersServiceApplication",
+      "relation": "depends_on"
+    },
+    {
+      "source": "ApiGatewayApplication",
+      "target": "MetricConfig",
+      "relation": "depends_on"
+    },
+    {
+      "source": "CustomersServiceClient",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "CustomersServiceClient",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "CustomersServiceClient",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "VisitsServiceClient",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "VisitsServiceClient",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "VisitsServiceClient",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "ApiGatewayController",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "ApiGatewayController",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "ApiGatewayController",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "FallbackController",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "FallbackController",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "FallbackController",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "ConfigServerApplication",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "ConfigServerApplication",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "ConfigServerApplication",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "CustomersServiceApplication",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "CustomersServiceApplication",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "CustomersServiceApplication",
+      "target": "PetType",
+      "relation": "uses"
+    },
+    {
+      "source": "MetricConfig",
+      "target": "Pet",
+      "relation": "uses"
+    },
+    {
+      "source": "MetricConfig",
+      "target": "Owner",
+      "relation": "uses"
+    },
+    {
+      "source": "MetricConfig",
+      "target": "PetType",
+      "relation": "uses"
+    }
+  ]
+}

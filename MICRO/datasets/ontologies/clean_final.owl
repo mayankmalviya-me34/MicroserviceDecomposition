@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://micro.clean#VisitResourceTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitResourceTest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#pets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>pets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>findOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#setOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>setOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getVisitsForPets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getVisitsForPets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#addPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>addPet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#showResourcesVetList">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>showResourcesVetList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetResource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#setPetId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>setPetId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitResource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#addVisitsToOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>addVisitsToOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetDetailsBuilder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetDetailsBuilder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetResourceTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetResourceTest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VetResourceTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>VetResourceTest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getPetId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getPetId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#addPetToOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>addPetToOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#Visit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>Visit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#OwnerDetailsBuilder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>OwnerDetailsBuilder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getOwnerDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>getOwnerDetails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#OwnerResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>OwnerResource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetclinicChatClient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetclinicChatClient</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#shouldGetAPetInJSonFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>shouldGetAPetInJSonFormat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getOwnerDetails_withAvailableVisitsService">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>getOwnerDetails_withAvailableVisitsService</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#assertVisitDescriptionEquals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>assertVisitDescriptionEquals</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findPet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getPetTypes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getPetTypes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#aPetDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>aPetDetails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitsServiceClientIntegrationTest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitsServiceClientIntegrationTest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#vet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>vet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#petId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>petId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#setupPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>setupPet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VetRepository">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>VetRepository</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#shouldGetAListOfVets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>shouldGetAListOfVets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#listOwners">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>listOwners</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#addOwnerToPetclinic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>addOwnerToPetclinic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findPetTypeById">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findPetTypeById</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#Pet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>Pet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findByPetIdIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findByPetIdIn</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getPetsInternal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getPetsInternal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getOwnerDetails_withServiceError">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>getOwnerDetails_withServiceError</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#createOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>createOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getPetIds">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getPetIds</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#Vet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>Vet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findByPetId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findByPetId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitBuilder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitBuilder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetclinicConfigServerApplicationTests">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetclinicConfigServerApplicationTests</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findPetById">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findPetById</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#PetRepository">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>PetRepository</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#visit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>visit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#owner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>owner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#aVisit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>aVisit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#findPetTypes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>findPetTypes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitsServiceClient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitsServiceClient</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#OwnerRepository">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>OwnerRepository</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#listVets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>listVets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#pet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#shouldFetchVisits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>shouldFetchVisits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#anOwnerDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>anOwnerDetails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#OwnerEntityMapper">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>OwnerEntityMapper</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#emptyVisitsForPets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>emptyVisitsForPets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>getOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#visits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>visits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VetsServiceApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>VetsServiceApplication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#ownerId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>ownerId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getPets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getPets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitsServiceApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitsServiceApplication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#updateOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>updateOwner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VetResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>VetResource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#loadVetDataToVectorStoreOnStartup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>loadVetDataToVectorStoreOnStartup</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getAllOwners">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>getAllOwners</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getVisitsForPets_withAvailableVisitsService">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#pet"/>
+    <rdfs:label>getVisitsForPets_withAvailableVisitsService</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#getVets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#vet"/>
+    <rdfs:label>getVets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#VisitRepository">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#visit"/>
+    <rdfs:label>VisitRepository</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://micro.clean#Owner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://micro.clean#owner"/>
+    <rdfs:label>Owner</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

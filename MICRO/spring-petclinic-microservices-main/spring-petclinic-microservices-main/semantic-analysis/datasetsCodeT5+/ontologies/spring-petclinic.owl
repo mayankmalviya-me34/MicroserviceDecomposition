@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:voc="http://example.org/spring-petclinic/vocab#"
+  xmlns:code="http://example.org/spring-petclinic/code#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_This_is_done_by_hand_for_simplicity_purp">
+    <rdfs:label>This is done by hand for simplicity purpose. In a real life use-case we should consider using MapStruct.</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#OwnerEntityMapper.java">
+        <rdfs:label>OwnerEntityMapper.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Hand"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Simplicity"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Purpose"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Life"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Use"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Case"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#do"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#consider"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Loads_the_veterinarians_data_into_a">
+    <rdfs:label>*
+ * Loads the veterinarians data into a vector store for the purpose of RAG functionality.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VectorStoreController.java">
+        <rdfs:label>VectorStoreController.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Load"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Datum"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vector"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Store"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Purpose"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Functionality"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_pets_petId_@ResponseStatus_Http">
+    <rdfs:label>/pets/{petId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void processUpdateForm(@RequestBody PetRequest petRequest) {
+        int petId = petRequest.id();
+        Pet pet = findPetById(petId);
+        save(pet, petRequest);
+    }
+
+    private Pet save(final Pet pet, final PetRequest petRequest) {
+
+        pet.setName(petRequest.name());
+        pet.setBirthDate(petRequest.birthDate());
+
+        petRepository.findPetTypeById(petRequest.typeId())
+            .ifPresent(pet::setType);
+
+        log.info("Saving pet {}", pet);
+        return petRepository.save(pet);
+    }
+
+    @GetMapping("owners/</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#PetResource.java">
+        <rdfs:label>PetResource.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@responsestatus_httpstatus"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Petrequest"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Int"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Pet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Findpetbyid_petid"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Save_pet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Pet.setname_petrequest.name"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Petrepository.findpettypebyid_petrequest.typeid"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#void"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#log.info_save"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#return"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@GetMapping_owners"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Convert_JSON_string_to_byte_array">
+    <rdfs:label>Convert JSON string to byte array</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Json"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#String"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Array"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#convert"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Check_if_file_exists">
+    <rdfs:label>Check if file exists</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#File"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#check"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#exist"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Simple_Data_Transfer_Object_represe">
+    <rdfs:label>*
+ * Simple Data Transfer Object representing an owner.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a pet data type.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a Pet request.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a Pet type.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a vet's specialty.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a vet.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <rdfs:label>*
+ * Simple Data Transfer Object representing a customer visit.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owner"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#represent"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Data"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Type"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetRequest.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Request"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#PetType.java">
+        <rdfs:label>PetType.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Specialty.java">
+        <rdfs:label>Specialty.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Specialty"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Vet.java">
+        <rdfs:label>Vet.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Customer"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visit"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_This_REST_controller_is_being_invok">
+    <rdfs:label>*
+ * This REST controller is being invoked by the in order to interact with the LLM
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Rest"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Controller"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Order"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#invoke"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#interact"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Typesafe_custom_configuration._*">
+    <rdfs:label>*
+ * Typesafe custom configuration.
+ *
+ * @author Maciej Szarlinski</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetsProperties.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Custom"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Configuration"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Repository_class_for_&lt;code&gt;Pet&lt;_cod">
+    <rdfs:label><![CDATA[*
+ * Repository class for <code>Pet</code> domain objects All method names are compliant with Spring Data naming
+ * conventions so this interface can easily be extended for Spring Data See here: http:static.springsource.org/spring-data/jpa/docs/current/reference/html/jpa.repositories.html#jpa.query-methods.query-creation
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Michael Isvy
+ * @author Maciej Szarlinski]]></rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#PetRepository.java">
+        <rdfs:label>PetRepository.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Repository"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Domain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Method"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Name"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Naming"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Convention"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#See"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Http"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Spring"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Current"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Reference"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Jpa.repositories.html#jpa.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Methods.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Creation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#extend"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_Copyright_2002-2021_the_original_autho">
+    <rdfs:label>* Copyright 2002-2021 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http:www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#SpringBootAdminApplication.java">
+        <rdfs:label>SpringBootAdminApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Copyright"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Author"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#License"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#File"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Compliance"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Copy"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#*"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Law"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Writing"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Software"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Is"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Warranty"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Condition"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Kind"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Language"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Permission"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Limitation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#license"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#obtain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#require"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#agree"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#distribute"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#imply"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#see"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#govern"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#ApiGatewayApplication.java">
+        <rdfs:label>ApiGatewayApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#CustomersServiceClient.java">
+        <rdfs:label>CustomersServiceClient.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitsServiceClient.java">
+        <rdfs:label>VisitsServiceClient.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#ApiGatewayController.java">
+        <rdfs:label>ApiGatewayController.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetType.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Visits.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#ConfigServerApplication.java">
+        <rdfs:label>ConfigServerApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#PetclinicConfigServerApplicationTests.java">
+        <rdfs:label>PetclinicConfigServerApplicationTests.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#CustomersServiceApplication.java">
+        <rdfs:label>CustomersServiceApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Owner.java">
+        <rdfs:label>Owner.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerRepository.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Pet.java">
+        <rdfs:label>Pet.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetRepository.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#OwnerResource.java">
+        <rdfs:label>OwnerResource.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetRequest.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetResource.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#DiscoveryServerApplication.java">
+        <rdfs:label>DiscoveryServerApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#DiscoveryServerApplicationTests.java">
+        <rdfs:label>DiscoveryServerApplicationTests.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#GenAIServiceApplication.java">
+        <rdfs:label>GenAIServiceApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Specialty.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Vet.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VetsServiceApplication.java">
+        <rdfs:label>VetsServiceApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetRepository.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#CacheConfig.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetsProperties.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VetResource.java">
+        <rdfs:label>VetResource.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VetResourceTest.java">
+        <rdfs:label>VetResourceTest.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitsServiceApplication.java">
+        <rdfs:label>VisitsServiceApplication.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Visit.java">
+        <rdfs:label>Visit.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitRepository.java">
+        <rdfs:label>VisitRepository.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitResource.java">
+        <rdfs:label>VisitResource.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_A_Configuration_class_for_beans_use">
+    <rdfs:label>*
+ * A Configuration class for beans used by the Chat Client.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#AIBeanConfiguration.java">
+        <rdfs:label>AIBeanConfiguration.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Configuration"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Bean"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_In_order_to_save_on_AI_credits_use_a_pr">
+    <rdfs:label>In order to save on AI credits, use a pre-embedded database that was saved</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Order"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Credit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Database"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#save"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_add_the_documents_to_the_vector_store">
+    <rdfs:label>add the documents to the vector store</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Document"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vector"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Store"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#add"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_@author_Oded_Shopen">
+    <rdfs:label>*
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#GenAIServiceApplication.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_--------_Static_Call_Graph_--------">
+    <rdfs:label>-------- Static Call Graph --------</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#RepoWideExtractor.java">
+        <rdfs:label>RepoWideExtractor.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Call"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_to">
+    <rdfs:label>to</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Repository_class_for_&lt;code&gt;Visit&lt;_c">
+    <rdfs:label><![CDATA[*
+ * Repository class for <code>Visit</code> domain objects All method names are compliant with Spring Data naming conventions so this interface can easily be extended for Spring
+ * Data See here: http:static.springsource.org/spring-data/jpa/docs/current/reference/html/jpa.repositories.html#jpa.query-methods.query-creation
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Michael Isvy
+ * @author Maciej Szarlinski]]></rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitRepository.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Repository"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Domain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Method"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Name"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Naming"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Convention"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Datum"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Http"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Spring"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Current"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Reference"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Jpa.repositories.html#jpa.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Methods.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Creation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#extend"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#see"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_@author_Maciej_Szarlinski">
+    <rdfs:label>*
+ * @author Maciej Szarlinski</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#ApiGatewayApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#CustomersServiceClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitsServiceClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#ApiGatewayController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetType.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Visits.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#ConfigServerApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#CustomersServiceApplication.java"/>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#PetResourceTest.java">
+        <rdfs:label>PetResourceTest.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#DiscoveryServerApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetsServiceApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetResourceTest.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitsServiceApplication.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Repository_class_for_&lt;code&gt;Vet&lt;_cod">
+    <rdfs:label><![CDATA[*
+ * Repository class for <code>Vet</code> domain objects All method names are compliant with Spring Data naming
+ * conventions so this interface can easily be extended for Spring Data See here: http:static.springsource.org/spring-data/jpa/docs/current/reference/html/jpa.repositories.html#jpa.query-methods.query-creation
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Michael Isvy
+ * @author Maciej Szarlinski]]></rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetRepository.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Repository"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Domain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Method"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Name"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Naming"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Convention"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#See"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Http"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Spring"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Current"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Reference"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Jpa.repositories.html#jpa.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Methods.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Creation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#extend"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Simple_business_object_representing">
+    <rdfs:label>*
+ * Simple business object representing a pet.
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Pet.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Business"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Pet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#represent"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Multi-module_PetClinic_repository_a">
+    <rdfs:label>*
+ * Multi-module PetClinic repository analyzer.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Analyzer"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Models_a_@link_Vet_Vet_s_specialt">
+    <rdfs:label>*
+ * Models a {@link Vet Vet's} specialty (for example, dentistry).
+ *
+ * @author Juergen Hoeller
+ * @author Ramazan Sakin</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Specialty.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Model"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Specialty"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Example"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Dentistry"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_If_vectorstore.json_is_deleted_the_data">
+    <rdfs:label>If vectorstore.json is deleted, the data will be loaded on startup every time.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Datum"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Startup"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Time"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#delete"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#load"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Simple_JavaBean_domain_object_repre">
+    <rdfs:label>*
+ * Simple JavaBean domain object representing an owner.
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Michael Isvy
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <rdfs:label>*
+ * Simple JavaBean domain object representing a veterinarian.
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Arjen Poutsma
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <rdfs:label>*
+ * Simple JavaBean domain object representing a visit.
+ *
+ * @author Ken Krebs
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Owner.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Domain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owner"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#represent"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Vet.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Veterinarian"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#Visit.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visit"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_=================_SEMANTIC_GRAPHML_=====">
+    <rdfs:label>================= SEMANTIC GRAPHML =================</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#="/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#GRAPHML"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_disk_based_on_the_current_data_in_the_h2">
+    <rdfs:label>disk based on the current data in the h2 data.sql file</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Disk"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Datum"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#H2"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#File"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#base"/>
+  </voc:Comment>
+  <owl:ObjectProperty rdf:about="http://example.org/spring-petclinic/vocab#actsOnEntity"/>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Chat_memory_helps_us_keep_context_when_u">
+    <rdfs:label>Chat memory helps us keep context when using the chatbot for up to 10 previous messages.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Chat"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Memory"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Context"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Chatbot"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Message"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#help"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#keep"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Repository_class_for_&lt;code&gt;Owner&lt;_c">
+    <rdfs:label><![CDATA[*
+ * Repository class for <code>Owner</code> domain objects All method names are compliant with Spring Data naming
+ * conventions so this interface can easily be extended for Spring Data See here: http:static.springsource.org/spring-data/jpa/docs/current/reference/html/jpa.repositories.html#jpa.query-methods.query-creation
+ *
+ * @author Ken Krebs
+ * @author Juergen Hoeller
+ * @author Sam Brannen
+ * @author Michael Isvy
+ * @author Maciej Szarlinski]]></rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerRepository.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Repository"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Domain"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Method"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Name"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Naming"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Convention"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#See"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Http"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Spring"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Current"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Reference"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Jpa.repositories.html#jpa.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Methods.query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Creation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#object"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#extend"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Convert_List&lt;Vet&gt;_to_JSON_string">
+    <rdfs:label><![CDATA[Convert List<Vet> to JSON string]]></rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#String"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Cache_could_be_disable_in_unit_test">
+    <rdfs:label>*
+ * Cache could be disable in unit test.
+ * @author Maciej Szarlinski</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#CacheConfig.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Unit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Test"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_new_ClassPathResource_static">
+    <rdfs:label>*", new ClassPathResource("static/"))
+            .andRoute(RequestPredicates.GET("/"),
+                request -&gt; ServerResponse.ok().contentType(MediaType.TEXT_HTML).bodyValue(indexHtml));
+        return router;
+    }
+
+    *
+     * Default Resilience4j circuit breaker configuration</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#ApiGatewayApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Get"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Return"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Router"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Circuit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Breaker"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Configuration"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#request"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Functions_that_are_invoked_by_the_L">
+    <rdfs:label>*
+ * Functions that are invoked by the LLM will use this bean to query the system of record
+ * for information such as listing owners and vets, or adding pets to an owner.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#AIDataProvider.java">
+        <rdfs:label>AIDataProvider.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Function"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Bean"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#System"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Record"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Information"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owner"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Pet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#invoke"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#query"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#list"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#add"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_@formatter_off">
+    <rdfs:label>@formatter:off</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@formatter"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_interface._Make_suer_to_visit_the_source">
+    <rdfs:label>interface. Make suer to visit the source code of the ChatModel and</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Suer"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Source"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Code"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#make"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#visit"/>
+  </voc:Comment>
+  <owl:ObjectProperty rdf:about="http://example.org/spring-petclinic/vocab#exposesEndpoint"/>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Fetches_all_Vet_entites_and_creates_a_do">
+    <rdfs:label>Fetches all Vet entites and creates a document per vet</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Fetch"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Entite"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Document"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#create"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Provide_a_limit_of_50_results_when_zero">
+    <rdfs:label>Provide a limit of 50 results when zero parameters are sent</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#AIDataProvider.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Limit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Result"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Parameter"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#provide"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#send"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_it_is_a_request_response_interface_that">
+    <rdfs:label>it is a request/response interface that implements the ModelModel</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Request"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Response"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#implement"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Method_references_Class_method">
+    <rdfs:label>Method references (Class::method)</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Reference"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_CHAT_MEMORY">
+    <rdfs:label>CHAT MEMORY</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_@author_Juergen_Hoeller_*_@author">
+    <rdfs:label>*
+ * @author Juergen Hoeller
+ * @author Ramazan Sakin
+ * Can be Cat, Dog, Hamster...</rdfs:label>
+    <rdfs:label>*
+ * @author Juergen Hoeller
+ * @author Ken Krebs
+ * @author Arjen Poutsma
+ * @author Michael Isvy
+ * @author Maciej Szarlinski</rdfs:label>
+    <rdfs:label>*
+ * @author Juergen Hoeller
+ * @author Ken Krebs
+ * @author Arjen Poutsma
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <rdfs:label>*
+ * @author Juergen Hoeller
+ * @author Mark Fisher
+ * @author Ken Krebs
+ * @author Arjen Poutsma
+ * @author Maciej Szarlinski</rdfs:label>
+    <rdfs:label>*
+ * @author Juergen Hoeller
+ * @author Ken Krebs
+ * @author Arjen Poutsma
+ * @author Michael Isvy
+ * @author Maciej Szarlinski
+ * @author Ramazan Sakin</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetType.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Maciej"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Szarlinski"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VetResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitResource.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_This_class_defines_the_@Bean_functi">
+    <rdfs:label>*
+ * This class defines the @Bean functions that the LLM provider will invoke when it
+ * requires more Information on a given topic. The currently available functions enable
+ * the LLM to get the list of owners and their pets, get information about the
+ * veterinarians, and add a pet to an owner.
+ *
+ * @author Oded Shopen</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#AIFunctionConfiguration.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Class"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Function"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Provider"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Information"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Topic"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#List"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owner"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Pet"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Veterinarian"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#define"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#invoke"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#require"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#give"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#enable"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#get"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#add"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_=================_STATIC_GRAPH_=========">
+    <rdfs:label>================= STATIC GRAPH =================</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#="/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Graph"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Set_project_root_to_repo_root_for_multi-">
+    <rdfs:label>Set project root to repo root for multi-module scanning</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Project"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Root"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Scanning"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#repo"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Warning_-_this_can_be_costly_in_terms_of">
+    <rdfs:label>Warning - this can be costly in terms of credits used with the AI provider.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Warning"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Term"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Credit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Provider"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Test_Resilience4j_fallback_meth">
+    <rdfs:label>*
+     * Test Resilience4j fallback method</rdfs:label>
+    <voc:mapsToOntology>
+      <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#ApiGatewayControllerTest.java">
+        <rdfs:label>ApiGatewayControllerTest.java</rdfs:label>
+      </code:CodeArtifact>
+    </voc:mapsToOntology>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Resilience4j"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Fallback"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Method"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_visits-service_;">
+    <rdfs:label>visits-service/";</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitsServiceClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visit"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Collect_imports_for_semantic_JSON">
+    <rdfs:label>Collect imports for semantic JSON</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Import"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Json"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#collect"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_The_@Description_annotation_helps_the_mo">
+    <rdfs:label>The @Description annotation helps the model understand when to call the function</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#AIFunctionConfiguration.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@description"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Annotation"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Model"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Function"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#help"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#understand"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#call"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Could_be_changed_for_testing_purpose">
+    <rdfs:label>Could be changed for testing purpose</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitsServiceClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Purpose"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#change"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#test"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_checkout_the_interfaces_in_the_core_Spri">
+    <rdfs:label>checkout the interfaces in the core Spring AI package.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Checkout"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Core"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Package"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_----------_Function-level_Semantic_Data">
+    <rdfs:label>---------- Function-level Semantic Data ----------</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Function"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Level"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#----------"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Update_Owner">
+    <rdfs:label>*
+     * Update Owner</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerResource.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Retrieve_all_@link_PetType_s_f">
+    <rdfs:label>*
+     * Retrieve all {@link PetType}s from the data store.
+     * @return a Collection of {@link PetType}s.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetRepository.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Data"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Store"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#retrieve"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#pettype"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@return"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_--------_Semantic_JSON_Function_Level">
+    <rdfs:label>-------- Semantic JSON (Function Level) --------</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_ChatModel_is_the_primary_interfaces_for">
+    <rdfs:label>ChatModel is the primary interfaces for interacting with an LLM</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Interface"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Llm"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#interact"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_pets_petId_visits_@ResponseStat">
+    <rdfs:label>/pets/{petId}/visits")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Visit create(
+        @Valid @RequestBody Visit visit,
+        @PathVariable("petId") @Min(1) int petId) {
+
+        visit.setPetId(petId);
+        log.info("Saving visit {}", visit);
+        return visitRepository.save(visit);
+    }
+
+    @GetMapping("owners/</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VisitResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#pets_petid_visit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@responsestatus_httpstatus"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Int"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visit.setpetid_petid"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Visitrepository.save_visit"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#create"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#log.info_save"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#return"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#@GetMapping_owners"/>
+  </voc:Comment>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#MetricConfig.java">
+    <rdfs:label>MetricConfig.java</rdfs:label>
+  </code:CodeArtifact>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_java_S5443_Sonar_rule_Using_publicly_wr">
+    <rdfs:label>java:S5443 Sonar rule: Using publicly writable directories is security-sensitive</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Rule"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Directory"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Security"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#use"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_Create_a_ByteArrayResource_from_the_byte">
+    <rdfs:label>Create a ByteArrayResource from the byte array</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Bytearrayresource"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Array"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#create"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_vets-service_;">
+    <rdfs:label>vets-service/";</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#VectorStoreController.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Vet"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_and_are_passed_to_the_LLM">
+    <rdfs:label>and are passed to the LLM</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#pass"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_@author_mszarlinski@bravurasolution">
+    <rdfs:label>*
+ * @author mszarlinski@bravurasolutions.com on 2016-12-05.</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetDetails.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetRequest.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_graphml.graphdrawing.org_xmlns_;">
+    <rdfs:label>graphml.graphdrawing.org/xmlns");</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_workaround_solution_for_forward">
+    <rdfs:label><![CDATA[*
+     * workaround solution for forwarding to index.html
+     * @see <a href="https:github.com/spring-projects/spring-boot/issues/9785">#9785</a>]]></rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#ApiGatewayApplication.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Workaround"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Solution"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Spring"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Project"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Boot"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#forward"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_customers-service_owners_ownerId_own">
+    <rdfs:label>customers-service/owners/{ownerId}", ownerId)</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#CustomersServiceClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Customer"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Service"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owners_ownerid"/>
+  </voc:Comment>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#Mapper.java">
+    <rdfs:label>Mapper.java</rdfs:label>
+  </code:CodeArtifact>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_=================_SEMANTIC_JSON_========">
+    <rdfs:label>================= SEMANTIC JSON =================</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#="/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Json"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_All_chatbot_messages_go_through_this_end">
+    <rdfs:label>All chatbot messages go through this endpoint</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#PetclinicChatClient.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Chatbot"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Message"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Endpoint"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#go"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_customers-service_;">
+    <rdfs:label>customers-service/";</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#AIDataProvider.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Customer"/>
+  </voc:Comment>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Create_Owner">
+    <rdfs:label>*
+     * Create Owner</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerResource.java"/>
+  </voc:Comment>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Action"/>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#ApiGatewayApplicationTests.java">
+    <rdfs:label>ApiGatewayApplicationTests.java</rdfs:label>
+  </code:CodeArtifact>
+  <owl:ObjectProperty rdf:about="http://example.org/spring-petclinic/vocab#belongsToService"/>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#APIEndpoint"/>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#FallbackController.java">
+    <rdfs:label>FallbackController.java</rdfs:label>
+  </code:CodeArtifact>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitResourceTest.java">
+    <rdfs:label>VisitResourceTest.java</rdfs:label>
+  </code:CodeArtifact>
+  <owl:DatatypeProperty rdf:about="http://example.org/spring-petclinic/vocab#hasBusinessRole"/>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Read_single_Owner">
+    <rdfs:label>*
+     * Read single Owner</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#read"/>
+  </voc:Comment>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#BusinessRole"/>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_*_*_Read_List_of_Owners">
+    <rdfs:label>*
+     * Read List of Owners</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#OwnerResource.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#Owner"/>
+  </voc:Comment>
+  <owl:ObjectProperty rdf:about="http://example.org/spring-petclinic/vocab#mapsToOntology"/>
+  <owl:DatatypeProperty rdf:about="http://example.org/spring-petclinic/vocab#hasIntentLiteral"/>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#VisitsServiceClientIntegrationTest.java">
+    <rdfs:label>VisitsServiceClientIntegrationTest.java</rdfs:label>
+  </code:CodeArtifact>
+  <voc:Comment rdf:about="http://example.org/spring-petclinic#comment_----------_Static_Graph_----------">
+    <rdfs:label>---------- Static Graph ----------</rdfs:label>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/code#RepoWideExtractor.java"/>
+    <voc:mapsToOntology rdf:resource="http://example.org/spring-petclinic/vocab#----------"/>
+  </voc:Comment>
+  <owl:DatatypeProperty rdf:about="http://example.org/spring-petclinic/vocab#hasSummary"/>
+  <code:CodeArtifact rdf:about="http://example.org/spring-petclinic/code#CircuitBreakerConfiguration.java">
+    <rdfs:label>CircuitBreakerConfiguration.java</rdfs:label>
+  </code:CodeArtifact>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#DomainEntity"/>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Process"/>
+  <owl:ObjectProperty rdf:about="http://example.org/spring-petclinic/vocab#implementedBy"/>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Save_pet">
+    <rdfs:label>Save(pet</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#File">
+    <rdfs:label>File</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Object">
+    <rdfs:label>Object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Comment"/>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Rule">
+    <rdfs:label>Rule</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Convention">
+    <rdfs:label>Convention</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Compliance">
+    <rdfs:label>Compliance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Router">
+    <rdfs:label>Router</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Limit">
+    <rdfs:label>Limit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Writing">
+    <rdfs:label>Writing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Creation">
+    <rdfs:label>Creation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#See">
+    <rdfs:label>See</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Http">
+    <rdfs:label>Http</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Interface">
+    <rdfs:label>Interface</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Vet">
+    <rdfs:label>Vet</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Credit">
+    <rdfs:label>Credit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#@responsestatus_httpstatus">
+    <rdfs:label>@responsestatus(httpstatus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Life">
+    <rdfs:label>Life</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Data">
+    <rdfs:label>Data</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Specialty">
+    <rdfs:label>Specialty</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#@description">
+    <rdfs:label>@description</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Limitation">
+    <rdfs:label>Limitation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Level">
+    <rdfs:label>Level</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Is">
+    <rdfs:label>Is</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Domain">
+    <rdfs:label>Domain</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Veterinarian">
+    <rdfs:label>Veterinarian</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Datum">
+    <rdfs:label>Datum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#List">
+    <rdfs:label>List</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Service">
+    <rdfs:label>Service</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Findpetbyid_petid">
+    <rdfs:label>Findpetbyid(petid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Term">
+    <rdfs:label>Term</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Annotation">
+    <rdfs:label>Annotation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Methods.query">
+    <rdfs:label>Methods.query</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Endpoint">
+    <rdfs:label>Endpoint</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Kind">
+    <rdfs:label>Kind</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Current">
+    <rdfs:label>Current</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Test">
+    <rdfs:label>Test</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Resilience4j">
+    <rdfs:label>Resilience4j</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Reference">
+    <rdfs:label>Reference</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#=">
+    <rdfs:label>=</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Call">
+    <rdfs:label>Call</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Circuit">
+    <rdfs:label>Circuit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Type">
+    <rdfs:label>Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Return">
+    <rdfs:label>Return</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Topic">
+    <rdfs:label>Topic</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Core">
+    <rdfs:label>Core</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Class">
+    <rdfs:label>Class</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Purpose">
+    <rdfs:label>Purpose</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Project">
+    <rdfs:label>Project</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Owners_ownerid">
+    <rdfs:label>Owners/{ownerid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Visitrepository.save_visit">
+    <rdfs:label>Visitrepository.save(visit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Fetch">
+    <rdfs:label>Fetch</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Llm">
+    <rdfs:label>Llm</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Root">
+    <rdfs:label>Root</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Maciej">
+    <rdfs:label>Maciej</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Condition">
+    <rdfs:label>Condition</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Workaround">
+    <rdfs:label>Workaround</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Checkout">
+    <rdfs:label>Checkout</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Copyright">
+    <rdfs:label>Copyright</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Software">
+    <rdfs:label>Software</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Functionality">
+    <rdfs:label>Functionality</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Unit">
+    <rdfs:label>Unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Response">
+    <rdfs:label>Response</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Pet">
+    <rdfs:label>Pet</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Customer">
+    <rdfs:label>Customer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#H2">
+    <rdfs:label>H2</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Parameter">
+    <rdfs:label>Parameter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Code">
+    <rdfs:label>Code</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Permission">
+    <rdfs:label>Permission</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Warning">
+    <rdfs:label>Warning</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Spring">
+    <rdfs:label>Spring</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Package">
+    <rdfs:label>Package</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Time">
+    <rdfs:label>Time</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Boot">
+    <rdfs:label>Boot</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Document">
+    <rdfs:label>Document</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Breaker">
+    <rdfs:label>Breaker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Information">
+    <rdfs:label>Information</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Source">
+    <rdfs:label>Source</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Fallback">
+    <rdfs:label>Fallback</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Array">
+    <rdfs:label>Array</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#*">
+    <rdfs:label>*</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Owner">
+    <rdfs:label>Owner</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#String">
+    <rdfs:label>String</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Graph">
+    <rdfs:label>Graph</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#----------">
+    <rdfs:label>----------</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Suer">
+    <rdfs:label>Suer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Chat">
+    <rdfs:label>Chat</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Configuration">
+    <rdfs:label>Configuration</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Database">
+    <rdfs:label>Database</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Solution">
+    <rdfs:label>Solution</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Directory">
+    <rdfs:label>Directory</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#pets_petid_visit">
+    <rdfs:label>/pets/{petid}/visit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Jpa.repositories.html#jpa.query">
+    <rdfs:label>Jpa.repositories.html#jpa.query</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Disk">
+    <rdfs:label>Disk</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Name">
+    <rdfs:label>Name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Visit">
+    <rdfs:label>Visit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Repository">
+    <rdfs:label>Repository</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Startup">
+    <rdfs:label>Startup</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Business">
+    <rdfs:label>Business</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Copy">
+    <rdfs:label>Copy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Method">
+    <rdfs:label>Method</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Author">
+    <rdfs:label>Author</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Load">
+    <rdfs:label>Load</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Petrequest">
+    <rdfs:label>Petrequest</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Entite">
+    <rdfs:label>Entite</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Bean">
+    <rdfs:label>Bean</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Szarlinski">
+    <rdfs:label>Szarlinski</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Model">
+    <rdfs:label>Model</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Import">
+    <rdfs:label>Import</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Message">
+    <rdfs:label>Message</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#@formatter">
+    <rdfs:label>@formatter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Chatbot">
+    <rdfs:label>Chatbot</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Petrepository.findpettypebyid_petrequest.typeid">
+    <rdfs:label>Petrepository.findpettypebyid(petrequest.typeid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Rest">
+    <rdfs:label>Rest</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Get">
+    <rdfs:label>Get("/</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Int">
+    <rdfs:label>Int</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Visit.setpetid_petid">
+    <rdfs:label>Visit.setpetid(petid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Context">
+    <rdfs:label>Context</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Json">
+    <rdfs:label>Json</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Record">
+    <rdfs:label>Record</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#License">
+    <rdfs:label>License</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Hand">
+    <rdfs:label>Hand</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Memory">
+    <rdfs:label>Memory</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Request">
+    <rdfs:label>Request</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Law">
+    <rdfs:label>Law</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Result">
+    <rdfs:label>Result</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Language">
+    <rdfs:label>Language</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Custom">
+    <rdfs:label>Custom</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Example">
+    <rdfs:label>Example</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Warranty">
+    <rdfs:label>Warranty</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Function">
+    <rdfs:label>Function</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Scanning">
+    <rdfs:label>Scanning</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Case">
+    <rdfs:label>Case</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Order">
+    <rdfs:label>Order</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Store">
+    <rdfs:label>Store</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Controller">
+    <rdfs:label>Controller</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Naming">
+    <rdfs:label>Naming</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Security">
+    <rdfs:label>Security</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Bytearrayresource">
+    <rdfs:label>Bytearrayresource</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Use">
+    <rdfs:label>Use</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Pet.setname_petrequest.name">
+    <rdfs:label>Pet.setname(petrequest.name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#System">
+    <rdfs:label>System</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Vector">
+    <rdfs:label>Vector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Analyzer">
+    <rdfs:label>Analyzer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Simplicity">
+    <rdfs:label>Simplicity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Provider">
+    <rdfs:label>Provider</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/spring-petclinic/vocab#Dentistry">
+    <rdfs:label>Dentistry</rdfs:label>
+  </owl:Class>
+</rdf:RDF>

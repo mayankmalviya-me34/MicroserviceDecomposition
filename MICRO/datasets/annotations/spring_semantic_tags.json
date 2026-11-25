@@ -1,0 +1,5263 @@
+{
+    "owner.setFirstName": {
+        "function": "setFirstName",
+        "intent": "set",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name('Garfield').visits": {
+        "function": "visits",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petclinicAiProvider.addPetToOwner": {
+        "function": "addPetToOwner",
+        "intent": "add",
+        "domain_entity": "pet",
+        "named_entities": [
+            "owner",
+            "pet",
+            "to"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.listOwners": {
+        "function": "listOwners",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list",
+            "owner"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "method.getParameters().stream().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClient.joining": {
+        "function": "joining",
+        "intent": "join",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.findPet": {
+        "function": "findPet",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResource.create": {
+        "function": "create",
+        "intent": "create",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor": {
+        "function": "RepoWideExtractor",
+        "intent": null,
+        "domain_entity": "repo",
+        "named_entities": [
+            "extractor",
+            "repo",
+            "wide"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticJSON": {
+        "function": "exportSemanticJSON",
+        "intent": "export",
+        "domain_entity": "json",
+        "named_entities": [
+            "json"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedWebClientBuilder": {
+        "function": "loadBalancedWebClientBuilder",
+        "intent": "load",
+        "domain_entity": "balanced",
+        "named_entities": [
+            "balanced",
+            "builder",
+            "client",
+            "web"
+        ],
+        "business_role": "API Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(2).petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "c.getScope": {
+        "function": "getScope",
+        "intent": "get",
+        "domain_entity": "scope",
+        "named_entities": [
+            "scope"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "e.getMessage": {
+        "function": "getMessage",
+        "intent": "get",
+        "domain_entity": "message",
+        "named_entities": [
+            "message"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue": {
+        "function": "bodyValue",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "value"
+        ],
+        "business_role": "API Layer"
+    },
+    "Collections.singletonList": {
+        "function": "singletonList",
+        "intent": null,
+        "domain_entity": "singleton",
+        "named_entities": [
+            "list",
+            "singleton"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "this.getType": {
+        "function": "getType",
+        "intent": "get",
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "graph.appendChild": {
+        "function": "appendChild",
+        "intent": "append",
+        "domain_entity": "child",
+        "named_entities": [
+            "child"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "javaFiles.size": {
+        "function": "size",
+        "intent": null,
+        "domain_entity": "size",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIDataProvider.addPetToOwner": {
+        "function": "addPetToOwner",
+        "intent": "add",
+        "domain_entity": "pet",
+        "named_entities": [
+            "owner",
+            "pet",
+            "to"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.setPetId": {
+        "function": "setPetId",
+        "intent": "set",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "owner.setTelephone": {
+        "function": "setTelephone",
+        "intent": "set",
+        "domain_entity": "telephone",
+        "named_entities": [
+            "telephone"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.config.MetricConfig.metricsCommonTags": {
+        "function": "metricsCommonTags",
+        "intent": null,
+        "domain_entity": "metric",
+        "named_entities": [
+            "common",
+            "metric",
+            "tags"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "graph.setAttribute": {
+        "function": "setAttribute",
+        "intent": "set",
+        "domain_entity": "attribute",
+        "named_entities": [
+            "attribute"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.getPetId": {
+        "function": "getPetId",
+        "intent": "get",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper.map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "pet.setBirthDate": {
+        "function": "setBirthDate",
+        "intent": "set",
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.admin.SpringBootAdminApplication": {
+        "function": "SpringBootAdminApplication",
+        "intent": null,
+        "domain_entity": "spring",
+        "named_entities": [
+            "admin",
+            "application",
+            "boot",
+            "spring"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClient.getVisitsForPets": {
+        "function": "getVisitsForPets",
+        "intent": "get",
+        "domain_entity": "visit",
+        "named_entities": [
+            "pet",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "owner.getPetIds": {
+        "function": "getPetIds",
+        "intent": "get",
+        "domain_entity": "pet",
+        "named_entities": [
+            "ids",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.name": {
+        "function": "name",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.equals": {
+        "function": "equals",
+        "intent": "equal",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "pet.setType": {
+        "function": "setType",
+        "intent": "set",
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withAvailableVisitsService": {
+        "function": "getOwnerDetails_withAvailableVisitsService",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "available",
+            "details",
+            "owner",
+            "service",
+            "visits"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.VetsServiceApplication": {
+        "function": "VetsServiceApplication",
+        "intent": null,
+        "domain_entity": "vets",
+        "named_entities": [
+            "application",
+            "service",
+            "vets"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "topMatches.stream().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "visit.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.emptyVisitsForPets": {
+        "function": "emptyVisitsForPets",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "pet",
+            "visit"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.circuitBreakerRegistry": {
+        "function": "circuitBreakerRegistry",
+        "intent": null,
+        "domain_entity": "circuit",
+        "named_entities": [
+            "breaker",
+            "circuit",
+            "registry"
+        ],
+        "business_role": "API Layer"
+    },
+    "petRequest.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest": {
+        "function": "VisitsServiceClientIntegrationTest",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "client",
+            "integration",
+            "service",
+            "test",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "imports.forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.ResourceNotFoundException": {
+        "function": "ResourceNotFoundException",
+        "intent": "find",
+        "domain_entity": "resource",
+        "named_entities": [
+            "exception",
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "cat.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Collections.unmodifiableList": {
+        "function": "unmodifiableList",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "LOG.error": {
+        "function": "error",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            "error"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.setCity": {
+        "function": "setCity",
+        "intent": "set",
+        "domain_entity": "city",
+        "named_entities": [
+            "city"
+        ],
+        "business_role": "Domain Model"
+    },
+    "log.info": {
+        "function": "info",
+        "intent": null,
+        "domain_entity": "info",
+        "named_entities": [
+            "info"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.given": {
+        "function": "given",
+        "intent": "give",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.addOwnerToPetclinic": {
+        "function": "addOwnerToPetclinic",
+        "intent": "add",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "ServerResponse.ok().contentType": {
+        "function": "contentType",
+        "intent": null,
+        "domain_entity": "content",
+        "named_entities": [
+            "content",
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.date": {
+        "function": "date",
+        "intent": null,
+        "domain_entity": "date",
+        "named_entities": [
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "callGraph.entrySet": {
+        "function": "entrySet",
+        "intent": null,
+        "domain_entity": "entry",
+        "named_entities": [
+            "entry"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.asList": {
+        "function": "asList",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list"
+        ],
+        "business_role": "API Layer"
+    },
+    "ids.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "factory.newDocumentBuilder": {
+        "function": "newDocumentBuilder",
+        "intent": null,
+        "domain_entity": "new",
+        "named_entities": [
+            "builder",
+            "document",
+            "new"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "arr.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri": {
+        "function": "uri",
+        "intent": null,
+        "domain_entity": "uri",
+        "named_entities": [
+            "uri"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.addVisitsToOwner": {
+        "function": "addVisitsToOwner",
+        "intent": "add",
+        "domain_entity": "visit",
+        "named_entities": [
+            "owner",
+            "visit"
+        ],
+        "business_role": "API Layer"
+    },
+    "owner.setCity": {
+        "function": "setCity",
+        "intent": "set",
+        "domain_entity": "city",
+        "named_entities": [
+            "city"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath": {
+        "function": "jsonPath",
+        "intent": null,
+        "domain_entity": "json",
+        "named_entities": [
+            "json",
+            "path"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "TransformerFactory.newInstance().newTransformer": {
+        "function": "newTransformer",
+        "intent": null,
+        "domain_entity": "new",
+        "named_entities": [
+            "new",
+            "transformer"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet": {
+        "function": "Vet",
+        "intent": null,
+        "domain_entity": "vet",
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "mvc.perform(get('/vets').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get().uri(vetsHostname + 'vets').retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getCity": {
+        "function": "getCity",
+        "intent": "get",
+        "domain_entity": "city",
+        "named_entities": [
+            "city"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visits.items().get(0).petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "pet.visits().addAll": {
+        "function": "addAll",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.VectorStoreController": {
+        "function": "VectorStoreController",
+        "intent": null,
+        "domain_entity": "vector",
+        "named_entities": [
+            "controller",
+            "store",
+            "vector"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.anOwnerDetails": {
+        "function": "anOwnerDetails",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "details",
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "PosixFilePermissions.fromString": {
+        "function": "fromString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "functionSemanticData.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "cu.getPackageDeclaration": {
+        "function": "getPackageDeclaration",
+        "intent": "get",
+        "domain_entity": "package",
+        "named_entities": [
+            "declaration",
+            "package"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails().pets": {
+        "function": "pets",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.system.CacheConfig": {
+        "function": "CacheConfig",
+        "intent": null,
+        "domain_entity": "cache",
+        "named_entities": [
+            "cache",
+            "config"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "webClientBuilder.build().get().uri(hostname + 'pets/visits?petId={petId}', joinIds(petIds)).retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "new Resilience4JConfigBuilder(id).circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()).timeLimiterConfig(TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(10)).build()).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Configuration Layer"
+    },
+    "writer.write": {
+        "function": "write",
+        "intent": "write",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petRequest.birthDate": {
+        "function": "birthDate",
+        "intent": null,
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "owner.pets().forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "pet.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "this.vectorStore.similaritySearch": {
+        "function": "similaritySearch",
+        "intent": null,
+        "domain_entity": "similarity",
+        "named_entities": [
+            "search",
+            "similarity"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "c.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace": {
+        "function": "replace",
+        "intent": "replace",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "SearchRequest.from": {
+        "function": "from",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "c.getScope().map(s -> s.toString() + '.' + c.getNameAsString()).orElse": {
+        "function": "orElse",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "given(petRepository.findById(2)).willReturn": {
+        "function": "willReturn",
+        "intent": "return",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "System.err.println": {
+        "function": "println",
+        "intent": null,
+        "domain_entity": "println",
+        "named_entities": [
+            "println"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "n.appendChild": {
+        "function": "appendChild",
+        "intent": "append",
+        "domain_entity": "child",
+        "named_entities": [
+            "child"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get().uri(ownersHostname + 'owners').retrieve().bodyToMono(new ParameterizedTypeReference<List<OwnerDetails>>() {  }).block": {
+        "function": "block",
+        "intent": null,
+        "domain_entity": "block",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name": {
+        "function": "name",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "TimeLimiterConfig.custom": {
+        "function": "custom",
+        "intent": null,
+        "domain_entity": "custom",
+        "named_entities": [
+            "custom"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "StaticJavaParser.parse": {
+        "function": "parse",
+        "intent": "parse",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource": {
+        "function": "PetResource",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "CircuitBreakerRegistry.ofDefaults": {
+        "function": "ofDefaults",
+        "intent": null,
+        "domain_entity": "default",
+        "named_entities": [
+            "default"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest": {
+        "function": "PetResourceTest",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "resource",
+            "test"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "p.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "RouterFunctions.resources": {
+        "function": "resources",
+        "intent": null,
+        "domain_entity": "resource",
+        "named_entities": [
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "pet.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "imports.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.VectorStoreController.convertListToJsonResource": {
+        "function": "convertListToJsonResource",
+        "intent": "convert",
+        "domain_entity": "list",
+        "named_entities": [
+            "json",
+            "list",
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication": {
+        "function": "DiscoveryServerApplication",
+        "intent": null,
+        "domain_entity": "discovery",
+        "named_entities": [
+            "application",
+            "discovery",
+            "server"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "method.getType": {
+        "function": "getType",
+        "intent": "get",
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.aVisit": {
+        "function": "aVisit",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "visit"
+        ],
+        "business_role": "Domain Model"
+    },
+    "n.setAttribute": {
+        "function": "setAttribute",
+        "intent": "set",
+        "domain_entity": "attribute",
+        "named_entities": [
+            "attribute"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "request.ownerId": {
+        "function": "ownerId",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "d",
+            "i",
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.config.MetricConfig.timedAspect": {
+        "function": "timedAspect",
+        "intent": "time",
+        "domain_entity": "aspect",
+        "named_entities": [
+            "aspect"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "visitsServiceClient.getVisitsForPets(owner.getPetIds()).transform": {
+        "function": "transform",
+        "intent": "transform",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Specialty.setName": {
+        "function": "setName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "webClient.post": {
+        "function": "post",
+        "intent": "post",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect(jsonPath('$.items(0).petId').value(111)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "visitsServiceClient.setHostname": {
+        "function": "setHostname",
+        "intent": "set",
+        "domain_entity": "hostname",
+        "named_entities": [
+            "hostname"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "builder.newDocument": {
+        "function": "newDocument",
+        "intent": null,
+        "domain_entity": "new",
+        "named_entities": [
+            "document",
+            "new"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus": {
+        "function": "expectStatus",
+        "intent": "expect",
+        "domain_entity": "status",
+        "named_entities": [
+            "status"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "visitsServiceClient.getVisitsForPets": {
+        "function": "getVisitsForPets",
+        "intent": "get",
+        "domain_entity": "visit",
+        "named_entities": [
+            "pet",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "this.chatClient.prompt().user(u -> u.text(query)).call": {
+        "function": "call",
+        "intent": "call",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "webClientBuilder.build().get().uri('http://customers-service/owners/{ownerId}', ownerId).retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "fn.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.VectorStoreController.loadVetDataToVectorStoreOnStartup": {
+        "function": "loadVetDataToVectorStoreOnStartup",
+        "intent": null,
+        "domain_entity": "load",
+        "named_entities": [
+            "data",
+            "load",
+            "startup",
+            "store",
+            "vector",
+            "vet"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIDataProvider.addOwnerToPetclinic": {
+        "function": "addOwnerToPetclinic",
+        "intent": "add",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "ResponseEntity.status": {
+        "function": "status",
+        "intent": null,
+        "domain_entity": "status",
+        "named_entities": [
+            "status"
+        ],
+        "business_role": "Domain Model"
+    },
+    "mvc.perform(get('/vets').accept(MediaType.APPLICATION_JSON)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Objects.equals": {
+        "function": "equals",
+        "intent": "equal",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "cu.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.CustomersServiceApplication": {
+        "function": "CustomersServiceApplication",
+        "intent": null,
+        "domain_entity": "customers",
+        "named_entities": [
+            "application",
+            "customer",
+            "service"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.config.MetricConfig": {
+        "function": "MetricConfig",
+        "intent": null,
+        "domain_entity": "metric",
+        "named_entities": [
+            "config",
+            "metric"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.customers.CustomersServiceApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "data.setTextContent": {
+        "function": "setTextContent",
+        "intent": "set",
+        "domain_entity": "text",
+        "named_entities": [
+            "content",
+            "text"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertEquals": {
+        "function": "assertEquals",
+        "intent": "assert",
+        "domain_entity": "equals",
+        "named_entities": [
+            "equals"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests.contextLoads": {
+        "function": "contextLoads",
+        "intent": null,
+        "domain_entity": "context",
+        "named_entities": [
+            "context",
+            "load"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor.parseFile": {
+        "function": "parseFile",
+        "intent": null,
+        "domain_entity": "parse",
+        "named_entities": [
+            "parse"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "writer.flush": {
+        "function": "flush",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "pet.setName": {
+        "function": "setName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.save": {
+        "function": "save",
+        "intent": "save",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "nodes.addAll": {
+        "function": "addAll",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petRepository.findById(petId).orElseThrow": {
+        "function": "orElseThrow",
+        "intent": null,
+        "domain_entity": "else",
+        "named_entities": [
+            "else"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.setFirstName": {
+        "function": "setFirstName",
+        "intent": "set",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.vets.model.Specialty.getName": {
+        "function": "getName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "classMethods.keySet": {
+        "function": "keySet",
+        "intent": null,
+        "domain_entity": "set",
+        "named_entities": [
+            "set"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Files.walk(Paths.get(PROJECT_ROOT)).filter": {
+        "function": "filter",
+        "intent": "filter",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getName": {
+        "function": "getName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "get('/owners/2/pets/2').accept": {
+        "function": "accept",
+        "intent": "accept",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "this.server.shutdown": {
+        "function": "shutdown",
+        "intent": null,
+        "domain_entity": "shutdown",
+        "named_entities": [
+            "shutdown"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect(jsonPath('$.id').value(2)).andExpect(jsonPath('$.name').value('Basil')).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "p.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.admin.SpringBootAdminApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.items(1).petId').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.address": {
+        "function": "address",
+        "intent": null,
+        "domain_entity": "address",
+        "named_entities": [
+            "address"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClientBuilder.build().get().uri": {
+        "function": "uri",
+        "intent": null,
+        "domain_entity": "uri",
+        "named_entities": [
+            "uri"
+        ],
+        "business_role": "API Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(1).petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Object.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "cbFactory.create": {
+        "function": "create",
+        "intent": "create",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.jsonPath": {
+        "function": "jsonPath",
+        "intent": null,
+        "domain_entity": "json",
+        "named_entities": [
+            "json",
+            "path"
+        ],
+        "business_role": "API Layer"
+    },
+    "resource.exists": {
+        "function": "exists",
+        "intent": "exist",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "request.firstName": {
+        "function": "firstName",
+        "intent": null,
+        "domain_entity": "first",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.setAddress": {
+        "function": "setAddress",
+        "intent": "set",
+        "domain_entity": "address",
+        "named_entities": [
+            "address"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.listVets": {
+        "function": "listVets",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "vet"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "petIds.stream().map(Object::toString).collect": {
+        "function": "collect",
+        "intent": "collect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Model"
+    },
+    "vet.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Optional.of": {
+        "function": "of",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder": {
+        "function": "OwnerDetailsBuilder",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "builder",
+            "details",
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.status": {
+        "function": "status",
+        "intent": null,
+        "domain_entity": "status",
+        "named_entities": [
+            "status"
+        ],
+        "business_role": "API Layer"
+    },
+    "c.getIdentifier": {
+        "function": "getIdentifier",
+        "intent": "get",
+        "domain_entity": "identifier",
+        "named_entities": [
+            "identifier"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "StaticJavaParser.setConfiguration": {
+        "function": "setConfiguration",
+        "intent": "set",
+        "domain_entity": "configuration",
+        "named_entities": [
+            "configuration"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.processUpdateForm": {
+        "function": "processUpdateForm",
+        "intent": null,
+        "domain_entity": "process",
+        "named_entities": [
+            "form",
+            "process",
+            "update"
+        ],
+        "business_role": "API Layer"
+    },
+    "doc.createElement": {
+        "function": "createElement",
+        "intent": "create",
+        "domain_entity": "element",
+        "named_entities": [
+            "element"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportSemanticGraphML": {
+        "function": "exportSemanticGraphML",
+        "intent": "export",
+        "domain_entity": "semantic",
+        "named_entities": [
+            "graph",
+            "ml",
+            "semantic"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.city": {
+        "function": "city",
+        "intent": null,
+        "domain_entity": "city",
+        "named_entities": [
+            "city"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri(ownersHostname + 'owners').bodyValue": {
+        "function": "bodyValue",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "value"
+        ],
+        "business_role": "API Layer"
+    },
+    "method.getParameters": {
+        "function": "getParameters",
+        "intent": "get",
+        "domain_entity": "parameter",
+        "named_entities": [
+            "parameter"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.resilience4JConfigurationProperties": {
+        "function": "resilience4JConfigurationProperties",
+        "intent": null,
+        "domain_entity": "resilience",
+        "named_entities": [
+            "configuration",
+            "j",
+            "properties",
+            "resilience"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.getVisitsForPets_withAvailableVisitsService": {
+        "function": "getVisitsForPets_withAvailableVisitsService",
+        "intent": "get",
+        "domain_entity": "visit",
+        "named_entities": [
+            "available",
+            "pets",
+            "service",
+            "visit",
+            "visits"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "request.pet": {
+        "function": "pet",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "customersServiceClient.getOwner": {
+        "function": "getOwner",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "registry.config": {
+        "function": "config",
+        "intent": null,
+        "domain_entity": "config",
+        "named_entities": [
+            "config"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication.routerFunction": {
+        "function": "routerFunction",
+        "intent": null,
+        "domain_entity": "router",
+        "named_entities": [
+            "function",
+            "router"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "callGraph.values": {
+        "function": "values",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.visits": {
+        "function": "visits",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "ResponseEntity.status(HttpStatus.SC_SERVICE_UNAVAILABLE).body": {
+        "function": "body",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "petRepository.findPetTypeById": {
+        "function": "findPetTypeById",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet",
+            "type"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "ids.containsKey": {
+        "function": "containsKey",
+        "intent": "contain",
+        "domain_entity": "key",
+        "named_entities": [
+            "key"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "cu.getImports().forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.setDate": {
+        "function": "setDate",
+        "intent": "set",
+        "domain_entity": "date",
+        "named_entities": [
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.lastName": {
+        "function": "lastName",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "visit.setDate": {
+        "function": "setDate",
+        "intent": "set",
+        "domain_entity": "date",
+        "named_entities": [
+            "date"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "webClientBuilder.build().get().uri('http://customers-service/owners/{ownerId}', ownerId).retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "graphml.appendChild": {
+        "function": "appendChild",
+        "intent": "append",
+        "domain_entity": "child",
+        "named_entities": [
+            "child"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.items(0).petId').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Mockito.when(customersServiceClient.getOwner(1)).thenReturn": {
+        "function": "thenReturn",
+        "intent": "return",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getBirthDate": {
+        "function": "getBirthDate",
+        "intent": "get",
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetType.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "u.text": {
+        "function": "text",
+        "intent": null,
+        "domain_entity": "text",
+        "named_entities": [
+            "text"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIDataProvider": {
+        "function": "AIDataProvider",
+        "intent": null,
+        "domain_entity": "ai",
+        "named_entities": [
+            "ai",
+            "data",
+            "provider"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIBeanConfiguration.loadBalancedWebClientBuilder": {
+        "function": "loadBalancedWebClientBuilder",
+        "intent": "load",
+        "domain_entity": "balanced",
+        "named_entities": [
+            "balanced",
+            "builder",
+            "client",
+            "web"
+        ],
+        "business_role": "API Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(2).petId(222).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration": {
+        "function": "CircuitBreakerConfiguration",
+        "intent": null,
+        "domain_entity": "circuit",
+        "named_entities": [
+            "breaker",
+            "circuit",
+            "configuration"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.config.ConfigServerApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Configuration Layer"
+    },
+    "file.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "server.url('/').toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.VetsServiceApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "content().contentType": {
+        "function": "contentType",
+        "intent": null,
+        "domain_entity": "content",
+        "named_entities": [
+            "content",
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "sr.withTopK": {
+        "function": "withTopK",
+        "intent": null,
+        "domain_entity": "k",
+        "named_entities": [
+            "k"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.date": {
+        "function": "date",
+        "intent": null,
+        "domain_entity": "date",
+        "named_entities": [
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResource.read": {
+        "function": "read",
+        "intent": "read",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "petIds.stream().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "PetDetails.PetDetailsBuilder.aPetDetails().id(20).name('Garfield').visits(new ArrayList<>()).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "SearchRequest.from(SearchRequest.defaults()).withQuery": {
+        "function": "withQuery",
+        "intent": null,
+        "domain_entity": "query",
+        "named_entities": [
+            "query"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClient": {
+        "function": "VisitsServiceClient",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "client",
+            "service",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "petRepository.findById": {
+        "function": "findById",
+        "intent": "find",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getFirstName": {
+        "function": "getFirstName",
+        "intent": "get",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visits.items().stream": {
+        "function": "stream",
+        "intent": null,
+        "domain_entity": "stream",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Mockito.when": {
+        "function": "when",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "ref.getScope": {
+        "function": "getScope",
+        "intent": "get",
+        "domain_entity": "scope",
+        "named_entities": [
+            "scope"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "method.getParameters().stream().map(p -> p.getNameAsString()).reduce((a, b) -> a + ', ' + b).orElse": {
+        "function": "orElse",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.VisitsServiceApplication": {
+        "function": "VisitsServiceApplication",
+        "intent": null,
+        "domain_entity": "visits",
+        "named_entities": [
+            "application",
+            "service",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "ids.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetIdIn": {
+        "function": "findByPetIdIn",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "method.findAll(MethodReferenceExpr.class).forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getPets": {
+        "function": "getPets",
+        "intent": "get",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "method.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner": {
+        "function": "Owner",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Model"
+    },
+    "writer.close": {
+        "function": "close",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getFirstName": {
+        "function": "getFirstName",
+        "intent": "get",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "impArr.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertVisitDescriptionEquals": {
+        "function": "assertVisitDescriptionEquals",
+        "intent": "assert",
+        "domain_entity": "visit",
+        "named_entities": [
+            "description",
+            "visit"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypes": {
+        "function": "findPetTypes",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "types"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "visitRepository.findByPetIdIn": {
+        "function": "findByPetIdIn",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(10)).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Configuration Layer"
+    },
+    "logger.info": {
+        "function": "info",
+        "intent": null,
+        "domain_entity": "info",
+        "named_entities": [
+            "info"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve().bodyToMono(PetDetails.class).block": {
+        "function": "block",
+        "intent": null,
+        "domain_entity": "block",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "ref.getIdentifier": {
+        "function": "getIdentifier",
+        "intent": "get",
+        "domain_entity": "identifier",
+        "named_entities": [
+            "identifier"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Mono.error": {
+        "function": "error",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            "error"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "method.getParameters().stream().map(p -> p.getNameAsString()).reduce": {
+        "function": "reduce",
+        "intent": "reduce",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.prepareResponse": {
+        "function": "prepareResponse",
+        "intent": "prepare",
+        "domain_entity": "response",
+        "named_entities": [
+            "response"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Model"
+    },
+    "method.getParameters().stream": {
+        "function": "stream",
+        "intent": null,
+        "domain_entity": "stream",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder": {
+        "function": "VisitBuilder",
+        "intent": "visit",
+        "domain_entity": "builder",
+        "named_entities": [
+            "builder"
+        ],
+        "business_role": "Domain Model"
+    },
+    "this.getOwner().getFirstName": {
+        "function": "getFirstName",
+        "intent": "get",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Specialty.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "petRequest.typeId": {
+        "function": "typeId",
+        "intent": null,
+        "domain_entity": "type",
+        "named_entities": [
+            "d",
+            "i",
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "callGraph.computeIfAbsent": {
+        "function": "computeIfAbsent",
+        "intent": null,
+        "domain_entity": "absent",
+        "named_entities": [
+            "absent"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "graphml.setAttribute": {
+        "function": "setAttribute",
+        "intent": "set",
+        "domain_entity": "attribute",
+        "named_entities": [
+            "attribute"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "petRepository.save": {
+        "function": "save",
+        "intent": "save",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "pet.visits": {
+        "function": "visits",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "calls.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "v.petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "methods.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController.getOwnerDetails": {
+        "function": "getOwnerDetails",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "details",
+            "owner"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.shutdown": {
+        "function": "shutdown",
+        "intent": null,
+        "domain_entity": "shutdown",
+        "named_entities": [
+            "shutdown"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getOwner": {
+        "function": "getOwner",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Model"
+    },
+    "this.getOwner": {
+        "function": "getOwner",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "petIds.stream": {
+        "function": "stream",
+        "intent": null,
+        "domain_entity": "stream",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "cu.getPackageDeclaration().map(pd -> pd.getNameAsString()).orElse": {
+        "function": "orElse",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "owner.addPet": {
+        "function": "addPet",
+        "intent": "add",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "petRequest.name": {
+        "function": "name",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Objects.hash": {
+        "function": "hash",
+        "intent": null,
+        "domain_entity": "hash",
+        "named_entities": [
+            "hash"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "call.getScope": {
+        "function": "getScope",
+        "intent": "get",
+        "domain_entity": "scope",
+        "named_entities": [
+            "scope"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.FallbackController.fallback": {
+        "function": "fallback",
+        "intent": null,
+        "domain_entity": "fallback",
+        "named_entities": [
+            "fallback"
+        ],
+        "business_role": "API Layer"
+    },
+    "SpringApplication.run": {
+        "function": "run",
+        "intent": "run",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "visits.items().stream().filter(v -> v.petId() == pet.id()).toList": {
+        "function": "toList",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "classMethods.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Files.walk(Paths.get(PROJECT_ROOT)).filter(p -> p.toString().endsWith('.java')).forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "logger.error": {
+        "function": "error",
+        "intent": null,
+        "domain_entity": "error",
+        "named_entities": [
+            "error"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails": {
+        "function": "anOwnerDetails",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "details",
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.processCreationForm": {
+        "function": "processCreationForm",
+        "intent": null,
+        "domain_entity": "process",
+        "named_entities": [
+            "creation",
+            "form",
+            "process"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication.defaultCustomizer": {
+        "function": "defaultCustomizer",
+        "intent": null,
+        "domain_entity": "default",
+        "named_entities": [
+            "customizer",
+            "default"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "p.toString().endsWith": {
+        "function": "endsWith",
+        "intent": "end",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "o.getClass": {
+        "function": "getClass",
+        "intent": "get",
+        "domain_entity": "class",
+        "named_entities": [
+            "class"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetType.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "given(vetRepository.findAll()).willReturn": {
+        "function": "willReturn",
+        "intent": "return",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "ownerRepository.save": {
+        "function": "save",
+        "intent": "save",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "owner.setAddress": {
+        "function": "setAddress",
+        "intent": "set",
+        "domain_entity": "address",
+        "named_entities": [
+            "address"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.config.ConfigServerApplication": {
+        "function": "ConfigServerApplication",
+        "intent": null,
+        "domain_entity": "config",
+        "named_entities": [
+            "application",
+            "config",
+            "server"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "ownerRepository.findById": {
+        "function": "findById",
+        "intent": "find",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(1).petId(111).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petclinicAiDataProvider.addOwnerToPetclinic": {
+        "function": "addOwnerToPetclinic",
+        "intent": "add",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.OwnerRepository": {
+        "function": "OwnerRepository",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner",
+            "repository"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "ownerRepository.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "cb.run": {
+        "function": "run",
+        "intent": "run",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.jsonPath": {
+        "function": "jsonPath",
+        "intent": null,
+        "domain_entity": "json",
+        "named_entities": [
+            "json",
+            "path"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitRepository.findByPetId": {
+        "function": "findByPetId",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "System.out.println": {
+        "function": "println",
+        "intent": null,
+        "domain_entity": "println",
+        "named_entities": [
+            "println"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "status().isOk": {
+        "function": "isOk",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri": {
+        "function": "uri",
+        "intent": null,
+        "domain_entity": "uri",
+        "named_entities": [
+            "uri"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests.contextLoads": {
+        "function": "contextLoads",
+        "intent": null,
+        "domain_entity": "context",
+        "named_entities": [
+            "context",
+            "load"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.config.MetricConfig.metricsCommonTags": {
+        "function": "metricsCommonTags",
+        "intent": null,
+        "domain_entity": "metric",
+        "named_entities": [
+            "common",
+            "metric",
+            "tags"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "arr.put": {
+        "function": "put",
+        "intent": "put",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.type.id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "DocumentBuilderFactory.newInstance": {
+        "function": "newInstance",
+        "intent": null,
+        "domain_entity": "new",
+        "named_entities": [
+            "instance",
+            "new"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.getDescription": {
+        "function": "getDescription",
+        "intent": "get",
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Model"
+    },
+    "node.replace": {
+        "function": "replace",
+        "intent": "replace",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.CustomersServiceClient.getOwner": {
+        "function": "getOwner",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "getPetsInternal().add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody": {
+        "function": "expectBody",
+        "intent": "expect",
+        "domain_entity": "body",
+        "named_entities": [
+            "body"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetType.getName": {
+        "function": "getName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "OwnerDetails.OwnerDetailsBuilder.anOwnerDetails().pets(List.of(cat)).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo": {
+        "function": "isEqualTo",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append('ownerFirstname', this.getOwner().getFirstName()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClient.setHostname": {
+        "function": "setHostname",
+        "intent": "set",
+        "domain_entity": "hostname",
+        "named_entities": [
+            "hostname"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest.shouldGetAListOfVets": {
+        "function": "shouldGetAListOfVets",
+        "intent": "get",
+        "domain_entity": "list",
+        "named_entities": [
+            "list",
+            "vet"
+        ],
+        "business_role": "API Layer"
+    },
+    "ServerResponse.ok().contentType(MediaType.TEXT_HTML).bodyValue": {
+        "function": "bodyValue",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.items(0).id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.items(2).id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "visitsServiceClient.getVisitsForPets(owner.getPetIds()).transform(it -> {      ReactiveCircuitBreaker cb = cbFactory.create('getOwnerDetails');      return cb.run(it, throwable -> emptyVisitsForPets());  }).map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "jsonPath('$.items(1).id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "((SimpleVectorStore) this.vectorStore).save": {
+        "function": "save",
+        "intent": "save",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "this.getType().getName": {
+        "function": "getName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getNrOfSpecialties": {
+        "function": "getNrOfSpecialties",
+        "intent": "get",
+        "domain_entity": "nr",
+        "named_entities": [
+            "nr",
+            "specialties"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.setupPet": {
+        "function": "setupPet",
+        "intent": null,
+        "domain_entity": "setup",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "API Layer"
+    },
+    "new Resilience4JConfigBuilder(id).circuitBreakerConfig": {
+        "function": "circuitBreakerConfig",
+        "intent": null,
+        "domain_entity": "circuit",
+        "named_entities": [
+            "breaker",
+            "circuit",
+            "config"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "callsSet.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.firstName": {
+        "function": "firstName",
+        "intent": null,
+        "domain_entity": "first",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "transformer.setOutputProperty": {
+        "function": "setOutputProperty",
+        "intent": "set",
+        "domain_entity": "output",
+        "named_entities": [
+            "output",
+            "property"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "method.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append('city', this.city).append('telephone', this.telephone).toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetType.setName": {
+        "function": "setName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "method.getType().asString": {
+        "function": "asString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "callGraph.values().forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClientBuilder.build().get().uri(hostname + 'pets/visits?petId={petId}', joinIds(petIds)).retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "pet.setOwner": {
+        "function": "setOwner",
+        "intent": "set",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "this.chatClient.prompt().user(u -> u.text(query)).call().content": {
+        "function": "content",
+        "intent": null,
+        "domain_entity": "content",
+        "named_entities": [
+            "content"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath": {
+        "function": "jsonPath",
+        "intent": null,
+        "domain_entity": "json",
+        "named_entities": [
+            "json",
+            "path"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect(jsonPath('$.id').value(2)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "i.toString().trim": {
+        "function": "trim",
+        "intent": "trim",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath('$.pets(0).visits(0).description').isEqualTo": {
+        "function": "isEqualTo",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "visits.items": {
+        "function": "items",
+        "intent": null,
+        "domain_entity": "item",
+        "named_entities": [
+            "item"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get().uri(ownersHostname + 'owners').retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "new File(OUTPUT_DIR).mkdirs": {
+        "function": "mkdirs",
+        "intent": null,
+        "domain_entity": "mkdir",
+        "named_entities": [
+            "mkdir"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "this.chatClient.prompt().user": {
+        "function": "user",
+        "intent": null,
+        "domain_entity": "user",
+        "named_entities": [
+            "user"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.setType": {
+        "function": "setType",
+        "intent": "set",
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "TimeLimiterRegistry.ofDefaults": {
+        "function": "ofDefaults",
+        "intent": null,
+        "domain_entity": "default",
+        "named_entities": [
+            "default"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet": {
+        "function": "Pet",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "this.server.enqueue": {
+        "function": "enqueue",
+        "intent": null,
+        "domain_entity": "enqueue",
+        "named_entities": [
+            "enqueue"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "node.replace('\\'', ''').replace('\\n', ' ').replace": {
+        "function": "replace",
+        "intent": "replace",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests.contextLoads": {
+        "function": "contextLoads",
+        "intent": null,
+        "domain_entity": "context",
+        "named_entities": [
+            "context",
+            "load"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "node.replace('\\'', ''').replace": {
+        "function": "replace",
+        "intent": "replace",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "SearchRequest.defaults": {
+        "function": "defaults",
+        "intent": null,
+        "domain_entity": "default",
+        "named_entities": [
+            "default"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "documents.size": {
+        "function": "size",
+        "intent": null,
+        "domain_entity": "size",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIBeanConfiguration.vectorStore": {
+        "function": "vectorStore",
+        "intent": null,
+        "domain_entity": "vector",
+        "named_entities": [
+            "store",
+            "vector"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResource": {
+        "function": "VetResource",
+        "intent": null,
+        "domain_entity": "vet",
+        "named_entities": [
+            "resource",
+            "vet"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.genai.GenAIServiceApplication": {
+        "function": "GenAIServiceApplication",
+        "intent": null,
+        "domain_entity": "gen",
+        "named_entities": [
+            "ai",
+            "application",
+            "gen",
+            "service"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "ownerRepository.findById(ownerId).orElseThrow": {
+        "function": "orElseThrow",
+        "intent": null,
+        "domain_entity": "else",
+        "named_entities": [
+            "else"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication.loadBalancedRestTemplate": {
+        "function": "loadBalancedRestTemplate",
+        "intent": "load",
+        "domain_entity": "balanced",
+        "named_entities": [
+            "balanced",
+            "rest",
+            "template"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "c.getScope().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest": {
+        "function": "ApiGatewayControllerTest",
+        "intent": null,
+        "domain_entity": "api",
+        "named_entities": [
+            "api",
+            "controller",
+            "gateway",
+            "test"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder": {
+        "function": "PetDetailsBuilder",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "builder",
+            "details",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "CircuitBreakerConfig.ofDefaults": {
+        "function": "ofDefaults",
+        "intent": null,
+        "domain_entity": "default",
+        "named_entities": [
+            "default"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.aPetDetails": {
+        "function": "aPetDetails",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "detail",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.given": {
+        "function": "given",
+        "intent": "give",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.setFirstName": {
+        "function": "setFirstName",
+        "intent": "set",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visit.setDescription": {
+        "function": "setDescription",
+        "intent": "set",
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "ServerResponse.ok": {
+        "function": "ok",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk().expectBody().jsonPath('$.pets(0).name').isEqualTo('Garfield').jsonPath('$.pets(0).visits').isEmpty": {
+        "function": "isEmpty",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.shouldGetAPetInJSonFormat": {
+        "function": "shouldGetAPetInJSonFormat",
+        "intent": "get",
+        "domain_entity": "pet",
+        "named_entities": [
+            "format",
+            "j",
+            "pet",
+            "son"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest": {
+        "function": "VisitResourceTest",
+        "intent": "visit",
+        "domain_entity": "resource",
+        "named_entities": [
+            "resource",
+            "test"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getSpecialties": {
+        "function": "getSpecialties",
+        "intent": "get",
+        "domain_entity": "specialty",
+        "named_entities": [
+            "specialty"
+        ],
+        "business_role": "Domain Model"
+    },
+    "this.getLastName": {
+        "function": "getLastName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getType": {
+        "function": "getType",
+        "intent": "get",
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.genai.AIFunctionConfiguration.addPetToOwner": {
+        "function": "addPetToOwner",
+        "intent": "add",
+        "domain_entity": "pet",
+        "named_entities": [
+            "owner",
+            "pet",
+            "to"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "jsonPath('$(0).id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "clazz.findAll(MethodDeclaration.class).forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.telephone": {
+        "function": "telephone",
+        "intent": null,
+        "domain_entity": "telephone",
+        "named_entities": [
+            "telephone"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "json.getBytes": {
+        "function": "getBytes",
+        "intent": "get",
+        "domain_entity": "byte",
+        "named_entities": [
+            "byte"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "classMethods.values().forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitRepository": {
+        "function": "VisitRepository",
+        "intent": "visit",
+        "domain_entity": "repository",
+        "named_entities": [
+            "repository"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "cu.getImports": {
+        "function": "getImports",
+        "intent": "get",
+        "domain_entity": "import",
+        "named_entities": [
+            "import"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.asList": {
+        "function": "asList",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.config.MetricConfig": {
+        "function": "MetricConfig",
+        "intent": null,
+        "domain_entity": "metric",
+        "named_entities": [
+            "config",
+            "metric"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.description": {
+        "function": "description",
+        "intent": null,
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.shouldFetchVisits": {
+        "function": "shouldFetchVisits",
+        "intent": "fetch",
+        "domain_entity": "visit",
+        "named_entities": [
+            "fetch",
+            "visit"
+        ],
+        "business_role": "API Layer"
+    },
+    "Mono.just": {
+        "function": "just",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "PosixFilePermissions.asFileAttribute": {
+        "function": "asFileAttribute",
+        "intent": null,
+        "domain_entity": "file",
+        "named_entities": [
+            "attribute",
+            "file"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.setOwner": {
+        "function": "setOwner",
+        "intent": "set",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Model"
+    },
+    "this.chatClient.prompt": {
+        "function": "prompt",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit": {
+        "function": "Visit",
+        "intent": "visit",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.content": {
+        "function": "content",
+        "intent": null,
+        "domain_entity": "content",
+        "named_entities": [
+            "content"
+        ],
+        "business_role": "API Layer"
+    },
+    "RouterFunctions.resources('/**', new ClassPathResource('static/')).andRoute": {
+        "function": "andRoute",
+        "intent": null,
+        "domain_entity": "route",
+        "named_entities": [
+            "route"
+        ],
+        "business_role": "API Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(3).petId(222).build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "getSpecialtiesInternal().add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClient.joinIds": {
+        "function": "joinIds",
+        "intent": "join",
+        "domain_entity": "ids",
+        "named_entities": [
+            "ids"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "classMethods.values": {
+        "function": "values",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "entry.getValue": {
+        "function": "getValue",
+        "intent": "get",
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "PropertyComparator.sort": {
+        "function": "sort",
+        "intent": null,
+        "domain_entity": "sort",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Files.createTempFile": {
+        "function": "createTempFile",
+        "intent": "create",
+        "domain_entity": "temp",
+        "named_entities": [
+            "file",
+            "temp"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "i.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClientBuilder.build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "Visit.VisitBuilder.aVisit": {
+        "function": "aVisit",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "visit"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "clazz.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests": {
+        "function": "PetclinicConfigServerApplicationTests",
+        "intent": null,
+        "domain_entity": "petclinic",
+        "named_entities": [
+            "application",
+            "config",
+            "petclinic",
+            "server",
+            "tests"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.genai.GenAIServiceApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.hashCode": {
+        "function": "hashCode",
+        "intent": "hash",
+        "domain_entity": "code",
+        "named_entities": [
+            "code",
+            "hash"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getPetsInternal": {
+        "function": "getPetsInternal",
+        "intent": "get",
+        "domain_entity": "pets",
+        "named_entities": [
+            "internal",
+            "pets"
+        ],
+        "business_role": "Domain Model"
+    },
+    "s.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.VisitsServiceApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication.main": {
+        "function": "main",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('lastName', this.getLastName()).append('firstName', this.getFirstName()).append('address', this.address).append('city', this.city).append": {
+        "function": "append",
+        "intent": null,
+        "domain_entity": "append",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "PetDetails.PetDetailsBuilder.aPetDetails().id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "((SimpleVectorStore) this.vectorStore).load": {
+        "function": "load",
+        "intent": null,
+        "domain_entity": "load",
+        "named_entities": [
+            "load"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.birthDate": {
+        "function": "birthDate",
+        "intent": null,
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "clazz.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visits.items().get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Visit.VisitBuilder.aVisit().id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "registry.config().commonTags": {
+        "function": "commonTags",
+        "intent": null,
+        "domain_entity": "tags",
+        "named_entities": [
+            "tags"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "mvc.perform": {
+        "function": "perform",
+        "intent": "perform",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petclinicAiProvider.getVets": {
+        "function": "getVets",
+        "intent": "get",
+        "domain_entity": "vet",
+        "named_entities": [
+            "vet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "config.setLanguageLevel": {
+        "function": "setLanguageLevel",
+        "intent": "set",
+        "domain_entity": "language",
+        "named_entities": [
+            "language",
+            "level"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.addPet": {
+        "function": "addPet",
+        "intent": "add",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Model"
+    },
+    "jsonPath('$.id').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "reader.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "PetDetails.PetDetailsBuilder.aPetDetails": {
+        "function": "aPetDetails",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "detail",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.name').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "objectMapper.writeValueAsString": {
+        "function": "writeValueAsString",
+        "intent": "write",
+        "domain_entity": "value",
+        "named_entities": [
+            "string",
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "customersServiceClient.getOwner(ownerId).flatMap": {
+        "function": "flatMap",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [
+            "map"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect(status().isOk()).andExpect(jsonPath('$.items(0).id').value(1)).andExpect(jsonPath('$.items(1).id').value(2)).andExpect(jsonPath('$.items(2).id').value(3)).andExpect(jsonPath('$.items(0).petId').value(111)).andExpect(jsonPath('$.items(1).petId').value(222)).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.setUp": {
+        "function": "setUp",
+        "intent": "set",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "request.telephone": {
+        "function": "telephone",
+        "intent": null,
+        "domain_entity": "telephone",
+        "named_entities": [
+            "telephone"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "this.vectorStore.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "owner.pets": {
+        "function": "pets",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "ref.getScope().toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetRepository.findPetTypeById": {
+        "function": "findPetTypeById",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet",
+            "type"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResourceTest.status": {
+        "function": "status",
+        "intent": null,
+        "domain_entity": "status",
+        "named_entities": [
+            "status"
+        ],
+        "business_role": "API Layer"
+    },
+    "TransformerFactory.newInstance": {
+        "function": "newInstance",
+        "intent": null,
+        "domain_entity": "new",
+        "named_entities": [
+            "instance",
+            "new"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "request.address": {
+        "function": "address",
+        "intent": null,
+        "domain_entity": "address",
+        "named_entities": [
+            "address"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "getSpecialtiesInternal().size": {
+        "function": "size",
+        "intent": null,
+        "domain_entity": "size",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.description": {
+        "function": "description",
+        "intent": null,
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.getPetTypes": {
+        "function": "getPetTypes",
+        "intent": "get",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "types"
+        ],
+        "business_role": "API Layer"
+    },
+    "this.getBirthDate": {
+        "function": "getBirthDate",
+        "intent": "get",
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.FallbackController": {
+        "function": "FallbackController",
+        "intent": null,
+        "domain_entity": "fallback",
+        "named_entities": [
+            "controller",
+            "fallback"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.analysis.RepoWideExtractor.exportStaticGraphGML": {
+        "function": "exportStaticGraphGML",
+        "intent": null,
+        "domain_entity": "export",
+        "named_entities": [
+            "export",
+            "gml",
+            "graph",
+            "static"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "doc.appendChild": {
+        "function": "appendChild",
+        "intent": "append",
+        "domain_entity": "child",
+        "named_entities": [
+            "child"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "List.of": {
+        "function": "of",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "Visit.VisitBuilder.aVisit().id(3).petId": {
+        "function": "petId",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.getDate": {
+        "function": "getDate",
+        "intent": "get",
+        "domain_entity": "date",
+        "named_entities": [
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "ownerEntityMapper.map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.mapper.Mapper": {
+        "function": "Mapper",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [
+            "mapper"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.PetResource.findPetById": {
+        "function": "findPetById",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "pet"
+        ],
+        "business_role": "API Layer"
+    },
+    "owner.setLastName": {
+        "function": "setLastName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getLastName": {
+        "function": "getLastName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.config.MetricConfig.timedAspect": {
+        "function": "timedAspect",
+        "intent": "time",
+        "domain_entity": "aspect",
+        "named_entities": [
+            "aspect"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.mapper.Mapper.map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "this.getOwner().getLastName": {
+        "function": "getLastName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get().uri(ownersHostname + 'owners').retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration.timeLimiterRegistry": {
+        "function": "timeLimiterRegistry",
+        "intent": null,
+        "domain_entity": "time",
+        "named_entities": [
+            "limiter",
+            "registry",
+            "time"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIDataProvider.getVets": {
+        "function": "getVets",
+        "intent": "get",
+        "domain_entity": "vet",
+        "named_entities": [
+            "vet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "visit.setPetId": {
+        "function": "setPetId",
+        "intent": "set",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetRepository": {
+        "function": "PetRepository",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "repository"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getAddress": {
+        "function": "getAddress",
+        "intent": "get",
+        "domain_entity": "address",
+        "named_entities": [
+            "address"
+        ],
+        "business_role": "Domain Model"
+    },
+    "new ToStringCreator(this).append('id', this.getId()).append('name', this.getName()).append('birthDate', this.getBirthDate()).append('type', this.getType().getName()).append('ownerFirstname', this.getOwner().getFirstName()).append('ownerLastname', this.getOwner().getLastName()).toString": {
+        "function": "toString",
+        "intent": null,
+        "domain_entity": "string",
+        "named_entities": [
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "file.getAbsolutePath": {
+        "function": "getAbsolutePath",
+        "intent": "get",
+        "domain_entity": "absolute",
+        "named_entities": [
+            "absolute",
+            "path"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplication": {
+        "function": "ApiGatewayApplication",
+        "intent": null,
+        "domain_entity": "api",
+        "named_entities": [
+            "api",
+            "application",
+            "gateway"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "mvc.perform(get('/owners/2/pets/2').accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk()).andExpect(content().contentType('application/json')).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "callGraph.computeIfAbsent(fullMethodName, k -> new HashSet<>()).add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.aVisit": {
+        "function": "aVisit",
+        "intent": null,
+        "domain_entity": "visit",
+        "named_entities": [
+            "visit"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visits.items().size": {
+        "function": "size",
+        "intent": null,
+        "domain_entity": "size",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petType.setId": {
+        "function": "setId",
+        "intent": "set",
+        "domain_entity": "d",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.OwnerResource.updateOwner": {
+        "function": "updateOwner",
+        "intent": null,
+        "domain_entity": "update",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.setBirthDate": {
+        "function": "setBirthDate",
+        "intent": "set",
+        "domain_entity": "birth",
+        "named_entities": [
+            "birth",
+            "date"
+        ],
+        "business_role": "Domain Model"
+    },
+    "webClient.get().uri": {
+        "function": "uri",
+        "intent": null,
+        "domain_entity": "uri",
+        "named_entities": [
+            "uri"
+        ],
+        "business_role": "API Layer"
+    },
+    "cu.findAll(ClassOrInterfaceDeclaration.class).forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.setLastName": {
+        "function": "setLastName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "cu.getPackageDeclaration().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "resource.getFile": {
+        "function": "getFile",
+        "intent": "get",
+        "domain_entity": "file",
+        "named_entities": [
+            "file"
+        ],
+        "business_role": "API Layer"
+    },
+    "this.getFirstName": {
+        "function": "getFirstName",
+        "intent": "get",
+        "domain_entity": "first",
+        "named_entities": [
+            "first",
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "pkg.isEmpty": {
+        "function": "isEmpty",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "transformer.transform": {
+        "function": "transform",
+        "intent": "transform",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.PetclinicChatClient": {
+        "function": "PetclinicChatClient",
+        "intent": null,
+        "domain_entity": "petclinic",
+        "named_entities": [
+            "chat",
+            "client",
+            "petclinic"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getTelephone": {
+        "function": "getTelephone",
+        "intent": "get",
+        "domain_entity": "telephone",
+        "named_entities": [
+            "telephone"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visitRepository.findByPetId": {
+        "function": "findByPetId",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "d",
+            "i",
+            "pet"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "visits.items().get(0).description": {
+        "function": "description",
+        "intent": null,
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "entry.getKey": {
+        "function": "getKey",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper": {
+        "function": "OwnerEntityMapper",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "entity",
+            "mapper",
+            "owner"
+        ],
+        "business_role": "API Layer"
+    },
+    "server.url": {
+        "function": "url",
+        "intent": null,
+        "domain_entity": "url",
+        "named_entities": [
+            "url"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.CustomersServiceClient": {
+        "function": "CustomersServiceClient",
+        "intent": null,
+        "domain_entity": "customers",
+        "named_entities": [
+            "client",
+            "customer",
+            "service"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "get('/vets').accept": {
+        "function": "accept",
+        "intent": "accept",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "given(visitRepository.findByPetIdIn(asList(111, 222))).willReturn": {
+        "function": "willReturn",
+        "intent": "return",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "pd.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace('(', '(').replace": {
+        "function": "replace",
+        "intent": "replace",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve().bodyToMono": {
+        "function": "bodyToMono",
+        "intent": null,
+        "domain_entity": "body",
+        "named_entities": [
+            "body",
+            "mono"
+        ],
+        "business_role": "API Layer"
+    },
+    "petRepository.findPetTypes": {
+        "function": "findPetTypes",
+        "intent": "find",
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "types"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.type": {
+        "function": "type",
+        "intent": null,
+        "domain_entity": "type",
+        "named_entities": [
+            "type"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "petclinicAiProvider.getAllOwners": {
+        "function": "getAllOwners",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "response.setHeader('Content-Type', 'application/json').setBody": {
+        "function": "setBody",
+        "intent": "set",
+        "domain_entity": "body",
+        "named_entities": [
+            "body"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "javaFiles.add": {
+        "function": "add",
+        "intent": "add",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "petRepository.findPetTypeById(petRequest.typeId()).ifPresent": {
+        "function": "ifPresent",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "request.lastName": {
+        "function": "lastName",
+        "intent": null,
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.pets": {
+        "function": "pets",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "topMatches.stream().map(Document::getContent).toList": {
+        "function": "toList",
+        "intent": null,
+        "domain_entity": "list",
+        "named_entities": [
+            "list"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests": {
+        "function": "ApiGatewayApplicationTests",
+        "intent": "test",
+        "domain_entity": "api",
+        "named_entities": [
+            "api",
+            "application",
+            "gateway",
+            "tests"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "jsonPath('$.items(2).petId').value": {
+        "function": "value",
+        "intent": null,
+        "domain_entity": "value",
+        "named_entities": [
+            "value"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Files.createTempFile('vectorstore', '.json', attr).toFile": {
+        "function": "toFile",
+        "intent": "file",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.getSpecialtiesInternal": {
+        "function": "getSpecialtiesInternal",
+        "intent": "get",
+        "domain_entity": "specialties",
+        "named_entities": [
+            "specialties"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.PetType": {
+        "function": "PetType",
+        "intent": null,
+        "domain_entity": "pet",
+        "named_entities": [
+            "pet",
+            "type"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.status": {
+        "function": "status",
+        "intent": null,
+        "domain_entity": "status",
+        "named_entities": [
+            "status"
+        ],
+        "business_role": "API Layer"
+    },
+    "webClientBuilder.build().get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.setLastName": {
+        "function": "setLastName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.visits.model.VisitBuilder.build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.customers.web.OwnerResource.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "this.getName": {
+        "function": "getName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "visits.items().stream().filter": {
+        "function": "filter",
+        "intent": "filter",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.jsonPath": {
+        "function": "jsonPath",
+        "intent": null,
+        "domain_entity": "json",
+        "named_entities": [
+            "json",
+            "path"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.setTelephone": {
+        "function": "setTelephone",
+        "intent": "set",
+        "domain_entity": "telephone",
+        "named_entities": [
+            "telephone"
+        ],
+        "business_role": "Domain Model"
+    },
+    "response.setHeader": {
+        "function": "setHeader",
+        "intent": "set",
+        "domain_entity": "header",
+        "named_entities": [
+            "header"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "SearchRequest.from(SearchRequest.defaults()).withQuery(vetAsJson).withTopK": {
+        "function": "withTopK",
+        "intent": null,
+        "domain_entity": "k",
+        "named_entities": [
+            "k"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.dto.PetDetailsBuilder.build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "Mockito.when(visitsServiceClient.getVisitsForPets(Collections.singletonList(cat.id()))).thenReturn": {
+        "function": "thenReturn",
+        "intent": "return",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "webClient.post().uri(ownersHostname + 'owners').bodyValue(ownerRequest).retrieve().bodyToMono(OwnerDetails.class).block": {
+        "function": "block",
+        "intent": null,
+        "domain_entity": "block",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.vets.model.VetRepository": {
+        "function": "VetRepository",
+        "intent": null,
+        "domain_entity": "vet",
+        "named_entities": [
+            "repository",
+            "vet"
+        ],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIBeanConfiguration.chatMemory": {
+        "function": "chatMemory",
+        "intent": null,
+        "domain_entity": "chat",
+        "named_entities": [
+            "memory"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController": {
+        "function": "ApiGatewayController",
+        "intent": null,
+        "domain_entity": "api",
+        "named_entities": [
+            "api",
+            "controller",
+            "gateway"
+        ],
+        "business_role": "API Layer"
+    },
+    "request.city": {
+        "function": "city",
+        "intent": null,
+        "domain_entity": "city",
+        "named_entities": [
+            "city"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "method.findAll(MethodCallExpr.class).forEach": {
+        "function": "forEach",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "TimeLimiterConfig.custom().timeoutDuration": {
+        "function": "timeoutDuration",
+        "intent": null,
+        "domain_entity": "timeout",
+        "named_entities": [
+            "duration",
+            "timeout"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "webClient.get().uri(vetsHostname + 'vets').retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResourceTest.given": {
+        "function": "given",
+        "intent": "give",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.build": {
+        "function": "build",
+        "intent": "build",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "node.replace('\\'', ''').replace('\\n', ' ').replace('\\r', ' ').replace('(', '(').replace(')', ')').trim": {
+        "function": "trim",
+        "intent": "trim",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "new Resilience4JConfigBuilder(id).circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()).timeLimiterConfig": {
+        "function": "timeLimiterConfig",
+        "intent": null,
+        "domain_entity": "time",
+        "named_entities": [
+            "config",
+            "limiter",
+            "time"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIFunctionConfiguration": {
+        "function": "AIFunctionConfiguration",
+        "intent": null,
+        "domain_entity": "ai",
+        "named_entities": [
+            "ai",
+            "configuration",
+            "function"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests": {
+        "function": "DiscoveryServerApplicationTests",
+        "intent": null,
+        "domain_entity": "discovery",
+        "named_entities": [
+            "application",
+            "discovery",
+            "server",
+            "tests"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "consumer.accept": {
+        "function": "accept",
+        "intent": "accept",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "WebClient.builder": {
+        "function": "builder",
+        "intent": null,
+        "domain_entity": "builder",
+        "named_entities": [
+            "builder"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.getClass": {
+        "function": "getClass",
+        "intent": "get",
+        "domain_entity": "class",
+        "named_entities": [
+            "class"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.genai.PetclinicChatClient.exchange": {
+        "function": "exchange",
+        "intent": null,
+        "domain_entity": "exchange",
+        "named_entities": [
+            "exchange"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "request.vet": {
+        "function": "vet",
+        "intent": null,
+        "domain_entity": "vet",
+        "named_entities": [
+            "vet"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.genai.AIBeanConfiguration": {
+        "function": "AIBeanConfiguration",
+        "intent": null,
+        "domain_entity": "ai",
+        "named_entities": [
+            "ai",
+            "bean",
+            "configuration"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Pet.setName": {
+        "function": "setName",
+        "intent": "set",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "org.springframework.samples.petclinic.api.dto.OwnerDetailsBuilder.id": {
+        "function": "id",
+        "intent": "d",
+        "domain_entity": null,
+        "named_entities": [
+            "d"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "webClient.get().uri(vetsHostname + 'vets').retrieve().bodyToMono(new ParameterizedTypeReference<List<Vet>>() {  }).block": {
+        "function": "block",
+        "intent": null,
+        "domain_entity": "block",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "factory.configureDefault": {
+        "function": "configureDefault",
+        "intent": null,
+        "domain_entity": "configure",
+        "named_entities": [
+            "configure",
+            "default"
+        ],
+        "business_role": "Configuration Layer"
+    },
+    "Duration.ofSeconds": {
+        "function": "ofSeconds",
+        "intent": null,
+        "domain_entity": "second",
+        "named_entities": [
+            "second"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "e.setAttribute": {
+        "function": "setAttribute",
+        "intent": "set",
+        "domain_entity": "attribute",
+        "named_entities": [
+            "attribute"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Specialty": {
+        "function": "Specialty",
+        "intent": null,
+        "domain_entity": "specialty",
+        "named_entities": [
+            "specialty"
+        ],
+        "business_role": "Domain Model"
+    },
+    "webClient.post().uri(ownersHostname + 'owners/' + request.ownerId() + '/pets').bodyValue(request.pet()).retrieve": {
+        "function": "retrieve",
+        "intent": null,
+        "domain_entity": "retrieve",
+        "named_entities": [],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.genai.AIDataProvider.getAllOwners": {
+        "function": "getAllOwners",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest.assertNotNull": {
+        "function": "assertNotNull",
+        "intent": "assert",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "Paths.get": {
+        "function": "get",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.OwnerResource.createOwner": {
+        "function": "createOwner",
+        "intent": "create",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "API Layer"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange": {
+        "function": "exchange",
+        "intent": null,
+        "domain_entity": "exchange",
+        "named_entities": [
+            "exchange"
+        ],
+        "business_role": "Business Logic Layer"
+    },
+    "topMatches.stream": {
+        "function": "stream",
+        "intent": null,
+        "domain_entity": "stream",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "call.getNameAsString": {
+        "function": "getNameAsString",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name",
+            "string"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Document.getContent": {
+        "function": "getContent",
+        "intent": "get",
+        "domain_entity": "content",
+        "named_entities": [
+            "content"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest.getOwnerDetails_withServiceError": {
+        "function": "getOwnerDetails_withServiceError",
+        "intent": "get",
+        "domain_entity": "owner",
+        "named_entities": [
+            "details",
+            "error",
+            "owner",
+            "service"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.model.Owner.getLastName": {
+        "function": "getLastName",
+        "intent": "get",
+        "domain_entity": "name",
+        "named_entities": [
+            "name"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visits.block": {
+        "function": "block",
+        "intent": null,
+        "domain_entity": "block",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.customers.web.OwnerResource": {
+        "function": "OwnerResource",
+        "intent": null,
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner",
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "mvc.perform(get('/pets/visits?petId=111,222')).andExpect": {
+        "function": "andExpect",
+        "intent": "expect",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "client.get().uri('/api/gateway/owners/1').exchange().expectStatus().isOk": {
+        "function": "isOk",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Business Logic Layer"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResource.showResourcesVetList": {
+        "function": "showResourcesVetList",
+        "intent": "show",
+        "domain_entity": "resources",
+        "named_entities": [
+            "list",
+            "resources",
+            "vet"
+        ],
+        "business_role": "API Layer"
+    },
+    "this.getId": {
+        "function": "getId",
+        "intent": "get",
+        "domain_entity": "i",
+        "named_entities": [
+            "d",
+            "i"
+        ],
+        "business_role": "Domain Logic"
+    },
+    "Files.walk": {
+        "function": "walk",
+        "intent": "walk",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "RequestPredicates.GET": {
+        "function": "GET",
+        "intent": "get",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "vetRepository.findAll": {
+        "function": "findAll",
+        "intent": "find",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    },
+    "org.springframework.samples.petclinic.visits.web.VisitResource": {
+        "function": "VisitResource",
+        "intent": "visit",
+        "domain_entity": "resource",
+        "named_entities": [
+            "resource"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.visits.model.Visit.setDescription": {
+        "function": "setDescription",
+        "intent": "set",
+        "domain_entity": "description",
+        "named_entities": [
+            "description"
+        ],
+        "business_role": "Domain Model"
+    },
+    "call.getScope().map(s -> s.toString() + '.' + call.getNameAsString()).orElse": {
+        "function": "orElse",
+        "intent": null,
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.web.VetResourceTest": {
+        "function": "VetResourceTest",
+        "intent": null,
+        "domain_entity": "vet",
+        "named_entities": [
+            "resource",
+            "test",
+            "vet"
+        ],
+        "business_role": "API Layer"
+    },
+    "org.springframework.samples.petclinic.customers.web.OwnerResource.findOwner": {
+        "function": "findOwner",
+        "intent": "find",
+        "domain_entity": "owner",
+        "named_entities": [
+            "owner"
+        ],
+        "business_role": "API Layer"
+    },
+    "call.getScope().map": {
+        "function": "map",
+        "intent": null,
+        "domain_entity": "map",
+        "named_entities": [],
+        "business_role": "Domain Logic"
+    },
+    "org.springframework.samples.petclinic.vets.model.Vet.addSpecialty": {
+        "function": "addSpecialty",
+        "intent": "add",
+        "domain_entity": "specialty",
+        "named_entities": [
+            "specialty"
+        ],
+        "business_role": "Domain Model"
+    },
+    "visitRepository.save": {
+        "function": "save",
+        "intent": "save",
+        "domain_entity": null,
+        "named_entities": [],
+        "business_role": "Data Access Layer"
+    }
+}

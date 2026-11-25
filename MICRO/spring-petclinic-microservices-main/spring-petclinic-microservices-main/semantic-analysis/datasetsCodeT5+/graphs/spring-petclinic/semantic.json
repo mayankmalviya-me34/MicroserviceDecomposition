@@ -1,0 +1,3169 @@
+[
+  {
+    "return_type": "void",
+    "imports": [
+      "import de.codecentric.boot.admin.server.config.EnableAdminServer;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.admin.SpringBootAdminApplication",
+    "source_file": "spring-petclinic-admin-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\admin\\SpringBootAdminApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterConfig;",
+      "import org.springframework.beans.factory.annotation.Value;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;",
+      "import org.springframework.cloud.client.circuitbreaker.Customizer;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.web.client.RestTemplate;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import org.springframework.web.reactive.function.server.RequestPredicates;",
+      "import org.springframework.web.reactive.function.server.RouterFunction;",
+      "import org.springframework.web.reactive.function.server.RouterFunctions;",
+      "import org.springframework.web.reactive.function.server.ServerResponse;",
+      "import java.time.Duration;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "semantic_summary": "{\n\nExtends@Bean\nExtends@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced\nExtends@LoadBalanced@LoadBalanced\nExtends@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced\nExtends @Load"
+  },
+  {
+    "return_type": "RestTemplate",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterConfig;",
+      "import org.springframework.beans.factory.annotation.Value;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;",
+      "import org.springframework.cloud.client.circuitbreaker.Customizer;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.web.client.RestTemplate;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import org.springframework.web.reactive.function.server.RequestPredicates;",
+      "import org.springframework.web.reactive.function.server.RouterFunction;",
+      "import org.springframework.web.reactive.function.server.RouterFunctions;",
+      "import org.springframework.web.reactive.function.server.ServerResponse;",
+      "import java.time.Duration;"
+    ],
+    "signature": "loadBalancedRestTemplate()",
+    "calls": [],
+    "function": "loadBalancedRestTemplate",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "semantic_summary": "{\n\nExtends@Bean\nExtends@Value(\"classpath:/static/index.html\")\nExtends@LoadBalanced@Bean\nExtends@LoadBalanced@Bean\nExtends@LoadBalanced@LoadBalanced\nExtends@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@LoadBalanced@"
+  },
+  {
+    "return_type": "WebClient",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterConfig;",
+      "import org.springframework.beans.factory.annotation.Value;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;",
+      "import org.springframework.cloud.client.circuitbreaker.Customizer;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.web.client.RestTemplate;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import org.springframework.web.reactive.function.server.RequestPredicates;",
+      "import org.springframework.web.reactive.function.server.RouterFunction;",
+      "import org.springframework.web.reactive.function.server.RouterFunctions;",
+      "import org.springframework.web.reactive.function.server.ServerResponse;",
+      "import java.time.Duration;"
+    ],
+    "signature": "loadBalancedWebClientBuilder()",
+    "calls": [
+      "builder"
+    ],
+    "function": "loadBalancedWebClientBuilder",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "semantic_summary": "{\nTemplating@Bean\n   @Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean\nTemplating@Bean"
+  },
+  {
+    "return_type": "RouterFunction",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterConfig;",
+      "import org.springframework.beans.factory.annotation.Value;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;",
+      "import org.springframework.cloud.client.circuitbreaker.Customizer;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.web.client.RestTemplate;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import org.springframework.web.reactive.function.server.RequestPredicates;",
+      "import org.springframework.web.reactive.function.server.RouterFunction;",
+      "import org.springframework.web.reactive.function.server.RouterFunctions;",
+      "import org.springframework.web.reactive.function.server.ServerResponse;",
+      "import java.time.Duration;"
+    ],
+    "signature": "routerFunction()",
+    "calls": [
+      "resources",
+      "andRoute",
+      "GET",
+      "ok",
+      "contentType",
+      "bodyValue"
+    ],
+    "function": "routerFunction",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "semantic_summary": "{\n\nExtends{\nExtends{\nExtends{\nExtends{\nExtends}\nExtends{\nExtends{\nExtends{\nExtends{\nExtends}\nExtends{\nExtends{\nExtends{\nExtends{\nExtends{\nExtends{\nExtends{\nExtends}{\nExtends{}}}}}"
+  },
+  {
+    "return_type": "Customizer",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterConfig;",
+      "import org.springframework.beans.factory.annotation.Value;",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;",
+      "import org.springframework.cloud.client.circuitbreaker.Customizer;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.web.client.RestTemplate;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import org.springframework.web.reactive.function.server.RequestPredicates;",
+      "import org.springframework.web.reactive.function.server.RouterFunction;",
+      "import org.springframework.web.reactive.function.server.RouterFunctions;",
+      "import org.springframework.web.reactive.function.server.ServerResponse;",
+      "import java.time.Duration;"
+    ],
+    "signature": "defaultCustomizer()",
+    "calls": [
+      "configureDefault",
+      "circuitBreakerConfig",
+      "ofDefaults",
+      "timeLimiterConfig",
+      "custom",
+      "timeoutDuration",
+      "ofSeconds",
+      "build",
+      "build"
+    ],
+    "function": "defaultCustomizer",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplication",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplication.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "Mono",
+    "imports": [
+      "import org.springframework.samples.petclinic.api.dto.OwnerDetails;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;"
+    ],
+    "signature": "getOwner(ownerId)",
+    "calls": [
+      "build",
+      "get",
+      "uri",
+      "retrieve",
+      "bodyToMono"
+    ],
+    "function": "getOwner",
+    "class": "org.springframework.samples.petclinic.api.application.CustomersServiceClient",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\CustomersServiceClient.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Mono",
+    "imports": [
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import static java.util.stream.Collectors.joining;"
+    ],
+    "signature": "getVisitsForPets(petIds)",
+    "calls": [
+      "build",
+      "get",
+      "uri",
+      "joinIds",
+      "retrieve",
+      "bodyToMono"
+    ],
+    "function": "getVisitsForPets",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClient",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "semantic_summary": "{\n\n       {\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{\nWarehouse{{}{}{}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import static java.util.stream.Collectors.joining;"
+    ],
+    "signature": "joinIds(petIds)",
+    "calls": [
+      "stream",
+      "map",
+      "collect",
+      "joining"
+    ],
+    "function": "joinIds",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClient",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "semantic_summary": "{setHostname(hostname);"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import static java.util.stream.Collectors.joining;"
+    ],
+    "signature": "setHostname(hostname)",
+    "calls": [],
+    "function": "setHostname",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClient",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClient.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Mono",
+    "imports": [
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;",
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreakerFactory;",
+      "import org.springframework.samples.petclinic.api.application.CustomersServiceClient;",
+      "import org.springframework.samples.petclinic.api.application.VisitsServiceClient;",
+      "import org.springframework.samples.petclinic.api.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RestController;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import java.util.function.Function;"
+    ],
+    "signature": "getOwnerDetails(ownerId)",
+    "calls": [
+      "getOwner",
+      "flatMap",
+      "getVisitsForPets",
+      "transform",
+      "create",
+      "run",
+      "emptyVisitsForPets",
+      "map",
+      "addVisitsToOwner",
+      "getPetIds"
+    ],
+    "function": "getOwnerDetails",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "semantic_summary": "{\n\nuris.map(visits ->)\n\nuris.map(visits ->.map(visits ->)\nuris.map(visits ->)\nuris.map(visits ->)\nuris.map(visits ->)\nuris.map(visits ->)\nuris.map(visits ->)\nuris.map(visits ->)\nuris.map(vis"
+  },
+  {
+    "return_type": "Function",
+    "imports": [
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;",
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreakerFactory;",
+      "import org.springframework.samples.petclinic.api.application.CustomersServiceClient;",
+      "import org.springframework.samples.petclinic.api.application.VisitsServiceClient;",
+      "import org.springframework.samples.petclinic.api.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RestController;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import java.util.function.Function;"
+    ],
+    "signature": "addVisitsToOwner(owner)",
+    "calls": [
+      "pets",
+      "forEach",
+      "visits",
+      "addAll",
+      "items",
+      "stream",
+      "filter",
+      "petId",
+      "id",
+      "toList"
+    ],
+    "function": "addVisitsToOwner",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "semantic_summary": "{{\n\nuris{\nuris}\nuris{}\nuris}}}\nuris}\nuris}\nuris{\nuris{\nuris}{\nuris}{\nuris}}"
+  },
+  {
+    "return_type": "Mono",
+    "imports": [
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;",
+      "import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreakerFactory;",
+      "import org.springframework.samples.petclinic.api.application.CustomersServiceClient;",
+      "import org.springframework.samples.petclinic.api.application.VisitsServiceClient;",
+      "import org.springframework.samples.petclinic.api.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RestController;",
+      "import reactor.core.publisher.Mono;",
+      "import java.util.List;",
+      "import java.util.function.Function;"
+    ],
+    "signature": "emptyVisitsForPets()",
+    "calls": [
+      "just",
+      "of"
+    ],
+    "function": "emptyVisitsForPets",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayController.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "ResponseEntity",
+    "imports": [
+      "import org.apache.http.HttpStatus;",
+      "import org.springframework.http.ResponseEntity;",
+      "import org.springframework.web.bind.annotation.PostMapping;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "fallback()",
+    "calls": [
+      "status",
+      "body"
+    ],
+    "function": "fallback",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.FallbackController",
+    "source_file": "spring-petclinic-api-gateway\\src\\main\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\FallbackController.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.boot.test.context.SpringBootTest;",
+      "import org.springframework.test.context.ActiveProfiles;"
+    ],
+    "signature": "contextLoads()",
+    "calls": [],
+    "function": "contextLoads",
+    "class": "org.springframework.samples.petclinic.api.ApiGatewayApplicationTests",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\ApiGatewayApplicationTests.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import okhttp3.mockwebserver.MockResponse;",
+      "import okhttp3.mockwebserver.MockWebServer;",
+      "import org.junit.jupiter.api.AfterEach;",
+      "import org.junit.jupiter.api.BeforeEach;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.io.IOException;",
+      "import java.util.Collections;",
+      "import java.util.function.Consumer;",
+      "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+    ],
+    "signature": "setUp()",
+    "calls": [
+      "builder",
+      "setHostname",
+      "url",
+      "toString"
+    ],
+    "function": "setUp",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "semantic_summary": "{\n\n       {\n\n       () {} }}\n\n       ( ) {( ) ;}\n\n       ( ) ;( ) ;( ) ; }( ) ; }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import okhttp3.mockwebserver.MockResponse;",
+      "import okhttp3.mockwebserver.MockWebServer;",
+      "import org.junit.jupiter.api.AfterEach;",
+      "import org.junit.jupiter.api.BeforeEach;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.io.IOException;",
+      "import java.util.Collections;",
+      "import java.util.function.Consumer;",
+      "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+    ],
+    "signature": "shutdown()",
+    "calls": [
+      "shutdown"
+    ],
+    "function": "shutdown",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "semantic_summary": "{\n\n        assertEquals(0,(Visits) {\n\n}\n\n        assertEquals(0,(Visits) {() ;}\n\n}\n\n}\n\n}\n}\n}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import okhttp3.mockwebserver.MockResponse;",
+      "import okhttp3.mockwebserver.MockWebServer;",
+      "import org.junit.jupiter.api.AfterEach;",
+      "import org.junit.jupiter.api.BeforeEach;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.io.IOException;",
+      "import java.util.Collections;",
+      "import java.util.function.Consumer;",
+      "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+    ],
+    "signature": "getVisitsForPets_withAvailableVisitsService()",
+    "calls": [
+      "prepareResponse",
+      "setHeader",
+      "setBody",
+      "getVisitsForPets",
+      "singletonList",
+      "assertVisitDescriptionEquals",
+      "block"
+    ],
+    "function": "getVisitsForPets_withAvailableVisitsService",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "semantic_summary": "{\n\n       ( ) {}\n\n       ( ) {( ) ;( ) ;( ) ;( ) ;( ) ;( ) ; }( ) ; }( ) ; }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import okhttp3.mockwebserver.MockResponse;",
+      "import okhttp3.mockwebserver.MockWebServer;",
+      "import org.junit.jupiter.api.AfterEach;",
+      "import org.junit.jupiter.api.BeforeEach;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.io.IOException;",
+      "import java.util.Collections;",
+      "import java.util.function.Consumer;",
+      "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+    ],
+    "signature": "assertVisitDescriptionEquals(visits, petId, description)",
+    "calls": [
+      "assertEquals",
+      "items",
+      "size",
+      "assertNotNull",
+      "items",
+      "get",
+      "assertEquals",
+      "items",
+      "get",
+      "petId",
+      "assertEquals",
+      "items",
+      "get",
+      "description"
+    ],
+    "function": "assertVisitDescriptionEquals",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "semantic_summary": "{\nWarehouse{\nWarehouse{\nWarehouse{}\nWarehouse{\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import okhttp3.mockwebserver.MockResponse;",
+      "import okhttp3.mockwebserver.MockWebServer;",
+      "import org.junit.jupiter.api.AfterEach;",
+      "import org.junit.jupiter.api.BeforeEach;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.samples.petclinic.api.dto.Visits;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.io.IOException;",
+      "import java.util.Collections;",
+      "import java.util.function.Consumer;",
+      "import static org.junit.jupiter.api.Assertions.assertEquals;",
+      "import static org.junit.jupiter.api.Assertions.assertNotNull;"
+    ],
+    "signature": "prepareResponse(consumer)",
+    "calls": [
+      "accept",
+      "enqueue"
+    ],
+    "function": "prepareResponse",
+    "class": "org.springframework.samples.petclinic.api.application.VisitsServiceClientIntegrationTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\application\\VisitsServiceClientIntegrationTest.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.mockito.Mockito;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JAutoConfiguration;",
+      "import org.springframework.context.annotation.Import;",
+      "import org.springframework.samples.petclinic.api.application.CustomersServiceClient;",
+      "import org.springframework.samples.petclinic.api.application.VisitsServiceClient;",
+      "import org.springframework.samples.petclinic.api.dto;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.reactive.server.WebTestClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.net.ConnectException;",
+      "import java.util.ArrayList;",
+      "import java.util.Collections;",
+      "import java.util.List;"
+    ],
+    "signature": "getOwnerDetails_withAvailableVisitsService()",
+    "calls": [
+      "aPetDetails",
+      "id",
+      "name",
+      "visits",
+      "build",
+      "anOwnerDetails",
+      "pets",
+      "of",
+      "build",
+      "when",
+      "thenReturn",
+      "just",
+      "getOwner",
+      "id",
+      "of",
+      "when",
+      "thenReturn",
+      "just",
+      "getVisitsForPets",
+      "singletonList",
+      "id",
+      "get",
+      "uri",
+      "exchange",
+      "expectStatus",
+      "isOk",
+      "expectBody",
+      "jsonPath",
+      "isEqualTo",
+      "jsonPath",
+      "isEqualTo"
+    ],
+    "function": "getOwnerDetails_withAvailableVisitsService",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayControllerTest.java",
+    "semantic_summary": ".uri(\"/api/gateway/owners/1\")\n\n\\\\\\\\\n\\\\\\\\\n\\\\\\\\.uri(\"/api/gateway/owners/2\")\n\\\\\\\\\n\\\\\\\\\n\\\\\\\\.uri(\"/api/gateway/owners/2\")\n\\\\\\\\\n\\\\\\\\.uri(\"/api/gateway/owners/2\")\n\\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.mockito.Mockito;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JAutoConfiguration;",
+      "import org.springframework.context.annotation.Import;",
+      "import org.springframework.samples.petclinic.api.application.CustomersServiceClient;",
+      "import org.springframework.samples.petclinic.api.application.VisitsServiceClient;",
+      "import org.springframework.samples.petclinic.api.dto;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.reactive.server.WebTestClient;",
+      "import reactor.core.publisher.Mono;",
+      "import java.net.ConnectException;",
+      "import java.util.ArrayList;",
+      "import java.util.Collections;",
+      "import java.util.List;"
+    ],
+    "signature": "getOwnerDetails_withServiceError()",
+    "calls": [
+      "aPetDetails",
+      "id",
+      "name",
+      "visits",
+      "build",
+      "anOwnerDetails",
+      "pets",
+      "of",
+      "build",
+      "when",
+      "thenReturn",
+      "just",
+      "getOwner",
+      "when",
+      "thenReturn",
+      "error",
+      "getVisitsForPets",
+      "singletonList",
+      "id",
+      "get",
+      "uri",
+      "exchange",
+      "expectStatus",
+      "isOk",
+      "expectBody",
+      "jsonPath",
+      "isEqualTo",
+      "jsonPath",
+      "isEmpty"
+    ],
+    "function": "getOwnerDetails_withServiceError",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.ApiGatewayControllerTest",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\ApiGatewayControllerTest.java",
+    "semantic_summary": ".jsonPath(\"$.pets[0].name\").isEqualTo(\"Garfield\")\nsiblings.jsonPath(\"$.pets[0].visits\").isEqualTo(\"Garfield\")\nsiblings.jsonPath(\"$.pets[0].visits\").isEqualTo(\"Garfield\")\nsiblings.jsonPath(\"$.pets[0].visits\").isEqualTo(\"Garfield\")"
+  },
+  {
+    "return_type": "CircuitBreakerRegistry",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterRegistry;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigurationProperties;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.context.annotation.Primary;"
+    ],
+    "signature": "circuitBreakerRegistry()",
+    "calls": [
+      "ofDefaults"
+    ],
+    "function": "circuitBreakerRegistry",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "semantic_summary": "{}\n   }"
+  },
+  {
+    "return_type": "TimeLimiterRegistry",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterRegistry;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigurationProperties;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.context.annotation.Primary;"
+    ],
+    "signature": "timeLimiterRegistry()",
+    "calls": [
+      "ofDefaults"
+    ],
+    "function": "timeLimiterRegistry",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Resilience4JConfigurationProperties",
+    "imports": [
+      "import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;",
+      "import io.github.resilience4j.timelimiter.TimeLimiterRegistry;",
+      "import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigurationProperties;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.context.annotation.Primary;"
+    ],
+    "signature": "resilience4JConfigurationProperties()",
+    "calls": [],
+    "function": "resilience4JConfigurationProperties",
+    "class": "org.springframework.samples.petclinic.api.boundary.web.CircuitBreakerConfiguration",
+    "source_file": "spring-petclinic-api-gateway\\src\\test\\java\\org\\springframework\\samples\\petclinic\\api\\boundary\\web\\CircuitBreakerConfiguration.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.config.server.EnableConfigServer;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.config.ConfigServerApplication",
+    "source_file": "spring-petclinic-config-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\config\\ConfigServerApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.boot.test.context.SpringBootTest;"
+    ],
+    "signature": "contextLoads()",
+    "calls": [],
+    "function": "contextLoads",
+    "class": "org.springframework.samples.petclinic.config.PetclinicConfigServerApplicationTests",
+    "source_file": "spring-petclinic-config-server\\src\\test\\java\\org\\springframework\\samples\\petclinic\\config\\PetclinicConfigServerApplicationTests.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.customers.CustomersServiceApplication",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\CustomersServiceApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "MeterRegistryCustomizer",
+    "imports": [
+      "import io.micrometer.core.aop.TimedAspect;",
+      "import io.micrometer.core.instrument.MeterRegistry;",
+      "import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;"
+    ],
+    "signature": "metricsCommonTags()",
+    "calls": [
+      "config",
+      "commonTags"
+    ],
+    "function": "metricsCommonTags",
+    "class": "org.springframework.samples.petclinic.customers.config.MetricConfig",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\config\\MetricConfig.java",
+    "semantic_summary": "{\n   }"
+  },
+  {
+    "return_type": "TimedAspect",
+    "imports": [
+      "import io.micrometer.core.aop.TimedAspect;",
+      "import io.micrometer.core.instrument.MeterRegistry;",
+      "import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;"
+    ],
+    "signature": "timedAspect(registry)",
+    "calls": [],
+    "function": "timedAspect",
+    "class": "org.springframework.samples.petclinic.customers.config.MetricConfig",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\config\\MetricConfig.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Set",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getPetsInternal()",
+    "calls": [],
+    "function": "getPetsInternal",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\nyoutube. append ( \"name\",.append(\"name\", this.getName())\nyoutube.append(\"telephone\",.append(\"telephone\", this.telephone)\nyoutube.append(\"telephone\",.append(\"city\", this.city)\nyoutube.append(\"telephone\", this.telephone)\nyoutube.append(\"telephone\", this.telephone)\nyoutube.append(\"telephone\",.append"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getPets()",
+    "calls": [
+      "getPetsInternal",
+      "sort",
+      "unmodifiableList"
+    ],
+    "function": "getPets",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\nbing{\nbing}\n\nbing{}\n\nbing{\nbing}\n\nbing{\nbing}\n\nbing{\nbing}\n\nbing{\nbing }\nbing{\nbing }\nbing{\nbing }\nbing{\nbing }\n\nbing{\nbing }\n\nbing{\nbing }\nbing }\nbing{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "addPet(pet)",
+    "calls": [
+      "getPetsInternal",
+      "add",
+      "setOwner"
+    ],
+    "function": "addPet",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\{}\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\ }\n\\\\\\\\ }}\n\\\\\\\\ }"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "toString()",
+    "calls": [
+      "append",
+      "getId",
+      "append",
+      "getLastName",
+      "append",
+      "getFirstName",
+      "append",
+      "append",
+      "append",
+      "toString"
+    ],
+    "function": "toString",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone =}\n\n        this.telephone}\n\nVirtualInterface}\n\nVirtualInterface}\n\nVirtualInterface}"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.id ={\n        this.id =}\n\n\\\\\\\\}}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getFirstName()",
+    "calls": [],
+    "function": "getFirstName",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.address ={\n        this.address =}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n    }\n\n   }\n\nNetworkInterface{\nBuilder}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface }"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getLastName()",
+    "calls": [],
+    "function": "getLastName",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.address ={\n        this.address =}\n\n   }}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\nNetworkInterface{\nBuilder}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface }\nNetworkInterface}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getAddress()",
+    "calls": [],
+    "function": "getAddress",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.address ={\n        this.address =}\n\nWarehouse}}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\n\nWarehouse}\nWarehouse"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getCity()",
+    "calls": [],
+    "function": "getCity",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n        this.city ={\n        this.telephone =}\n\n   }}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\nNetworkInterface{\nBuilder}\n\nNetworkInterface{\nBuilder}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface }\n\nNetworkInterface"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "getTelephone()",
+    "calls": [],
+    "function": "getTelephone",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{{\n        this.telephone =}\n\n   }}}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\nNetworkInterface{\nNetworkInterface{\nNetworkInterface{\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface }\nNetworkInterface}\nNetworkInterface}\nNetworkInterface{}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "setFirstName(firstName)",
+    "calls": [],
+    "function": "setFirstName",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   {}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   {\n\nNetworkInterface{\nNetworkInterface{\nNetworkInterface}\n\nNetworkInterface{\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\nNetworkInterface"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "setLastName(lastName)",
+    "calls": [],
+    "function": "setLastName",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   {}\n\n   }\n\n   {}\n\n   }\n\n   }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "setAddress(address)",
+    "calls": [],
+    "function": "setAddress",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{}\n\n   }\n\n   }\n\n   }\n   }\nBridge}}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "setCity(city)",
+    "calls": [],
+    "function": "setCity",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Digits;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util;"
+    ],
+    "signature": "setTelephone(telephone)",
+    "calls": [],
+    "function": "setTelephone",
+    "class": "org.springframework.samples.petclinic.customers.model.Owner",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Owner.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "toString()",
+    "calls": [
+      "append",
+      "getId",
+      "append",
+      "getName",
+      "append",
+      "getBirthDate",
+      "append",
+      "getType",
+      "getName",
+      "append",
+      "getOwner",
+      "getFirstName",
+      "append",
+      "getOwner",
+      "getLastName",
+      "toString"
+    ],
+    "function": "toString",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n\n        this.pub\n    }\n\n    publicpublic{\n        this.pub\n    }\n\n    publicpublic{\n        this.pub\n}\n\n    publicpublic{\n\n        this.pub\n}\n\n    publicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublicpublic void getB"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n\nbing{\nbing{\nbing}{\nbing}\nbing}\nbing}\nbing{\nbing}\nbing}\nbing }\nbing}\nbing }{\nbing}\nbing }}\nbing }{\nbing }}\nbing }}\nbing }\nbing }}\nbing }}\nbing}\nbing }"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "getName()",
+    "calls": [],
+    "function": "getName",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n\nbing{\nbing{\nbing}{\nbing}\nbing}\nbing}\nbing}\nbing}\nbing}\nbing}\nbing{\nbing}\nbing }}\nbing}\nbing}\nbing }\nbing}\nbing }\nbing}\nbing }{\nbing}\nbing }}\nbing }"
+  },
+  {
+    "return_type": "Date",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "getBirthDate()",
+    "calls": [],
+    "function": "getBirthDate",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n       {\n       {\n       = (Pet) o;\n       = (Pet) o;\n       = (Pet)(o.getClass()) ;\n       (o.getClass()) ;\n       (o.getClass()) ;\n\n(o.getClass()) ;\n\n(o.getClass()) ;\n\n(o.getClass()) ;"
+  },
+  {
+    "return_type": "PetType",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "getType()",
+    "calls": [],
+    "function": "getType",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n\nbing{\nbing{\nbing{\nbing}\nbing{\nbing}\nbing{\nbing}\n\nbing{\nbing}\n\nbing{\nbing}\nbing{\nbing}\nbing}\n\nbing}\n\nbing}\n\nbing }\nbing}\n\nbing }\nbing{\nbing }\nbing}"
+  },
+  {
+    "return_type": "Owner",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "getOwner()",
+    "calls": [],
+    "function": "getOwner",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n       {\n       {\n       }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface @Override\n   }\n\nVirtualInterface}\n\nVirtualInterface}\n\nVirtualInterface{\n       ({\n       }\n\nVirtualInterface}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "setId(id)",
+    "calls": [],
+    "function": "setId",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{\n\n       {\n       {\n       {\n       }\n\n       {\n        return Objects.equals(id,}\n\n       {\n        return Objects.equals(name,}\n\n       }\n\n        return Objects.equals(birthDate,{\n        return Objects.equals(name,}\n\n        return Objects.equals(birthDate,{\n        return Objects."
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "setName(name)",
+    "calls": [],
+    "function": "setName",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "@Override\n    public boolean{\n\n       {\n       {\n       return Objects.equals(id, name, birthDate,{\n        return Objects.equals(name,}\n\n       {\n        return Objects.equals(birthDate,}\n\n       }\n\n        return Objects.equals(birthDate,{\n        return Objects.equals(name,}\n\n       }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "setBirthDate(birthDate)",
+    "calls": [],
+    "function": "setBirthDate",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "@Override\n    public boolean{\n\n       {\n       {\n       return Objects.equals(id, name, birthDate,{\n        return Objects.equals(name,}\n\n       {\n        return Objects.equals(birthDate,}\n\n       }\n\n       {\n        return Objects.equals(name,}\n\n        return Objects.equals(birthDate,{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "setType(type)",
+    "calls": [],
+    "function": "setType",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "@Override\n    public boolean{\n\n       {\n       {\n       {\n        return Objects.equals(id,{\n        return Objects.equals(name,}\n\n       {\n        return Objects.equals(birthDate,}\n\n       {\n        return Objects.equals(birthDate,}\n\n       {\n        return Objects.equals(name,}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "setOwner(owner)",
+    "calls": [],
+    "function": "setOwner",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "@Override\n    public boolean{\n\n       {\n       {\n       {\n       () ;}\n\n       () ;\n       () ;\n       () ;\n       ( ) ;( ) ;( ) ;( ) ;\n       ( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;"
+  },
+  {
+    "return_type": "boolean",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "equals(o)",
+    "calls": [
+      "getClass",
+      "getClass",
+      "equals",
+      "equals",
+      "equals",
+      "equals",
+      "equals"
+    ],
+    "function": "equals",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "@Override\n    public boolean{\n\n       {\n       {\n       {\n       {\n        return Objects.equals(id,}\nConsume{\nConsume{\nConsume}\nConsume{\nConsume{\nConsume}\nConsume{\nConsume{\nConsume}\nConsume{\nConsume}\nConsume{\nConsume}\nConsume{\nConsume}"
+  },
+  {
+    "return_type": "int",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonIgnore;",
+      "import jakarta.persistence;",
+      "import org.springframework.core.style.ToStringCreator;",
+      "import java.util.Date;",
+      "import java.util.Objects;"
+    ],
+    "signature": "hashCode()",
+    "calls": [
+      "hash"
+    ],
+    "function": "hashCode",
+    "class": "org.springframework.samples.petclinic.customers.model.Pet",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\Pet.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.customers.model.PetType",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "semantic_summary": "{}\n\n   }\n\n   }}}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "getName()",
+    "calls": [],
+    "function": "getName",
+    "class": "org.springframework.samples.petclinic.customers.model.PetType",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "semantic_summary": "{}\n\n   }\n   }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "setId(id)",
+    "calls": [],
+    "function": "setId",
+    "class": "org.springframework.samples.petclinic.customers.model.PetType",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "setName(name)",
+    "calls": [],
+    "function": "setName",
+    "class": "org.springframework.samples.petclinic.customers.model.PetType",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\model\\PetType.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Owner",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;",
+      "import java.util.Optional;"
+    ],
+    "signature": "createOwner(ownerRequest)",
+    "calls": [
+      "map",
+      "save"
+    ],
+    "function": "createOwner",
+    "class": "org.springframework.samples.petclinic.customers.web.OwnerResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "semantic_summary": "{\n        final@ResponseStatus(HttpStatus.NO_CONTENT)\n    }\n\n       @ResponseStatus(HttpStatus.NO_CONTENT)\n\n        final@ResponseStatus(HttpStatus.NO_CONTENT)\n\n        final@ResponseStatus(HttpStatus.NO_CONTENT)\n\n        final Owner@ResponseStatus(HttpStatus.NO_CONTENT)\n\n       @ResponseStatus(HttpStatus.NO_CONTENT"
+  },
+  {
+    "return_type": "Optional",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;",
+      "import java.util.Optional;"
+    ],
+    "signature": "findOwner(ownerId)",
+    "calls": [
+      "findById"
+    ],
+    "function": "findOwner",
+    "class": "org.springframework.samples.petclinic.customers.web.OwnerResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "semantic_summary": "@Valid @RequestBody OwnerRequest ownerRequest{\n\n        log.\"Creating{\n        log.info(\"Creating\"+ownerId);\n\n        log.info(\"Updating\"+ownerId);\n\n        log.info(\"Updating\"+ownerId);\n\n       \" + ownerId);\n\n\" + ownerId);\n\n}\n\n}\n}\n}\n}\n}"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;",
+      "import java.util.Optional;"
+    ],
+    "signature": "findAll()",
+    "calls": [
+      "findAll"
+    ],
+    "function": "findAll",
+    "class": "org.springframework.samples.petclinic.customers.web.OwnerResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "semantic_summary": "@PutMapping(value = \"/{ownerId}\"){\n\n        log.info(\"Updatingowner{\n\n        log.info(\"Updatingowner{}) ;\n\n        log.info(\"Updating\", ownerModel);\n\n       }\n\n}\n   }\n   }\n   }\n   }\n   }\n   {\n\n}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;",
+      "import java.util.Optional;"
+    ],
+    "signature": "updateOwner(ownerId, ownerRequest)",
+    "calls": [
+      "findById",
+      "orElseThrow",
+      "map",
+      "info",
+      "save"
+    ],
+    "function": "updateOwner",
+    "class": "org.springframework.samples.petclinic.customers.web.OwnerResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\OwnerResource.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "getPetTypes()",
+    "calls": [
+      "findPetTypes"
+    ],
+    "function": "getPetTypes",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       petRequest.id();\n\n       pet"
+  },
+  {
+    "return_type": "Pet",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "processCreationForm(petRequest, ownerId)",
+    "calls": [
+      "findById",
+      "orElseThrow",
+      "addPet",
+      "save"
+    ],
+    "function": "processCreationForm",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{\n\n\\\\\\\\( ) -> new( ) -> new( ) -> new( ) ->( ) -> new( ) -> new( ) ->( ) -> new( ) -> new( ) -> new( ) -> new( ) -> new( ) ->( ) -> new( ) -> new( ) -> new( ) -> new( ) -> new( ) -> new"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "processUpdateForm(petRequest)",
+    "calls": [
+      "id",
+      "findPetById",
+      "save"
+    ],
+    "function": "processUpdateForm",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{\n\n\\\\\\\\{\n\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
+  },
+  {
+    "return_type": "Pet",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "save(pet, petRequest)",
+    "calls": [
+      "setName",
+      "name",
+      "setBirthDate",
+      "birthDate",
+      "findPetTypeById",
+      "ifPresent",
+      "typeId",
+      "info",
+      "save"
+    ],
+    "function": "save",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{\n\n       {\n\n       {\n\n       (petId){\n\n       (petId)(petId)(petId)(petId)\nhsm.ifPresent(pet::setType);\n\n}\n\n}\n\n}\n\n}\n\n}\n\n}\n\n}\n\n}\n\n}\n\n}"
+  },
+  {
+    "return_type": "PetDetails",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "findPet(petId)",
+    "calls": [
+      "findPetById"
+    ],
+    "function": "findPet",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{{\n\nyoutube}\nyoutube}\nyoutube}\nyoutube}\nyoutube})))))))))))))))))))"
+  },
+  {
+    "return_type": "Pet",
+    "imports": [
+      "import io.micrometer.core.annotation.Timed;",
+      "import jakarta.validation.constraints.Min;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.customers.model;",
+      "import org.springframework.web.bind.annotation;",
+      "import java.util.List;"
+    ],
+    "signature": "findPetById(petId)",
+    "calls": [
+      "findById",
+      "orElseThrow"
+    ],
+    "function": "findPetById",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResource",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResource.java",
+    "semantic_summary": "{\nbearer"
+  },
+  {
+    "return_type": "Owner",
+    "imports": [
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.web.OwnerRequest;",
+      "import org.springframework.stereotype.Component;"
+    ],
+    "signature": "map(owner, request)",
+    "calls": [
+      "setAddress",
+      "address",
+      "setCity",
+      "city",
+      "setTelephone",
+      "telephone",
+      "setFirstName",
+      "firstName",
+      "setLastName",
+      "lastName"
+    ],
+    "function": "map",
+    "class": "org.springframework.samples.petclinic.customers.web.mapper.OwnerEntityMapper",
+    "source_file": "spring-petclinic-customers-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\mapper\\OwnerEntityMapper.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import java.util.Optional;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.samples.petclinic.customers.model.Pet;",
+      "import org.springframework.samples.petclinic.customers.model.PetRepository;",
+      "import org.springframework.samples.petclinic.customers.model.PetType;",
+      "import org.springframework.test.context.ActiveProfiles;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.servlet.MockMvc;",
+      "import static org.mockito.BDDMockito.given;",
+      "import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;"
+    ],
+    "signature": "shouldGetAPetInJSonFormat()",
+    "calls": [
+      "setupPet",
+      "given",
+      "willReturn",
+      "of",
+      "findById",
+      "perform",
+      "andExpect",
+      "status",
+      "isOk",
+      "andExpect",
+      "content",
+      "contentType",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "get",
+      "accept"
+    ],
+    "function": "shouldGetAPetInJSonFormat",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResourceTest",
+    "source_file": "spring-petclinic-customers-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResourceTest.java",
+    "semantic_summary": "{\n\n\n{\n\n{\n\n}\n\n{\n\n}\n\n{\n\n}\n\n{\n\n}\n\n{\n\n}\n\n{\n\n{}\n{\n}\n{\n\n}\n{({}\n}\n{}"
+  },
+  {
+    "return_type": "Pet",
+    "imports": [
+      "import java.util.Optional;",
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.samples.petclinic.customers.model.Owner;",
+      "import org.springframework.samples.petclinic.customers.model.OwnerRepository;",
+      "import org.springframework.samples.petclinic.customers.model.Pet;",
+      "import org.springframework.samples.petclinic.customers.model.PetRepository;",
+      "import org.springframework.samples.petclinic.customers.model.PetType;",
+      "import org.springframework.test.context.ActiveProfiles;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.servlet.MockMvc;",
+      "import static org.mockito.BDDMockito.given;",
+      "import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;"
+    ],
+    "signature": "setupPet()",
+    "calls": [
+      "setFirstName",
+      "setLastName",
+      "setName",
+      "setId",
+      "setId",
+      "setType",
+      "addPet"
+    ],
+    "function": "setupPet",
+    "class": "org.springframework.samples.petclinic.customers.web.PetResourceTest",
+    "source_file": "spring-petclinic-customers-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\customers\\web\\PetResourceTest.java",
+    "semantic_summary": "{Write:\n\n   Write:\n\nExtraWrite:\nExtraWrite:\nExtraWrite:\nExtraWrite:\nExtraWrite:\nExtraWrite:\nExtra"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplication",
+    "source_file": "spring-petclinic-discovery-server\\src\\main\\java\\org\\springframework\\samples\\petclinic\\discovery\\DiscoveryServerApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.springframework.boot.test.context.SpringBootTest;"
+    ],
+    "signature": "contextLoads()",
+    "calls": [],
+    "function": "contextLoads",
+    "class": "org.springframework.samples.petclinic.discovery.DiscoveryServerApplicationTests",
+    "source_file": "spring-petclinic-discovery-server\\src\\test\\java\\org\\springframework\\samples\\petclinic\\discovery\\DiscoveryServerApplicationTests.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "ChatMemory",
+    "imports": [
+      "import org.springframework.ai.chat.memory.ChatMemory;",
+      "import org.springframework.ai.chat.memory.InMemoryChatMemory;",
+      "import org.springframework.ai.embedding.EmbeddingModel;",
+      "import org.springframework.ai.vectorstore.SimpleVectorStore;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.web.reactive.function.client.WebClient;"
+    ],
+    "signature": "chatMemory()",
+    "calls": [],
+    "function": "chatMemory",
+    "class": "org.springframework.samples.petclinic.genai.AIBeanConfiguration",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "semantic_summary": "{}\nuris{\nuris}\nuris}\nuris}}"
+  },
+  {
+    "return_type": "VectorStore",
+    "imports": [
+      "import org.springframework.ai.chat.memory.ChatMemory;",
+      "import org.springframework.ai.chat.memory.InMemoryChatMemory;",
+      "import org.springframework.ai.embedding.EmbeddingModel;",
+      "import org.springframework.ai.vectorstore.SimpleVectorStore;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.web.reactive.function.client.WebClient;"
+    ],
+    "signature": "vectorStore(embeddingModel)",
+    "calls": [],
+    "function": "vectorStore",
+    "class": "org.springframework.samples.petclinic.genai.AIBeanConfiguration",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "semantic_summary": "{\nuris"
+  },
+  {
+    "return_type": "WebClient",
+    "imports": [
+      "import org.springframework.ai.chat.memory.ChatMemory;",
+      "import org.springframework.ai.chat.memory.InMemoryChatMemory;",
+      "import org.springframework.ai.embedding.EmbeddingModel;",
+      "import org.springframework.ai.vectorstore.SimpleVectorStore;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.cloud.client.loadbalancer.LoadBalanced;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;",
+      "import org.springframework.web.reactive.function.client.WebClient;"
+    ],
+    "signature": "loadBalancedWebClientBuilder()",
+    "calls": [
+      "builder"
+    ],
+    "function": "loadBalancedWebClientBuilder",
+    "class": "org.springframework.samples.petclinic.genai.AIBeanConfiguration",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIBeanConfiguration.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "OwnersResponse",
+    "imports": [
+      "import java.util.List;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.vectorstore.SearchRequest;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.samples.petclinic.genai.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.genai.dto.PetDetails;",
+      "import org.springframework.stereotype.Service;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;"
+    ],
+    "signature": "getAllOwners()",
+    "calls": [
+      "get",
+      "uri",
+      "retrieve",
+      "bodyToMono",
+      "block"
+    ],
+    "function": "getAllOwners",
+    "class": "org.springframework.samples.petclinic.genai.AIDataProvider",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "semantic_summary": "...( ) {.( ) ;.( ) ;.( ) ;\n\t\t\treturn.( ) ;\n\t\t\treturn.( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;"
+  },
+  {
+    "return_type": "VetResponse",
+    "imports": [
+      "import java.util.List;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.vectorstore.SearchRequest;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.samples.petclinic.genai.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.genai.dto.PetDetails;",
+      "import org.springframework.stereotype.Service;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;"
+    ],
+    "signature": "getVets(request)",
+    "calls": [
+      "writeValueAsString",
+      "vet",
+      "from",
+      "withQuery",
+      "withTopK",
+      "defaults",
+      "vet",
+      "withTopK",
+      "similaritySearch",
+      "stream",
+      "map",
+      "toList"
+    ],
+    "function": "getVets",
+    "class": "org.springframework.samples.petclinic.genai.AIDataProvider",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "semantic_summary": ".uri(ownersHostname + \"owners/\"+request.ownerId+\"/pets\")\n\n\treturn new.bodyToMono(PetDetails\n   .bodyToMono(PetDetails\n.bodyToMono(PetDetails\n.bodyToMono(PetDetails\n.bodyToMono(PetDetails\n.bodyToMono(PetDetails\n.bodyTo"
+  },
+  {
+    "return_type": "AddedPetResponse",
+    "imports": [
+      "import java.util.List;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.vectorstore.SearchRequest;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.samples.petclinic.genai.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.genai.dto.PetDetails;",
+      "import org.springframework.stereotype.Service;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;"
+    ],
+    "signature": "addPetToOwner(request)",
+    "calls": [
+      "post",
+      "uri",
+      "ownerId",
+      "bodyValue",
+      "pet",
+      "retrieve",
+      "bodyToMono",
+      "block"
+    ],
+    "function": "addPetToOwner",
+    "class": "org.springframework.samples.petclinic.genai.AIDataProvider",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "semantic_summary": "addPetToPetclinic(AddPetRequest request) {\n\t\treturn.retrieve().bodyToMono(AddPetDetails.class).block());\n\t}\n\n\tpublicaddPetToPetclinic(AddPetRequest request) {\n\t\treturn.retrieve().bodyToMono(AddPetDetails.class).block());\n\t}\n\n\tpublicaddPet"
+  },
+  {
+    "return_type": "OwnerResponse",
+    "imports": [
+      "import java.util.List;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.vectorstore.SearchRequest;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.samples.petclinic.genai.dto.OwnerDetails;",
+      "import org.springframework.samples.petclinic.genai.dto.PetDetails;",
+      "import org.springframework.stereotype.Service;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;"
+    ],
+    "signature": "addOwnerToPetclinic(ownerRequest)",
+    "calls": [
+      "post",
+      "uri",
+      "bodyValue",
+      "retrieve",
+      "bodyToMono",
+      "block"
+    ],
+    "function": "addOwnerToPetclinic",
+    "class": "org.springframework.samples.petclinic.genai.AIDataProvider",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\AIDataProvider.java",
+    "semantic_summary": "{.uri(ownersHostname +).retrieve().bodyToMono(OwnerDetails.class).block());\n\tpublic.retrieve().bodyToMono(OwnerDetails.class).block());\n\tpublic.retrieve().bodyToMono(OwnerDetails.class).block());\n\tpublic"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.genai.GenAIServiceApplication",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\GenAIServiceApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.document.DocumentReader;",
+      "import org.springframework.ai.reader.JsonReader;",
+      "import org.springframework.ai.vectorstore.SimpleVectorStore;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.boot.context.event.ApplicationStartedEvent;",
+      "import org.springframework.context.event.EventListener;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.core.io.ByteArrayResource;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.samples.petclinic.genai.dto.Vet;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import java.io.File;",
+      "import java.io.IOException;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.attribute.FileAttribute;",
+      "import java.nio.file.attribute.PosixFilePermission;",
+      "import java.nio.file.attribute.PosixFilePermissions;",
+      "import java.util.List;",
+      "import java.util.Set;"
+    ],
+    "signature": "loadVetDataToVectorStoreOnStartup(event)",
+    "calls": [
+      "exists",
+      "getFile",
+      "info",
+      "get",
+      "uri",
+      "retrieve",
+      "bodyToMono",
+      "block",
+      "convertListToJsonResource",
+      "get",
+      "add",
+      "asFileAttribute",
+      "fromString",
+      "createTempFile",
+      "toFile",
+      "info",
+      "getAbsolutePath",
+      "info",
+      "size"
+    ],
+    "function": "loadVetDataToVectorStoreOnStartup",
+    "class": "org.springframework.samples.petclinic.genai.VectorStoreController",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\VectorStoreController.java",
+    "semantic_summary": ".( vetsHostname ) ;( vetsHostname ) ;( vets( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;( vetsHostname ) ;"
+  },
+  {
+    "return_type": "Resource",
+    "imports": [
+      "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "import com.fasterxml.jackson.databind.ObjectMapper;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.ai.document.Document;",
+      "import org.springframework.ai.document.DocumentReader;",
+      "import org.springframework.ai.reader.JsonReader;",
+      "import org.springframework.ai.vectorstore.SimpleVectorStore;",
+      "import org.springframework.ai.vectorstore.VectorStore;",
+      "import org.springframework.boot.context.event.ApplicationStartedEvent;",
+      "import org.springframework.context.event.EventListener;",
+      "import org.springframework.core.ParameterizedTypeReference;",
+      "import org.springframework.core.io.ByteArrayResource;",
+      "import org.springframework.core.io.ClassPathResource;",
+      "import org.springframework.core.io.Resource;",
+      "import org.springframework.samples.petclinic.genai.dto.Vet;",
+      "import org.springframework.stereotype.Component;",
+      "import org.springframework.web.reactive.function.client.WebClient;",
+      "import java.io.File;",
+      "import java.io.IOException;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.attribute.FileAttribute;",
+      "import java.nio.file.attribute.PosixFilePermission;",
+      "import java.nio.file.attribute.PosixFilePermissions;",
+      "import java.util.List;",
+      "import java.util.Set;"
+    ],
+    "signature": "convertListToJsonResource(vets)",
+    "calls": [
+      "writeValueAsString",
+      "getBytes",
+      "error"
+    ],
+    "function": "convertListToJsonResource",
+    "class": "org.springframework.samples.petclinic.genai.VectorStoreController",
+    "source_file": "spring-petclinic-genai-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\genai\\VectorStoreController.java",
+    "semantic_summary": "{\n\t\t\treturn null;\n\t\t\treturn{\n\t\t\treturn{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{\n\t\t{}{\n\t\t{\n\t\t{\n\t\t{() {}}{}{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.boot.context.properties.EnableConfigurationProperties;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;",
+      "import org.springframework.samples.petclinic.vets.system.VetsProperties;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.vets.VetsServiceApplication",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\VetsServiceApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.vets.model.Specialty",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "getName()",
+    "calls": [],
+    "function": "getName",
+    "class": "org.springframework.samples.petclinic.vets.model.Specialty",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;"
+    ],
+    "signature": "setName(name)",
+    "calls": [],
+    "function": "setName",
+    "class": "org.springframework.samples.petclinic.vets.model.Specialty",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Specialty.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Set",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getSpecialtiesInternal()",
+    "calls": [],
+    "function": "getSpecialtiesInternal",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{\n\n\nExtends{\nExtends{\nExtends{\nExtends{\nExtends}\nExtends{\nExtends{\nExtends{\nExtends{\nExtends}\nExtends{\nExtends{\nExtends{\nExtends{\nExtends{\nExtends }\nExtends{\nExtends }\nExtends }{\nExtends }\nExtends }\nExtends{\nExtends }\nExtends }{"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getSpecialties()",
+    "calls": [
+      "getSpecialtiesInternal",
+      "sort",
+      "unmodifiableList"
+    ],
+    "function": "getSpecialties",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{\n      \n\n    }\n      }\n\n      }}\n      }\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n      }\n\n       }\n\n   }\n\n    }}"
+  },
+  {
+    "return_type": "int",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getNrOfSpecialties()",
+    "calls": [
+      "getSpecialtiesInternal",
+      "size"
+    ],
+    "function": "getNrOfSpecialties",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{\n        this.id =}\n\n   }\n\n   }}}}}}\n\nNetworkInterface{\nNetworkInterface}\n\nNetworkInterface}\nNetworkInterface{\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}\nNetworkInterface }\nNetworkInterface}\nNetworkInterface }\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}\nNetworkInterface}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "addSpecialty(specialty)",
+    "calls": [
+      "getSpecialtiesInternal",
+      "add"
+    ],
+    "function": "addSpecialty",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}\n\n   }\n\n   {}\n\n   }\n\n   }\n\n   }\n\n   {\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface{\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface}\n\nNetworkInterface }\n\nNetworkInterface}\n\nNetworkInterface }\n\nNetworkInterface}"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}\n\n   }}}}}}}}\n\n   }\n\n   }\n\n   }\n\n   {}\n\n   }\n\n   {}\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }\n\n   }}}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getFirstName()",
+    "calls": [],
+    "function": "getFirstName",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}\n\n   }\n\n   }}}}}}}\n\n   }\n\n   }\n\n   }\n\n   }}{}}\n\n   }\n\n   }}"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "getLastName()",
+    "calls": [],
+    "function": "getLastName",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}\n\n   }}}}}}}}}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "setId(id)",
+    "calls": [],
+    "function": "setId",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}\n\n   }\n\n   }\n   }"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "setFirstName(firstName)",
+    "calls": [],
+    "function": "setFirstName",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.NotBlank;",
+      "import jakarta.xml.bind.annotation.XmlElement;",
+      "import org.springframework.beans.support.MutableSortDefinition;",
+      "import org.springframework.beans.support.PropertyComparator;",
+      "import java.util;"
+    ],
+    "signature": "setLastName(lastName)",
+    "calls": [],
+    "function": "setLastName",
+    "class": "org.springframework.samples.petclinic.vets.model.Vet",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\model\\Vet.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import java.util.List;",
+      "import org.springframework.cache.annotation.Cacheable;",
+      "import org.springframework.samples.petclinic.vets.model.Vet;",
+      "import org.springframework.samples.petclinic.vets.model.VetRepository;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "showResourcesVetList()",
+    "calls": [
+      "findAll"
+    ],
+    "function": "showResourcesVetList",
+    "class": "org.springframework.samples.petclinic.vets.web.VetResource",
+    "source_file": "spring-petclinic-vets-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\vets\\web\\VetResource.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.http.MediaType;",
+      "import org.springframework.samples.petclinic.vets.model.Vet;",
+      "import org.springframework.samples.petclinic.vets.model.VetRepository;",
+      "import org.springframework.test.context.ActiveProfiles;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.servlet.MockMvc;",
+      "import static java.util.Arrays.asList;",
+      "import static org.mockito.BDDMockito.given;",
+      "import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;"
+    ],
+    "signature": "shouldGetAListOfVets()",
+    "calls": [
+      "setId",
+      "given",
+      "willReturn",
+      "asList",
+      "findAll",
+      "perform",
+      "andExpect",
+      "status",
+      "isOk",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "get",
+      "accept"
+    ],
+    "function": "shouldGetAListOfVets",
+    "class": "org.springframework.samples.petclinic.vets.web.VetResourceTest",
+    "source_file": "spring-petclinic-vets-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\vets\\web\\VetResourceTest.java",
+    "semantic_summary": "{}}}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.cloud.client.discovery.EnableDiscoveryClient;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "run"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.visits.VisitsServiceApplication",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\VisitsServiceApplication.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "MeterRegistryCustomizer",
+    "imports": [
+      "import io.micrometer.core.aop.TimedAspect;",
+      "import io.micrometer.core.instrument.MeterRegistry;",
+      "import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;"
+    ],
+    "signature": "metricsCommonTags()",
+    "calls": [
+      "config",
+      "commonTags"
+    ],
+    "function": "metricsCommonTags",
+    "class": "org.springframework.samples.petclinic.visits.config.MetricConfig",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\config\\MetricConfig.java",
+    "semantic_summary": "{\n   }"
+  },
+  {
+    "return_type": "TimedAspect",
+    "imports": [
+      "import io.micrometer.core.aop.TimedAspect;",
+      "import io.micrometer.core.instrument.MeterRegistry;",
+      "import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;",
+      "import org.springframework.context.annotation.Bean;",
+      "import org.springframework.context.annotation.Configuration;"
+    ],
+    "signature": "timedAspect(registry)",
+    "calls": [],
+    "function": "timedAspect",
+    "class": "org.springframework.samples.petclinic.visits.config.MetricConfig",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\config\\MetricConfig.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "Integer",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "getId()",
+    "calls": [],
+    "function": "getId",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\n       {\n       }\n\n        public{\n       }\n\n        public{\n\n       }\n\n       }\n\n        public{\n\n       }\n\n       }\n\n        public}\n\n        public{\n\n       }}}{\n\n       }\n\n        public}\n\n        public}}}"
+  },
+  {
+    "return_type": "Date",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "getDate()",
+    "calls": [],
+    "function": "getDate",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\"
+  },
+  {
+    "return_type": "String",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "getDescription()",
+    "calls": [],
+    "function": "getDescription",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}}"
+  },
+  {
+    "return_type": "int",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "getPetId()",
+    "calls": [],
+    "function": "getPetId",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "setId(id)",
+    "calls": [],
+    "function": "setId",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "setDate(date)",
+    "calls": [],
+    "function": "setDate",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}\nym}}}"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "setDescription(description)",
+    "calls": [],
+    "function": "setDescription",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\\\\\\\\ this.petId ={\n\\\\\\\\ this.petId =}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "setPetId(petId)",
+    "calls": [],
+    "function": "setPetId",
+    "class": "org.springframework.samples.petclinic.visits.model.Visit",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\\\\\\\\ this.id ={\n\\\\\\\\ this.id ={\n\\\\\\\\ this.id =}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}"
+  },
+  {
+    "return_type": "VisitBuilder",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "aVisit()",
+    "calls": [],
+    "function": "aVisit",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n   {\n   {\n   }\n   {\n   }\n   {\n   }\n   {\n   }\n   }\n   {\n   }\n   {\n   }\n   {\n   }\n   }\n   }\n   {\n   }\n   }\n   }\n   }\n   }"
+  },
+  {
+    "return_type": "VisitBuilder",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "id(id)",
+    "calls": [],
+    "function": "id",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\{\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\}\n\\\\\\\\{\n\\\\\\\\ }\n\\\\\\\\"
+  },
+  {
+    "return_type": "VisitBuilder",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "date(date)",
+    "calls": [],
+    "function": "date",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\nWarehouse{\nWarehouse{\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}"
+  },
+  {
+    "return_type": "VisitBuilder",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "description(description)",
+    "calls": [],
+    "function": "description",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse}\nWarehouse{\nWarehouse}\nWarehouse{()}\nWarehouse}\nWarehouse}\nWarehouse}"
+  },
+  {
+    "return_type": "VisitBuilder",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "petId(petId)",
+    "calls": [],
+    "function": "petId",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehousethis;\nWarehouse"
+  },
+  {
+    "return_type": "Visit",
+    "imports": [
+      "import com.fasterxml.jackson.annotation.JsonFormat;",
+      "import jakarta.persistence;",
+      "import jakarta.validation.constraints.Size;",
+      "import java.util.Date;"
+    ],
+    "signature": "build()",
+    "calls": [
+      "setId",
+      "setDate",
+      "setDescription",
+      "setPetId"
+    ],
+    "function": "build",
+    "class": "org.springframework.samples.petclinic.visits.model.VisitBuilder",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\model\\Visit.java",
+    "semantic_summary": "{\nuris"
+  },
+  {
+    "return_type": "Visit",
+    "imports": [
+      "import java.util.List;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import io.micrometer.core.annotation.Timed;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.visits.model.Visit;",
+      "import org.springframework.samples.petclinic.visits.model.VisitRepository;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.PostMapping;",
+      "import org.springframework.web.bind.annotation.RequestBody;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "import org.springframework.web.bind.annotation.ResponseStatus;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "create(visit, petId)",
+    "calls": [
+      "setPetId",
+      "info",
+      "save"
+    ],
+    "function": "create",
+    "class": "org.springframework.samples.petclinic.visits.web.VisitResource",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "semantic_summary": "{\n\n{\n{\n}\n{\n}\n{\n}\n{\n}\n}\n{\n}\n}\n}\n}\n{\n}\n}\n}\n}\n}\n}\n}\n}\n}"
+  },
+  {
+    "return_type": "List",
+    "imports": [
+      "import java.util.List;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import io.micrometer.core.annotation.Timed;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.visits.model.Visit;",
+      "import org.springframework.samples.petclinic.visits.model.VisitRepository;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.PostMapping;",
+      "import org.springframework.web.bind.annotation.RequestBody;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "import org.springframework.web.bind.annotation.ResponseStatus;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "read(petId)",
+    "calls": [
+      "findByPetId"
+    ],
+    "function": "read",
+    "class": "org.springframework.samples.petclinic.visits.web.VisitResource",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "semantic_summary": "{\n\n{\n{\n}\n{\n}\n}\n}\n{\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}\n}"
+  },
+  {
+    "return_type": "Visits",
+    "imports": [
+      "import java.util.List;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import io.micrometer.core.annotation.Timed;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.visits.model.Visit;",
+      "import org.springframework.samples.petclinic.visits.model.VisitRepository;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.PostMapping;",
+      "import org.springframework.web.bind.annotation.RequestBody;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "import org.springframework.web.bind.annotation.ResponseStatus;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "read(petIds)",
+    "calls": [
+      "findByPetIdIn"
+    ],
+    "function": "read",
+    "class": "org.springframework.samples.petclinic.visits.web.VisitResource",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "semantic_summary": "{{\nbearer{\nbearer{}"
+  },
+  {
+    "return_type": "record",
+    "imports": [
+      "import java.util.List;",
+      "import jakarta.validation.Valid;",
+      "import jakarta.validation.constraints.Min;",
+      "import io.micrometer.core.annotation.Timed;",
+      "import org.slf4j.Logger;",
+      "import org.slf4j.LoggerFactory;",
+      "import org.springframework.http.HttpStatus;",
+      "import org.springframework.samples.petclinic.visits.model.Visit;",
+      "import org.springframework.samples.petclinic.visits.model.VisitRepository;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.PathVariable;",
+      "import org.springframework.web.bind.annotation.PostMapping;",
+      "import org.springframework.web.bind.annotation.RequestBody;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "import org.springframework.web.bind.annotation.ResponseStatus;",
+      "import org.springframework.web.bind.annotation.RestController;"
+    ],
+    "signature": "Visits(items)",
+    "calls": [],
+    "function": "Visits",
+    "class": "org.springframework.samples.petclinic.visits.web.VisitResource",
+    "source_file": "spring-petclinic-visits-service\\src\\main\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResource.java",
+    "semantic_summary": "{"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import org.junit.jupiter.api.Test;",
+      "import org.junit.jupiter.api.extension.ExtendWith;",
+      "import org.springframework.beans.factory.annotation.Autowired;",
+      "import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;",
+      "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "import org.springframework.samples.petclinic.visits.model.Visit;",
+      "import org.springframework.samples.petclinic.visits.model.VisitRepository;",
+      "import org.springframework.test.context.ActiveProfiles;",
+      "import org.springframework.test.context.junit.jupiter.SpringExtension;",
+      "import org.springframework.test.web.servlet.MockMvc;",
+      "import static java.util.Arrays.asList;",
+      "import static org.mockito.BDDMockito.given;",
+      "import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;",
+      "import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;"
+    ],
+    "signature": "shouldFetchVisits()",
+    "calls": [
+      "given",
+      "willReturn",
+      "asList",
+      "aVisit",
+      "id",
+      "petId",
+      "build",
+      "aVisit",
+      "id",
+      "petId",
+      "build",
+      "aVisit",
+      "id",
+      "petId",
+      "build",
+      "findByPetIdIn",
+      "asList",
+      "perform",
+      "andExpect",
+      "status",
+      "isOk",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "andExpect",
+      "jsonPath",
+      "value",
+      "get"
+    ],
+    "function": "shouldFetchVisits",
+    "class": "org.springframework.samples.petclinic.visits.web.VisitResourceTest",
+    "source_file": "spring-petclinic-visits-service\\src\\test\\java\\org\\springframework\\samples\\petclinic\\visits\\web\\VisitResourceTest.java",
+    "semantic_summary": ".andExpect(jsonPath(\"$.items[0].id\"\n   .andExpect(jsonPath(\"$.items[1].id\"\n   .andExpect(jsonPath(\"$.items[2].id\"\n   .andExpect(jsonPath(\"$.items[3].id\"\n    .andExpect(jsonPath(\"$.items[3].id\"\n    .andExpect(jsonPath(\"$."
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.github.javaparser.StaticJavaParser;",
+      "import com.github.javaparser.ast.CompilationUnit;",
+      "import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;",
+      "import com.github.javaparser.ast.body.MethodDeclaration;",
+      "import com.github.javaparser.ast.expr.MethodCallExpr;",
+      "import com.github.javaparser.ast.expr.MethodReferenceExpr;",
+      "import com.github.javaparser.ParserConfiguration;",
+      "import org.json.JSONArray;",
+      "import org.json.JSONObject;",
+      "import javax.xml.parsers.DocumentBuilder;",
+      "import javax.xml.parsers.DocumentBuilderFactory;",
+      "import javax.xml.transform.OutputKeys;",
+      "import javax.xml.transform.Transformer;",
+      "import javax.xml.transform.TransformerFactory;",
+      "import javax.xml.transform.dom.DOMSource;",
+      "import javax.xml.transform.stream.StreamResult;",
+      "import org.w3c.dom.Document;",
+      "import org.w3c.dom.Element;",
+      "import java.io.File;",
+      "import java.io.FileWriter;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.Path;",
+      "import java.nio.file.Paths;",
+      "import java.util;"
+    ],
+    "signature": "main(args)",
+    "calls": [
+      "setLanguageLevel",
+      "setConfiguration",
+      "walk",
+      "filter",
+      "toString",
+      "endsWith",
+      "forEach",
+      "get",
+      "println",
+      "size",
+      "parseFile",
+      "mkdirs",
+      "exportStaticGraphGML",
+      "exportSemanticJSON",
+      "exportSemanticGraphML",
+      "println"
+    ],
+    "function": "main",
+    "class": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "source_file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "semantic_summary": "new File(PROJECT_ROOT))new File(OUTPUT_DIR).mkdirs();\n\n       new File(OUTPUT_DIR).mkdirs();\n\nnew File(OUTPUT_DIR).mkdirs();\n\nnew File(OUTPUT_DIR).mkdirs();\n\nnew File(OUTPUT_DIR).mkdirs();\n\nnew File(OUTPUT_DIR).mkdirs();\n\nnew File(OUTPUT_DIR).mkdirs();"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.github.javaparser.StaticJavaParser;",
+      "import com.github.javaparser.ast.CompilationUnit;",
+      "import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;",
+      "import com.github.javaparser.ast.body.MethodDeclaration;",
+      "import com.github.javaparser.ast.expr.MethodCallExpr;",
+      "import com.github.javaparser.ast.expr.MethodReferenceExpr;",
+      "import com.github.javaparser.ParserConfiguration;",
+      "import org.json.JSONArray;",
+      "import org.json.JSONObject;",
+      "import javax.xml.parsers.DocumentBuilder;",
+      "import javax.xml.parsers.DocumentBuilderFactory;",
+      "import javax.xml.transform.OutputKeys;",
+      "import javax.xml.transform.Transformer;",
+      "import javax.xml.transform.TransformerFactory;",
+      "import javax.xml.transform.dom.DOMSource;",
+      "import javax.xml.transform.stream.StreamResult;",
+      "import org.w3c.dom.Document;",
+      "import org.w3c.dom.Element;",
+      "import java.io.File;",
+      "import java.io.FileWriter;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.Path;",
+      "import java.nio.file.Paths;",
+      "import java.util;"
+    ],
+    "signature": "parseFile(file)",
+    "calls": [
+      "parse",
+      "getPackageDeclaration",
+      "map",
+      "getNameAsString",
+      "orElse",
+      "getImports",
+      "forEach",
+      "add",
+      "toString",
+      "trim",
+      "findAll",
+      "forEach",
+      "isEmpty",
+      "getNameAsString",
+      "getNameAsString",
+      "findAll",
+      "forEach",
+      "getNameAsString",
+      "add",
+      "findAll",
+      "forEach",
+      "getScope",
+      "map",
+      "toString",
+      "getNameAsString",
+      "orElse",
+      "getNameAsString",
+      "computeIfAbsent",
+      "add",
+      "findAll",
+      "forEach",
+      "getScope",
+      "toString",
+      "getIdentifier",
+      "computeIfAbsent",
+      "add",
+      "put",
+      "getNameAsString",
+      "put",
+      "getParameters",
+      "stream",
+      "map",
+      "getNameAsString",
+      "reduce",
+      "orElse",
+      "put",
+      "getNameAsString",
+      "put",
+      "getType",
+      "asString",
+      "findAll",
+      "forEach",
+      "add",
+      "getScope",
+      "map",
+      "toString",
+      "getNameAsString",
+      "orElse",
+      "getNameAsString",
+      "findAll",
+      "forEach",
+      "put",
+      "getIdentifier",
+      "put",
+      "forEach",
+      "put",
+      "put",
+      "toString",
+      "add",
+      "println",
+      "getMessage",
+      "put",
+      "println",
+      "getMessage"
+    ],
+    "function": "parseFile",
+    "class": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "source_file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "semantic_summary": "// --------// --------// -------- St\n    // -------- St\n    // -------- St\n// -------- St\n    // -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St\n// -------- St"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.github.javaparser.StaticJavaParser;",
+      "import com.github.javaparser.ast.CompilationUnit;",
+      "import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;",
+      "import com.github.javaparser.ast.body.MethodDeclaration;",
+      "import com.github.javaparser.ast.expr.MethodCallExpr;",
+      "import com.github.javaparser.ast.expr.MethodReferenceExpr;",
+      "import com.github.javaparser.ParserConfiguration;",
+      "import org.json.JSONArray;",
+      "import org.json.JSONObject;",
+      "import javax.xml.parsers.DocumentBuilder;",
+      "import javax.xml.parsers.DocumentBuilderFactory;",
+      "import javax.xml.transform.OutputKeys;",
+      "import javax.xml.transform.Transformer;",
+      "import javax.xml.transform.TransformerFactory;",
+      "import javax.xml.transform.dom.DOMSource;",
+      "import javax.xml.transform.stream.StreamResult;",
+      "import org.w3c.dom.Document;",
+      "import org.w3c.dom.Element;",
+      "import java.io.File;",
+      "import java.io.FileWriter;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.Path;",
+      "import java.nio.file.Paths;",
+      "import java.util;"
+    ],
+    "signature": "exportStaticGraphGML()",
+    "calls": [
+      "write",
+      "addAll",
+      "keySet",
+      "values",
+      "forEach",
+      "values",
+      "forEach",
+      "addAll",
+      "replace",
+      "replace",
+      "replace",
+      "replace",
+      "replace",
+      "trim",
+      "put",
+      "write",
+      "entrySet",
+      "getKey",
+      "getValue",
+      "containsKey",
+      "containsKey",
+      "write",
+      "get",
+      "get",
+      "write",
+      "flush",
+      "close"
+    ],
+    "function": "exportStaticGraphGML",
+    "class": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "source_file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "semantic_summary": "////// Add all// Add all// Add all// Add all// Add all// Add all// Add all// Add all// Add alladdAll(callGraph.values().forEach(node -> nodes.addAll(nodes::addAll(nodes::addAll(nodes::addAll(nodes::addAll(nodes::addAll(nodes::addAll(nodes::addAll(nodes::addAll"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.github.javaparser.StaticJavaParser;",
+      "import com.github.javaparser.ast.CompilationUnit;",
+      "import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;",
+      "import com.github.javaparser.ast.body.MethodDeclaration;",
+      "import com.github.javaparser.ast.expr.MethodCallExpr;",
+      "import com.github.javaparser.ast.expr.MethodReferenceExpr;",
+      "import com.github.javaparser.ParserConfiguration;",
+      "import org.json.JSONArray;",
+      "import org.json.JSONObject;",
+      "import javax.xml.parsers.DocumentBuilder;",
+      "import javax.xml.parsers.DocumentBuilderFactory;",
+      "import javax.xml.transform.OutputKeys;",
+      "import javax.xml.transform.Transformer;",
+      "import javax.xml.transform.TransformerFactory;",
+      "import javax.xml.transform.dom.DOMSource;",
+      "import javax.xml.transform.stream.StreamResult;",
+      "import org.w3c.dom.Document;",
+      "import org.w3c.dom.Element;",
+      "import java.io.File;",
+      "import java.io.FileWriter;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.Path;",
+      "import java.nio.file.Paths;",
+      "import java.util;"
+    ],
+    "signature": "exportSemanticJSON()",
+    "calls": [
+      "put",
+      "write",
+      "toString",
+      "close"
+    ],
+    "function": "exportSemanticJSON",
+    "class": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "source_file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "semantic_summary": "{\n\n       = doc.createElement(\"graph\");\n       doc.appendChild(graph);\n\n       doc.appendChild(graph);\n\n       doc.appendChild(graph);\n\n       doc.appendChild(graph);\n\n       doc.appendChild(graph);\n        doc.appendChild(graph);\n\n       doc.appendChild(graph);\n\n        doc.appendChild(graph);"
+  },
+  {
+    "return_type": "void",
+    "imports": [
+      "import com.github.javaparser.StaticJavaParser;",
+      "import com.github.javaparser.ast.CompilationUnit;",
+      "import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;",
+      "import com.github.javaparser.ast.body.MethodDeclaration;",
+      "import com.github.javaparser.ast.expr.MethodCallExpr;",
+      "import com.github.javaparser.ast.expr.MethodReferenceExpr;",
+      "import com.github.javaparser.ParserConfiguration;",
+      "import org.json.JSONArray;",
+      "import org.json.JSONObject;",
+      "import javax.xml.parsers.DocumentBuilder;",
+      "import javax.xml.parsers.DocumentBuilderFactory;",
+      "import javax.xml.transform.OutputKeys;",
+      "import javax.xml.transform.Transformer;",
+      "import javax.xml.transform.TransformerFactory;",
+      "import javax.xml.transform.dom.DOMSource;",
+      "import javax.xml.transform.stream.StreamResult;",
+      "import org.w3c.dom.Document;",
+      "import org.w3c.dom.Element;",
+      "import java.io.File;",
+      "import java.io.FileWriter;",
+      "import java.nio.file.Files;",
+      "import java.nio.file.Path;",
+      "import java.nio.file.Paths;",
+      "import java.util;"
+    ],
+    "signature": "exportSemanticGraphML()",
+    "calls": [
+      "newInstance",
+      "newDocumentBuilder",
+      "newDocument",
+      "createElement",
+      "setAttribute",
+      "appendChild",
+      "createElement",
+      "setAttribute",
+      "setAttribute",
+      "appendChild",
+      "addAll",
+      "keySet",
+      "values",
+      "forEach",
+      "values",
+      "forEach",
+      "createElement",
+      "setAttribute",
+      "createElement",
+      "setTextContent",
+      "appendChild",
+      "appendChild",
+      "put",
+      "entrySet",
+      "getKey",
+      "getValue",
+      "containsKey",
+      "containsKey",
+      "createElement",
+      "setAttribute",
+      "get",
+      "setAttribute",
+      "get",
+      "appendChild",
+      "newInstance",
+      "newTransformer",
+      "setOutputProperty",
+      "transform"
+    ],
+    "function": "exportSemanticGraphML",
+    "class": "org.springframework.samples.petclinic.analysis.RepoWideExtractor",
+    "source_file": "src\\main\\java\\org\\springframework\\samples\\petclinic\\analysis\\RepoWideExtractor.java",
+    "semantic_summary": "(St\n    ) {( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ;( ) ; }( ) ; }( ) ; }"
+  }
+]

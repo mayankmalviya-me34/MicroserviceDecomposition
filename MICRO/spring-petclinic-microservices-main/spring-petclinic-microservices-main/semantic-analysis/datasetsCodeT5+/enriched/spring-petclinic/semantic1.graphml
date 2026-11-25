@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="directed"><node id="code::AIBeanConfiguration.java"/>
+<node id="ont::File"/>
+<node id="code::OwnerEntityMapper.java"/>
+<node id="code::PetResource.java"/>
+<node id="code::Owner.java"/>
+<node id="code::OwnerResource.java"/>
+<node id="code::PetType.java"/>
+<node id="code::VetResourceTest.java"/>
+<node id="code::VisitsServiceApplication.java"/>
+<node id="code::MetricConfig.java"/>
+<node id="code::AIDataProvider.java"/>
+<node id="code::Mapper.java"/>
+<node id="code::ApiGatewayController.java"/>
+<node id="code::VetResource.java"/>
+<node id="code::RepoWideExtractor.java"/>
+<node id="code::CircuitBreakerConfiguration.java"/>
+<node id="code::PetRepository.java"/>
+<node id="code::PetResourceTest.java"/>
+<node id="code::VisitRepository.java"/>
+<node id="code::VectorStoreController.java"/>
+<node id="code::ApiGatewayApplication.java"/>
+<node id="code::DiscoveryServerApplicationTests.java"/>
+<node id="code::CustomersServiceClient.java"/>
+<node id="code::VisitResourceTest.java"/>
+<node id="code::PetclinicConfigServerApplicationTests.java"/>
+<node id="code::ApiGatewayControllerTest.java"/>
+<node id="code::SpringBootAdminApplication.java"/>
+<node id="code::Vet.java"/>
+<node id="code::Visit.java"/>
+<node id="code::VisitResource.java"/>
+<node id="code::DiscoveryServerApplication.java"/>
+<node id="code::CustomersServiceApplication.java"/>
+<node id="code::Pet.java"/>
+<node id="code::Specialty.java"/>
+<node id="code::VisitsServiceClientIntegrationTest.java"/>
+<node id="code::VetsServiceApplication.java"/>
+<node id="code::ApiGatewayApplicationTests.java"/>
+<node id="code::FallbackController.java"/>
+<node id="code::ConfigServerApplication.java"/>
+<node id="code::GenAIServiceApplication.java"/>
+<node id="code::VisitsServiceClient.java"/>
+<edge source="code::AIBeanConfiguration.java" target="ont::File"/>
+<edge source="code::OwnerEntityMapper.java" target="ont::File"/>
+<edge source="code::PetResource.java" target="ont::File"/>
+<edge source="code::Owner.java" target="ont::File"/>
+<edge source="code::OwnerResource.java" target="ont::File"/>
+<edge source="code::PetType.java" target="ont::File"/>
+<edge source="code::VetResourceTest.java" target="ont::File"/>
+<edge source="code::VisitsServiceApplication.java" target="ont::File"/>
+<edge source="code::MetricConfig.java" target="ont::File"/>
+<edge source="code::AIDataProvider.java" target="ont::File"/>
+<edge source="code::Mapper.java" target="ont::File"/>
+<edge source="code::ApiGatewayController.java" target="ont::File"/>
+<edge source="code::VetResource.java" target="ont::File"/>
+<edge source="code::RepoWideExtractor.java" target="ont::File"/>
+<edge source="code::CircuitBreakerConfiguration.java" target="ont::File"/>
+<edge source="code::PetRepository.java" target="ont::File"/>
+<edge source="code::PetResourceTest.java" target="ont::File"/>
+<edge source="code::VisitRepository.java" target="ont::File"/>
+<edge source="code::VectorStoreController.java" target="ont::File"/>
+<edge source="code::ApiGatewayApplication.java" target="ont::File"/>
+<edge source="code::DiscoveryServerApplicationTests.java" target="ont::File"/>
+<edge source="code::CustomersServiceClient.java" target="ont::File"/>
+<edge source="code::VisitResourceTest.java" target="ont::File"/>
+<edge source="code::PetclinicConfigServerApplicationTests.java" target="ont::File"/>
+<edge source="code::ApiGatewayControllerTest.java" target="ont::File"/>
+<edge source="code::SpringBootAdminApplication.java" target="ont::File"/>
+<edge source="code::Vet.java" target="ont::File"/>
+<edge source="code::Visit.java" target="ont::File"/>
+<edge source="code::VisitResource.java" target="ont::File"/>
+<edge source="code::DiscoveryServerApplication.java" target="ont::File"/>
+<edge source="code::CustomersServiceApplication.java" target="ont::File"/>
+<edge source="code::Pet.java" target="ont::File"/>
+<edge source="code::Specialty.java" target="ont::File"/>
+<edge source="code::VisitsServiceClientIntegrationTest.java" target="ont::File"/>
+<edge source="code::VetsServiceApplication.java" target="ont::File"/>
+<edge source="code::ApiGatewayApplicationTests.java" target="ont::File"/>
+<edge source="code::FallbackController.java" target="ont::File"/>
+<edge source="code::ConfigServerApplication.java" target="ont::File"/>
+<edge source="code::GenAIServiceApplication.java" target="ont::File"/>
+<edge source="code::VisitsServiceClient.java" target="ont::File"/>
+</graph></graphml>
