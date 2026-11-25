@@ -11,3 +11,9 @@ __pycache__/
 *.class
 Shoping Monolithic/Grocery_Online_Shopping_App-master/tree-sitter-javascript/
 evaluation/prometheus-3.13.0-rc.1.windows-amd64/
+.venv/
+venv/
+journal/
+**/db-monolithic/
+**/nodejs_microservice-master/db/
+**/datasets/graphs/semantic.graphml
